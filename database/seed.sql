@@ -1,7 +1,3 @@
-INSERT INTO TriageStatus (status_name) VALUES 
-('NonUrgent'), ('SemiUrgent'), ('Urgent'), ('Emergency'), ('Immediate'), ('NotInTriage')
-ON CONFLICT DO NOTHING;
-
 INSERT INTO Network DEFAULT VALUES;
 
 INSERT INTO Hospital (network_id, name, address, phoneNumber) VALUES

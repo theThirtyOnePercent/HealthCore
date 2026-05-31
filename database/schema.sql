@@ -1,7 +1,3 @@
-CREATE TABLE TriageStatus (
-    status_name VARCHAR(20) PRIMARY KEY
-);
-
 CREATE TABLE Network (
     network_id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY
 );
@@ -40,7 +36,7 @@ CREATE TABLE Patient (
     network_id INT NOT NULL,
     healthcareCardNumber INT UNIQUE,
     insurancePlan_id INT,
-    triageStatus VARCHAR(20) DEFAULT 'NotInTriage',
+    triageStatus ENUM('NonUrgent', 'SemiUrgent', 'Urgent', 'Emergency', 'Immediate', 'NotInTriage') DEFAULT 'NotInTriage',
     CONSTRAINT fk_patient_network FOREIGN KEY (network_id) REFERENCES Network(network_id),
     CONSTRAINT fk_patient_insurance FOREIGN KEY (insurancePlan_id) REFERENCES InsurancePlan(insurancePlan_id) ON DELETE SET NULL,
     CONSTRAINT fk_patient_triage FOREIGN KEY (triageStatus) REFERENCES TriageStatus(status_name)
