@@ -1,115 +1,76 @@
-INSERT INTO Network DEFAULT VALUES;
+INSERT INTO Hospitals (name, address, phone_number) VALUES
+('Stark General Hospital', 'New York, USA', '+1-555-IRON-MAN'),
+('Wayne Memorial Hospital', 'Gotham City', '+1-555-BAT-CARE'),
+('Hogwarts Health & Spellcare Hospital', 'Scottish Highlands', '+44-000-HP-CARE');
 
-INSERT INTO Hospital (network_id, name, address, phoneNumber) VALUES
-(1, 'General Central Hospital', '100 Medical Plaza, Metro City', '555-0100'),
-(1, 'St. Jude Community Clinic', '450 Suburban Boulevard, Westside', '555-0200');
+INSERT INTO InsurancePlans (name) VALUES
+('Galactic Health Plan'),
+('Gotham Care Premium'),
+('MuggleCare Basic'),
+('Stark Industries Coverage');
 
-INSERT INTO Department (hospital_id, name, beds, totalStaffPositions) VALUES
-(1, 'Emergency Medicine', 5, 10),
-(1, 'Cardiology Unit', 5, 8),
-(2, 'Pediatrics Ward', 5, 6);
+INSERT INTO Departments (hospital_id, name, beds, total_staff_positions) VALUES
+(1, 'Cardiology', 40, 10),
+(1, 'Robotics Surgery', 25, 8),
+(2, 'Trauma Unit', 60, 15),
+(2, 'Psychiatry', 30, 6),
+(3, 'Spell Injuries', 20, 7),
+(3, 'Potions Ward', 15, 5);
 
-INSERT INTO Administrator (name, surname, email, password, network_id) VALUES
-('Alice', 'Smith', 'alice.smith@network.com', '$2b$12$SecureHashForAlice123!', 1),
-('Bob', 'Jones', 'bob.jones@network.com', '$2b$12$SecureHashForBob456!', 1);
+INSERT INTO Users (name, surname, email, password, role) VALUES
+('Gregory', 'House', 'house@wayne-med.com', 'pwd1', 'Doctor'),
+('Stephen', 'Strange', 'strange@hogwarts-med.com', 'pwd2', 'Doctor'),
+('Leonard', 'McCoy', 'mccoy@stark-med.com', 'pwd3', 'Doctor'),
+('Meredith', 'Grey', 'grey@wayne-med.com', 'pwd4', 'Doctor'),
 
-INSERT INTO InsurancePlan (network_id, name) VALUES
-(1, 'Blue Shield Premium'),
-(1, 'Medicaid Standard Plan');
+('Luke', 'Skywalker', 'luke@galaxy.com', 'pwd5', 'Patient'),
+('Harry', 'Potter', 'harry@hogwarts.edu', 'pwd6', 'Patient'),
+('Bruce', 'Wayne', 'bruce@wayneenterprises.com', 'pwd7', 'Patient'),
 
-INSERT INTO Doctor (name, surname, email, password, network_id, specialization, appointmentPrice) VALUES
-('John', 'Doe', 'john.doe@hospital.com', '$2b$12$hash1', 1, 'ER Specialist', 150.00),
-('Jane', 'Smith', 'jane.smith@hospital.com', '$2b$12$hash2', 1, 'Trauma Surgeon', 200.00),
-('Robert', 'Lee', 'robert.lee@hospital.com', '$2b$12$hash3', 1, 'ER Resident', 100.00),
-('Emily', 'Davis', 'emily.davis@hospital.com', '$2b$12$hash4', 1, 'Acute Care Specialist', 160.00),
-('Michael', 'Brown', 'michael.brown@hospital.com', '$2b$12$hash5', 1, 'Toxicologist', 180.00),
-('William', 'Wilson', 'william.w@hospital.com', '$2b$12$hash6', 1, 'Cardiologist', 250.00),
-('Olivia', 'Taylor', 'olivia.t@hospital.com', '$2b$12$hash7', 1, 'Cardiovascular Surgeon', 350.00),
-('James', 'Miller', 'james.m@hospital.com', '$2b$12$hash8', 1, 'Electrophysiologist', 280.00),
-('Sophia', 'Garcia', 'sophia.g@hospital.com', '$2b$12$hash9', 1, 'Pediatric Cardiologist', 260.00),
-('Benjamin', 'Martinez', 'ben.m@hospital.com', '$2b$12$hash10', 1, 'Heart Failure Specialist', 240.00),
-('Isabella', 'Anderson', 'isabella.a@hospital.com', '$2b$12$hash11', 1, 'Pediatrician', 120.00),
-('Lucas', 'Thomas', 'lucas.t@hospital.com', '$2b$12$hash12', 1, 'Neonatologist', 210.00),
-('Mia', 'White', 'mia.white@hospital.com', '$2b$12$hash13', 1, 'Pediatric ER Doc', 140.00),
-('Mason', 'Harris', 'mason.h@hospital.com', '$2b$12$hash14', 1, 'Child Psychologist', 175.00),
-('Charlotte', 'Clark', 'charlotte.c@hospital.com', '$2b$12$hash15', 1, 'Pediatric Allergist', 130.00);
+('Nick', 'Fury', 'fury@shield.gov', 'pwd8', 'Administrator');
 
-INSERT INTO Doctor_Department (doctor_id, department_id) VALUES
-(1, 1), (2, 1), (3, 1), (4, 1), (5, 1),
-(6, 2), (7, 2), (8, 2), (9, 2), (10, 2),
-(11, 3), (12, 3), (13, 3), (14, 3), (15, 3);
+INSERT INTO Patients (patient_id, healthcare_card_number, insurance_plan_id, triage_status) VALUES
+(5, 100001, 1, 'SemiUrgent'),
+(6, 100002, 3, 'Urgent'),
+(7, 100003, 2, 'NonUrgent');
 
-INSERT INTO Equipment (department_id, equipmentType, quantity) VALUES
-(1, 'Defibrillator', 4),
-(1, 'Ventilator', 6),
-(1, 'Trauma Gurney', 10),
-(1, 'Patient Monitor', 12),
-(2, 'Echocardiogram Machine', 2),
-(2, 'ECG Monitor', 8),
-(2, 'Oxygen Concentrator', 5),
-(3, 'Infant Incubator', 4),
-(3, 'Pediatric Scale', 3),
-(3, 'Phototherapy Lamp', 2);
+INSERT INTO Doctors (doctor_id, department_id, specialization, appointment_price) VALUES
+(1, 4, 'Diagnostic Psychiatry', 250.00),
+(2, 5, 'Arcane Surgery', 500.00),
+(3, 1, 'Interstellar Cardiology', 300.00),
+(4, 3, 'Trauma Medicine', 220.00);
 
-INSERT INTO Patient (name, surname, email, password, network_id, healthcareCardNumber, insurancePlan_id, triageStatus)
-SELECT 
-    'PatientFirst_' || i as name,
-    'PatientLast_' || i as surname,
-    'patient' || i || '@example.com' as email,
-    '$2b$12$DummyHashedPasswordForPatient' || i as password,
-    1 as network_id,
-    100000 + i as healthcareCardNumber,
-    (CASE WHEN i % 2 = 0 THEN 1 ELSE 2 END) as insurancePlan_id, -- Alternate between insurance plans
-    (CASE 
-        WHEN i % 5 = 0 THEN 'NonUrgent'
-        WHEN i % 5 = 1 THEN 'SemiUrgent'
-        WHEN i % 5 = 2 THEN 'Urgent'
-        WHEN i % 5 = 3 THEN 'Emergency'
-        ELSE 'NotInTriage'
-     END) as triageStatus
-FROM generate_series(1, 50) AS i;
+INSERT INTO Equipments (department_id, equipment_type, quantity) VALUES
+(1, 'ECG Machine', 5),
+(2, 'Surgical Robot', 2),
+(3, 'Defibrillator', 10),
+(4, 'EEG Scanner', 4),
+(5, 'Wand Stabilizer', 6),
+(6, 'Alchemy Kit', 3);
 
-INSERT INTO Shift (doctor_id, startTime, endTime)
-SELECT 
-    d.doctor_id,
-    (CASE WHEN i % 2 = 0 THEN '2026-06-01 08:00:00'::timestamp ELSE '2026-06-02 14:00:00'::timestamp END),
-    (CASE WHEN i % 2 = 0 THEN '2026-06-01 16:00:00'::timestamp ELSE '2026-06-02 22:00:00'::timestamp END)
-FROM Doctor d
-CROSS JOIN generate_series(1, 2) AS i;
+INSERT INTO Equipments_Doctors (equipment_id, quantity, doctor_id) VALUES
+(4, 2, 1),
+(5, 1, 2),
+(1, 1, 3),
+(3, 1, 4);
 
+INSERT INTO Shifts (doctor_id, start_time, end_time) VALUES
+(1, '2026-06-02 08:00:00', '2026-06-02 16:00:00'),
+(2, '2026-06-02 10:00:00', '2026-06-02 18:00:00'),
+(3, '2026-06-02 09:00:00', '2026-06-02 17:00:00'),
+(4, '2026-06-02 12:00:00', '2026-06-02 20:00:00');
 
-INSERT INTO Appointment (patient_id, doctor_id, startDate, endDate)
-SELECT 
-    p.patient_id,
-    -- Safely maps doctor_id sequentially between the minimum and maximum generated IDs
-    (SELECT MIN(doctor_id) FROM Doctor) + (p.patient_id % (SELECT COUNT(*) FROM Doctor)),
-    '2026-06-03 09:00:00'::timestamp + (p.patient_id * INTERVAL '30 minutes'),
-    '2026-06-03 09:30:00'::timestamp + (p.patient_id * INTERVAL '30 minutes')
-FROM Patient p;
+INSERT INTO Appointments (patient_id, doctor_id, start_date, end_date) VALUES
+(5, 3, '2026-06-02 10:00:00', '2026-06-02 10:30:00'),
+(6, 2, '2026-06-02 11:00:00', '2026-06-02 11:45:00'),
+(7, 1, '2026-06-02 14:00:00', '2026-06-02 14:30:00');
 
-INSERT INTO Note (appointment_id, content, sentDate)
-SELECT 
-    appointment_id,
-    'Patient presented routine symptoms. Checked vital statistics and recorded history for clinical evaluation.',
-    startDate - INTERVAL '5 minutes'
-FROM Appointment;
+INSERT INTO Notes (appointment_id, content, sent_date) VALUES
+(1, 'Routine cardiac scan after hyperspace stress.', '2026-06-02 10:40:00'),
+(2, 'Minor magical instability detected. Prescribed stabilization charms.', '2026-06-02 12:00:00'),
+(3, 'Patient insists he is "the night".', '2026-06-02 15:00:00');
 
-INSERT INTO Diagnosis (appointment_id, doctor_id, patient_id, dateRecord, dateStartCondition, dateEndCondition, description)
-SELECT 
-    appointment_id,
-    doctor_id,
-    patient_id,
-    endDate,
-    startDate - INTERVAL '2 days',
-    (CASE WHEN appointment_id % 3 = 0 THEN endDate + INTERVAL '5 days' ELSE NULL END), -- Some conditions are resolved, some ongoing
-    'Clinical observation indicates standard seasonal variation or mild localized inflammation. Advised rest and routine follow-up.'
-FROM Appointment;
-
-INSERT INTO Doctor_Patient (doctor_id, patient_id)
-SELECT doctor_id, patient_id FROM Appointment
-ON CONFLICT DO NOTHING;
-
-INSERT INTO Admin_Doctor (admin_id, doctor_id)
-SELECT a.admin_id, d.doctor_id 
-FROM Administrator a 
-CROSS JOIN Doctor d;
+INSERT INTO Diagnosis (appointment_id, date_record, date_start_condition, date_end_condition, description) VALUES
+(1, '2026-06-02 10:35:00', '2026-06-02 09:50:00', '2026-06-02 10:30:00', 'Mild hyperspace arrhythmia'),
+(2, '2026-06-02 11:50:00', '2026-06-02 11:00:00', '2026-06-02 11:45:00', 'Chaotic spell residue imbalance'),
+(3, '2026-06-02 14:40:00', '2026-06-02 14:00:00', '2026-06-02 14:30:00', 'Severe nocturnal identity fixation syndrome');
