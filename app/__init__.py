@@ -1,6 +1,6 @@
 from flask import Flask
-from app.route.auth  import auth_bp
-from main import main_bp
+from app.routes.auth  import auth_bp
+from app.routes.main import main_bp
 
 
 def create_app():
