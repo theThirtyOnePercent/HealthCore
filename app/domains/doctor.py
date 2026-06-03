@@ -10,10 +10,10 @@ class Doctor(User):
         email: str,
         password: str,
         specialization: str,
-
     ):
-        super().__init__(name, surname, email, password)
 
+        super().__init__(name, surname, email, password)
+        
         self.doctor_id = doctor_id
         self.specialization = specialization
         self.appointment_price = None
