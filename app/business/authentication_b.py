@@ -30,7 +30,6 @@ class AuthService:
         if not user.verify_otp(input_code):
             raise ValueError("Invalid or expired verification code.")
 
-
         user.verification_code = None
         self.repository.commit_changes()
         
