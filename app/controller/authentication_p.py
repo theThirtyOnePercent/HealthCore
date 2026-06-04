@@ -19,7 +19,7 @@ def login_step_1_controller():
     
         session["mfa_pending_email"] = session_email
         
-        return jsonify({"message": "Verification code sent to email.", "next_step": "verify_mfa"}), 200
+        return jsonify({"message": "User successfully entered", "next_step": "verify_mfa"}), 200
     except ValueError as e:
         # Extension 2a.1: Display warning message
         return jsonify({"error": str(e)}), 401
@@ -37,7 +37,7 @@ def login_step_2_controller():
 
     db = SessionLocal()
     try:
-        repo = UserRepository(db)
+        repo = UserPersistence(db)
         auth_service = AuthService(repo)
         
 
