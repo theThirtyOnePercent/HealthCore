@@ -1,7 +1,0 @@
-  Network 1 -- 2 admin
-                       /         \ 
-                  Hospital 1    Hospital 2
-                 /          \            \
-              Dept 1      Dept 2          Dept 3
-             /     \      /     \        /      \   
-        Equip 4  Doc 5 Equip 3  Doc 5   Equip 3  Doc 5
