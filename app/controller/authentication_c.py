@@ -1,7 +1,7 @@
 from flask import request, jsonify, session
 from app.persistence.database import SessionLocal
 from app.persistence.authentication_p import UserPersistence
-from app.business.authentication_b import AuthService
+from app.business.authentication_b import AuthenticationBusiness
 
 def login_step_1_controller():
     """Submitting Email & Password."""
@@ -11,20 +11,21 @@ def login_step_1_controller():
 
     db = SessionLocal()
     try:
-        repo = UserPersistence(db)
-        auth_service = AuthService(repo)
-        
-        session_email = auth_service.authenticate_credentials(email, password)
+        persistence = UserPersistence(db)
+        auth_business = AuthenticationBusiness(persistence)
+        session_email = auth_business.authenticate_credentials(email, password)
         
     
         session["mfa_pending_email"] = session_email
         
-        return jsonify({"message": "User successfully entered", "next_step": "verify_mfa"}), 200
+        return jsonify({"message": "Verification code sent to email.", "next_step": "verify_mfa"}), 200
+
     except ValueError as e:
         # Extension 2a.1: Display warning message
         return jsonify({"error": str(e)}), 401
     finally:
         db.close()
+
 
 def login_step_2_controller():
     """Endpoint for Step 4: Submitting the Email OTP"""
@@ -37,14 +38,14 @@ def login_step_2_controller():
 
     db = SessionLocal()
     try:
-        repo = UserPersistence(db)
+        repo = UserRepository(db)
         auth_service = AuthService(repo)
         
 
         user = auth_service.verify_mfa(email, input_code)
-        session.pop("mfa_pending_email", None) # Clear temp track
+        session.pop("mfa_pending_email", None)
         session["user_id"] = user.id
-        session["user_role"] = user.role # Dynamic configuration based on actor mapping
+        session["user_role"] = user.role 
         
         return jsonify({
             "message": "Authentication successful.",

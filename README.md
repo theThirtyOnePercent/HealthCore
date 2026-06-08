@@ -165,6 +165,23 @@ git commit -m "Add flask-login dependency"
 
 ---
 
+## Update requirements.txt
+
+After installing new dependencies:
+
+```bash
+pip freeze > requirements.txt
+```
+
+Commit the updated requirements file:
+
+```bash
+git add requirements.txt
+git commit -m "Add flask-login dependency"
+```
+
+---
+
 # Docker Commands
 
 ### Start Containers
