@@ -3,7 +3,9 @@ package it.unitn.healthcore.domain;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "Users")
+@Table(name = "users")
+//@Inheritance(strategy = InheritanceType.JOINED)
+//@DiscriminatorColumn (name="role")
 public class User {
 
     @Id
