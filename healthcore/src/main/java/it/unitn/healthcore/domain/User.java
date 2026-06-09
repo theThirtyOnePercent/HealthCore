@@ -4,8 +4,8 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name = "users")
-@Inheritance(strategy = InheritanceType.JOINED)
-@DiscriminatorColumn (name="role")
+//@Inheritance(strategy = InheritanceType.JOINED)
+//@DiscriminatorColumn (name="role")
 public class User {
 
     @Id

@@ -1,10 +1,11 @@
 package it.unitn.healthcore.business;
 
-import it.unitn.healthcore.controller.SecurityConfig;
 import it.unitn.healthcore.domain.SecurityUser;
 import it.unitn.healthcore.domain.User;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -38,7 +39,27 @@ public class UserService implements UserDetailsService {
         return this.userRepository.findAll();
     }
 
-    public void registerUser(User user){
+    public String getCurrentUserEmail() {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        if (authentication != null && authentication.isAuthenticated()){
+            return authentication.getName();
+        }
+        return null;
+    }
+
+    public User getCurrentUser(){
+        String email = getCurrentUserEmail();
+        if (email != null){
+            Optional<User> user = userRepository.findUserByEmail(email);
+            if (user.isPresent()){
+                return user.get();
+            }
+            throw  new IllegalStateException("no user found");
+        }
+            throw  new IllegalStateException("no email found");
+    }
+
+    public void registerPatient(User user){
         Optional<User> optionalUser = userRepository.findUserByEmail(user.getEmail());
         if (optionalUser.isPresent()){
             throw  new IllegalStateException("already exist");

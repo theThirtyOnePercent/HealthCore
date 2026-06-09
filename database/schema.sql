@@ -36,21 +36,21 @@ CREATE TABLE Users (
 );
 
 CREATE TABLE Patients (
-    patient_id INT PRIMARY KEY,
+    id INT PRIMARY KEY,
     healthcare_card_number INT UNIQUE,
     insurance_plan_id INT,
     triage_status VARCHAR(20) CHECK (triage_status IN ('NonUrgent','SemiUrgent','Urgent','Emergency','Immediate','NotInTriage')) NOT NULL,
-    CONSTRAINT fk_patient_user FOREIGN KEY (patient_id) REFERENCES Users(id) ON DELETE CASCADE,
+    CONSTRAINT fk_patient_user FOREIGN KEY (id) REFERENCES Users(id) ON DELETE CASCADE,
     CONSTRAINT fk_patient_insurance FOREIGN KEY (insurance_plan_id) REFERENCES InsurancePlans(insurance_plan_id) ON DELETE SET NULL
 );
 
 CREATE TABLE Doctors (
-    doctor_id INT PRIMARY KEY,
+    id INT PRIMARY KEY,
     department_id INT NOT NULL,
     specialization VARCHAR(100),
     appointment_price DOUBLE PRECISION, -- Changed from DOUBLE to DOUBLE PRECISION
     CONSTRAINT fk_doctor_department FOREIGN KEY (department_id) REFERENCES Departments(department_id) ON DELETE CASCADE,
-    CONSTRAINT fk_doctor_user FOREIGN KEY (doctor_id) REFERENCES Users(id) ON DELETE CASCADE
+    CONSTRAINT fk_doctor_user FOREIGN KEY (id) REFERENCES Users(id) ON DELETE CASCADE
 );
 
 CREATE TABLE Equipments (
@@ -68,7 +68,7 @@ CREATE TABLE Equipments_Doctors(
     doctor_id INT,
     PRIMARY KEY (equipment_id, doctor_id),
     CONSTRAINT fk_equipment_doctor FOREIGN KEY (equipment_id) REFERENCES Equipments(equipment_id),
-    CONSTRAINT fk_doctor_equipment FOREIGN KEY (doctor_id) REFERENCES Doctors(doctor_id)
+    CONSTRAINT fk_doctor_equipment FOREIGN KEY (doctor_id) REFERENCES Doctors(id)
 );
 
 CREATE TABLE Shifts (
@@ -76,7 +76,7 @@ CREATE TABLE Shifts (
     doctor_id INT NOT NULL,
     start_time TIMESTAMP, -- Changed from DATETIME to TIMESTAMP
     end_time TIMESTAMP,   -- Changed from DATETIME to TIMESTAMP
-    CONSTRAINT fk_shift_doctor FOREIGN KEY (doctor_id) REFERENCES Doctors(doctor_id) ON DELETE CASCADE
+    CONSTRAINT fk_shift_doctor FOREIGN KEY (doctor_id) REFERENCES Doctors(id) ON DELETE CASCADE
 );
 
 CREATE TABLE Appointments (
@@ -85,8 +85,8 @@ CREATE TABLE Appointments (
     doctor_id INT NOT NULL,
     start_date TIMESTAMP, -- Changed from DATETIME to TIMESTAMP
     end_date TIMESTAMP,   -- Changed from DATETIME to TIMESTAMP
-    CONSTRAINT fk_appointment_patient FOREIGN KEY (patient_id) REFERENCES Patients(patient_id),
-    CONSTRAINT fk_appointment_doctor FOREIGN KEY (doctor_id) REFERENCES Doctors(doctor_id)
+    CONSTRAINT fk_appointment_patient FOREIGN KEY (patient_id) REFERENCES Patients(id),
+    CONSTRAINT fk_appointment_doctor FOREIGN KEY (doctor_id) REFERENCES Doctors(id)
 );
 
 CREATE TABLE Notes (

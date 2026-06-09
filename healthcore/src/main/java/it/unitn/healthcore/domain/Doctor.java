@@ -1,3 +1,4 @@
+/*
 package it.unitn.healthcore.domain;
 
 import jakarta.persistence.DiscriminatorValue;
@@ -8,6 +9,8 @@ import jakarta.persistence.Table;
 @Table(name="doctors")
 @DiscriminatorValue("Doctor")
 public class Doctor extends User{
+    private Integer department_id;
     private String specialization;
     private Double appointmentPrice;
 }
+*/
