@@ -1,8 +1,14 @@
 package it.unitn.healthcore.business;
 
+import it.unitn.healthcore.controller.SecurityConfig;
+import it.unitn.healthcore.domain.SecurityUser;
 import it.unitn.healthcore.domain.User;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import it.unitn.healthcore.persistence.UserRepository;
 
@@ -11,23 +17,33 @@ import java.util.Objects;
 import java.util.Optional;
 
 @Service
-public class UserService {
+public class UserService implements UserDetailsService {
     private final UserRepository userRepository;
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
     @Autowired
     public UserService(UserRepository userRepository){
         this.userRepository = userRepository;
     }
 
-    public List<User> getUser(){
+    @Override
+    public UserDetails loadUserByUsername (String username) throws UsernameNotFoundException{
+        return userRepository.findUserByEmail(username)
+                .map(SecurityUser::new)
+                .orElseThrow(() -> new UsernameNotFoundException("User not found"));
+    }
+
+    public List<User> getUsers(){
         return this.userRepository.findAll();
     }
 
-    public void addUser(User user){
+    public void registerUser(User user){
         Optional<User> optionalUser = userRepository.findUserByEmail(user.getEmail());
         if (optionalUser.isPresent()){
             throw  new IllegalStateException("already exist");
         }
+        user.setPassword(passwordEncoder.encode(user.getPassword()));
         userRepository.save(user);
     }
 
