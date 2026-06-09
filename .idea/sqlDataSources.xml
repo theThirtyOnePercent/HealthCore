@@ -3,6 +3,9 @@
   <component name="DdlMappings">
     <mapping uuid="b47cd611-5c3e-4065-a14b-593c6a46c878" name="postgres@localhost Mapping">
       <data-sources db="ac7f7f91-99d1-4aef-9188-6e281251213b" />
+      <scope>
+        <node kind="database" negative="1" />
+      </scope>
     </mapping>
   </component>
 </project>

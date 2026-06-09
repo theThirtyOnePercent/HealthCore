@@ -8,6 +8,7 @@ class HealthcoreApplicationTests {
 
 	@Test
 	void contextLoads() {
+
 	}
 
 }

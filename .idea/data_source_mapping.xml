@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourcePerFileMappings">
-    <file url="file://$PROJECT_DIR$/database/schema.sql" value="ac7f7f91-99d1-4aef-9188-6e281251213b" />
-    <file url="file://$PROJECT_DIR$/database/seed.sql" value="ac7f7f91-99d1-4aef-9188-6e281251213b" />
+    <file url="file://$PROJECT_DIR$/healthcore/src/main/resources/data.sql" value="ac7f7f91-99d1-4aef-9188-6e281251213b" />
+    <file url="file://$PROJECT_DIR$/healthcore/src/main/resources/schema.sql" value="ac7f7f91-99d1-4aef-9188-6e281251213b" />
   </component>
 </project>
