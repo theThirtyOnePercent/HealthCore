@@ -1,10 +1,7 @@
 package it.unitn.healthcore.controller;
 
 import it.unitn.healthcore.business.UserService;
-import it.unitn.healthcore.domain.Patient;
-import it.unitn.healthcore.domain.PatientRegistrationForm;
-import it.unitn.healthcore.domain.SecurityUser;
-import it.unitn.healthcore.domain.User;
+import it.unitn.healthcore.domain.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -21,10 +18,6 @@ public class UserController {
         this.userService = userService;
     }
 
-    @GetMapping(path = "allUsers")
-    public List<User> getAllUsers(){
-        return this.userService.getUsers();
-    }
 
     @PostMapping(path = "registration")
     public ResponseEntity<Void> addUser(@RequestBody PatientRegistrationForm user){
@@ -67,6 +60,19 @@ public class UserController {
                 .build();
     }
 
+    @PostMapping(path = "passwordRecovery")
+    public ResponseEntity<Void> recoverPassword(@RequestBody PasswordConfirmationForm request){
+        userService.recoverPassword(request);
+
+        return ResponseEntity.status(302)
+                .header("Location", "/login")
+                .build();
+    }
+
+
+    //These functions are not part of the requirements
+    //We can delete them later
+
     @DeleteMapping(path = "delete/{userId}")
     public void deleteUser(@PathVariable("userId") Integer id){
         userService.deleteUser(id);
@@ -76,6 +82,11 @@ public class UserController {
     public void updateUser (@PathVariable("userId") Integer id,
                             @RequestBody User user){
         userService.updateUser(id, user);
+    }
+
+    @GetMapping(path = "allUsers")
+    public List<User> getAllUsers(){
+        return this.userService.getUsers();
     }
 
 }

@@ -1,9 +1,6 @@
 package it.unitn.healthcore.business;
 
-import it.unitn.healthcore.domain.Patient;
-import it.unitn.healthcore.domain.PatientRegistrationForm;
-import it.unitn.healthcore.domain.SecurityUser;
-import it.unitn.healthcore.domain.User;
+import it.unitn.healthcore.domain.*;
 import it.unitn.healthcore.persistence.PatientRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -79,10 +76,7 @@ public class UserService implements UserDetailsService {
         if (optionalUser.isPresent()){
             throw new ResponseStatusException(HttpStatus.CONFLICT, "email already exists");
         }
-        if(!isValidPassword(user.getPassword())){
-            throw new ResponseStatusException(
-                    HttpStatus.BAD_REQUEST,"password does not meet security requirements");
-        }
+
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         userRepository.save(user);
     }
@@ -91,10 +85,8 @@ public class UserService implements UserDetailsService {
         System.out.println(user.getPassword());
         System.out.println(user.getPasswordConfirmation());
 
-        if (!user.getPassword().equals(user.getPasswordConfirmation())){
-            throw new ResponseStatusException(
-                    HttpStatus.BAD_REQUEST,"password does not match with password confirmation");
-        }
+        isValidPasswordForm(user);
+
         if (!isValidEmail(user.getEmail())){
             throw new ResponseStatusException(
                     HttpStatus.BAD_REQUEST,"email is not valid");
@@ -113,11 +105,35 @@ public class UserService implements UserDetailsService {
         registerUser(newUser);
     }
 
-    private Boolean isValidCard(Integer card){
-        //The healthcare card validation would be implemented here
-        //This is a mockup function that always return True
+    @Transactional
+    public void recoverPassword(PasswordConfirmationForm request){
+        isValidPasswordForm(request);
 
-        return true;
+        User user = userRepository.findUserByEmail(request.getEmail()).orElseThrow(
+                ()-> new ResponseStatusException(HttpStatus.NOT_FOUND, "user not found")
+        );
+
+        user.setPassword(passwordEncoder.encode(request.getPassword()));
+    }
+
+    private void isValidPasswordForm (PasswordConfirmationForm form){
+
+        //Checks if it is not null
+        if (form.getPassword() == null || form.getPasswordConfirmation() == null){
+            throw new ResponseStatusException(
+                    HttpStatus.BAD_REQUEST,"password was not given");
+        }
+
+        //Checks if they are the same
+        if (!form.getPassword().equals(form.getPasswordConfirmation())){
+            throw new ResponseStatusException(
+                    HttpStatus.BAD_REQUEST,"password does not match with password confirmation");
+        }
+        //Checks if it complies with the guidelines
+        if (!isValidPassword(form.getPassword())){
+            throw new ResponseStatusException(
+                    HttpStatus.BAD_REQUEST,"password does not meet security requirements");
+        }
     }
 
     private Boolean isValidPassword(String password){
@@ -145,6 +161,13 @@ public class UserService implements UserDetailsService {
                 "^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$";
 
         return email.matches(emailRegex);
+    }
+
+    private Boolean isValidCard(Integer card){
+        //The healthcare card validation would be implemented here
+        //This is a mockup function that always return True
+
+        return true;
     }
 
     public void deleteUser (Integer id){
