@@ -4,8 +4,8 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name = "users")
-@Inheritance(strategy = InheritanceType.JOINED)
-@DiscriminatorColumn (name="role")
+//@Inheritance(strategy = InheritanceType.JOINED)
+//@DiscriminatorColumn (name="role")
 public class User {
 
     @Id
@@ -15,16 +15,19 @@ public class User {
     private String surname;
     private String email;
     private String password;
+    private String role;
 
     public User(){
 
     }
 
-    public User(String name, String surname, String email, String password) {
+    public User(Integer id, String name, String surname, String email, String password, String role) {
+        this.id = id;
         this.name = name;
         this.surname = surname;
         this.email = email;
         this.password = password;
+        this.role = role;
     }
 
     public Integer getId() {
@@ -67,4 +70,11 @@ public class User {
         this.password = password;
     }
 
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
 }
