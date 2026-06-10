@@ -45,10 +45,9 @@ public class UserController {
     }
 
     @PostMapping("/otp")
-    public String verifyOtp(
-            @RequestParam String code) {
+    public String verifyOtp(@RequestParam String code) {
 
-        if ("123456".equals(code)) {
+        if (userService.verifyOtp(code)) {
             return "redirect:/home";
         }
         return "redirect:/otp";

@@ -39,6 +39,14 @@ public class UserService implements UserDetailsService {
         return this.userRepository.findAll();
     }
 
+    public Boolean verifyOtp(String otp){
+        //Here the otp verification logic would be implemented
+        //However, we are not implementing the email notification
+        //So, this is a mockup that returns true id otp is equal to 123456
+
+        return "123456".equals(otp);
+    }
+
     public String getCurrentUserEmail() {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         if (authentication != null && authentication.isAuthenticated()){
