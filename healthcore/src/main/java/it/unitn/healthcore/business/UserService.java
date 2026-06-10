@@ -5,6 +5,7 @@ import it.unitn.healthcore.persistence.PatientRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -66,6 +67,7 @@ public class UserService implements UserDetailsService {
             if (user.isPresent()){
                 return user.get();
             }
+            System.out.println(email + " " + user);
             throw  new IllegalStateException("no user found");
         }
             throw  new IllegalStateException("no email found");
@@ -82,18 +84,10 @@ public class UserService implements UserDetailsService {
     }
 
     public void registerPatient (PatientRegistrationForm user){
-        System.out.println(user.getPassword());
-        System.out.println(user.getPasswordConfirmation());
-
         isValidPasswordForm(user);
 
-        if (!isValidEmail(user.getEmail())){
-            throw new ResponseStatusException(
-                    HttpStatus.BAD_REQUEST,"email is not valid");
-        }
         if (!isValidCard(user.getHealthcareCardNumber())){
-            throw new ResponseStatusException(
-                    HttpStatus.BAD_REQUEST,"the healthcare card number is not valid");
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST,"the healthcare card number is not valid");
         }
         if (patientRepository.existsByHealthcareCardNumber(user.getHealthcareCardNumber())){
             throw new ResponseStatusException(HttpStatus.CONFLICT, "healthcare card number already exists");
@@ -103,6 +97,31 @@ public class UserService implements UserDetailsService {
         Patient newUser = new Patient(user.getName(), user.getSurname(), user.getEmail(), user.getPassword(), user.getHealthcareCardNumber());
 
         registerUser(newUser);
+    }
+
+    public void registerEmployee (EmployeeRegistrationForm user){
+        isValidPasswordForm(user);
+
+        if (user.getRole().equals("Doctor")){
+            registerDoctor(user);
+        }
+        else if (user.getRole().equals("Administrator")){
+            registerAdministrator(user);
+        }
+        else{
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST,"role is not valid");
+        }
+
+    }
+
+    public void registerDoctor(EmployeeRegistrationForm user){
+        Doctor new_user = new Doctor(user.getName(), user.getSurname(), user.getEmail(), user.getPassword(), user.getDepartmentId());
+        registerUser(new_user);
+    }
+
+    public void registerAdministrator(EmployeeRegistrationForm user){
+        Administrator new_user = new Administrator(user.getName(), user.getSurname(), user.getEmail(), user.getPassword());
+        registerUser(new_user);
     }
 
     @Transactional
@@ -122,6 +141,11 @@ public class UserService implements UserDetailsService {
         if (form.getPassword() == null || form.getPasswordConfirmation() == null){
             throw new ResponseStatusException(
                     HttpStatus.BAD_REQUEST,"password was not given");
+        }
+
+        if (!isValidEmail(form.getEmail())){
+            throw new ResponseStatusException(
+                    HttpStatus.BAD_REQUEST,"email is not valid");
         }
 
         //Checks if they are the same
@@ -176,6 +200,53 @@ public class UserService implements UserDetailsService {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, "user not found");
         }
         userRepository.deleteById(id);
+    }
+
+    @Transactional
+    public void updateUserProfile(ProfileUpdateForm form){
+        User user = getCurrentUser();
+
+        if (form.getPassword() != null){
+            recoverPassword(new PasswordConfirmationForm(user.getEmail(), form.getPassword(), form.getPasswordConfirmation()));
+        }
+
+        if (form.getName() != null && !form.getName().isEmpty() && !user.getName().equals((form.getName()))){
+            user.setName(form.getName());
+        }
+
+        if (form.getSurname() != null && !form.getSurname().isEmpty() && !user.getSurname().equals((form.getSurname()))){
+            user.setSurname(form.getSurname());
+        }
+
+        if (form.getEmail() != null && !form.getEmail().isEmpty() && !Objects.equals(user.getEmail(), form.getEmail())){
+            Optional<User> user1 = userRepository.findUserByEmail(form.getEmail());
+            if(user1.isPresent()){
+                throw new ResponseStatusException(HttpStatus.CONFLICT,"email taken");
+            }
+            user.setEmail(form.getEmail());
+        }
+
+        if (user instanceof Doctor doctor) {
+            doctor.setSpecialization(form.getSpecialization());
+        } else {
+            throw new ResponseStatusException(
+                    HttpStatus.BAD_REQUEST,
+                    "Only doctors can have specialization"
+            );
+        }
+        refreshSecurityContext(user);
+    }
+
+    private void refreshSecurityContext(User user) {
+        SecurityUser securityUser = new SecurityUser(user);
+
+        Authentication auth = new UsernamePasswordAuthenticationToken(
+                securityUser,
+                securityUser.getPassword(),
+                securityUser.getAuthorities()
+        );
+
+        SecurityContextHolder.getContext().setAuthentication(auth);
     }
 
     @Transactional

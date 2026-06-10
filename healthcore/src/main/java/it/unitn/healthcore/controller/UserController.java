@@ -4,6 +4,7 @@ import it.unitn.healthcore.business.UserService;
 import it.unitn.healthcore.domain.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.method.P;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -20,10 +21,20 @@ public class UserController {
 
 
     @PostMapping(path = "registration")
-    public ResponseEntity<Void> addUser(@RequestBody PatientRegistrationForm user){
+    public ResponseEntity<Void> addPatient(@RequestBody PatientRegistrationForm user){
         userService.registerPatient(user);
+
         return ResponseEntity.status(302)
                 .header("Location", "/login")
+                .build();
+    }
+
+    @PostMapping(path = "employeeRegistration")
+    public ResponseEntity<Void> addEmployee(@RequestBody EmployeeRegistrationForm user){
+        userService.registerEmployee(user);
+
+        return ResponseEntity.status(302)
+                .header("Location", "/home?message=Employee%20successfully%20registered")
                 .build();
     }
 
@@ -36,20 +47,24 @@ public class UserController {
     public ResponseEntity<Void> verifyOtp(@RequestParam String code) {
 
         if (userService.verifyOtp(code)) {
-            //return "redirect:/home";
             return ResponseEntity.status(302)
-                    .header("Location", "/home")
+                    .header("Location", "/home?message=OTP%20successfully%20verified")
                     .build();
         }
-        //return "redirect:/otp";
         return ResponseEntity.status(302)
                 .header("Location", "/otp")
                 .build();
     }
 
     @GetMapping(path = "home")
-    public String userHomepage(){
-        return ("HOMEPAGE \n \n Hello " + userService.getCurrentUser().getName() +"!");
+    public String userHomepage(@RequestParam(required = false) String message){
+        String response = "HOMEPAGE\n\nHello " + userService.getCurrentUser().getName() + "!";
+
+        if (message != null) {
+            response += "\n\n" + message;
+        }
+
+        return response;
     }
 
     @GetMapping(path = "deleteAccount")
@@ -69,10 +84,16 @@ public class UserController {
                 .build();
     }
 
+    @PutMapping(path = "profileUpdate")
+    public User updateProfile(@RequestBody ProfileUpdateForm profileUpdateForm){
+        userService.updateUserProfile(profileUpdateForm);
+
+        return userService.getCurrentUser();
+    }
+
 
     //These functions are not part of the requirements
     //We can delete them later
-
     @DeleteMapping(path = "delete/{userId}")
     public void deleteUser(@PathVariable("userId") Integer id){
         userService.deleteUser(id);

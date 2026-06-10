@@ -53,6 +53,13 @@ CREATE TABLE Doctors (
     CONSTRAINT fk_doctor_user FOREIGN KEY (id) REFERENCES Users(id) ON DELETE CASCADE
 );
 
+CREATE TABLE Administrators (
+    id INT PRIMARY KEY,
+    CONSTRAINT fk_admin_user
+        FOREIGN KEY (id) REFERENCES Users(id)
+        ON DELETE CASCADE
+);
+
 CREATE TABLE Equipments (
     equipment_id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     department_id INT NOT NULL,

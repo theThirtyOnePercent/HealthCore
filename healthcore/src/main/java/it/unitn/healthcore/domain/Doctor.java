@@ -23,6 +23,13 @@ public class Doctor extends User{
         this.appointmentPrice = appointmentPrice;
     }
 
+    public Doctor(String name, String surname, String email, String password, Integer departmentId) {
+        super(name, surname, email, password);
+        this.departmentId = departmentId;
+        this.specialization = null;
+        this.appointmentPrice = null;
+    }
+
     public Integer getDepartmentId() {
         return departmentId;
     }

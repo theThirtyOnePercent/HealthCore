@@ -1,28 +1,18 @@
 package it.unitn.healthcore.domain;
 
 public class PatientRegistrationForm extends PasswordConfirmationForm {
-    private Integer id;
     private String name;
     private String surname;
     private Integer healthcareCardNumber;
 
     public PatientRegistrationForm(){}
 
-    public PatientRegistrationForm(Integer id, String name, String surname, String email, String password, String passwordConfirmation, Integer healthcareCardNumber) {
+    public PatientRegistrationForm(String name, String surname, String email, String password, String passwordConfirmation, Integer healthcareCardNumber) {
 
         super(email, password, passwordConfirmation);
-        this.id = id;
         this.name = name;
         this.surname = surname;
         this.healthcareCardNumber = healthcareCardNumber;
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
     }
 
     public String getName() {
