@@ -70,10 +70,10 @@ CREATE TABLE Equipments (
 
 
 CREATE TABLE Equipments_Doctors(
+    id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     equipment_id INT,
     quantity INT,
     doctor_id INT,
-    PRIMARY KEY (equipment_id, doctor_id),
     CONSTRAINT fk_equipment_doctor FOREIGN KEY (equipment_id) REFERENCES Equipments(equipment_id),
     CONSTRAINT fk_doctor_equipment FOREIGN KEY (doctor_id) REFERENCES Doctors(id)
 );

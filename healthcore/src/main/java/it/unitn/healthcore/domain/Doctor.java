@@ -2,7 +2,10 @@ package it.unitn.healthcore.domain;
 
 import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
+
+import java.util.List;
 
 @Entity
 @Table(name="doctors")
@@ -11,6 +14,8 @@ public class Doctor extends User{
     private Integer departmentId;
     private String specialization;
     private Double appointmentPrice;
+    @OneToMany(mappedBy = "doctor")
+    private List<EquipmentDoctor> equipments;
 
     public Doctor(){
 
