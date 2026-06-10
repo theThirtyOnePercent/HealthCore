@@ -1,10 +1,13 @@
 package it.unitn.healthcore.business;
 
 import it.unitn.healthcore.domain.Patient;
+import it.unitn.healthcore.domain.PatientRegistrationForm;
 import it.unitn.healthcore.domain.SecurityUser;
 import it.unitn.healthcore.domain.User;
+import it.unitn.healthcore.persistence.PatientRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -13,6 +16,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import it.unitn.healthcore.persistence.UserRepository;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 import java.util.Objects;
@@ -21,12 +25,14 @@ import java.util.Optional;
 @Service
 public class UserService implements UserDetailsService {
     private final UserRepository userRepository;
+    private final PatientRepository patientRepository;
     @Autowired
     private PasswordEncoder passwordEncoder;
 
     @Autowired
-    public UserService(UserRepository userRepository){
+    public UserService(UserRepository userRepository, PatientRepository patientRepository){
         this.userRepository = userRepository;
+        this.patientRepository = patientRepository;
     }
 
     @Override
@@ -68,19 +74,53 @@ public class UserService implements UserDetailsService {
             throw  new IllegalStateException("no email found");
     }
 
-    public void registerUser(User user){
+    private void registerUser(User user){
         Optional<User> optionalUser = userRepository.findUserByEmail(user.getEmail());
         if (optionalUser.isPresent()){
-            throw new IllegalStateException("already exist");
+            throw new ResponseStatusException(HttpStatus.CONFLICT, "email already exists");
         }
-        if(!checkPassword(user.getPassword())){
-            throw new IllegalStateException("password does not meet security requirements");
+        if(!isValidPassword(user.getPassword())){
+            throw new ResponseStatusException(
+                    HttpStatus.BAD_REQUEST,"password does not meet security requirements");
         }
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         userRepository.save(user);
     }
 
-    private Boolean checkPassword(String password){
+    public void registerPatient (PatientRegistrationForm user){
+        System.out.println(user.getPassword());
+        System.out.println(user.getPasswordConfirmation());
+
+        if (!user.getPassword().equals(user.getPasswordConfirmation())){
+            throw new ResponseStatusException(
+                    HttpStatus.BAD_REQUEST,"password does not match with password confirmation");
+        }
+        if (!isValidEmail(user.getEmail())){
+            throw new ResponseStatusException(
+                    HttpStatus.BAD_REQUEST,"email is not valid");
+        }
+        if (!isValidCard(user.getHealthcareCardNumber())){
+            throw new ResponseStatusException(
+                    HttpStatus.BAD_REQUEST,"the healthcare card number is not valid");
+        }
+        if (patientRepository.existsByHealthcareCardNumber(user.getHealthcareCardNumber())){
+            throw new ResponseStatusException(HttpStatus.CONFLICT, "healthcare card number already exists");
+        }
+
+
+        Patient newUser = new Patient(user.getName(), user.getSurname(), user.getEmail(), user.getPassword(), user.getHealthcareCardNumber());
+
+        registerUser(newUser);
+    }
+
+    private Boolean isValidCard(Integer card){
+        //The healthcare card validation would be implemented here
+        //This is a mockup function that always return True
+
+        return true;
+    }
+
+    private Boolean isValidPassword(String password){
         if (password == null) {
             return false;
         }
@@ -92,10 +132,25 @@ public class UserService implements UserDetailsService {
         return password.matches(passwordRegex);
     }
 
+    private boolean isValidEmail(String email) {
+        if (email == null) {
+            return false;
+        }
+
+        //checks for allowed characters (letters, numbers, and ._%+-),
+        // followed by a single @ symbol,
+        // then a valid domain name containing letters, numbers, dots, or hyphens,
+        // and finally a domain extension with at least two letters (e.g., .com, .it)
+        String emailRegex =
+                "^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$";
+
+        return email.matches(emailRegex);
+    }
+
     public void deleteUser (Integer id){
         boolean find = userRepository.existsById(id);
         if (!find){
-            throw new IllegalStateException("user not found");
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "user not found");
         }
         userRepository.deleteById(id);
     }
@@ -103,7 +158,7 @@ public class UserService implements UserDetailsService {
     @Transactional
     public void updateUser(Integer id, User user_info){
         User user = userRepository.findById(id).orElseThrow(
-                ()-> new IllegalStateException("user not found")
+                ()-> new ResponseStatusException(HttpStatus.NOT_FOUND, "user not found")
         );
 
         if (user_info.getName() != null && !user_info.getName().isEmpty() && !user.getName().equals((user_info.getName()))){
@@ -117,7 +172,7 @@ public class UserService implements UserDetailsService {
         if (user_info.getEmail() != null && !user_info.getEmail().isEmpty() && !Objects.equals(user.getEmail(), user_info.getEmail())){
             Optional<User> user1 = userRepository.findUserByEmail(user_info.getEmail());
             if(user1.isPresent()){
-                throw new IllegalStateException("email taken");
+                throw new ResponseStatusException(HttpStatus.CONFLICT,"email taken");
             }
             user.setEmail(user_info.getEmail());
         }

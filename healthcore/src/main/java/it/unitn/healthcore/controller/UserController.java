@@ -2,6 +2,7 @@ package it.unitn.healthcore.controller;
 
 import it.unitn.healthcore.business.UserService;
 import it.unitn.healthcore.domain.Patient;
+import it.unitn.healthcore.domain.PatientRegistrationForm;
 import it.unitn.healthcore.domain.SecurityUser;
 import it.unitn.healthcore.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,8 +27,11 @@ public class UserController {
     }
 
     @PostMapping(path = "registration")
-    public void addUser(@RequestBody Patient user){
-        userService.registerUser(user);
+    public ResponseEntity<Void> addUser(@RequestBody PatientRegistrationForm user){
+        userService.registerPatient(user);
+        return ResponseEntity.status(302)
+                .header("Location", "/login")
+                .build();
     }
 
     @GetMapping("/otp")
@@ -52,7 +56,7 @@ public class UserController {
 
     @GetMapping(path = "home")
     public String userHomepage(){
-        return ("Hello " + userService.getCurrentUser().getName() +"!");
+        return ("HOMEPAGE \n \n Hello " + userService.getCurrentUser().getName() +"!");
     }
 
     @GetMapping(path = "deleteAccount")

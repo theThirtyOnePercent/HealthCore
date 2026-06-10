@@ -1,30 +1,26 @@
 package it.unitn.healthcore.domain;
 
-import jakarta.persistence.*;
-
-@Entity
-@Table(name = "users")
-@Inheritance(strategy = InheritanceType.JOINED)
-@DiscriminatorColumn (name="role")
-public class User {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class PatientRegistrationForm {
     private Integer id;
     private String name;
     private String surname;
     private String email;
     private String password;
+    private String passwordConfirmation;
+    private Integer healthcareCardNumber;
 
-    public User(){
+    public PatientRegistrationForm(){
 
     }
 
-    public User(String name, String surname, String email, String password) {
+    public PatientRegistrationForm(Integer id, String name, String surname, String email, String password, String passwordConfirmation, Integer healthcareCardNumber) {
+        this.id = id;
         this.name = name;
         this.surname = surname;
         this.email = email;
         this.password = password;
+        this.passwordConfirmation = passwordConfirmation;
+        this.healthcareCardNumber = healthcareCardNumber;
     }
 
     public Integer getId() {
@@ -67,4 +63,19 @@ public class User {
         this.password = password;
     }
 
+    public String getPasswordConfirmation() {
+        return passwordConfirmation;
+    }
+
+    public void setPasswordConfirmation(String passwordConfirmation) {
+        this.passwordConfirmation = passwordConfirmation;
+    }
+
+    public Integer getHealthcareCardNumber() {
+        return healthcareCardNumber;
+    }
+
+    public void setHealthcareCardNumber(Integer healthcareCardNumber) {
+        this.healthcareCardNumber = healthcareCardNumber;
+    }
 }
