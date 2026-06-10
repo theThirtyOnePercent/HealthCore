@@ -1,6 +1,6 @@
-/*
 package it.unitn.healthcore.domain;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
@@ -10,8 +10,43 @@ import jakarta.persistence.Table;
 @DiscriminatorValue("Patient")
 public class Patient extends User{
 
-    private Integer healthcare_card_number;
-    private Integer insurance_plan_id;
-    private String triage_status;
+    private Integer healthcareCardNumber; //healthcareCardNumber
+    private Integer insurancePlanId;
+    private String triageStatus = "NotInTriage";
+
+    public Patient(){
+
+    }
+
+    public Patient(Integer id, String name, String surname, String email, String password, Integer healthcare_card_number, Integer insurance_plan_id, String triage_status) {
+        super(id, name, surname, email, password);
+        this.healthcareCardNumber = healthcare_card_number;
+        this.insurancePlanId = insurance_plan_id;
+        this.triageStatus = triage_status;
+    }
+
+    public Integer getHealthcareCardNumber() {
+        return healthcareCardNumber;
+    }
+
+    public void setHealthcareCardNumber(Integer healthcareCardNumber) {
+        this.healthcareCardNumber = healthcareCardNumber;
+    }
+
+    public Integer getInsurancePlanId() {
+        return insurancePlanId;
+    }
+
+    public void setInsurancePlanId(Integer insurancePlanId) {
+        this.insurancePlanId = insurancePlanId;
+    }
+
+    public String getTriageStatus() {
+        return triageStatus;
+    }
+
+    public void setTriageStatus(String triageStatus) {
+        this.triageStatus = triageStatus;
+    }
 }
-*/
+

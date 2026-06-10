@@ -1,5 +1,6 @@
 package it.unitn.healthcore.business;
 
+import it.unitn.healthcore.domain.Patient;
 import it.unitn.healthcore.domain.SecurityUser;
 import it.unitn.healthcore.domain.User;
 import jakarta.transaction.Transactional;
@@ -67,13 +68,28 @@ public class UserService implements UserDetailsService {
             throw  new IllegalStateException("no email found");
     }
 
-    public void registerPatient(User user){
+    public void registerUser(User user){
         Optional<User> optionalUser = userRepository.findUserByEmail(user.getEmail());
         if (optionalUser.isPresent()){
-            throw  new IllegalStateException("already exist");
+            throw new IllegalStateException("already exist");
+        }
+        if(!checkPassword(user.getPassword())){
+            throw new IllegalStateException("password does not meet security requirements");
         }
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         userRepository.save(user);
+    }
+
+    private Boolean checkPassword(String password){
+        if (password == null) {
+            return false;
+        }
+
+        // at least 8 chars, one uppercase, one lowercase, one digit, one special char
+        String passwordRegex =
+                "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[^a-zA-Z0-9]).{8,}$";
+
+        return password.matches(passwordRegex);
     }
 
     public void deleteUser (Integer id){
