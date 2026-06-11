@@ -1,0 +1,10 @@
+<map id="it.unitn.healthcore.business.UserService.updateUser" name="it.unitn.healthcore.business.UserService.updateUser">
+<area shape="rect" id="node1" title=" " alt="" coords="5,201,212,243"/>
+<area shape="rect" id="node2" href="$interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1UserRepository.html#a6a646ae44d01189ff44c81c03fc92fa8" title=" " alt="" coords="260,5,492,47"/>
+<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#a5b48be6dca19b7d4d43ec2e6a3b91502" title=" " alt="" coords="277,71,475,112"/>
+<area shape="rect" id="node4" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#a0c78137c0cf7b414cc88dcc41895d5a7" title=" " alt="" coords="277,136,475,177"/>
+<area shape="rect" id="node5" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#a1e52a76c1ad5fb44fe9c312e11203c9e" title=" " alt="" coords="277,201,475,243"/>
+<area shape="rect" id="node6" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#a637da3e206f619ffbd1b1589367b2114" title=" " alt="" coords="277,267,475,308"/>
+<area shape="rect" id="node7" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#a91c87abb5e6a05b9a218ee0a9537d0fb" title=" " alt="" coords="277,332,475,373"/>
+<area shape="rect" id="node8" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#aafba5fb3c10ba03d2e9121427365ec92" title=" " alt="" coords="277,397,475,439"/>
+</map>

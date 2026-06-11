@@ -1,0 +1,8 @@
+<map id="it.unitn.healthcore.controller.UserController.deleteAccount" name="it.unitn.healthcore.controller.UserController.deleteAccount">
+<area shape="rect" id="node1" title=" " alt="" coords="5,71,217,112"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a9487a950d729ed2c4df128a8ea89b9b7" title=" " alt="" coords="265,5,472,47"/>
+<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a33213d05bfda4e7384e17b18332d4bb5" title=" " alt="" coords="265,71,472,112"/>
+<area shape="rect" id="node6" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#af8206b66c08446d8c3cb7e16b825a794" title=" " alt="" coords="269,136,468,177"/>
+<area shape="rect" id="node4" href="$interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1UserRepository.html#a6a646ae44d01189ff44c81c03fc92fa8" title=" " alt="" coords="524,39,756,80"/>
+<area shape="rect" id="node5" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a703ed9778e3ac6cd9741220089b5f48d" title=" " alt="" coords="520,104,760,145"/>
+</map>

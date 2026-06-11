@@ -1,0 +1,85 @@
+#--------------------------------------------------
+# Project
+#--------------------------------------------------
+PROJECT_NAME           = "HealthCore"
+PROJECT_BRIEF          = "The project consists of a healthcare management system. Its goal is to build a secure system that bridges doctors and patients while protecting patient information as well as sensitive medical data. "
+PROJECT_NUMBER         = "1.0.0"
+
+OUTPUT_DIRECTORY       = docs
+CREATE_SUBDIRS         = NO
+
+#--------------------------------------------------
+# Java Support
+#--------------------------------------------------
+OPTIMIZE_OUTPUT_JAVA   = YES
+SUBGROUPING            = YES
+JAVADOC_AUTOBRIEF      = YES
+MARKDOWN_SUPPORT       = YES
+
+#--------------------------------------------------
+# Input
+#--------------------------------------------------
+INPUT                  = healthcore/src/main/java   \
+                        README.md \
+                        docs/architecture.md
+
+FILE_PATTERNS          = *.java *.md
+
+RECURSIVE              = YES
+
+# Exclude build folders
+EXCLUDE                = target build .idea .git
+
+#--------------------------------------------------
+# Extraction
+#--------------------------------------------------
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = NO
+EXTRACT_PACKAGE        = YES
+EXTRACT_STATIC         = YES
+
+HIDE_UNDOC_MEMBERS     = NO
+HIDE_UNDOC_CLASSES     = NO
+
+#--------------------------------------------------
+# Source Browser
+#--------------------------------------------------
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = NO
+REFERENCED_BY_RELATION = YES
+REFERENCES_RELATION    = YES
+
+#--------------------------------------------------
+# Diagrams
+#--------------------------------------------------
+HAVE_DOT               = YES
+
+CLASS_DIAGRAMS         = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+COLLABORATION_GRAPH    = YES
+
+DOT_IMAGE_FORMAT       = svg
+
+#--------------------------------------------------
+# HTML Output
+#--------------------------------------------------
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+HTML_DYNAMIC_SECTIONS  = YES
+
+GENERATE_LATEX         = NO
+
+
+# Package & Tree Layout
+SHOW_INCLUDE_FILES     = NO
+SHOW_NAMESPACES        = YES
+GENERATE_TREEVIEW      = YES     
+SORT_MEMBER_DOCS       = YES
+
+#--------------------------------------------------
+# Warnings
+#--------------------------------------------------
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
