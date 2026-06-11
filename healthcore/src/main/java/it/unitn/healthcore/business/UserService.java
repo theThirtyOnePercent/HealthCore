@@ -19,11 +19,22 @@ import org.springframework.web.server.ResponseStatusException;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
-
+ /**
+ * @class UserService 
+ * @brief This class serves as a service layer for handling user-related business logic such as registration,
+ *  profile updates, password recovery, and OTP verification. It interacts with the UserRepository and PatientRepository to perform database operations related to users. 
+ * It also implements the UserDetailsService interface to integrate with Spring Security for authentication purposes.
+ * @see it.unitn.healthcore.persistence.UserRepository
+ * @see it.unitn.healthcore.persistence.PatientRepository
+ * @author HealthCore Team
+ * @version 1.0.0
+ * @date 2026-06-11
+ */
 @Service
 public class UserService implements UserDetailsService {
     private final UserRepository userRepository;
     private final PatientRepository patientRepository;
+    
     @Autowired
     private PasswordEncoder passwordEncoder;
     private Boolean otpVerified = false;

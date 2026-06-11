@@ -38,7 +38,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#aa9d85586ed83e4d9865621769e24fd81" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#aa9d85586ed83e4d9865621769e24fd81" target="_top" xlink:title="delete the current user&#39;s account and redirect to the login page.">
 <polygon fill="white" stroke="black" points="197,-137.5 197,-167.5 356,-167.5 356,-137.5 197,-137.5"/>
 <text text-anchor="start" x="205" y="-155.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.controller.</text>
 <text text-anchor="middle" x="276.5" y="-144.5" font-family="Helvetica,sans-Serif" font-size="10.00">UserController.deleteAccount</text>
@@ -86,7 +86,7 @@
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#a72a0e87005b1b6a91822302d4888d3cf" target="_top" xlink:title=" ">
+<g id="a_node6"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#a72a0e87005b1b6a91822302d4888d3cf" target="_top" xlink:title="display the user&#39;s homepage after successful login and OTP verification.">
 <polygon fill="white" stroke="black" points="194.5,-0.5 194.5,-30.5 358.5,-30.5 358.5,-0.5 194.5,-0.5"/>
 <text text-anchor="start" x="202.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.controller.</text>
 <text text-anchor="middle" x="276.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">UserController.userHomepage</text>

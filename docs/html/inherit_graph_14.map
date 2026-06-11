@@ -1,5 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" title=" " alt="" coords="5,46,117,73"/>
-<area shape="rect" id="node2" href="$interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1PatientRepository.html" title=" " alt="" coords="165,5,389,47"/>
-<area shape="rect" id="node3" href="$interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1UserRepository.html" title=" " alt="" coords="165,71,389,112"/>
+<area shape="rect" id="node1" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html" title="Represents a general user in our system." alt="" coords="5,78,233,105"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1Administrator.html" title=" " alt="" coords="281,5,480,47"/>
+<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor.html" title="Represents a doctor in our system, extending the general User class." alt="" coords="281,71,480,112"/>
+<area shape="rect" id="node4" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1Patient.html" title=" " alt="" coords="281,136,480,177"/>
 </map>

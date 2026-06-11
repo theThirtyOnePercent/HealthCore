@@ -1,13 +1,13 @@
 <map id="it.unitn.healthcore.persistence.UserRepository.findUserByEmail" name="it.unitn.healthcore.persistence.UserRepository.findUserByEmail">
-<area shape="rect" id="node1" title=" " alt="" coords="836,213,1068,255"/>
-<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a33213d05bfda4e7384e17b18332d4bb5" title=" " alt="" coords="561,96,768,137"/>
-<area shape="rect" id="node5" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a114823fda5c213bb46bc935608bb8953" title=" " alt="" coords="269,188,489,229"/>
-<area shape="rect" id="node7" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a88e927ad954f21615b6f2ffa4fe90de2" title=" " alt="" coords="541,213,788,255"/>
-<area shape="rect" id="node8" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#acc1ae5218e790edcc69ad692c84871a2" title=" " alt="" coords="557,279,772,320"/>
-<area shape="rect" id="node10" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#acc8ce128197ab98ad15545286cabeba8" title=" " alt="" coords="561,344,768,385"/>
-<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#aa9d85586ed83e4d9865621769e24fd81" title=" " alt="" coords="273,5,485,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="897,213,1129,255"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a33213d05bfda4e7384e17b18332d4bb5" title=" " alt="" coords="623,96,829,137"/>
+<area shape="rect" id="node5" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a114823fda5c213bb46bc935608bb8953" title=" " alt="" coords="299,188,519,229"/>
+<area shape="rect" id="node7" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a88e927ad954f21615b6f2ffa4fe90de2" title=" " alt="" coords="603,213,849,255"/>
+<area shape="rect" id="node8" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#acc1ae5218e790edcc69ad692c84871a2" title=" " alt="" coords="619,279,833,320"/>
+<area shape="rect" id="node10" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a262646caddacb1ce9c3a009beecdd52d" title=" " alt="" coords="623,344,829,385"/>
+<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#aa9d85586ed83e4d9865621769e24fd81" title="delete the current user&#39;s account and redirect to the login page." alt="" coords="303,5,515,47"/>
 <area shape="rect" id="node4" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#acd7b4fd033c7ae0b42644c3932e6867f" title=" " alt="" coords="5,127,216,168"/>
-<area shape="rect" id="node6" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#a72a0e87005b1b6a91822302d4888d3cf" title=" " alt="" coords="269,123,488,164"/>
-<area shape="rect" id="node9" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#a2405e7122fa835c28ee045e1339e0f7c" title=" " alt="" coords="264,279,493,320"/>
-<area shape="rect" id="node11" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#a9ef12b4b42af0b8c47a79e8bc06de976" title=" " alt="" coords="273,344,484,385"/>
+<area shape="rect" id="node6" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#a72a0e87005b1b6a91822302d4888d3cf" title="display the user&#39;s homepage after successful login and OTP verification." alt="" coords="300,123,519,164"/>
+<area shape="rect" id="node9" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#a2405e7122fa835c28ee045e1339e0f7c" title="handle the password recovery request by sending an OTP to the user&#39;s email and redirecting to the OTP..." alt="" coords="295,279,524,320"/>
+<area shape="rect" id="node11" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#adf57285765525b14ad6ec4e68e4ab3bf" title="handle the password recovery request by sending an OTP to the user&#39;s email and redirecting to the OTP..." alt="" coords="264,344,555,385"/>
 </map>

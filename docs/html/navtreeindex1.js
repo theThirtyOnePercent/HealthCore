@@ -1,5 +1,14 @@
 var NAVTREEINDEX1 =
 {
+"controller_2package__info_8java_source.html":[4,0,1,0,0,0,0,0,0,1,2],
+"dir_41851c51fb3186c3cfa7eac4221761fc.html":[4,0,1,0],
+"dir_49e56c817e5e54854c35e136979f97ca.html":[4,0,0],
+"dir_53ea6e07534784e7d5f176bd5d0334df.html":[4,0,1,0,0,0,0],
+"dir_565dcb51077f427c661469a3f6e51715.html":[4,0,1,0,0,0,0,0,0,1],
+"dir_69b3e995861ed80e2d390673010e6adb.html":[4,0,1,0,0,0,0,0,0,2],
+"dir_7b9d7a193c42e225d97e62a22526b616.html":[4,0,1,0,0,0,0,0,0,0],
+"dir_937b3fe10c100b075e5166c04f4ffe3e.html":[4,0,1],
+"dir_9bdce0fa79c76b797877cd1768ac0bac.html":[4,0,1,0,0,0,0,0,0],
 "dir_c5571b894ee92ac87a780a0405cfd750.html":[4,0,1,0,0,0],
 "dir_cee657e46d117c1fc75dddd4ed2825e3.html":[4,0,1,0,0],
 "dir_da9a4db6077495d9e284c4456b962290.html":[4,0,1,0,0,0,0,0],
@@ -11,10 +20,11 @@ var NAVTREEINDEX1 =
 "functions_func.html":[3,3,1],
 "hierarchy.html":[3,2],
 "index.html":[],
-"interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1PatientRepository.html":[3,0,0,0,0,3,0],
-"interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1PatientRepository.html#a320387b23f16ee948d66d932faa3991f":[3,0,0,0,0,3,0,0],
-"interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1UserRepository.html":[3,0,0,0,0,3,1],
-"interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1UserRepository.html#a6a646ae44d01189ff44c81c03fc92fa8":[3,0,0,0,0,3,1,0],
+"interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1HospitalRepository.html":[3,0,0,0,0,3,0],
+"interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1PatientRepository.html":[3,0,0,0,0,3,1],
+"interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1PatientRepository.html#a320387b23f16ee948d66d932faa3991f":[3,0,0,0,0,3,1,0],
+"interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1UserRepository.html":[3,0,0,0,0,3,2],
+"interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1UserRepository.html#a6a646ae44d01189ff44c81c03fc92fa8":[3,0,0,0,0,3,2,0],
 "md_README.html":[0],
 "md_README.html#autotoc_md1":[0,0],
 "md_README.html#autotoc_md2":[0,1],
@@ -24,6 +34,6 @@ var NAVTREEINDEX1 =
 "namespaceit_1_1unitn_1_1healthcore_1_1persistence.html":[2,0,0,0,0,3],
 "namespaces.html":[2,0],
 "pages.html":[],
-"persistence_2package__info_8java.html":[4,0,1,0,0,0,0,0,0,3,0],
-"persistence_2package__info_8java_source.html":[4,0,1,0,0,0,0,0,0,3,0]
+"persistence_2package__info_8java.html":[4,0,1,0,0,0,0,0,0,3,1],
+"persistence_2package__info_8java_source.html":[4,0,1,0,0,0,0,0,0,3,1]
 };

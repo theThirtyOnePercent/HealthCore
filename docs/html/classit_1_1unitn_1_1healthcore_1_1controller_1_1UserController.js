@@ -8,8 +8,9 @@ var classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController =
     [ "getAllUsers", "classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#a9735bcf92905b2404fd52792f3e6d2d4", null ],
     [ "otpPage", "classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#af2c354e628cb4fd89bccf4931def837a", null ],
     [ "recoverPassword", "classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#a2405e7122fa835c28ee045e1339e0f7c", null ],
+    [ "requestPasswordRecovery", "classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#adf57285765525b14ad6ec4e68e4ab3bf", null ],
     [ "updateProfile", "classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#acd7b4fd033c7ae0b42644c3932e6867f", null ],
-    [ "updateUser", "classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#a9ef12b4b42af0b8c47a79e8bc06de976", null ],
     [ "userHomepage", "classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#a72a0e87005b1b6a91822302d4888d3cf", null ],
-    [ "verifyOtp", "classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#a088a16bc769b401bec40c472fd6064f4", null ]
+    [ "verifyOtp", "classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#a088a16bc769b401bec40c472fd6064f4", null ],
+    [ "verifyRecoveryOtp", "classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#a0e3c2fc11ceb432480c338e68e57d6c9", null ]
 ];

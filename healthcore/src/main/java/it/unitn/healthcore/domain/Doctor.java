@@ -6,7 +6,15 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 import java.util.List;
-
+/**
+ * @class Doctor
+ * @brief Represents a doctor in our system, extending the general User class.
+ * T
+ * It uses JPA annotations for ORM mapping to the "doctors" table in the database.
+ ** @author HealthCore Team
+ * @version 1.0.0
+ * @date 2026-06-11
+ */
 @Entity
 @Table(name="doctors")
 @DiscriminatorValue("Doctor")
