@@ -1,6 +1,7 @@
 package it.unitn.healthcore.business;
 
 import it.unitn.healthcore.domain.*;
+import it.unitn.healthcore.persistence.DepartmentRepository;
 import it.unitn.healthcore.persistence.PatientRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,14 +25,16 @@ import java.util.Optional;
 public class UserService implements UserDetailsService {
     private final UserRepository userRepository;
     private final PatientRepository patientRepository;
+    private final DepartmentRepository departmentRepository;
     @Autowired
     private PasswordEncoder passwordEncoder;
     private Boolean otpVerified = false;
 
     @Autowired
-    public UserService(UserRepository userRepository, PatientRepository patientRepository){
+    public UserService(UserRepository userRepository, PatientRepository patientRepository, DepartmentRepository departmentRepository) {
         this.userRepository = userRepository;
         this.patientRepository = patientRepository;
+        this.departmentRepository = departmentRepository;
     }
 
     @Override
@@ -129,7 +132,14 @@ public class UserService implements UserDetailsService {
     }
 
     public void registerDoctor(EmployeeRegistrationForm user){
-        Doctor new_user = new Doctor(user.getName(), user.getSurname(), user.getEmail(), user.getPassword(), user.getDepartmentId());
+        Department department = departmentRepository
+                .findById(user.getDepartmentId())
+                .orElseThrow(() ->
+                        new ResponseStatusException(
+                                HttpStatus.NOT_FOUND,
+                                "Department not found"));
+
+        Doctor new_user = new Doctor(user.getName(), user.getSurname(), user.getEmail(), user.getPassword(), department);
         registerUser(new_user);
     }
 

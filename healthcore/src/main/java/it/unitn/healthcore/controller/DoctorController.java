@@ -22,7 +22,7 @@ public class DoctorController {
     }
 
     @GetMapping(path = "list")
-    @PreAuthorize("hasRole('ADMINISTRATOR')")
+    @PreAuthorize("hasRole('ADMINISTRATOR') or hasRole('PATIENT')")
     public String viewDoctors(){
         StringBuilder sb = new StringBuilder();
 

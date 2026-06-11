@@ -27,6 +27,21 @@ public class InsurancePlan {
         this.name = name;
     }
 
+
+    public boolean isCoveredAtHospital(Hospital hospital) {
+        if (hospital == null || this.hospitals == null) {
+            return false;
+        }
+
+        for (Hospital h : this.hospitals) {
+            if (h.getHospitalId().equals(hospital.getHospitalId())) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
     public Integer getInsurancePlanId() {
         return insurancePlanId;
     }
