@@ -1,0 +1,7 @@
+<map id="it.unitn.healthcore.controller.UserController.userHomepage" name="it.unitn.healthcore.controller.UserController.userHomepage">
+<area shape="rect" id="node1" title=" " alt="" coords="5,71,224,112"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a33213d05bfda4e7384e17b18332d4bb5" title=" " alt="" coords="272,37,479,79"/>
+<area shape="rect" id="node5" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#a0c78137c0cf7b414cc88dcc41895d5a7" title=" " alt="" coords="276,103,475,144"/>
+<area shape="rect" id="node3" href="$interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1UserRepository.html#a6a646ae44d01189ff44c81c03fc92fa8" title=" " alt="" coords="531,5,763,47"/>
+<area shape="rect" id="node4" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a703ed9778e3ac6cd9741220089b5f48d" title=" " alt="" coords="527,71,767,112"/>
+</map>

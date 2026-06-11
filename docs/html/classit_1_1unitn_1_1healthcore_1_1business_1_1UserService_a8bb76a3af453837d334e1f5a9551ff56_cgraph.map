@@ -1,0 +1,11 @@
+<map id="it.unitn.healthcore.business.UserService.registerEmployee" name="it.unitn.healthcore.business.UserService.registerEmployee">
+<area shape="rect" id="node1" title=" " alt="" coords="5,71,224,112"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1EmployeeRegistrationForm.html#a2cddb295abb33e4d48081a4b179d0928" title=" " alt="" coords="272,5,525,47"/>
+<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#aebfef6bf9480fb24956dba8b10232d2f" title=" " alt="" coords="277,71,520,112"/>
+<area shape="rect" id="node8" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#af71b0f13c31c938efe9fce54ab3d7f7d" title=" " alt="" coords="295,136,502,177"/>
+<area shape="rect" id="node4" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1PasswordConfirmationForm.html#ad2a321af868704e56c42d5306a8acd91" title=" " alt="" coords="599,71,862,112"/>
+<area shape="rect" id="node5" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1EmployeeRegistrationForm.html#ae00ab1333401d899f6e010a99e5afec8" title=" " alt="" coords="599,136,862,177"/>
+<area shape="rect" id="node6" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1PasswordConfirmationForm.html#aa7de23a583db33eba13ddecad973ceca" title=" " alt="" coords="587,201,874,243"/>
+<area shape="rect" id="node7" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1EmployeeRegistrationForm.html#af1804bfdb0eb5dd711f6344f6c7e420c" title=" " alt="" coords="589,5,872,47"/>
+<area shape="rect" id="node9" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1EmployeeRegistrationForm.html#aacda9ff32f2f6c240f9f1ce7a746839a" title=" " alt="" coords="573,267,888,308"/>
+</map>
