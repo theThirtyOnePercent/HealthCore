@@ -12,10 +12,12 @@ public class Department {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer departmentId;
+
     @ManyToOne
     @JoinColumn(name = "hospital_id")
     @JsonIgnore
     private Hospital hospital;
+
     @OneToMany (mappedBy = "department")
     private List<Equipment> equipments;
 

@@ -1,6 +1,7 @@
 package it.unitn.healthcore.business;
 
 import it.unitn.healthcore.domain.*;
+import it.unitn.healthcore.persistence.DepartmentRepository;
 import it.unitn.healthcore.persistence.PatientRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,15 +35,16 @@ import java.util.Optional;
 public class UserService implements UserDetailsService {
     private final UserRepository userRepository;
     private final PatientRepository patientRepository;
-    
+    private final DepartmentRepository departmentRepository;
     @Autowired
     private PasswordEncoder passwordEncoder;
     private Boolean otpVerified = false;
 
     @Autowired
-    public UserService(UserRepository userRepository, PatientRepository patientRepository){
+    public UserService(UserRepository userRepository, PatientRepository patientRepository, DepartmentRepository departmentRepository) {
         this.userRepository = userRepository;
         this.patientRepository = patientRepository;
+        this.departmentRepository = departmentRepository;
     }
 
     @Override
@@ -73,6 +75,7 @@ public class UserService implements UserDetailsService {
         }
 
         //This is where the email with the OTP would be sent
+        //This is only a mock-up function
 
     }
 
@@ -91,7 +94,6 @@ public class UserService implements UserDetailsService {
             if (user.isPresent()){
                 return user.get();
             }
-            System.out.println(email + " " + user);
             throw  new IllegalStateException("no user found");
         }
             throw  new IllegalStateException("no email found");
@@ -140,7 +142,14 @@ public class UserService implements UserDetailsService {
     }
 
     public void registerDoctor(EmployeeRegistrationForm user){
-        Doctor new_user = new Doctor(user.getName(), user.getSurname(), user.getEmail(), user.getPassword(), user.getDepartmentId());
+        Department department = departmentRepository
+                .findById(user.getDepartmentId())
+                .orElseThrow(() ->
+                        new ResponseStatusException(
+                                HttpStatus.NOT_FOUND,
+                                "Department not found"));
+
+        Doctor new_user = new Doctor(user.getName(), user.getSurname(), user.getEmail(), user.getPassword(), department);
         registerUser(new_user);
     }
 
@@ -256,13 +265,16 @@ public class UserService implements UserDetailsService {
             user.setEmail(form.getEmail());
         }
 
-        if (user instanceof Doctor doctor) {
-            doctor.setSpecialization(form.getSpecialization());
-        } else {
-            throw new ResponseStatusException(
-                    HttpStatus.BAD_REQUEST,
-                    "Only doctors can have specialization"
-            );
+        if (form.getSpecialization() != null && !form.getSpecialization().isBlank()) {
+            if (user instanceof Doctor doctor) {
+                doctor.setSpecialization(form.getSpecialization());
+            }
+            else {
+                throw new ResponseStatusException(
+                        HttpStatus.BAD_REQUEST,
+                        "Only doctors can have specialization"
+                );
+            }
         }
 
         refreshSecurityContext(user);

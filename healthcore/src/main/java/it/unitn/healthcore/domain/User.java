@@ -1,5 +1,6 @@
 package it.unitn.healthcore.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 /**
  * @class User
@@ -30,6 +31,7 @@ public class User {
     private String name;
     private String surname;
     private String email;
+    @JsonIgnore
     private String password;
 
     public User(){
