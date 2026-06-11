@@ -1,6 +1,7 @@
 package it.unitn.healthcore.controller;
 
 import it.unitn.healthcore.business.DoctorService;
+import it.unitn.healthcore.domain.Appointment;
 import it.unitn.healthcore.domain.Doctor;
 import it.unitn.healthcore.domain.Hospital;
 import it.unitn.healthcore.domain.Shift;
@@ -70,6 +71,44 @@ public class DoctorController {
     public List<Shift> viewMyShifts() {
 
         return doctorService.getCurrentDoctorShifts();
+    }
+
+    @GetMapping(path = "appointments")
+    @PreAuthorize("hasRole('DOCTOR')")
+    public String viewFutureAppointments() {
+
+        List<Appointment> appointments = doctorService.getFutureAppointments();
+
+        StringBuilder sb = new StringBuilder("Next Appointments:\n");
+
+        for (Appointment a : appointments) {
+            sb.append("ID: ").append(a.getAppointmentId())
+                    .append(", Start: ").append(a.getStartTime())
+                    .append(", End: ").append(a.getEndTime())
+                    .append("\nPatient: ").append(a.getPatient().toString())
+                    .append("\n");
+        }
+
+        return sb.toString();
+    }
+
+    @GetMapping(path = "appointments/history")
+    @PreAuthorize("hasRole('DOCTOR')")
+    public String viewPastAppointments() {
+
+        List<Appointment> appointments = doctorService.getPastAppointments();
+
+        StringBuilder sb = new StringBuilder("Past Appointments:\n");
+
+        for (Appointment a : appointments) {
+            sb.append("ID: ").append(a.getAppointmentId())
+                    .append(", Start: ").append(a.getStartTime())
+                    .append(", End: ").append(a.getEndTime())
+                    .append("Patient: ").append(a.getPatient())
+                    .append("\n");
+        }
+
+        return sb.toString();
     }
 
 }

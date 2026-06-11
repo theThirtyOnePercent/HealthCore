@@ -1,5 +1,6 @@
 package it.unitn.healthcore.business;
 
+import it.unitn.healthcore.domain.Appointment;
 import it.unitn.healthcore.domain.Doctor;
 import it.unitn.healthcore.domain.Shift;
 import it.unitn.healthcore.persistence.DoctorRepository;
@@ -173,6 +174,27 @@ public class DoctorService {
     public List<Shift> getCurrentDoctorShifts() {
         Doctor doctor = (Doctor) userService.getCurrentUser();
         return doctor.getShifts();
+    }
+
+    public List<Appointment> getFutureAppointments() {
+        Doctor doctor = (Doctor) userService.getCurrentUser();
+
+        LocalDateTime now = LocalDateTime.now();
+
+        return doctor.getAppointments().stream()
+                .filter(a -> a.getStartTime().isAfter(now))
+                .toList();
+    }
+
+    public List<Appointment> getPastAppointments() {
+        Doctor doctor = (Doctor) userService.getCurrentUser();
+
+        LocalDateTime now = LocalDateTime.now();
+
+        return doctor.getAppointments()
+                .stream()
+                .filter(a -> a.getEndTime().isBefore(now))
+                .toList();
     }
 
 }
