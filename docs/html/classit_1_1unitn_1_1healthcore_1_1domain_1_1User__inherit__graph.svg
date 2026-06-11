@@ -12,7 +12,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="Represents a general user in our system.">
 <polygon fill="#bfbfbf" stroke="black" points="0,-55 0,-74 171,-74 171,-55 0,-55"/>
 <text text-anchor="middle" x="85.5" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.domain.User</text>
 </a>
@@ -37,7 +37,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor.html" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor.html" target="_top" xlink:title="Represents a doctor in our system, extending the general User class.">
 <polygon fill="white" stroke="black" points="207,-49.5 207,-79.5 356,-79.5 356,-49.5 207,-49.5"/>
 <text text-anchor="start" x="215" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.domain.</text>
 <text text-anchor="middle" x="281.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">Doctor</text>

@@ -11,7 +11,7 @@ var classit_1_1unitn_1_1healthcore_1_1business_1_1UserService =
     [ "registerDoctor", "classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#af71b0f13c31c938efe9fce54ab3d7f7d", null ],
     [ "registerEmployee", "classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a8bb76a3af453837d334e1f5a9551ff56", null ],
     [ "registerPatient", "classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a32dba226bff5fb3cd0caf79303b71d38", null ],
-    [ "updateUser", "classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#acc8ce128197ab98ad15545286cabeba8", null ],
+    [ "sendOtp", "classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a262646caddacb1ce9c3a009beecdd52d", null ],
     [ "updateUserProfile", "classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a114823fda5c213bb46bc935608bb8953", null ],
     [ "verifyOtp", "classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#ab525154f58a13b4824b1dbf05e86e7b9", null ]
 ];

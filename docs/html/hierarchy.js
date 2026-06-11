@@ -7,6 +7,8 @@ var hierarchy =
     [ "it.unitn.healthcore.domain.EquipmentDoctor", "classit_1_1unitn_1_1healthcore_1_1domain_1_1EquipmentDoctor.html", null ],
     [ "it.unitn.healthcore.HealthcoreApplication", "classit_1_1unitn_1_1healthcore_1_1HealthcoreApplication.html", null ],
     [ "it.unitn.healthcore.domain.Hospital", "classit_1_1unitn_1_1healthcore_1_1domain_1_1Hospital.html", null ],
+    [ "it.unitn.healthcore.controller.HospitalController", "classit_1_1unitn_1_1healthcore_1_1controller_1_1HospitalController.html", null ],
+    [ "it.unitn.healthcore.business.HospitalService", "classit_1_1unitn_1_1healthcore_1_1business_1_1HospitalService.html", null ],
     [ "it.unitn.healthcore.domain.InsurancePlan", "classit_1_1unitn_1_1healthcore_1_1domain_1_1InsurancePlan.html", null ],
     [ "it.unitn.healthcore.domain.PasswordConfirmationForm", "classit_1_1unitn_1_1healthcore_1_1domain_1_1PasswordConfirmationForm.html", [
       [ "it.unitn.healthcore.domain.EmployeeRegistrationForm", "classit_1_1unitn_1_1healthcore_1_1domain_1_1EmployeeRegistrationForm.html", null ],
@@ -21,6 +23,7 @@ var hierarchy =
     ] ],
     [ "it.unitn.healthcore.controller.UserController", "classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html", null ],
     [ "JpaRepository", null, [
+      [ "it.unitn.healthcore.persistence.HospitalRepository", "interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1HospitalRepository.html", null ],
       [ "it.unitn.healthcore.persistence.PatientRepository", "interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1PatientRepository.html", null ],
       [ "it.unitn.healthcore.persistence.UserRepository", "interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1UserRepository.html", null ]
     ] ],

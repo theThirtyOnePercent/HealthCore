@@ -30,12 +30,7 @@ var NAVTREE =
       [ "Purpose of the Project", "md_README.html#autotoc_md2", null ]
     ] ],
     [ "Architectural Overview", "architecture_page.html", [
-      [ "Architectural Layout & Design Patterns", "architecture_page.html#autotoc_md5", null ],
-      [ "Layer Breakdowns", "architecture_page.html#autotoc_md7", [
-        [ "1. Web Layer (The View)", "architecture_page.html#autotoc_md8", null ],
-        [ "2. Server Layer (The Controller & Core Model)", "architecture_page.html#autotoc_md9", null ],
-        [ "3. Persistence Layer (The Model Persistence)", "architecture_page.html#autotoc_md10", null ]
-      ] ]
+      [ "Architectural Layout & Design Patterns", "architecture_page.html#autotoc_md5", null ]
     ] ],
     [ "Packages", "namespaces.html", [
       [ "Packages", "namespaces.html", "namespaces_dup" ]
@@ -58,7 +53,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "",
-"dir_c5571b894ee92ac87a780a0405cfd750.html"
+"controller_2package__info_8java_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
