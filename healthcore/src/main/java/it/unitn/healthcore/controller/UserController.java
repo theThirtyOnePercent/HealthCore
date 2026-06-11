@@ -102,19 +102,22 @@ public class UserController {
     }
 
     @PutMapping(path = "profileUpdate")
-    public User updateProfile(@RequestBody ProfileUpdateForm profileUpdateForm){
+    public ResponseEntity<Void> updateProfile(@RequestBody ProfileUpdateForm profileUpdateForm){
         userService.updateUserProfile(profileUpdateForm);
 
+        return ResponseEntity.status(302)
+                .header("Location", "/viewProfile")
+                .build();
+    }
+
+    @GetMapping (path = "viewProfile")
+    public User viewProfile (){
         return userService.getCurrentUser();
     }
 
 
     //These functions are not part of the requirements
     //We can delete them later
-    @DeleteMapping(path = "delete/{userId}")
-    public void deleteUser(@PathVariable("userId") Integer id){
-        userService.deleteUser(id);
-    }
 
     @GetMapping(path = "allUsers")
     public List<User> getAllUsers(){

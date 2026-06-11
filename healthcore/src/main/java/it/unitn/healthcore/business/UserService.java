@@ -62,6 +62,7 @@ public class UserService implements UserDetailsService {
         }
 
         //This is where the email with the OTP would be sent
+        //This is only a mock up function
 
     }
 
@@ -245,13 +246,16 @@ public class UserService implements UserDetailsService {
             user.setEmail(form.getEmail());
         }
 
-        if (user instanceof Doctor doctor) {
-            doctor.setSpecialization(form.getSpecialization());
-        } else {
-            throw new ResponseStatusException(
-                    HttpStatus.BAD_REQUEST,
-                    "Only doctors can have specialization"
-            );
+        if (form.getSpecialization() != null && !form.getSpecialization().isBlank()) {
+            if (user instanceof Doctor doctor) {
+                doctor.setSpecialization(form.getSpecialization());
+            }
+            else {
+                throw new ResponseStatusException(
+                        HttpStatus.BAD_REQUEST,
+                        "Only doctors can have specialization"
+                );
+            }
         }
 
         refreshSecurityContext(user);

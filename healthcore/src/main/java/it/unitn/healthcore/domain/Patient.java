@@ -1,9 +1,9 @@
 package it.unitn.healthcore.domain;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.DiscriminatorValue;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.persistence.*;
+
+import java.util.List;
 
 @Entity
 @Table (name="patients")
@@ -11,24 +11,19 @@ import jakarta.persistence.Table;
 public class Patient extends User{
 
     private Integer healthcareCardNumber;
-    private Integer insurancePlanId;
+    @ManyToOne
+    @JoinColumn(name = "insurance_plan_id")
+    private InsurancePlan insurancePlan;
     private String triageStatus;
 
     public Patient(){
 
     }
 
-    public Patient(String name, String surname, String email, String password, Integer healthcare_card_number, Integer insurance_plan_id, String triage_status) {
-        super(name, surname, email, password);
-        this.healthcareCardNumber = healthcare_card_number;
-        this.insurancePlanId = insurance_plan_id;
-        this.triageStatus = triage_status;
-    }
-
     public  Patient(String name, String surname, String email, String password, Integer healthcare_card_number){
         super(name, surname, email, password);
         this.healthcareCardNumber = healthcare_card_number;
-        this.insurancePlanId = null;
+        this.insurancePlan = null;
         this.triageStatus = "NotInTriage";
     }
 
@@ -40,12 +35,12 @@ public class Patient extends User{
         this.healthcareCardNumber = healthcareCardNumber;
     }
 
-    public Integer getInsurancePlanId() {
-        return insurancePlanId;
+    public InsurancePlan getInsurancePlan() {
+        return insurancePlan;
     }
 
-    public void setInsurancePlanId(Integer insurancePlanId) {
-        this.insurancePlanId = insurancePlanId;
+    public void setInsurancePlan(InsurancePlan insurancePlan) {
+        this.insurancePlan = insurancePlan;
     }
 
     public String getTriageStatus() {
