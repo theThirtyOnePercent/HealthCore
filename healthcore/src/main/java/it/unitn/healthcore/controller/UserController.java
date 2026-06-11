@@ -118,7 +118,7 @@ public class UserController {
 
     @GetMapping(path = "allUsers")
     public List<User> getAllUsers(){
-        return this.userService.getUsers();
+        return userService.getUsers();
     }
 
 }

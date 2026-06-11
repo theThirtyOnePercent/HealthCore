@@ -1,11 +1,12 @@
 package it.unitn.healthcore.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 import java.util.List;
 
 @Entity
-@Table(name = "InsurancePlans")
+@Table(name = "insuranceplans")
 public class InsurancePlan {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,6 +18,7 @@ public class InsurancePlan {
             joinColumns = @JoinColumn(name = "insurance_plan_id"),
             inverseJoinColumns = @JoinColumn(name = "hospital_id")
     )
+    @JsonIgnore
     private List<Hospital> hospitals;
 
     public InsurancePlan(){}
