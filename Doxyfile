@@ -27,6 +27,8 @@ FILE_PATTERNS          = *.java *.md
 
 RECURSIVE              = YES
 
+IMAGE_PATH             = docs
+
 # Exclude build folders
 EXCLUDE                = target build .idea .git
 

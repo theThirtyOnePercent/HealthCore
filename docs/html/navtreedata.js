@@ -57,8 +57,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"AdministratorController_8java.html",
-"dir_db7f06ddc3d5eacf749d1954a5e09707.html"
+"",
+"dir_c5571b894ee92ac87a780a0405cfd750.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
