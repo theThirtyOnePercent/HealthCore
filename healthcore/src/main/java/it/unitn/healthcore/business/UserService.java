@@ -26,6 +26,7 @@ public class UserService implements UserDetailsService {
     private final PatientRepository patientRepository;
     @Autowired
     private PasswordEncoder passwordEncoder;
+    private Boolean otpVerified = false;
 
     @Autowired
     public UserService(UserRepository userRepository, PatientRepository patientRepository){
@@ -49,7 +50,19 @@ public class UserService implements UserDetailsService {
         //However, we are not implementing the email notification
         //So, this is a mockup that returns true id otp is equal to 123456
 
-        return "123456".equals(otp);
+        otpVerified = "123456".equals(otp);
+
+        return otpVerified;
+    }
+
+    public void sendOtp(String email){
+        Optional<User> optionalUser = userRepository.findUserByEmail(email);
+        if (optionalUser.isEmpty()){
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "email not registered");
+        }
+
+        //This is where the email with the OTP would be sent
+
     }
 
     public String getCurrentUserEmail() {
@@ -100,6 +113,14 @@ public class UserService implements UserDetailsService {
     }
 
     public void registerEmployee (EmployeeRegistrationForm user){
+
+        if (!(getCurrentUser() instanceof Administrator)) {
+            throw new ResponseStatusException(
+                    HttpStatus.UNAUTHORIZED,
+                    "Only admins can register employees"
+            );
+        }
+
         isValidPasswordForm(user);
 
         if (user.getRole().equals("Doctor")){
@@ -126,6 +147,11 @@ public class UserService implements UserDetailsService {
 
     @Transactional
     public void recoverPassword(PasswordConfirmationForm request){
+        if (!otpVerified){
+            throw new ResponseStatusException(
+                    HttpStatus.UNAUTHORIZED,"otp was not verified");
+        }
+
         isValidPasswordForm(request);
 
         User user = userRepository.findUserByEmail(request.getEmail()).orElseThrow(
@@ -234,6 +260,7 @@ public class UserService implements UserDetailsService {
                     "Only doctors can have specialization"
             );
         }
+
         refreshSecurityContext(user);
     }
 
@@ -247,30 +274,6 @@ public class UserService implements UserDetailsService {
         );
 
         SecurityContextHolder.getContext().setAuthentication(auth);
-    }
-
-    @Transactional
-    public void updateUser(Integer id, User user_info){
-        User user = userRepository.findById(id).orElseThrow(
-                ()-> new ResponseStatusException(HttpStatus.NOT_FOUND, "user not found")
-        );
-
-        if (user_info.getName() != null && !user_info.getName().isEmpty() && !user.getName().equals((user_info.getName()))){
-            user.setName(user_info.getName());
-        }
-
-        if (user_info.getSurname() != null && !user_info.getSurname().isEmpty() && !user.getSurname().equals((user_info.getSurname()))){
-            user.setSurname(user_info.getSurname());
-        }
-
-        if (user_info.getEmail() != null && !user_info.getEmail().isEmpty() && !Objects.equals(user.getEmail(), user_info.getEmail())){
-            Optional<User> user1 = userRepository.findUserByEmail(user_info.getEmail());
-            if(user1.isPresent()){
-                throw new ResponseStatusException(HttpStatus.CONFLICT,"email taken");
-            }
-            user.setEmail(user_info.getEmail());
-        }
-
     }
 
 }

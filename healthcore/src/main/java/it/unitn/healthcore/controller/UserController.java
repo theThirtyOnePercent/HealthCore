@@ -75,6 +75,21 @@ public class UserController {
                 .build();
     }
 
+    @PostMapping ("passwordRecovery/request")
+    public String requestPasswordRecovery(@RequestParam String email){
+        userService.sendOtp(email);
+
+        return "OTP sent";
+    }
+
+    @PostMapping("/passwordRecovery/otp")
+    public String verifyRecoveryOtp(@RequestParam String otp){
+
+        userService.verifyOtp(otp);
+
+        return "OTP verified";
+    }
+
     @PostMapping(path = "passwordRecovery")
     public ResponseEntity<Void> recoverPassword(@RequestBody PasswordConfirmationForm request){
         userService.recoverPassword(request);
@@ -97,12 +112,6 @@ public class UserController {
     @DeleteMapping(path = "delete/{userId}")
     public void deleteUser(@PathVariable("userId") Integer id){
         userService.deleteUser(id);
-    }
-
-    @PutMapping(path = "updateUser/{userId}")
-    public void updateUser (@PathVariable("userId") Integer id,
-                            @RequestBody User user){
-        userService.updateUser(id, user);
     }
 
     @GetMapping(path = "allUsers")
