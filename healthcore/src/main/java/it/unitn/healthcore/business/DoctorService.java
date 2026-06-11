@@ -18,11 +18,13 @@ import java.util.Optional;
 public class DoctorService {
     private final DoctorRepository doctorRepository;
     private final ShiftRepository shiftRepository;
+    private final UserService userService;
 
     @Autowired
-    public DoctorService(DoctorRepository doctorRepository, ShiftRepository shiftRepository) {
+    public DoctorService(DoctorRepository doctorRepository, ShiftRepository shiftRepository, UserService userService) {
         this.doctorRepository = doctorRepository;
         this.shiftRepository = shiftRepository;
+        this.userService = userService;
     }
 
     public List<Doctor> getAllDoctors(){
@@ -166,6 +168,11 @@ public class DoctorService {
         shift.setEndTime(endTime);
 
         shiftRepository.saveAndFlush(shift);
+    }
+
+    public List<Shift> getCurrentDoctorShifts() {
+        Doctor doctor = (Doctor) userService.getCurrentUser();
+        return doctor.getShifts();
     }
 
 }

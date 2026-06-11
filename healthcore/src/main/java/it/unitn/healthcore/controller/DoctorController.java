@@ -3,6 +3,7 @@ package it.unitn.healthcore.controller;
 import it.unitn.healthcore.business.DoctorService;
 import it.unitn.healthcore.domain.Doctor;
 import it.unitn.healthcore.domain.Hospital;
+import it.unitn.healthcore.domain.Shift;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -62,6 +63,13 @@ public class DoctorController {
     public void deleteShift(@PathVariable Integer shiftId) {
 
         doctorService.deleteShift(shiftId);
+    }
+
+    @GetMapping(path = "shifts")
+    @PreAuthorize("hasRole('DOCTOR')")
+    public List<Shift> viewMyShifts() {
+
+        return doctorService.getCurrentDoctorShifts();
     }
 
 }
