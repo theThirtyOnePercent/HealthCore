@@ -5,6 +5,7 @@ import it.unitn.healthcore.domain.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.method.P;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -30,6 +31,7 @@ public class UserController {
     }
 
     @PostMapping(path = "employeeRegistration")
+    @PreAuthorize("hasRole('ADMINISTRATOR')")
     public ResponseEntity<Void> addEmployee(@RequestBody EmployeeRegistrationForm user){
         userService.registerEmployee(user);
 

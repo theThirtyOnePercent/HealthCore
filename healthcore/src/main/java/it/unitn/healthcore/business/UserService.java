@@ -114,13 +114,6 @@ public class UserService implements UserDetailsService {
 
     public void registerEmployee (EmployeeRegistrationForm user){
 
-        if (!(getCurrentUser() instanceof Administrator)) {
-            throw new ResponseStatusException(
-                    HttpStatus.UNAUTHORIZED,
-                    "Only admins can register employees"
-            );
-        }
-
         isValidPasswordForm(user);
 
         if (user.getRole().equals("Doctor")){
