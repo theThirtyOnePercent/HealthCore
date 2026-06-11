@@ -62,7 +62,7 @@ public class UserService implements UserDetailsService {
         }
 
         //This is where the email with the OTP would be sent
-        //This is only a mock up function
+        //This is only a mock-up function
 
     }
 
@@ -81,7 +81,6 @@ public class UserService implements UserDetailsService {
             if (user.isPresent()){
                 return user.get();
             }
-            System.out.println(email + " " + user);
             throw  new IllegalStateException("no user found");
         }
             throw  new IllegalStateException("no email found");

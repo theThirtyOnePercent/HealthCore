@@ -1,9 +1,6 @@
 package it.unitn.healthcore.domain;
 
-import jakarta.persistence.DiscriminatorValue;
-import jakarta.persistence.Entity;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 import java.util.List;
 
@@ -16,6 +13,8 @@ public class Doctor extends User{
     private Double appointmentPrice;
     @OneToMany(mappedBy = "doctor")
     private List<EquipmentDoctor> equipments;
+    @OneToMany (mappedBy = "doctor", fetch = FetchType.EAGER)
+    private List<Shift> shifts;
 
     public Doctor(){
 
@@ -33,6 +32,22 @@ public class Doctor extends User{
         this.departmentId = departmentId;
         this.specialization = null;
         this.appointmentPrice = null;
+    }
+
+    public List<EquipmentDoctor> getEquipments() {
+        return equipments;
+    }
+
+    public void setEquipments(List<EquipmentDoctor> equipments) {
+        this.equipments = equipments;
+    }
+
+    public List<Shift> getShifts() {
+        return shifts;
+    }
+
+    public void setShifts(List<Shift> shifts) {
+        this.shifts = shifts;
     }
 
     public Integer getDepartmentId() {
