@@ -34,9 +34,18 @@ public class PatientService{
         }
 
         Patient current_patient =(Patient) userService.getCurrentUser();
+        if (validatePlan(planId, current_patient.getId())) {
+            current_patient.setInsurancePlan(optionalPlan.get());
+        }
 
-        current_patient.setInsurancePlan(optionalPlan.get());
+    }
 
+    private Boolean validatePlan(Integer planId, Integer userId){
+
+        //This is where the system would check with insurance system
+        // if the user is actually subscribed with that plan
+
+        return true;
     }
 
     public InsurancePlan getCurrentInsurancePlan (){
