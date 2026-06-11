@@ -5,6 +5,7 @@ import it.unitn.healthcore.domain.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.method.P;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -30,6 +31,7 @@ public class UserController {
     }
 
     @PostMapping(path = "employeeRegistration")
+    @PreAuthorize("hasRole('ADMINISTRATOR')")
     public ResponseEntity<Void> addEmployee(@RequestBody EmployeeRegistrationForm user){
         userService.registerEmployee(user);
 
@@ -75,6 +77,21 @@ public class UserController {
                 .build();
     }
 
+    @PostMapping ("passwordRecovery/request")
+    public String requestPasswordRecovery(@RequestParam String email){
+        userService.sendOtp(email);
+
+        return "OTP sent";
+    }
+
+    @PostMapping("/passwordRecovery/otp")
+    public String verifyRecoveryOtp(@RequestParam String otp){
+
+        userService.verifyOtp(otp);
+
+        return "OTP verified";
+    }
+
     @PostMapping(path = "passwordRecovery")
     public ResponseEntity<Void> recoverPassword(@RequestBody PasswordConfirmationForm request){
         userService.recoverPassword(request);
@@ -99,15 +116,9 @@ public class UserController {
         userService.deleteUser(id);
     }
 
-    @PutMapping(path = "updateUser/{userId}")
-    public void updateUser (@PathVariable("userId") Integer id,
-                            @RequestBody User user){
-        userService.updateUser(id, user);
-    }
-
     @GetMapping(path = "allUsers")
     public List<User> getAllUsers(){
-        return this.userService.getUsers();
+        return userService.getUsers();
     }
 
 }
