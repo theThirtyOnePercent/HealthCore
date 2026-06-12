@@ -10,12 +10,20 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+/**
+ * @class 
+ * @brief  
+ * @see 
+ * @author HealthCore Team
+ * @version 1.0.0
+ * @date 2026-06-11
+ */
+
 @RestController
 @RequestMapping(path = "hierarchy")
 @PreAuthorize("hasRole('ADMINISTRATOR')")
 public class HospitalController {
     private final HospitalService hospitalService;
-
     @Autowired
     public HospitalController (HospitalService hospitalService){
         this.hospitalService = hospitalService;
