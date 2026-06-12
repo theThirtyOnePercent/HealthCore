@@ -17,12 +17,5 @@ import java.util.List;
  * @date 2026-06-11
  */
 public interface AppointmentRepository extends JpaRepository<Appointment, Integer> {
-    /** @brief Finds all appointments associated with a specific doctor. */
-    List<Appointment> findByDoctorId(Integer doctorId);
-    /** @brief Finds all appointments for a doctor that overlap with a given time range. */
-    List<Appointment> findByDoctorIdAndStartTimeLessThanAndEndTimeGreaterThan(
-            Integer doctorId,
-            LocalDateTime end,
-            LocalDateTime start
-    );
+
 }
