@@ -1,5 +1,6 @@
 package it.unitn.healthcore.controller;
 
+import it.unitn.healthcore.business.AppointmentService;
 import it.unitn.healthcore.business.DoctorService;
 import it.unitn.healthcore.domain.Appointment;
 import it.unitn.healthcore.domain.Doctor;
@@ -17,10 +18,12 @@ import java.util.List;
 @RequestMapping(path = "doctor")
 public class DoctorController {
     private final DoctorService doctorService;
+    private final AppointmentService appointmentService;
 
     @Autowired
-    public DoctorController(DoctorService doctorService) {
+    public DoctorController(DoctorService doctorService, AppointmentService appointmentService) {
         this.doctorService = doctorService;
+        this.appointmentService = appointmentService;
     }
 
     @GetMapping(path = "list")
@@ -77,7 +80,7 @@ public class DoctorController {
     @PreAuthorize("hasRole('DOCTOR')")
     public String viewFutureAppointments() {
 
-        List<Appointment> appointments = doctorService.getFutureAppointments();
+        List<Appointment> appointments = appointmentService.getFutureAppointments();
 
         StringBuilder sb = new StringBuilder("Next Appointments:\n");
 
@@ -96,7 +99,7 @@ public class DoctorController {
     @PreAuthorize("hasRole('DOCTOR')")
     public String viewPastAppointments() {
 
-        List<Appointment> appointments = doctorService.getPastAppointments();
+        List<Appointment> appointments = appointmentService.getPastAppointments();
 
         StringBuilder sb = new StringBuilder("Past Appointments:\n");
 
@@ -114,7 +117,7 @@ public class DoctorController {
     @GetMapping(path = "appointment/detail/{appointmentId}")
     @PreAuthorize("hasRole('DOCTOR')")
     public String viewAppointmentDetail(@PathVariable Integer appointmentId){
-        return doctorService.getAppointmentDetails(appointmentId);
+        return appointmentService.getAppointmentDetails(appointmentId);
     }
 
 }
