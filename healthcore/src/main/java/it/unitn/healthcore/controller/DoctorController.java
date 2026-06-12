@@ -111,4 +111,10 @@ public class DoctorController {
         return sb.toString();
     }
 
+    @GetMapping(path = "appointment/detail/{appointmentId}")
+    @PreAuthorize("hasRole('DOCTOR')")
+    public String viewAppointmentDetail(@PathVariable Integer appointmentId){
+        return doctorService.getAppointmentDetails(appointmentId);
+    }
+
 }

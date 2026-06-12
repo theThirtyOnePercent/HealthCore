@@ -41,6 +41,14 @@ public class Patient extends User{
                 '}';
     }
 
+    public List<Appointment> getAppointments() {
+        return appointments;
+    }
+
+    public void setAppointments(List<Appointment> appointments) {
+        this.appointments = appointments;
+    }
+
     public Integer getHealthcareCardNumber() {
         return healthcareCardNumber;
     }

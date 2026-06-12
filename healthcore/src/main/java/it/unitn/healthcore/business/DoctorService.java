@@ -1,8 +1,7 @@
 package it.unitn.healthcore.business;
 
-import it.unitn.healthcore.domain.Appointment;
-import it.unitn.healthcore.domain.Doctor;
-import it.unitn.healthcore.domain.Shift;
+import it.unitn.healthcore.domain.*;
+import it.unitn.healthcore.persistence.AppointmentRepository;
 import it.unitn.healthcore.persistence.DoctorRepository;
 import it.unitn.healthcore.persistence.ShiftRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,12 +20,14 @@ public class DoctorService {
     private final DoctorRepository doctorRepository;
     private final ShiftRepository shiftRepository;
     private final UserService userService;
+    private final AppointmentRepository appointmentRepository;
 
     @Autowired
-    public DoctorService(DoctorRepository doctorRepository, ShiftRepository shiftRepository, UserService userService) {
+    public DoctorService(DoctorRepository doctorRepository, ShiftRepository shiftRepository, UserService userService, AppointmentRepository appointmentRepository) {
         this.doctorRepository = doctorRepository;
         this.shiftRepository = shiftRepository;
         this.userService = userService;
+        this.appointmentRepository = appointmentRepository;
     }
 
     public List<Doctor> getAllDoctors(){
@@ -200,6 +201,102 @@ public class DoctorService {
                 .filter(a -> a.getEndTime().isBefore(now))
                 .sorted(Comparator.comparing(Appointment::getStartTime).reversed())
                 .toList();
+    }
+
+    public String getAppointmentDetails(Integer appointmentId){
+        Doctor currentDoctor = (Doctor) userService.getCurrentUser();
+
+        Appointment appointment = appointmentRepository.findById(appointmentId)
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Appointment not found"));
+
+        // Security check
+        if (!appointment.getDoctor().getId().equals(currentDoctor.getId())) {
+            throw new ResponseStatusException(
+                    HttpStatus.FORBIDDEN,
+                    "You are not assigned to this appointment");
+        }
+
+        Patient patient = appointment.getPatient();
+        StringBuilder sb = new StringBuilder();
+
+        sb.append("Appointment ID: ")
+                .append(appointment.getAppointmentId())
+                .append("\n");
+
+        sb.append("Start: ")
+                .append(appointment.getStartTime())
+                .append("\n");
+
+        sb.append("End: ")
+                .append(appointment.getEndTime())
+                .append("\n\n");
+
+        sb.append("Patient Information\n");
+        sb.append("-------------------\n");
+
+        sb.append("Patient ID: ").append(patient.getId()).append("\n");
+        sb.append("Name: ").append(patient.getName()).append("\n");
+        sb.append("Surname: ").append(patient.getSurname()).append("\n");
+        sb.append("Email: ").append(patient.getEmail()).append("\n");
+        sb.append("Triage Status: ").append(patient.getTriageStatus()).append("\n");
+
+        if (patient.getInsurancePlan() != null) {
+            sb.append("Insurance Plan: ")
+                    .append(patient.getInsurancePlan().getName())
+                    .append("\n");
+        }
+
+        sb.append("\nDiagnosis History\n");
+        sb.append("-----------------\n");
+
+        boolean foundDiagnosis = false;
+
+        for (Appointment patientAppointment : patient.getAppointments()) {
+
+            for (Diagnosis diagnosis : patientAppointment.getDiagnoses()) {
+
+                foundDiagnosis = true;
+
+                sb.append("Diagnosis ID: ")
+                        .append(diagnosis.getDiagnosisId())
+                        .append("\n");
+
+                sb.append("Appointment ID: ")
+                        .append(patientAppointment.getAppointmentId())
+                        .append("\n");
+
+                sb.append("Recorded: ")
+                        .append(diagnosis.getDateRecord())
+                        .append("\n");
+
+                sb.append("Condition Start: ")
+                        .append(diagnosis.getDateStartCondition())
+                        .append("\n");
+
+                sb.append("Condition End: ")
+                        .append(diagnosis.getDateEndCondition())
+                        .append("\n");
+
+                sb.append("Description: ")
+                        .append(diagnosis.getDescription())
+                        .append("\n\n");
+            }
+        }
+
+        if (!foundDiagnosis) {
+            sb.append("No diagnosis history found.\n");
+        }
+
+        if (appointment.getNote() != null) {
+
+            sb.append("Note\n");
+            sb.append("----\n");
+            sb.append(appointment.getNote().getContent())
+                    .append("\n");
+        }
+
+        return sb.toString();
+
     }
 
 }

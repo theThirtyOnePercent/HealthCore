@@ -11,6 +11,7 @@ import java.util.List;
 public class Appointment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "appointment_id")
     private Integer appointmentId;
 
     @JsonIgnore
@@ -32,6 +33,9 @@ public class Appointment {
     @JsonIgnore
     private List<Diagnosis> diagnoses;
 
+    @OneToOne (mappedBy = "appointment")
+    private Note note;
+
     public Appointment(){}
 
     public Appointment(Patient patient, Doctor doctor, LocalDateTime startTime, LocalDateTime endTime) {
@@ -39,6 +43,14 @@ public class Appointment {
         this.doctor = doctor;
         this.startTime = startTime;
         this.endTime = endTime;
+    }
+
+    public Note getNote() {
+        return note;
+    }
+
+    public void setNote(Note note) {
+        this.note = note;
     }
 
     public List<Diagnosis> getDiagnoses() {

@@ -12,8 +12,8 @@ public class Note {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer noteId;
 
-    @ManyToOne
-    @JoinColumn(name = "appointment_id")
+    @OneToOne
+    @JoinColumn(name = "appointment_id", referencedColumnName = "appointment_id")
     @JsonIgnore
     private Appointment appointment;
 
