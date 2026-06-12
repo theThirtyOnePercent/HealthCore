@@ -1,7 +1,7 @@
 package it.unitn.healthcore.business;
 
-import it.unitn.healthcore.domain.Doctor;
-import it.unitn.healthcore.domain.Shift;
+import it.unitn.healthcore.domain.*;
+import it.unitn.healthcore.persistence.AppointmentRepository;
 import it.unitn.healthcore.persistence.DoctorRepository;
 import it.unitn.healthcore.persistence.ShiftRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.time.LocalDateTime;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 
@@ -19,12 +20,14 @@ public class DoctorService {
     private final DoctorRepository doctorRepository;
     private final ShiftRepository shiftRepository;
     private final UserService userService;
+    private final AppointmentRepository appointmentRepository;
 
     @Autowired
-    public DoctorService(DoctorRepository doctorRepository, ShiftRepository shiftRepository, UserService userService) {
+    public DoctorService(DoctorRepository doctorRepository, ShiftRepository shiftRepository, UserService userService, AppointmentRepository appointmentRepository) {
         this.doctorRepository = doctorRepository;
         this.shiftRepository = shiftRepository;
         this.userService = userService;
+        this.appointmentRepository = appointmentRepository;
     }
 
     public List<Doctor> getAllDoctors(){
@@ -172,7 +175,9 @@ public class DoctorService {
 
     public List<Shift> getCurrentDoctorShifts() {
         Doctor doctor = (Doctor) userService.getCurrentUser();
-        return doctor.getShifts();
+        return doctor.getShifts().stream()
+                .sorted(java.util.Comparator.comparing(Shift::getStartTime))
+                .toList();
     }
 
 }

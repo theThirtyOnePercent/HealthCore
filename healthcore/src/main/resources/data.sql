@@ -39,3 +39,25 @@ INSERT INTO Equipments (department_id, equipment_type, quantity) VALUES
 (3, 'MRI Scanner', 3),
 (4, 'X-Ray Machine', 5),
 (5, 'Incubator', 12);
+
+
+WITH new_admin AS (
+    INSERT INTO Users (
+        name,
+        surname,
+        email,
+        password,
+        role
+    )
+    VALUES (
+        'root',
+        'admin',
+        'admin@healthcore.com',
+        '$2a$10$2UpRq4MdCKeRpxfc8/s7CuiyZFj8DWLqWe/owIU00gmzr/ap92BDG',
+        'Administrator'
+    )
+    RETURNING id
+)
+INSERT INTO Administrators(id)
+SELECT id
+FROM new_admin;

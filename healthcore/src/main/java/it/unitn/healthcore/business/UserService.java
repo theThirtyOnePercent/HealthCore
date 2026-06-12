@@ -144,10 +144,16 @@ public class UserService implements UserDetailsService {
     public void registerDoctor(EmployeeRegistrationForm user){
         Department department = departmentRepository
                 .findById(user.getDepartmentId())
-                .orElseThrow(() ->
-                        new ResponseStatusException(
-                                HttpStatus.NOT_FOUND,
-                                "Department not found"));
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Department not found"));
+
+        // Check if department has a free position for the new doctor
+        int occupiedPositions = department.getDoctors().size();
+
+        if (occupiedPositions >= department.getTotalStaffPositions()) {
+            throw new ResponseStatusException(
+                    HttpStatus.BAD_REQUEST,
+                    "Department has no available staff positions");
+        }
 
         Doctor new_user = new Doctor(user.getName(), user.getSurname(), user.getEmail(), user.getPassword(), department);
         registerUser(new_user);

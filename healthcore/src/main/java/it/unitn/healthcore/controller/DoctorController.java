@@ -1,6 +1,8 @@
 package it.unitn.healthcore.controller;
 
+import it.unitn.healthcore.business.AppointmentService;
 import it.unitn.healthcore.business.DoctorService;
+import it.unitn.healthcore.domain.Appointment;
 import it.unitn.healthcore.domain.Doctor;
 import it.unitn.healthcore.domain.Hospital;
 import it.unitn.healthcore.domain.Shift;
@@ -16,10 +18,12 @@ import java.util.List;
 @RequestMapping(path = "doctor")
 public class DoctorController {
     private final DoctorService doctorService;
+    private final AppointmentService appointmentService;
 
     @Autowired
-    public DoctorController(DoctorService doctorService) {
+    public DoctorController(DoctorService doctorService, AppointmentService appointmentService) {
         this.doctorService = doctorService;
+        this.appointmentService = appointmentService;
     }
 
     @GetMapping(path = "list")
@@ -70,6 +74,50 @@ public class DoctorController {
     public List<Shift> viewMyShifts() {
 
         return doctorService.getCurrentDoctorShifts();
+    }
+
+    @GetMapping(path = "appointments")
+    @PreAuthorize("hasRole('DOCTOR')")
+    public String viewFutureAppointments() {
+
+        List<Appointment> appointments = appointmentService.getFutureAppointments();
+
+        StringBuilder sb = new StringBuilder("Next Appointments:\n");
+
+        for (Appointment a : appointments) {
+            sb.append("ID: ").append(a.getAppointmentId())
+                    .append(", Start: ").append(a.getStartTime())
+                    .append(", End: ").append(a.getEndTime())
+                    .append("\nPatient: ").append(a.getPatient().toString())
+                    .append("\n");
+        }
+
+        return sb.toString();
+    }
+
+    @GetMapping(path = "appointments/history")
+    @PreAuthorize("hasRole('DOCTOR')")
+    public String viewPastAppointments() {
+
+        List<Appointment> appointments = appointmentService.getPastAppointments();
+
+        StringBuilder sb = new StringBuilder("Past Appointments:\n");
+
+        for (Appointment a : appointments) {
+            sb.append("ID: ").append(a.getAppointmentId())
+                    .append(", Start: ").append(a.getStartTime())
+                    .append(", End: ").append(a.getEndTime())
+                    .append("Patient: ").append(a.getPatient())
+                    .append("\n");
+        }
+
+        return sb.toString();
+    }
+
+    @GetMapping(path = "appointment/detail/{appointmentId}")
+    @PreAuthorize("hasRole('DOCTOR')")
+    public String viewAppointmentDetail(@PathVariable Integer appointmentId){
+        return appointmentService.getAppointmentDetails(appointmentId);
     }
 
 }

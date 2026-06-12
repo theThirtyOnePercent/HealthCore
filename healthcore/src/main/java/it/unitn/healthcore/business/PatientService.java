@@ -9,6 +9,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.time.LocalDateTime;
+import java.util.Comparator;
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -100,6 +102,7 @@ public class PatientService{
         return true;
     }
 
+
     @Transactional
     public Appointment bookAppointment(Integer doctorId, LocalDateTime start, LocalDateTime end) {
 
@@ -111,6 +114,15 @@ public class PatientService{
 
         Doctor doctor = doctorRepository.findById(doctorId)
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Doctor not found"));
+
+        // Check if it is during doctor shift time
+
+        boolean insideShift = doctor.getShifts().stream()
+                .anyMatch(shift -> !start.isBefore(shift.getStartTime()) && !end.isAfter(shift.getEndTime()));
+
+        if (!insideShift) {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Doctor is not working during the requested time");
+        }
 
         // Check doctor overlap
         for (Appointment a : doctor.getAppointments()) {
@@ -159,5 +171,4 @@ public class PatientService{
         return appointment;
 
     }
-
 }

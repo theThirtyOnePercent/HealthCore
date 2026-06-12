@@ -31,7 +31,15 @@ public class Department {
     private String name;
     private Integer beds;
     private Integer totalStaffPositions;
+<<<<<<< HEAD
     /** @brief Default constructor required by JPA. */
+=======
+
+    @OneToMany(mappedBy = "department")
+    @JsonIgnore
+    private List<Doctor> doctors;
+
+>>>>>>> 2854f03b29256b6e3c75423a21eb3facb266b831
     public Department(){}
     /** @brief Creates a Department with full credentials. */
     public Department(Hospital hospital, String name, Integer beds, Integer totalStaffPositions) {
@@ -41,7 +49,26 @@ public class Department {
         this.totalStaffPositions = totalStaffPositions;
     }
 
+<<<<<<< HEAD
     /** @brief Creates a Department . */
+=======
+    public List<Equipment> getEquipments() {
+        return equipments;
+    }
+
+    public void setEquipments(List<Equipment> equipments) {
+        this.equipments = equipments;
+    }
+
+    public List<Doctor> getDoctors() {
+        return doctors;
+    }
+
+    public void setDoctors(List<Doctor> doctors) {
+        this.doctors = doctors;
+    }
+
+>>>>>>> 2854f03b29256b6e3c75423a21eb3facb266b831
     public Integer getDepartmentId() {
         return departmentId;
     }

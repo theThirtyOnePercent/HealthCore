@@ -52,8 +52,17 @@ public class Doctor extends User{
         this.appointmentPrice = null;
     }
 
-    /**
-     * @brief Appointment getter.*/
+    @Override
+    public String toString() {
+        return "Doctor{" +
+                "id=" + getId() +
+                ", name='" + getName() + '\'' +
+                ", surname='" + getSurname() + '\'' +
+                ", email='" + getEmail() + '\'' +
+                '}';
+    }
+
+
     public List<Appointment> getAppointments() {
         return appointments;
     }

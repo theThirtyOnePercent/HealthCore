@@ -3,6 +3,7 @@ package it.unitn.healthcore.domain;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
+import java.util.List;
 
 /**
  * @class Appointment
@@ -18,6 +19,7 @@ import java.time.LocalDateTime;
 public class Appointment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "appointment_id")
     private Integer appointmentId;
 
     @JsonIgnore
@@ -35,7 +37,13 @@ public class Appointment {
     @Column(name = "end_date")
     private LocalDateTime endTime;
 
-    /** @brief Default constructor required by JPA. */
+    @OneToMany (mappedBy = "appointment")
+    @JsonIgnore
+    private List<Diagnosis> diagnoses;
+
+    @OneToOne (mappedBy = "appointment")
+    private Note note;
+
     public Appointment(){}
 
     /**
@@ -51,7 +59,23 @@ public class Appointment {
         this.startTime = startTime;
         this.endTime = endTime;
     }
-    /** @brief Returns the appointment ID. */
+
+    public Note getNote() {
+        return note;
+    }
+
+    public void setNote(Note note) {
+        this.note = note;
+    }
+
+    public List<Diagnosis> getDiagnoses() {
+        return diagnoses;
+    }
+
+    public void setDiagnoses(List<Diagnosis> diagnoses) {
+        this.diagnoses = diagnoses;
+    }
+
     public Integer getAppointmentId() {
         return appointmentId;
     }

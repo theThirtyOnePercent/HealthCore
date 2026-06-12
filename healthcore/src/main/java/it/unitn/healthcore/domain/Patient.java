@@ -16,6 +16,10 @@ public class Patient extends User{
     private InsurancePlan insurancePlan;
     private String triageStatus;
 
+    @OneToMany (mappedBy = "patient")
+    @JsonIgnore
+    private List<Appointment> appointments;
+
     public Patient(){
 
     }
@@ -25,6 +29,24 @@ public class Patient extends User{
         this.healthcareCardNumber = healthcare_card_number;
         this.insurancePlan = null;
         this.triageStatus = "NotInTriage";
+    }
+
+    @Override
+    public String toString() {
+        return "Patient{" +
+                "id=" + getId() +
+                ", name='" + getName() + '\'' +
+                ", surname='" + getSurname() + '\'' +
+                ", email='" + getEmail() + '\'' +
+                '}';
+    }
+
+    public List<Appointment> getAppointments() {
+        return appointments;
+    }
+
+    public void setAppointments(List<Appointment> appointments) {
+        this.appointments = appointments;
     }
 
     public Integer getHealthcareCardNumber() {

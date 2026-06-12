@@ -1,5 +1,6 @@
 package it.unitn.healthcore.controller;
 
+import it.unitn.healthcore.business.AppointmentService;
 import it.unitn.healthcore.business.PatientService;
 import it.unitn.healthcore.domain.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,16 +9,19 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @RestController
 @RequestMapping(path = "patient")
 @PreAuthorize("hasRole('PATIENT')")
 public class PatientController {
     private final PatientService patientService;
+    private final AppointmentService appointmentService;
 
     @Autowired
-    public PatientController (PatientService patientService){
+    public PatientController(PatientService patientService, AppointmentService appointmentService) {
         this.patientService = patientService;
+        this.appointmentService = appointmentService;
     }
 
     @PostMapping(path = "updateInsurance")
@@ -58,6 +62,45 @@ public class PatientController {
                 .append("Hospital: ").append(hospital.getName()).append("\n");
 
         return sb.toString();
+    }
+
+    @GetMapping (path = "appointments")
+    public String viewFutureAppointments(){
+        List<Appointment> appointments = appointmentService.getFutureAppointments();
+
+        StringBuilder sb = new StringBuilder("Next Appointments:\n");
+
+        for (Appointment a : appointments) {
+            sb.append("ID: ").append(a.getAppointmentId())
+                    .append(", Start: ").append(a.getStartTime())
+                    .append(", End: ").append(a.getEndTime())
+                    .append("Doctor: ").append(a.getDoctor())
+                    .append("\n");
+        }
+
+        return sb.toString();
+    }
+
+    @GetMapping (path = "appointments/history")
+    public String viewPastAppointments(){
+        List<Appointment> appointments = appointmentService.getPastAppointments();
+
+        StringBuilder sb = new StringBuilder("Appointment history:\n");
+
+        for (Appointment a : appointments) {
+            sb.append("ID: ").append(a.getAppointmentId())
+                    .append(", Start: ").append(a.getStartTime())
+                    .append(", End: ").append(a.getEndTime())
+                    .append("Doctor: ").append(a.getDoctor())
+                    .append("\n");
+        }
+
+        return sb.toString();
+    }
+
+    @GetMapping(path = "appointment/detail/{appointmentId}")
+    public String viewAppointmentDetail(@PathVariable Integer appointmentId){
+        return appointmentService.getAppointmentDetails(appointmentId);
     }
 
 }
