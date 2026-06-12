@@ -10,18 +10,37 @@ import org.springframework.web.server.ResponseStatusException;
 import java.time.LocalDateTime;
 import java.util.Comparator;
 import java.util.List;
-
+/**
+ * @class AppointmentService
+ * @brief  AppointmentService is a service class that provides business logic related to appointments.
+ *  It interacts with the UserService to retrieve the current user and the AppointmentRepository to access appointment data. 
+ * The service includes methods for retrieving future and past appointments, as well as getting detailed information about specific appointments.
+ * @see UserService
+ * @see AppointmentRepository
+ * @author HealthCore Team
+ * @version 1.0.0
+ * @date 2026-06-11
+ */
 @Service
 public class AppointmentService {
     private final UserService userService;
     private final AppointmentRepository appointmentRepository;
-
+    /** @brief Constructor for the AppointmentService class.
+     * This constructor is used to inject the UserService and AppointmentRepository dependencies into the service.
+     * The @Autowired annotation allows Spring to automatically wire the service when creating an instance of the AppointmentService.
+     * @param userService The service that provides user-related functionalities such as retrieving the current user.
+     * @param appointmentRepository The repository that provides access to appointment data in the database.
+     * */
     @Autowired
     public AppointmentService(UserService userService, AppointmentRepository appointmentRepository) {
         this.userService = userService;
         this.appointmentRepository = appointmentRepository;
     }
-
+    /** @brief Retrieves a list of future appointments for the currently authenticated user.
+     * This method checks the type of the current user (Doctor or Patient) and retrieves their respective appointments. 
+     * It then filters the appointments to include only those that are scheduled for the future (i.e., start time is after the current time) and sorts them by start time in ascending order.
+     * @return A list of future appointments for the current user, sorted by start time.
+     */
     public List<Appointment> getFutureAppointments() {
 
         User user = userService.getCurrentUser();
@@ -46,7 +65,11 @@ public class AppointmentService {
                 .sorted(Comparator.comparing(Appointment::getStartTime))
                 .toList();
     }
-
+    /** @brief Retrieves a list of past appointments for the currently authenticated user.
+     * This method checks the type of the current user (Doctor or Patient) and retrieves their respective appointments. 
+     * It then filters the appointments to include only those that have already occurred (i.e., end time is before the current time) and sorts them by start time in descending order.
+     * @return A list of past appointments for the current user, sorted by start time in descending order.
+     */
     public List<Appointment> getPastAppointments() {
 
         User user = userService.getCurrentUser();
@@ -70,7 +93,12 @@ public class AppointmentService {
                 .sorted(Comparator.comparing(Appointment::getStartTime).reversed())
                 .toList();
     }
-
+    /** @brief Retrieves detailed information about a specific appointment based on the appointment ID.
+     * This method checks the type of the current user (Doctor or Patient) and verifies that they are assigned to the requested appointment. 
+     * If the user is authorized to view the appointment, it returns a string containing detailed information about the appointment, including patient or doctor details and any associated notes or diagnoses.
+     * @param appointmentId The ID of the appointment for which to retrieve details.
+     * @return A string containing detailed information about the specified appointment.
+     */
     public String getAppointmentDetails(Integer appointmentId){
         Appointment appointment = appointmentRepository.findById(appointmentId)
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Appointment not found"));
@@ -111,7 +139,11 @@ public class AppointmentService {
         return sb.toString();
 
     }
-
+    /** @brief Helper method to retrieve detailed information about the patient associated with a specific appointment.
+     * This method constructs a string containing the patient's personal information, triage status, insurance plan (if available), diagnosis history, and any notes associated with the appointment.
+     * @param appointment The appointment for which to retrieve patient details.
+     * @return A string containing detailed information about the patient associated with the specified appointment.
+     */
     private String getPatientDetails(Appointment appointment){
         StringBuilder sb = new StringBuilder();
 
@@ -183,7 +215,11 @@ public class AppointmentService {
 
         return sb.toString();
     }
-
+    /** @brief Helper method to retrieve detailed information about the doctor associated with a specific appointment.
+     * This method constructs a string containing the doctor's personal information, specialization, department, hospital, appointment price, shift schedule, and any notes associated with the appointment.
+     * @param appointment The appointment for which to retrieve doctor details.
+     * @return A string containing detailed information about the doctor associated with the specified appointment.
+     */
     private String getDoctorDetails(Appointment appointment) {
 
         StringBuilder sb = new StringBuilder();

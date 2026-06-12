@@ -51,7 +51,7 @@ public class Doctor extends User{
         this.specialization = null;
         this.appointmentPrice = null;
     }
-
+    /** @brief Creates a Doctor with full credentials.*/
     @Override
     public String toString() {
         return "Doctor{" +
@@ -61,14 +61,12 @@ public class Doctor extends User{
                 ", email='" + getEmail() + '\'' +
                 '}';
     }
-
-
+    /** @brief Appointment getter. */
     public List<Appointment> getAppointments() {
         return appointments;
     }
 
-     /**
-     * @brief Appointment getter.*/
+    /** @brief Appointment setter. */
     public void setAppointments(List<Appointment> appointments) {
         this.appointments = appointments;
     }

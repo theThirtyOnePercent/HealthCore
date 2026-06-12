@@ -59,23 +59,23 @@ public class Appointment {
         this.startTime = startTime;
         this.endTime = endTime;
     }
-
+    /** @brief Returns the appointment ID. */
     public Note getNote() {
         return note;
     }
-
+    /** @brief Sets the note associated with the appointment. */
     public void setNote(Note note) {
         this.note = note;
     }
-
+    /** @brief Returns the list of diagnoses associated with the appointment. */
     public List<Diagnosis> getDiagnoses() {
         return diagnoses;
     }
-
+    /** @brief Sets the list of diagnoses associated with the appointment. */
     public void setDiagnoses(List<Diagnosis> diagnoses) {
         this.diagnoses = diagnoses;
     }
-
+    /** @brief Returns the appointment ID. */
     public Integer getAppointmentId() {
         return appointmentId;
     }

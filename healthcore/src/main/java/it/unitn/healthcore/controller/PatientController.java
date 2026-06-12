@@ -10,32 +10,61 @@ import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
 import java.util.List;
-
+/**
+ * @class PatientController
+ * @brief  PatientController is a REST controller that handles HTTP requests related to patient management and appointment booking for patients. It provides endpoints for patients to manage their insurance plans, view doctor descriptions, book appointments with doctors, and view their appointment history and details.
+ * @see PatientService
+ * @author HealthCore Team
+ * @version 1.0.0
+ * @date 2026-06-11
+ */
 @RestController
 @RequestMapping(path = "patient")
 @PreAuthorize("hasRole('PATIENT')")
 public class PatientController {
     private final PatientService patientService;
     private final AppointmentService appointmentService;
-
+    /** @brief Constructor for the PatientController class.
+     * This constructor is used to inject the PatientService and AppointmentService dependencies into the controller.
+     * The @Autowired annotation allows Spring to automatically wire the services when creating an instance of the controller.
+     * @param patientService The service that provides business logic related to patients.
+     * @param appointmentService The service that provides business logic related to appointments.
+     */
     @Autowired
     public PatientController(PatientService patientService, AppointmentService appointmentService) {
         this.patientService = patientService;
         this.appointmentService = appointmentService;
     }
-
+    /** @brief Retrieves the current insurance plan of the authenticated patient.
+     * This endpoint is accessible only to users with the 'PATIENT' role.
+     * It returns the InsurancePlan object representing the patient's current insurance plan.
+     * @return The current InsurancePlan of the patient.
+     */
     @PostMapping(path = "updateInsurance")
     public InsurancePlan updateInsurancePlan(@RequestParam Integer planId){
         patientService.updateInsurancePlan(planId);
         return patientService.getCurrentInsurancePlan();
     }
-
+    /** @brief Retrieves the current insurance plan of the authenticated patient.
+     * This endpoint is accessible only to users with the 'PATIENT' role.
+     * It returns the InsurancePlan object representing the patient's current insurance plan.
+     * @return The current InsurancePlan of the patient.
+     */
     @GetMapping(path = "doctorDescription/{doctorId}")
     public String getDoctorDescription(
             @PathVariable("doctorId") Integer doctorId) {
 
         return patientService.getDoctorDescription(doctorId);
     }
+    /** @brief Books an appointment with a specified doctor for the authenticated patient.
+     * This endpoint is accessible only to users with the 'PATIENT' role.
+     * It takes the doctor's ID, start time, and end time as parameters and creates an appointment.
+     * It returns a string containing the details of the created appointment, including doctor information, department, and hospital.
+     * @param doctorId The ID of the doctor to book an appointment with.
+     * @param startTime The start time of the appointment.
+     * @param endTime The end time of the appointment.
+     * @return A string containing the details of the booked appointment.
+     */
     @PostMapping(path = "book/{doctorId}")
     public String bookAppointment(@PathVariable Integer doctorId, @RequestParam LocalDateTime startTime, @RequestParam LocalDateTime endTime) {
 
@@ -63,7 +92,11 @@ public class PatientController {
 
         return sb.toString();
     }
-
+    /** @brief Retrieves a list of future appointments for the authenticated patient.
+     * This endpoint is accessible only to users with the 'PATIENT' role.
+     * It returns a string representation of each future appointment, including the appointment ID, start and end times, and doctor information.
+     * @return A string containing the details of future appointments for the patient.
+     */
     @GetMapping (path = "appointments")
     public String viewFutureAppointments(){
         List<Appointment> appointments = appointmentService.getFutureAppointments();
@@ -80,7 +113,11 @@ public class PatientController {
 
         return sb.toString();
     }
-
+    /** @brief Retrieves a list of past appointments for the authenticated patient.
+     * This endpoint is accessible only to users with the 'PATIENT' role.
+     * It returns a string representation of each past appointment, including the appointment ID, start and end times, and doctor information.
+     * @return A string containing the details of past appointments for the patient.
+     */
     @GetMapping (path = "appointments/history")
     public String viewPastAppointments(){
         List<Appointment> appointments = appointmentService.getPastAppointments();
@@ -97,7 +134,12 @@ public class PatientController {
 
         return sb.toString();
     }
-
+    /** @brief Retrieves the details of a specific appointment by its ID.
+     * This endpoint is accessible only to users with the 'PATIENT' role.
+     * It returns a string containing the details of the appointment, including doctor information, diagnosis history, and any notes associated with the appointment.
+     * @param appointmentId The ID of the appointment to retrieve.
+     * @return A string containing the details of the specified appointment.
+     */
     @GetMapping(path = "appointment/detail/{appointmentId}")
     public String viewAppointmentDetail(@PathVariable Integer appointmentId){
         return appointmentService.getAppointmentDetails(appointmentId);

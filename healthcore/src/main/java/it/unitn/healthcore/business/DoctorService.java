@@ -14,14 +14,29 @@ import java.time.LocalDateTime;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
-
+/** @class DoctorService
+ * @brief  DoctorService is a service class that provides business logic related to doctor management and scheduling. It interacts with the DoctorRepository, ShiftRepository, UserService, and AppointmentRepository to perform operations such as retrieving doctor information, managing shifts, and handling appointments. The service ensures that doctors' schedules adhere to constraints such as maximum weekly hours and non-overlapping shifts.
+ * @see DoctorRepository
+ * @see ShiftRepository
+ * @see UserService
+ * @see AppointmentRepository
+ * @author HealthCore Team
+ * @version 1.0.0
+ * @date 2026-06-11
+ */
 @Service
 public class DoctorService {
     private final DoctorRepository doctorRepository;
     private final ShiftRepository shiftRepository;
     private final UserService userService;
     private final AppointmentRepository appointmentRepository;
-
+    /** @brief Constructor for the DoctorService class.
+     * This constructor is used to inject the DoctorRepository, ShiftRepository, UserService, and AppointmentRepository dependencies into the service. The @Autowired annotation allows Spring to automatically wire the service when creating an instance of the DoctorService.
+     * @param doctorRepository The repository that provides access to doctor data in the database.
+     * @param shiftRepository The repository that provides access to shift data in the database.
+     * @param userService The service that provides user-related functionalities such as retrieving the current user.
+     * @param appointmentRepository The repository that provides access to appointment data in the database for managing doctor appointments and schedules.
+     * */
     @Autowired
     public DoctorService(DoctorRepository doctorRepository, ShiftRepository shiftRepository, UserService userService, AppointmentRepository appointmentRepository) {
         this.doctorRepository = doctorRepository;
@@ -29,11 +44,19 @@ public class DoctorService {
         this.userService = userService;
         this.appointmentRepository = appointmentRepository;
     }
-
+    /** @brief Retrieves a list of all doctors in the system.
+     * This method interacts with the DoctorRepository to fetch all doctor records from the database and returns them as a list.
+     * @return A list of all doctors in the system.
+     */
     public List<Doctor> getAllDoctors(){
         return doctorRepository.findAll();
     }
-
+    /** @brief Retrieves detailed information about a specific doctor based on the doctor ID.
+     * This method interacts with the DoctorRepository to find a doctor by their ID. If the doctor is found, it returns the Doctor object; otherwise, it throws a ResponseStatusException with a 404 NOT FOUND status.
+     * @param id The ID of the doctor to retrieve.
+     * @return The Doctor object corresponding to the specified ID.
+     * @throws ResponseStatusException if the doctor with the specified ID is not found in the database.
+     */
     public Doctor findDoctor(Integer id){
         Optional<Doctor> doctor = doctorRepository.findById(id);
         if (doctor.isEmpty()){
@@ -42,7 +65,11 @@ public class DoctorService {
 
         return doctor.get();
     }
-
+    /** @brief Retrieves the doctor associated with the currently authenticated user.
+     * This method uses the UserService to get the current user and checks if the user is an instance of Doctor. If so, it returns the Doctor object; otherwise, it throws a ResponseStatusException with a 403 FORBIDDEN status.
+     * @return The Doctor object corresponding to the currently authenticated user.
+     * @throws ResponseStatusException if the current user is not a doctor or if there is an issue retrieving the doctor information.
+     */
     private long getHours(LocalDateTime start,
                           LocalDateTime end) {
 
@@ -51,6 +78,13 @@ public class DoctorService {
                 .toHours();
     }
 
+    /** @brief Helper method to calculate the total number of hours a doctor is scheduled to work in a given week.
+     * This method iterates through the doctor's shifts and sums the hours of those that fall within the specified week (between weekStart and weekEnd). It returns the total number of hours scheduled for that week.
+     * @param doctor The doctor for whom to calculate weekly hours.
+     * @param weekStart The start date and time of the week for which to calculate hours.
+     * @param weekEnd The end date and time of the week for which to calculate hours.
+     * @return The total number of hours the doctor is scheduled to work in the specified week.
+     */
     private long calculateWeeklyHours(Doctor doctor,
                                       LocalDateTime weekStart,
                                       LocalDateTime weekEnd) {
@@ -68,7 +102,13 @@ public class DoctorService {
 
         return total;
     }
-
+    /** @brief Helper method to check if a proposed shift overlaps with an existing shift for a doctor.
+     * This method compares the start and end times of the proposed shift with those of an existing shift to determine if there is any overlap. It returns true if the proposed shift overlaps with the existing shift, and false otherwise.
+     * @param shift The existing shift to compare against.
+     * @param newStart The start date and time of the proposed new shift.
+     * @param newEnd The end date and time of the proposed new shift.
+     * @return true if the proposed shift overlaps with the existing shift; false otherwise.
+     */
     private boolean overlaps(Shift shift,
                              LocalDateTime newStart,
                              LocalDateTime newEnd) {
@@ -76,7 +116,12 @@ public class DoctorService {
         return newStart.isBefore(shift.getEndTime())
                 && newEnd.isAfter(shift.getStartTime());
     }
-
+    /** @brief Helper method to retrieve a specific shift based on its ID.
+     * This method interacts with the ShiftRepository to find a shift by its ID. If the shift is found, it returns the Shift object; otherwise, it throws a ResponseStatusException with a 404 NOT FOUND status.
+     * @param shiftId The ID of the shift to retrieve.
+     * @return The Shift object corresponding to the specified ID.
+     * @throws ResponseStatusException if the shift with the specified ID is not found in the database.
+     */
     private Shift findShift(Integer shiftId) {
 
         return shiftRepository.findById(shiftId)
@@ -85,7 +130,11 @@ public class DoctorService {
                                 HttpStatus.NOT_FOUND,
                                 "shift not found"));
     }
-
+    /** @brief Helper method to retrieve detailed information about a doctor associated with a specific appointment.
+     * This method constructs a string containing the doctor's personal information, specialization, department, hospital, appointment price, shift schedule, and any notes associated with the appointment.
+     * @param appointment The appointment for which to retrieve doctor details.
+     * @return A string containing detailed information about the doctor associated with the specified appointment.
+     */
     @Transactional
     public void addShift(Integer id, LocalDateTime startTime, LocalDateTime endTime) {
 
@@ -118,7 +167,11 @@ public class DoctorService {
         shiftRepository.save(shift);
         shiftRepository.saveAndFlush(shift);
     }
-
+    /** @brief Helper method to delete a specific shift based on its ID.
+     * This method interacts with the ShiftRepository to find and delete a shift by its ID. If the shift is found, it is deleted from the database; otherwise, it throws a ResponseStatusException with a 404 NOT FOUND status.
+     * @param shiftId The ID of the shift to delete.
+     * @throws ResponseStatusException if the shift with the specified ID is not found in the database.
+     */
     @Transactional
     public void deleteShift(Integer shiftId) {
 
@@ -130,7 +183,11 @@ public class DoctorService {
         shiftRepository.flush();
         doctorRepository.flush();
     }
-
+    /** @brief Helper method to retrieve detailed information about a doctor associated with a specific appointment.
+     * This method constructs a string containing the doctor's personal information, specialization, department, hospital, appointment price, shift schedule, and any notes associated with the appointment.
+     * @param appointment The appointment for which to retrieve doctor details.
+     * @return A string containing detailed information about the doctor associated with the specified appointment.
+     */
     @Transactional
     public void modifyShift(Integer shiftId, LocalDateTime startTime, LocalDateTime endTime) {
 
@@ -172,7 +229,11 @@ public class DoctorService {
 
         shiftRepository.saveAndFlush(shift);
     }
-
+    /** @brief Retrieves the shifts of the currently authenticated doctor.
+     * This method uses the UserService to get the current user and checks if the user is an instance of Doctor. If so, it retrieves and returns a list of the doctor's shifts sorted by start time. If the current user is not a doctor, it throws a ResponseStatusException with a 403 FORBIDDEN status.
+     * @return A list of shifts for the currently authenticated doctor, sorted by start time.
+     * @throws ResponseStatusException if the current user is not a doctor or if there is an issue retrieving the doctor information.
+     */
     public List<Shift> getCurrentDoctorShifts() {
         Doctor doctor = (Doctor) userService.getCurrentUser();
         return doctor.getShifts().stream()

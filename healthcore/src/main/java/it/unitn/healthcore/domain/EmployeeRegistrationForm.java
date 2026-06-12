@@ -13,7 +13,7 @@ public class EmployeeRegistrationForm extends PasswordConfirmationForm{
     private Integer departmentId;
     /** @brief Default constructor required by JPA.*/
     public EmployeeRegistrationForm(){}
-    /** @brief Default constructor required by JPA.*/
+    /** @brief Creates an EmployeeRegistrationForm with full credentials. */
     public EmployeeRegistrationForm(String email, String password, String passwordConfirmation, String name, String surname, String role, Integer departmentId) {
         super(email, password, passwordConfirmation);
         this.name = name;
@@ -21,7 +21,7 @@ public class EmployeeRegistrationForm extends PasswordConfirmationForm{
         this.role = role;
         this.departmentId = departmentId;
     }
-    /** @brief Default constructor required by JPA.*/
+    /** @brief Creates an EmployeeRegistrationForm with full credentials except department ID, which can be set later. */
     public EmployeeRegistrationForm(String email, String password, String passwordConfirmation, String name, String role, String surname) {
         super(email, password, passwordConfirmation);
         this.name = name;

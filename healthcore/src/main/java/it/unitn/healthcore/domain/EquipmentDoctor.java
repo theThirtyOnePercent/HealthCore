@@ -15,6 +15,7 @@ import jakarta.persistence.*;
 @Entity
 @Table(name = "equipments_doctors")
 public class EquipmentDoctor {
+    /** @brief Default constructor required by JPA. */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -33,7 +34,7 @@ public class EquipmentDoctor {
     public EquipmentDoctor(){}
 
     /**
-     * @brief Creates an Equipment entry for a given department.
+     * @brief Create
      * @param equipment    The department this equipment belongs to.
      * @param doctor    The doctor conducting the appointment.
      * @param quantity      The available quantity.

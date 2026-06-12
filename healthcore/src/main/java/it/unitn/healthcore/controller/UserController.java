@@ -48,10 +48,10 @@ public class UserController {
                 .build();
     }
 
-    /**
+   /**
      * @brief 
-     * @param 
-     * @details
+     * @param EmployeeRegistrationForm The form containing the necessary information for registering a new employee user (e.g., doctor or administrator).
+     * @detail The service that provides user-related functionalities such as registration, profile updates, password recovery, and OTP verification.
      */
     @PostMapping(path = "employeeRegistration")
     @PreAuthorize("hasRole('ADMINISTRATOR')")
@@ -159,10 +159,10 @@ public class UserController {
     }
 
     /**
-    * @brief 
-    * @param
-    * @return 
-    */
+     * @brief handle the profile update request by updating the user's profile information and redirecting to the profile view page.
+     * @param ProfileUpdateForm The form containing the updated profile information for the user.
+     * @return A ResponseEntity that redirects the user to the profile view page after successfully updating their profile information.
+     */
     @PutMapping(path = "profileUpdate")
     public ResponseEntity<Void> updateProfile(@RequestBody ProfileUpdateForm profileUpdateForm){
         userService.updateUserProfile(profileUpdateForm);
@@ -171,7 +171,11 @@ public class UserController {
                 .header("Location", "/viewProfile")
                 .build();
     }
-
+    /** @brief Retrieves the profile information of the currently authenticated user.
+     * This endpoint is accessible to all authenticated users.
+     * It returns a User object containing the details of the current user, such as name, surname, and email.
+     * @return A User object with the current user's profile information.
+     */
     @GetMapping (path = "viewProfile")
     public User viewProfile (){
         return userService.getCurrentUser();

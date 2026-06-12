@@ -7,7 +7,8 @@ import jakarta.persistence.Table;
 /**
  * @class Administrator
  * @brief Administrator entity mapped to the "administrators" table, extends User.
- *
+ * @detail This class represents an administrator in the system, with all the properties and behaviors of a User. 
+ * @detail Administrators have elevated privileges for managing the system.
  * @author HealthCore Team
  * @version 1.0.0
  * @date 2026-06-12

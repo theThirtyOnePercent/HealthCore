@@ -6,8 +6,20 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.time.LocalDateTime;
 import java.util.List;
 
+/**
+ * @interface AppointmentRepository
+ * @brief Repository interface for managing Appointment entities in the database.
+ * It extends JpaRepository to provide CRUD operations and custom query methods.
+ * This interface is used by the service layer to interact with the persistence layer.
+ * @see JpaRepository
+ * @author HealthCore Team
+ * @version 1.0.0
+ * @date 2026-06-11
+ */
 public interface AppointmentRepository extends JpaRepository<Appointment, Integer> {
+    /** @brief Finds all appointments associated with a specific doctor. */
     List<Appointment> findByDoctorId(Integer doctorId);
+    /** @brief Finds all appointments for a doctor that overlap with a given time range. */
     List<Appointment> findByDoctorIdAndStartTimeLessThanAndEndTimeGreaterThan(
             Integer doctorId,
             LocalDateTime end,
