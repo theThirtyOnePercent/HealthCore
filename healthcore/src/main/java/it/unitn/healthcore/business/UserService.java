@@ -110,7 +110,7 @@ public class UserService implements UserDetailsService {
     }
 
     public void registerPatient (PatientRegistrationForm user){
-        isValidPasswordForm(user);
+        user.isValidPasswordForm();
 
         if (!isValidCard(user.getHealthcareCardNumber())){
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST,"the healthcare card number is not valid");
@@ -127,7 +127,7 @@ public class UserService implements UserDetailsService {
 
     public void registerEmployee (EmployeeRegistrationForm user){
 
-        isValidPasswordForm(user);
+        user.isValidPasswordForm();
 
         if (user.getRole().equals("Doctor")){
             registerDoctor(user);
@@ -171,65 +171,13 @@ public class UserService implements UserDetailsService {
                     HttpStatus.UNAUTHORIZED,"otp was not verified");
         }
 
-        isValidPasswordForm(request);
+        request.isValidPasswordForm();
 
         User user = userRepository.findUserByEmail(request.getEmail()).orElseThrow(
                 ()-> new ResponseStatusException(HttpStatus.NOT_FOUND, "user not found")
         );
 
         user.setPassword(passwordEncoder.encode(request.getPassword()));
-    }
-
-    private void isValidPasswordForm (PasswordConfirmationForm form){
-
-        //Checks if it is not null
-        if (form.getPassword() == null || form.getPasswordConfirmation() == null){
-            throw new ResponseStatusException(
-                    HttpStatus.BAD_REQUEST,"password was not given");
-        }
-
-        if (!isValidEmail(form.getEmail())){
-            throw new ResponseStatusException(
-                    HttpStatus.BAD_REQUEST,"email is not valid");
-        }
-
-        //Checks if they are the same
-        if (!form.getPassword().equals(form.getPasswordConfirmation())){
-            throw new ResponseStatusException(
-                    HttpStatus.BAD_REQUEST,"password does not match with password confirmation");
-        }
-        //Checks if it complies with the guidelines
-        if (!isValidPassword(form.getPassword())){
-            throw new ResponseStatusException(
-                    HttpStatus.BAD_REQUEST,"password does not meet security requirements");
-        }
-    }
-
-    private Boolean isValidPassword(String password){
-        if (password == null) {
-            return false;
-        }
-
-        // at least 8 chars, one uppercase, one lowercase, one digit, one special char
-        String passwordRegex =
-                "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[^a-zA-Z0-9]).{8,}$";
-
-        return password.matches(passwordRegex);
-    }
-
-    private boolean isValidEmail(String email) {
-        if (email == null) {
-            return false;
-        }
-
-        //checks for allowed characters (letters, numbers, and ._%+-),
-        // followed by a single @ symbol,
-        // then a valid domain name containing letters, numbers, dots, or hyphens,
-        // and finally a domain extension with at least two letters (e.g., .com, .it)
-        String emailRegex =
-                "^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$";
-
-        return email.matches(emailRegex);
     }
 
     private Boolean isValidCard(Integer card){
