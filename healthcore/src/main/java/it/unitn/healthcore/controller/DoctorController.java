@@ -2,10 +2,7 @@ package it.unitn.healthcore.controller;
 
 import it.unitn.healthcore.business.AppointmentService;
 import it.unitn.healthcore.business.DoctorService;
-import it.unitn.healthcore.domain.Appointment;
-import it.unitn.healthcore.domain.Doctor;
-import it.unitn.healthcore.domain.Hospital;
-import it.unitn.healthcore.domain.Shift;
+import it.unitn.healthcore.domain.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -176,6 +173,18 @@ public class DoctorController {
     @PreAuthorize("hasRole('DOCTOR')")
     public String viewAppointmentDetail(@PathVariable Integer appointmentId){
         return appointmentService.getAppointmentDetails(appointmentId);
+    }
+
+    @GetMapping(path = "availableDepartments")
+    @PreAuthorize("hasRole('ADMINISTRATOR')")
+    public List<Department> viewAvailableDepartments(){
+        return doctorService.getAvailableDepartments();
+    }
+
+    @PostMapping (path = "changeDepartment/{doctorId}")
+    @PreAuthorize("hasRole('ADMINISTRATOR')")
+    public void changeDepartment(@PathVariable Integer doctorId, @RequestParam Integer departmentId){
+        doctorService.changeDepartment(doctorId, departmentId);
     }
 
 }

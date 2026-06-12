@@ -54,10 +54,6 @@ public class UserService implements UserDetailsService {
                 .orElseThrow(() -> new UsernameNotFoundException("User not found"));
     }
 
-    public List<User> getUsers(){
-        return this.userRepository.findAll();
-    }
-
     public Boolean verifyOtp(String otp){
         //Here the otp verification logic would be implemented
         //However, we are not implementing the email notification
@@ -150,9 +146,7 @@ public class UserService implements UserDetailsService {
         int occupiedPositions = department.getDoctors().size();
 
         if (occupiedPositions >= department.getTotalStaffPositions()) {
-            throw new ResponseStatusException(
-                    HttpStatus.BAD_REQUEST,
-                    "Department has no available staff positions");
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Department has no available staff positions");
         }
 
         Doctor new_user = new Doctor(user.getName(), user.getSurname(), user.getEmail(), user.getPassword(), department);

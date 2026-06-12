@@ -2,6 +2,7 @@ package it.unitn.healthcore.business;
 
 import it.unitn.healthcore.domain.*;
 import it.unitn.healthcore.persistence.AppointmentRepository;
+import it.unitn.healthcore.persistence.DepartmentRepository;
 import it.unitn.healthcore.persistence.DoctorRepository;
 import it.unitn.healthcore.persistence.ShiftRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,20 +30,20 @@ public class DoctorService {
     private final DoctorRepository doctorRepository;
     private final ShiftRepository shiftRepository;
     private final UserService userService;
-    private final AppointmentRepository appointmentRepository;
+    private final DepartmentRepository departmentRepository;
     /** @brief Constructor for the DoctorService class.
      * This constructor is used to inject the DoctorRepository, ShiftRepository, UserService, and AppointmentRepository dependencies into the service. The @Autowired annotation allows Spring to automatically wire the service when creating an instance of the DoctorService.
      * @param doctorRepository The repository that provides access to doctor data in the database.
      * @param shiftRepository The repository that provides access to shift data in the database.
      * @param userService The service that provides user-related functionalities such as retrieving the current user.
-     * @param appointmentRepository The repository that provides access to appointment data in the database for managing doctor appointments and schedules.
+     * @param departmentRepository The repository that provides access to department data in the database.
      * */
     @Autowired
-    public DoctorService(DoctorRepository doctorRepository, ShiftRepository shiftRepository, UserService userService, AppointmentRepository appointmentRepository) {
+    public DoctorService(DoctorRepository doctorRepository, ShiftRepository shiftRepository, UserService userService, DepartmentRepository departmentRepository) {
         this.doctorRepository = doctorRepository;
         this.shiftRepository = shiftRepository;
         this.userService = userService;
-        this.appointmentRepository = appointmentRepository;
+        this.departmentRepository = departmentRepository;
     }
     /** @brief Retrieves a list of all doctors in the system.
      * This method interacts with the DoctorRepository to fetch all doctor records from the database and returns them as a list.
@@ -124,11 +125,7 @@ public class DoctorService {
      */
     private Shift findShift(Integer shiftId) {
 
-        return shiftRepository.findById(shiftId)
-                .orElseThrow(() ->
-                        new ResponseStatusException(
-                                HttpStatus.NOT_FOUND,
-                                "shift not found"));
+        return shiftRepository.findById(shiftId).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "shift not found"));
     }
     /** @brief Helper method to retrieve detailed information about a doctor associated with a specific appointment.
      * This method constructs a string containing the doctor's personal information, specialization, department, hospital, appointment price, shift schedule, and any notes associated with the appointment.
@@ -241,4 +238,34 @@ public class DoctorService {
                 .toList();
     }
 
+    public List<Department> getAvailableDepartments(){
+        List<Department> departments = departmentRepository.findAll();
+
+        for (Department department: departments){
+            // Check if department has a free position for a potential new doctor
+            int occupiedPositions = department.getDoctors().size();
+
+            if (occupiedPositions >= department.getTotalStaffPositions()) {
+               departments.remove(department);
+            }
+        }
+
+        return departments;
+    }
+
+    @Transactional
+    public void changeDepartment(Integer doctorId, Integer departmentId){
+        Doctor doctor = doctorRepository.findById(doctorId).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "doctor not found"));
+
+        Department department = departmentRepository.findById(departmentId).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Department not found"));
+
+        // Check if department has a free position for the new doctor
+        int occupiedPositions = department.getDoctors().size();
+
+        if (occupiedPositions >= department.getTotalStaffPositions()) {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Department has no available staff positions");
+        }
+
+        doctor.setDepartment(department);
+    }
 }

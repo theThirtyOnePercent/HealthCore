@@ -6,12 +6,12 @@ import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.time.LocalDateTime;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 /** @class PatientService
  * @brief  PatientService is a service class that provides business logic related to patient management. It interacts with the InsurancePlanRepository,
@@ -172,41 +172,11 @@ public class PatientService{
     public Appointment bookAppointment(Integer doctorId, LocalDateTime start, LocalDateTime end) {
 
         Patient patient = (Patient) userService.getCurrentUser();
-        if (!start.isBefore(end)) {
-            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Start must be before end");
-        }
         // Check doctor existence
         Doctor doctor = doctorRepository.findById(doctorId)
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Doctor not found"));
 
-        // Check if it is during doctor shift time
-
-        boolean insideShift = doctor.getShifts().stream()
-                .anyMatch(shift -> !start.isBefore(shift.getStartTime()) && !end.isAfter(shift.getEndTime()));
-
-        if (!insideShift) {
-            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Doctor is not working during the requested time");
-        }
-
-        // Check doctor overlap
-        for (Appointment a : doctor.getAppointments()) {
-            if (overlap(start, end, a.getStartTime(), a.getEndTime())) {
-                throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Doctor already has an appointment at this time");
-            }
-        }
-
-        // Check bed availability (department level)
-        Department department = doctor.getDepartment();
-
-        long overlappingAppointments = doctor.getAppointments().stream()
-                .filter(a -> overlap(start, end, a.getStartTime(), a.getEndTime()))
-                .count();
-
-        if (overlappingAppointments >= department.getBeds()) {
-            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "No beds available in department at this time");
-        }
-
-        // Check equipment availability
+        validateAppointment(patient, doctor, start, end, null);
 
         // Check insurance
         Hospital hospital = doctor.getDepartment().getHospital();
@@ -225,6 +195,7 @@ public class PatientService{
 
         // Create appointment
 
+
         if (!canProceed) {
             throw new ResponseStatusException(HttpStatus.UNAUTHORIZED, "Payment was not successful");
         }
@@ -235,4 +206,149 @@ public class PatientService{
         return appointment;
 
     }
+
+    public void modifyAppointment(Integer appointmentId,LocalDateTime startTime, LocalDateTime endTime){
+        Appointment appointment = appointmentRepository.findById(appointmentId)
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Appointment not found"));
+
+        Patient patient = (Patient) userService.getCurrentUser();
+
+
+        if (!appointment.getPatient().getId().equals(patient.getId())) {
+            throw new ResponseStatusException(
+                    HttpStatus.FORBIDDEN, "You are not assigned to this appointment");
+        }
+
+        //Check if the appointment hasn't already started
+        if (!appointment.getStartTime().isAfter(LocalDateTime.now())) {
+            throw new ResponseStatusException(
+                    HttpStatus.BAD_REQUEST,
+                    "Cannot modify an appointment that has already started");
+        }
+
+        validateAppointment(patient, appointment.getDoctor(), startTime, endTime, appointmentId);
+
+        appointment.setStartTime(startTime);
+        appointment.setEndTime(endTime);
+
+        appointmentRepository.save(appointment);
+    }
+
+    private void validateAppointment(
+            Patient patient,
+            Doctor doctor,
+            LocalDateTime start,
+            LocalDateTime end,
+            Integer excludedAppointmentId) {
+
+        if (!start.isBefore(end)) {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Start must be before end");
+        }
+
+        // Check if it is during doctor shift time
+        boolean insideShift = doctor.getShifts().stream()
+                .anyMatch(shift -> !start.isBefore(shift.getStartTime()) && !end.isAfter(shift.getEndTime()));
+
+        if (!insideShift) {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Doctor is not working during the requested time");
+        }
+
+        // Check doctor overlap
+        for (Appointment a : doctor.getAppointments()) {
+            if (a.getAppointmentId().equals(excludedAppointmentId)) {
+                continue;
+            }
+            if (overlap(start, end, a.getStartTime(), a.getEndTime())) {
+                throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Doctor already has an appointment at this time");
+            }
+        }
+
+
+        // Check bed availability (department level)
+        Department department = doctor.getDepartment();
+
+        long overlappingAppointments = doctor.getAppointments().stream()
+                .filter(a -> overlap(start, end, a.getStartTime(), a.getEndTime()))
+                .count();
+
+        if (overlappingAppointments >= department.getBeds()) {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "No beds available in department at this time");
+        }
+
+        // Check equipment availability
+
+        checkEquipmentAvailability(doctor, start, end, excludedAppointmentId);
+    }
+
+    private void checkEquipmentAvailability(Doctor doctor, LocalDateTime start, LocalDateTime end, Integer excludedAppointmentId){
+
+        Department department = doctor.getDepartment();
+
+        //Find overlapping appointments
+
+        List<Appointment> overlappingAppointments =
+                appointmentRepository.findAll().stream()
+                        .filter(a -> !a.getAppointmentId().equals(excludedAppointmentId))
+                        .filter(a -> a.getDoctor().getDepartment().getDepartmentId()
+                                        .equals(department.getDepartmentId()))
+                        .filter(a -> overlap(start, end, a.getStartTime(), a.getEndTime()))
+                        .toList();
+
+        //Check equipments in use
+
+        Map<Integer, Integer> equipmentInUse = new HashMap<>();
+        for (Appointment appointment : overlappingAppointments) {
+
+            Doctor otherDoctor = appointment.getDoctor();
+
+            for (EquipmentDoctor equipmentDoctor : otherDoctor.getEquipments()) {
+
+                Integer equipmentId = equipmentDoctor.getEquipment().getEquipmentId();
+
+                equipmentInUse.merge(equipmentId, equipmentDoctor.getQuantity(), Integer::sum);
+            }
+        }
+
+        //Check if new doctor won't cause the equipment maximum to be reached
+
+        for (EquipmentDoctor required : doctor.getEquipments()) {
+
+            Equipment equipment = required.getEquipment();
+
+            int currentlyUsed = equipmentInUse.getOrDefault(equipment.getEquipmentId(), 0);
+            int totalRequired = currentlyUsed + required.getQuantity();
+
+            if (totalRequired > equipment.getQuantity()) {
+                throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Not enough " + equipment.getEquipmentType() + " available");
+            }
+        }
+    }
+
+    public void cancelAppointment (Integer appointmentId){
+        Appointment appointment = appointmentRepository.findById(appointmentId)
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Appointment not found"));
+
+        Patient patient = (Patient) userService.getCurrentUser();
+
+        // Check if the appointment belongs to the patient
+        if (!appointment.getPatient().getId().equals(patient.getId())) {
+            throw new ResponseStatusException(HttpStatus.FORBIDDEN, "You are not assigned to this appointment");
+        }
+
+
+        //Check if operation is happening within 24h. It's not, they receive a refund
+
+        if (appointment.getStartTime().isAfter(LocalDateTime.now().plusHours(24))) {
+            refundPayment(patient);
+        }
+
+        //Delete
+
+        appointmentRepository.deleteById(appointmentId);
+    }
+
+    private void refundPayment(Patient patient){
+        //This is where the system would contact the payment system to perform the refund
+    }
+
 }
