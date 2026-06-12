@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
 @Table(name = "appointments")
@@ -27,6 +28,10 @@ public class Appointment {
     @Column(name = "end_date")
     private LocalDateTime endTime;
 
+    @OneToMany (mappedBy = "appointment")
+    @JsonIgnore
+    private List<Diagnosis> diagnoses;
+
     public Appointment(){}
 
     public Appointment(Patient patient, Doctor doctor, LocalDateTime startTime, LocalDateTime endTime) {
@@ -34,6 +39,14 @@ public class Appointment {
         this.doctor = doctor;
         this.startTime = startTime;
         this.endTime = endTime;
+    }
+
+    public List<Diagnosis> getDiagnoses() {
+        return diagnoses;
+    }
+
+    public void setDiagnoses(List<Diagnosis> diagnoses) {
+        this.diagnoses = diagnoses;
     }
 
     public Integer getAppointmentId() {

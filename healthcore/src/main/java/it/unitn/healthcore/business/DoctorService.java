@@ -12,6 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.time.LocalDateTime;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 
@@ -173,7 +174,9 @@ public class DoctorService {
 
     public List<Shift> getCurrentDoctorShifts() {
         Doctor doctor = (Doctor) userService.getCurrentUser();
-        return doctor.getShifts();
+        return doctor.getShifts().stream()
+                .sorted(java.util.Comparator.comparing(Shift::getStartTime))
+                .toList();
     }
 
     public List<Appointment> getFutureAppointments() {
@@ -183,6 +186,7 @@ public class DoctorService {
 
         return doctor.getAppointments().stream()
                 .filter(a -> a.getStartTime().isAfter(now))
+                .sorted(Comparator.comparing(Appointment::getStartTime))
                 .toList();
     }
 
@@ -194,6 +198,7 @@ public class DoctorService {
         return doctor.getAppointments()
                 .stream()
                 .filter(a -> a.getEndTime().isBefore(now))
+                .sorted(Comparator.comparing(Appointment::getStartTime).reversed())
                 .toList();
     }
 
