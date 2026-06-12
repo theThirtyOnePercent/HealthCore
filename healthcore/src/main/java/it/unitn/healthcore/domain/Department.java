@@ -25,6 +25,10 @@ public class Department {
     private Integer beds;
     private Integer totalStaffPositions;
 
+    @OneToMany(mappedBy = "department")
+    @JsonIgnore
+    private List<Doctor> doctors;
+
     public Department(){}
 
     public Department(Hospital hospital, String name, Integer beds, Integer totalStaffPositions) {
@@ -32,6 +36,22 @@ public class Department {
         this.name = name;
         this.beds = beds;
         this.totalStaffPositions = totalStaffPositions;
+    }
+
+    public List<Equipment> getEquipments() {
+        return equipments;
+    }
+
+    public void setEquipments(List<Equipment> equipments) {
+        this.equipments = equipments;
+    }
+
+    public List<Doctor> getDoctors() {
+        return doctors;
+    }
+
+    public void setDoctors(List<Doctor> doctors) {
+        this.doctors = doctors;
     }
 
     public Integer getDepartmentId() {
