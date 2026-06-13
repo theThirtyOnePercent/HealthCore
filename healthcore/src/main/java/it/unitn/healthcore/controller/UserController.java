@@ -181,15 +181,5 @@ public class UserController {
         return userService.getCurrentUser();
     }
 
-
-    //These functions are not part of the requirements
-    //We can delete them later
-
-    @GetMapping(path = "allUsers")
-    public List<User> getAllUsers(){
-        return userService.getUsers();
-    }
-
-
 }
 

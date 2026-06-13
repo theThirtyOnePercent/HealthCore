@@ -145,4 +145,14 @@ public class PatientController {
         return appointmentService.getAppointmentDetails(appointmentId);
     }
 
+    @PostMapping(path = "appointment/modify/{appointmentId}")
+    public void modifyAppointment (@PathVariable Integer appointmentId, @RequestParam LocalDateTime startTime, @RequestParam LocalDateTime endTime){
+        patientService.modifyAppointment(appointmentId, startTime, endTime);
+    }
+
+    @PostMapping(path = "appointment/cancel/{appointmentId}")
+    public void cancelAppointment (@PathVariable Integer appointmentId){
+        patientService.cancelAppointment(appointmentId);
+    }
+
 }

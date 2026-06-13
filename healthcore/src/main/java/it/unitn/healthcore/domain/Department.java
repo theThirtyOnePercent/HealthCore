@@ -31,7 +31,9 @@ public class Department {
     private String name;
     private Integer beds;
     private Integer totalStaffPositions;
+
     /** @brief Default constructor required by JPA. */
+
 
     @OneToMany(mappedBy = "department")
     @JsonIgnore
@@ -45,7 +47,6 @@ public class Department {
         this.beds = beds;
         this.totalStaffPositions = totalStaffPositions;
     }
-    /** @brief Creates a Department . */
     public List<Equipment> getEquipments() {
         return equipments;
     }

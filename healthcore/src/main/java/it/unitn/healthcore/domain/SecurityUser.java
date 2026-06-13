@@ -24,19 +24,18 @@ public class SecurityUser implements UserDetails {
     public SecurityUser(User user){
         this.user = user;
     }
-    /* @brief Returns the authorities granted to the user. In this implementation, it maps the user's role to a Spring Security authority.
+
+    /** @brief Returns the authorities granted to the user. In this implementation, it maps the user's role to a Spring Security authority.
      * @detail The role is prefixed with "ROLE_" to conform to Spring Security's convention for role names.
      * @return A collection of GrantedAuthority representing the user's roles and permissions.
      */
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities(){
-        //String role = user.getRole();
-        //String prefixedRole = role.startsWith("ROLE_") ? role: "ROLE_" + role;
         String role = "ROLE_" + user.getClass().getSimpleName().toUpperCase();
         return List.of(new SimpleGrantedAuthority(role));
     }
 
-    /* @brief Returns the password used to authenticate the user. In this implementation, it retrieves the password from the underlying User entity.
+    /** @brief Returns the password used to authenticate the user. In this implementation, it retrieves the password from the underlying User entity.
      * @return The user's password as a String.
      */
     @Override
@@ -44,7 +43,7 @@ public class SecurityUser implements UserDetails {
         return user.getPassword();
     }
 
-    /* @brief Returns the username used to authenticate the user. In this implementation, it retrieves the email from the underlying User entity as the username.
+    /** @brief Returns the username used to authenticate the user. In this implementation, it retrieves the email from the underlying User entity as the username.
      * @return The user's email as a String, which serves as the username for authentication purposes.
      */
     @Override
@@ -52,11 +51,9 @@ public class SecurityUser implements UserDetails {
         return user.getEmail();
     }
 
-    /* @brief Indicates whether the user's account has expired. In this implementation, it always returns true, indicating that accounts do not expire.
+    /** @brief Indicates whether the user's account has expired. In this implementation, it always returns true, indicating that accounts do not expire.
      * @return true, indicating that the user's account is non-expired.
      */
-    @Override public boolean isAccountNonExpired() { return true; }
-    @Override public boolean isAccountNonLocked() { return true; }
-    @Override public boolean isCredentialsNonExpired() { return true; }
+
     @Override public boolean isEnabled() { return true; }
 }
