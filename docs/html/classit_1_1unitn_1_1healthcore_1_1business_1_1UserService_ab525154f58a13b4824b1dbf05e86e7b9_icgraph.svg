@@ -12,7 +12,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="Verifies the provided OTP (One&#45;Time Password) for user authentication or password recovery.">
 <polygon fill="#bfbfbf" stroke="black" points="216,-24.5 216,-54.5 371,-54.5 371,-24.5 216,-24.5"/>
 <text text-anchor="start" x="224" y="-42.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.business.</text>
 <text text-anchor="middle" x="293.5" y="-31.5" font-family="Helvetica,sans-Serif" font-size="10.00">UserService.verifyOtp</text>

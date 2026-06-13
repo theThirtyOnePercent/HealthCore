@@ -12,7 +12,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="Helper method to retrieve detailed information about a doctor associated with a specific appointment.">
 <polygon fill="#bfbfbf" stroke="black" points="0,-24.5 0,-54.5 155,-54.5 155,-24.5 0,-24.5"/>
 <text text-anchor="start" x="8" y="-42.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.business.</text>
 <text text-anchor="middle" x="77.5" y="-31.5" font-family="Helvetica,sans-Serif" font-size="10.00">DoctorService.addShift</text>
@@ -22,7 +22,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1business_1_1DoctorService.html#a41e7c24bfb4c4e41f1b3df875368f3c8" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1business_1_1DoctorService.html#a41e7c24bfb4c4e41f1b3df875368f3c8" target="_top" xlink:title="Retrieves detailed information about a specific doctor based on the doctor ID.">
 <polygon fill="white" stroke="black" points="191,-49.5 191,-79.5 346,-79.5 346,-49.5 191,-49.5"/>
 <text text-anchor="start" x="199" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.business.</text>
 <text text-anchor="middle" x="268.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">DoctorService.findDoctor</text>

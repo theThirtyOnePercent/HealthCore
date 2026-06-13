@@ -1,11 +1,11 @@
 <map id="it.unitn.healthcore.controller.PatientController.updateInsurancePlan" name="it.unitn.healthcore.controller.PatientController.updateInsurancePlan">
-<area shape="rect" id="node1" title=" " alt="" coords="5,104,276,145"/>
-<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService.html#a9c5655c1b706c7dba40efb883c900a39" title=" " alt="" coords="324,71,603,112"/>
-<area shape="rect" id="node7" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService.html#a541ee9273fd696797608c005eb4d2f78" title=" " alt="" coords="336,136,591,177"/>
-<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a33213d05bfda4e7384e17b18332d4bb5" title=" " alt="" coords="651,71,857,112"/>
+<area shape="rect" id="node1" title="Retrieves the current insurance plan of the authenticated patient." alt="" coords="5,104,276,145"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService.html#a9c5655c1b706c7dba40efb883c900a39" title="Retrieves the current insurance plan for the authenticated patient." alt="" coords="324,71,603,112"/>
+<area shape="rect" id="node7" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService.html#a541ee9273fd696797608c005eb4d2f78" title="Updates the insurance plan for the currently authenticated patient." alt="" coords="336,136,591,177"/>
+<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a33213d05bfda4e7384e17b18332d4bb5" title="Retrieves the currently authenticated user from the database." alt="" coords="651,71,857,112"/>
 <area shape="rect" id="node6" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1Patient.html#a48266d60ec0c7b2baebd9aef60e6cbfe" title="Insurance plan getter." alt="" coords="655,5,853,47"/>
 <area shape="rect" id="node4" href="$interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1UserRepository.html#a6a646ae44d01189ff44c81c03fc92fa8" title=" " alt="" coords="909,39,1141,80"/>
-<area shape="rect" id="node5" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a703ed9778e3ac6cd9741220089b5f48d" title=" " alt="" coords="905,104,1145,145"/>
+<area shape="rect" id="node5" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a703ed9778e3ac6cd9741220089b5f48d" title="Retrieves the email of the currently authenticated user." alt="" coords="905,104,1145,145"/>
 <area shape="rect" id="node8" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#af8206b66c08446d8c3cb7e16b825a794" title="Returns a string representation of the User." alt="" coords="655,136,853,177"/>
 <area shape="rect" id="node9" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1Patient.html#afbff2ff4714363a46b30f1bbb1e76d56" title="Insurance plan setter." alt="" coords="655,201,853,243"/>
 </map>

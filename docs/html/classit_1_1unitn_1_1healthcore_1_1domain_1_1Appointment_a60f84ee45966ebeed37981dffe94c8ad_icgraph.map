@@ -1,6 +1,10 @@
 <map id="it.unitn.healthcore.domain.Appointment.getPatient" name="it.unitn.healthcore.domain.Appointment.getPatient">
-<area shape="rect" id="node1" title="Returns the patient associated with the appointment." alt="" coords="652,39,851,80"/>
-<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1AppointmentService.html#a6df398766f183e79fe315aea5f1752a4" title=" " alt="" coords="341,31,604,87"/>
-<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController.html#aaf741f63621b758e3aab2e1af0639398" title="Retrieves the details of a specific appointment by its ID." alt="" coords="6,5,293,47"/>
-<area shape="rect" id="node4" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#ac6fe0b7997f8668f80b25419c0d686c6" title=" " alt="" coords="5,71,293,112"/>
+<area shape="rect" id="node1" title="Returns the patient associated with the appointment." alt="" coords="652,92,851,133"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService.html#a7f10372a6537c0f235e585bdb8b87c30" title="Cancels an existing appointment for the currently authenticated patient." alt="" coords="350,12,595,53"/>
+<area shape="rect" id="node4" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1AppointmentService.html#a6df398766f183e79fe315aea5f1752a4" title="Retrieves detailed information about a specific appointment based on the appointment ID." alt="" coords="341,85,604,141"/>
+<area shape="rect" id="node7" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService.html#ab8266c492da03f9b5e38829e698129c6" title="Modifies an existing appointment for the currently authenticated patient." alt="" coords="349,177,597,219"/>
+<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#a3a3ac977996cfd51ff42b9386dccc075" title="Cancels an existing appointment for the authenticated patient." alt="" coords="19,5,279,47"/>
+<area shape="rect" id="node5" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController.html#aaf741f63621b758e3aab2e1af0639398" title="Retrieves the details of a specific appointment by its ID." alt="" coords="6,71,293,112"/>
+<area shape="rect" id="node6" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#ac6fe0b7997f8668f80b25419c0d686c6" title="Retrieves the details of a specific appointment by its ID." alt="" coords="5,136,293,177"/>
+<area shape="rect" id="node8" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#af370cd8f9baad62995675426371b349c" title="Modifies the details of an existing appointment for the authenticated patient." alt="" coords="18,201,281,243"/>
 </map>

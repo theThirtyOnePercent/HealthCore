@@ -22,7 +22,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a262646caddacb1ce9c3a009beecdd52d" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a262646caddacb1ce9c3a009beecdd52d" target="_top" xlink:title="Sends an OTP (One&#45;Time Password) to the specified email address for user authentication or password r...">
 <polygon fill="white" stroke="black" points="254,-0.5 254,-30.5 409,-30.5 409,-0.5 254,-0.5"/>
 <text text-anchor="start" x="262" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.business.</text>
 <text text-anchor="middle" x="331.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">UserService.sendOtp</text>

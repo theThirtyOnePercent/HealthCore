@@ -1,4 +1,4 @@
 <map id="it.unitn.healthcore.business.UserService.sendOtp" name="it.unitn.healthcore.business.UserService.sendOtp">
-<area shape="rect" id="node1" title=" " alt="" coords="344,5,551,47"/>
+<area shape="rect" id="node1" title="Sends an OTP (One&#45;Time Password) to the specified email address for user authentication or password r..." alt="" coords="344,5,551,47"/>
 <area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#adf57285765525b14ad6ec4e68e4ab3bf" title="handle the password recovery request by sending an OTP to the user&#39;s email and redirecting to the OTP..." alt="" coords="5,5,296,47"/>
 </map>

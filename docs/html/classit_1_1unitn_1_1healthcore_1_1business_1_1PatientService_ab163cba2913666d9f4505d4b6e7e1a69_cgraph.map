@@ -1,5 +1,5 @@
 <map id="it.unitn.healthcore.business.PatientService.getDoctorDescription" name="it.unitn.healthcore.business.PatientService.getDoctorDescription">
-<area shape="rect" id="node1" title=" " alt="" coords="5,300,263,341"/>
+<area shape="rect" id="node1" title="Retrieves detailed information about a doctor based on their ID." alt="" coords="5,300,263,341"/>
 <area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor.html#ab3cac7f0c22b3f39c4a5743a8422e1a3" title="Appointment price getter." alt="" coords="311,5,516,47"/>
 <area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor.html#ac03da7697c11c376768602fad6a43886" title="Department getter." alt="" coords="314,71,513,112"/>
 <area shape="rect" id="node4" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#a5b48be6dca19b7d4d43ec2e6a3b91502" title="Returns the email address of the user." alt="" coords="314,136,513,177"/>

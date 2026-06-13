@@ -1,5 +1,5 @@
 <map id="it.unitn.healthcore.business.DoctorService.modifyShift" name="it.unitn.healthcore.business.DoctorService.modifyShift">
-<area shape="rect" id="node1" title=" " alt="" coords="5,169,212,211"/>
+<area shape="rect" id="node1" title="Helper method to retrieve detailed information about a doctor associated with a specific appointment." alt="" coords="5,169,212,211"/>
 <area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1Shift.html#aeb536b32967f2656409f668ad13f2347" title="Returns the doctor assigned to the shift." alt="" coords="260,5,459,47"/>
 <area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1Shift.html#a38638195cd02bc419bd7c15abb1df602" title="Returns the end time of the shift." alt="" coords="260,71,459,112"/>
 <area shape="rect" id="node4" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor.html#a1f74266b5c9953f4c861a1b2e66405a8" title="Shift getter." alt="" coords="260,136,459,177"/>

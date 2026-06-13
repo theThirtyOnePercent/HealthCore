@@ -1,5 +1,5 @@
 <map id="it.unitn.healthcore.domain.ProfileUpdateForm.getName" name="it.unitn.healthcore.domain.ProfileUpdateForm.getName">
 <area shape="rect" id="node1" title="Name getter." alt="" coords="532,5,739,47"/>
-<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a114823fda5c213bb46bc935608bb8953" title=" " alt="" coords="264,5,484,47"/>
-<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#a546d5ed79a6b2f6f15000d9ddb3b03ab" title=" " alt="" coords="5,5,216,47"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a114823fda5c213bb46bc935608bb8953" title="Updates the profile of the currently authenticated user based on the provided object ." alt="" coords="264,5,484,47"/>
+<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#a546d5ed79a6b2f6f15000d9ddb3b03ab" title="handle the profile update request by updating the user&#39;s profile information and redirecting to the p..." alt="" coords="5,5,216,47"/>
 </map>

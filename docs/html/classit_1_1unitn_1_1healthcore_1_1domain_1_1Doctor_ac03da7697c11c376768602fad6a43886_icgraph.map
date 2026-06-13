@@ -1,7 +1,7 @@
 <map id="it.unitn.healthcore.domain.Doctor.getDepartment" name="it.unitn.healthcore.domain.Doctor.getDepartment">
 <area shape="rect" id="node1" title="Department getter." alt="" coords="631,35,829,76"/>
-<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#a6c1b2c866308e0723c5b9157149ab47b" title=" " alt="" coords="16,5,267,47"/>
-<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService.html#ac33e02f57cc7f1ef55dd59cb5673781a" title=" " alt="" coords="337,35,571,76"/>
-<area shape="rect" id="node4" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService.html#ab163cba2913666d9f4505d4b6e7e1a69" title=" " alt="" coords="325,100,583,141"/>
-<area shape="rect" id="node5" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#aaf7a71336886e01fdc45116e44bf67db" title=" " alt="" coords="5,100,277,141"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#a6c1b2c866308e0723c5b9157149ab47b" title="Books an appointment with a specified doctor for the authenticated patient." alt="" coords="16,5,267,47"/>
+<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService.html#ac33e02f57cc7f1ef55dd59cb5673781a" title="Books an appointment with a specified doctor for the currently authenticated patient." alt="" coords="337,35,571,76"/>
+<area shape="rect" id="node4" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService.html#ab163cba2913666d9f4505d4b6e7e1a69" title="Retrieves detailed information about a doctor based on their ID." alt="" coords="325,100,583,141"/>
+<area shape="rect" id="node5" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#aaf7a71336886e01fdc45116e44bf67db" title="Retrieves the current insurance plan of the authenticated patient." alt="" coords="5,100,277,141"/>
 </map>

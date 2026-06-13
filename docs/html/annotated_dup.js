@@ -39,7 +39,7 @@ var annotated_dup =
             [ "User", "classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html", "classit_1_1unitn_1_1healthcore_1_1domain_1_1User" ]
           ] ],
           [ "persistence", "namespaceit_1_1unitn_1_1healthcore_1_1persistence.html", [
-            [ "AppointmentRepository", "interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1AppointmentRepository.html", "interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1AppointmentRepository" ],
+            [ "AppointmentRepository", "interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1AppointmentRepository.html", null ],
             [ "DepartmentRepository", "interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1DepartmentRepository.html", null ],
             [ "DoctorRepository", "interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1DoctorRepository.html", null ],
             [ "HospitalRepository", "interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1HospitalRepository.html", null ],

@@ -1,0 +1,4 @@
+<map id="it.unitn.healthcore.business.PatientService.modifyAppointment" name="it.unitn.healthcore.business.PatientService.modifyAppointment">
+<area shape="rect" id="node1" title="Modifies an existing appointment for the currently authenticated patient." alt="" coords="316,5,564,47"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#af370cd8f9baad62995675426371b349c" title="Modifies the details of an existing appointment for the authenticated patient." alt="" coords="5,5,268,47"/>
+</map>

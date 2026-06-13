@@ -123,10 +123,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aaf741f63621b758e3aab2e1af0639398"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController.html#aaf741f63621b758e3aab2e1af0639398">viewAppointmentDetail</a> (@PathVariable Integer appointmentId)</td></tr>
 <tr class="memdesc:aaf741f63621b758e3aab2e1af0639398"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the details of a specific appointment by its ID.  <a href="classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController.html#aaf741f63621b758e3aab2e1af0639398">More...</a><br /></td></tr>
 <tr class="separator:aaf741f63621b758e3aab2e1af0639398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb883beb797f320272c45dd204055bfe"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classit_1_1unitn_1_1healthcore_1_1domain_1_1Department.html">Department</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController.html#adb883beb797f320272c45dd204055bfe">viewAvailableDepartments</a> ()</td></tr>
+<tr class="memdesc:adb883beb797f320272c45dd204055bfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a list of available departments for doctor assignment.  <a href="classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController.html#adb883beb797f320272c45dd204055bfe">More...</a><br /></td></tr>
+<tr class="separator:adb883beb797f320272c45dd204055bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae8b5b27a77226e6e5c7a1ce5e177e92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController.html#aae8b5b27a77226e6e5c7a1ce5e177e92">changeDepartment</a> (@PathVariable Integer doctorId, @RequestParam Integer departmentId)</td></tr>
+<tr class="memdesc:aae8b5b27a77226e6e5c7a1ce5e177e92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the department assignment for a specific doctor.  <a href="classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController.html#aae8b5b27a77226e6e5c7a1ce5e177e92">More...</a><br /></td></tr>
+<tr class="separator:aae8b5b27a77226e6e5c7a1ce5e177e92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="DoctorController_8java_source.html#l00026">26</a> of file <a class="el" href="DoctorController_8java_source.html">DoctorController.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DoctorController_8java_source.html#l00023">23</a> of file <a class="el" href="DoctorController_8java_source.html">DoctorController.java</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5e0c55ffd40c1814133929179e3b3cfb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5e0c55ffd40c1814133929179e3b3cfb">&#9670;&nbsp;</a></span>DoctorController()</h2>
@@ -163,7 +169,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="DoctorController_8java_source.html#l00036">36</a> of file <a class="el" href="DoctorController_8java_source.html">DoctorController.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DoctorController_8java_source.html#l00033">33</a> of file <a class="el" href="DoctorController_8java_source.html">DoctorController.java</a>.</p>
 
 </div>
 </div>
@@ -210,16 +216,63 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="DoctorController_8java_source.html#l00081">81</a> of file <a class="el" href="DoctorController_8java_source.html">DoctorController.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DoctorController_8java_source.html#l00078">78</a> of file <a class="el" href="DoctorController_8java_source.html">DoctorController.java</a>.</p>
 
-<p class="reference">References <a class="el" href="DoctorService_8java_source.html#l00090">it.unitn.healthcore.business.DoctorService.addShift()</a>.</p>
+<p class="reference">References <a class="el" href="DoctorService_8java_source.html#l00136">it.unitn.healthcore.business.DoctorService.addShift()</a>.</p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController_a0a872c9d094787a6992ab720f4b226df_cgraph.svg" width="739" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController_a0a872c9d094787a6992ab720f4b226df_cgraph.svg" width="739" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
+
+</div>
+</div>
+<a id="aae8b5b27a77226e6e5c7a1ce5e177e92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae8b5b27a77226e6e5c7a1ce5e177e92">&#9670;&nbsp;</a></span>changeDepartment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void it.unitn.healthcore.controller.DoctorController.changeDepartment </td>
+          <td>(</td>
+          <td class="paramtype">@PathVariable Integer&#160;</td>
+          <td class="paramname"><em>doctorId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">@RequestParam Integer&#160;</td>
+          <td class="paramname"><em>departmentId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Changes the department assignment for a specific doctor. </p>
+<p>This endpoint is accessible only to users with the 'ADMINISTRATOR' role. It takes the doctor's ID and the new department ID as parameters and calls the DoctorService to update the doctor's department assignment. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">doctorId</td><td>The ID of the doctor whose department is to be changed. </td></tr>
+    <tr><td class="paramname">departmentId</td><td>The ID of the new department to assign to the doctor. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="DoctorController_8java_source.html#l00196">196</a> of file <a class="el" href="DoctorController_8java_source.html">DoctorController.java</a>.</p>
+
+<p class="reference">References <a class="el" href="DoctorService_8java_source.html#l00269">it.unitn.healthcore.business.DoctorService.changeDepartment()</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController_aae8b5b27a77226e6e5c7a1ce5e177e92_cgraph.svg" width="852" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -248,16 +301,15 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="DoctorController_8java_source.html#l00106">106</a> of file <a class="el" href="DoctorController_8java_source.html">DoctorController.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DoctorController_8java_source.html#l00103">103</a> of file <a class="el" href="DoctorController_8java_source.html">DoctorController.java</a>.</p>
 
-<p class="reference">References <a class="el" href="DoctorService_8java_source.html#l00123">it.unitn.healthcore.business.DoctorService.deleteShift()</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="DoctorService_8java_source.html#l00173">it.unitn.healthcore.business.DoctorService.deleteShift()</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController_a9918159e8ca76ff0c58aa9c9dd8aeba9_cgraph.svg" width="723" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController_a9918159e8ca76ff0c58aa9c9dd8aeba9_cgraph.svg" width="723" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -304,16 +356,15 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="DoctorController_8java_source.html#l00095">95</a> of file <a class="el" href="DoctorController_8java_source.html">DoctorController.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DoctorController_8java_source.html#l00092">92</a> of file <a class="el" href="DoctorController_8java_source.html">DoctorController.java</a>.</p>
 
-<p class="reference">References <a class="el" href="DoctorService_8java_source.html#l00135">it.unitn.healthcore.business.DoctorService.modifyShift()</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="DoctorService_8java_source.html#l00189">it.unitn.healthcore.business.DoctorService.modifyShift()</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController_aa8d0870dac3e5c366755771a799956bb_cgraph.svg" width="723" height="379"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController_aa8d0870dac3e5c366755771a799956bb_cgraph.svg" width="723" height="379"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -343,16 +394,46 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A string containing the details of the specified appointment. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="DoctorController_8java_source.html#l00177">177</a> of file <a class="el" href="DoctorController_8java_source.html">DoctorController.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DoctorController_8java_source.html#l00174">174</a> of file <a class="el" href="DoctorController_8java_source.html">DoctorController.java</a>.</p>
 
-<p class="reference">References <a class="el" href="AppointmentService_8java_source.html#l00074">it.unitn.healthcore.business.AppointmentService.getAppointmentDetails()</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="AppointmentService_8java_source.html#l00103">it.unitn.healthcore.business.AppointmentService.getAppointmentDetails()</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController_aaf741f63621b758e3aab2e1af0639398_cgraph.svg" width="1171" height="444"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController_aaf741f63621b758e3aab2e1af0639398_cgraph.svg" width="1171" height="444"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
+
+</div>
+</div>
+<a id="adb883beb797f320272c45dd204055bfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb883beb797f320272c45dd204055bfe">&#9670;&nbsp;</a></span>viewAvailableDepartments()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="classit_1_1unitn_1_1healthcore_1_1domain_1_1Department.html">Department</a>&gt; it.unitn.healthcore.controller.DoctorController.viewAvailableDepartments </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves a list of available departments for doctor assignment. </p>
+<p>This endpoint is accessible only to users with the 'ADMINISTRATOR' role. It returns a list of Department objects representing the available departments in the system. </p><dl class="section return"><dt>Returns</dt><dd>A list of Department objects representing available departments. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="DoctorController_8java_source.html#l00184">184</a> of file <a class="el" href="DoctorController_8java_source.html">DoctorController.java</a>.</p>
+
+<p class="reference">References <a class="el" href="DoctorService_8java_source.html#l00245">it.unitn.healthcore.business.DoctorService.getAvailableDepartments()</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController_adb883beb797f320272c45dd204055bfe_cgraph.svg" width="650" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -382,16 +463,15 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A Doctor object with the specified ID. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="DoctorController_8java_source.html#l00068">68</a> of file <a class="el" href="DoctorController_8java_source.html">DoctorController.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DoctorController_8java_source.html#l00065">65</a> of file <a class="el" href="DoctorController_8java_source.html">DoctorController.java</a>.</p>
 
-<p class="reference">References <a class="el" href="DoctorService_8java_source.html#l00037">it.unitn.healthcore.business.DoctorService.findDoctor()</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="DoctorService_8java_source.html#l00061">it.unitn.healthcore.business.DoctorService.findDoctor()</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController_af584ce0e97c3d1e3c9164228d62cb106_cgraph.svg" width="588" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController_af584ce0e97c3d1e3c9164228d62cb106_cgraph.svg" width="588" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -414,16 +494,15 @@ Public Member Functions</h2></td></tr>
 <p>Retrieves a list of all doctors in the system. </p>
 <p>This endpoint is accessible to users with the 'ADMINISTRATOR' or 'PATIENT' role. It returns a string representation of each doctor's ID, name, surname, and email. </p><dl class="section return"><dt>Returns</dt><dd>A string containing the details of all doctors. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="DoctorController_8java_source.html#l00047">47</a> of file <a class="el" href="DoctorController_8java_source.html">DoctorController.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DoctorController_8java_source.html#l00044">44</a> of file <a class="el" href="DoctorController_8java_source.html">DoctorController.java</a>.</p>
 
-<p class="reference">References <a class="el" href="DoctorService_8java_source.html#l00033">it.unitn.healthcore.business.DoctorService.getAllDoctors()</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="DoctorService_8java_source.html#l00052">it.unitn.healthcore.business.DoctorService.getAllDoctors()</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController_a047be700a1ce9033b75b0a41ef52c68f_cgraph.svg" width="479" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController_a047be700a1ce9033b75b0a41ef52c68f_cgraph.svg" width="479" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -446,16 +525,15 @@ Public Member Functions</h2></td></tr>
 <p>Retrieves a list of future appointments for the currently authenticated doctor. </p>
 <p>This endpoint is accessible only to users with the 'DOCTOR' role. It returns a string representation of each future appointment, including the appointment ID, start and end times, and patient information. </p><dl class="section return"><dt>Returns</dt><dd>A string containing the details of future appointments for the doctor. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="DoctorController_8java_source.html#l00130">130</a> of file <a class="el" href="DoctorController_8java_source.html">DoctorController.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DoctorController_8java_source.html#l00127">127</a> of file <a class="el" href="DoctorController_8java_source.html">DoctorController.java</a>.</p>
 
-<p class="reference">References <a class="el" href="AppointmentService_8java_source.html#l00025">it.unitn.healthcore.business.AppointmentService.getFutureAppointments()</a>.</p>
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="AppointmentService_8java_source.html#l00045">it.unitn.healthcore.business.AppointmentService.getFutureAppointments()</a>.</p>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController_a422bd25fb5f44b8f763d6a29787c46f0_cgraph.svg" width="1207" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController_a422bd25fb5f44b8f763d6a29787c46f0_cgraph.svg" width="1207" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -484,16 +562,15 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A string containing the details of the specified appointment. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="DoctorController_8java_source.html#l00118">118</a> of file <a class="el" href="DoctorController_8java_source.html">DoctorController.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DoctorController_8java_source.html#l00115">115</a> of file <a class="el" href="DoctorController_8java_source.html">DoctorController.java</a>.</p>
 
-<p class="reference">References <a class="el" href="DoctorService_8java_source.html#l00176">it.unitn.healthcore.business.DoctorService.getCurrentDoctorShifts()</a>.</p>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="DoctorService_8java_source.html#l00234">it.unitn.healthcore.business.DoctorService.getCurrentDoctorShifts()</a>.</p>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController_a5a876b4fd08f941dc77ffca9e29608a3_cgraph.svg" width="1086" height="150"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController_a5a876b4fd08f941dc77ffca9e29608a3_cgraph.svg" width="1086" height="150"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -516,16 +593,15 @@ Public Member Functions</h2></td></tr>
 <p>Retrieves a list of past appointments for the currently authenticated doctor. </p>
 <p>This endpoint is accessible only to users with the 'DOCTOR' role. It returns a string representation of each past appointment, including the appointment ID, start and end times, and patient information. </p><dl class="section return"><dt>Returns</dt><dd>A string containing the details of past appointments for the doctor. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="DoctorController_8java_source.html#l00153">153</a> of file <a class="el" href="DoctorController_8java_source.html">DoctorController.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DoctorController_8java_source.html#l00150">150</a> of file <a class="el" href="DoctorController_8java_source.html">DoctorController.java</a>.</p>
 
-<p class="reference">References <a class="el" href="AppointmentService_8java_source.html#l00050">it.unitn.healthcore.business.AppointmentService.getPastAppointments()</a>.</p>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<p class="reference">References <a class="el" href="AppointmentService_8java_source.html#l00074">it.unitn.healthcore.business.AppointmentService.getPastAppointments()</a>.</p>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController_a6d1a63a3f86734bbe0af66cf4b9cc4f8_cgraph.svg" width="1180" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController_a6d1a63a3f86734bbe0af66cf4b9cc4f8_cgraph.svg" width="1180" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>

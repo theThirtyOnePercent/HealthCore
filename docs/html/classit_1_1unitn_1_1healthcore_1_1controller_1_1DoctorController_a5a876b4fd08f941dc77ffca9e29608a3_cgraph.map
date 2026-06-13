@@ -1,8 +1,8 @@
 <map id="it.unitn.healthcore.controller.DoctorController.viewMyShifts" name="it.unitn.healthcore.controller.DoctorController.viewMyShifts">
 <area shape="rect" id="node1" title="Retrieves the details of a specific appointment by its ID." alt="" coords="5,71,224,112"/>
-<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1DoctorService.html#a96292ffc9ef487c31145d1cd00f22b4e" title=" " alt="" coords="272,71,537,112"/>
-<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a33213d05bfda4e7384e17b18332d4bb5" title=" " alt="" coords="585,37,792,79"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1DoctorService.html#a96292ffc9ef487c31145d1cd00f22b4e" title="Retrieves the shifts of the currently authenticated doctor." alt="" coords="272,71,537,112"/>
+<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a33213d05bfda4e7384e17b18332d4bb5" title="Retrieves the currently authenticated user from the database." alt="" coords="585,37,792,79"/>
 <area shape="rect" id="node6" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor.html#a1f74266b5c9953f4c861a1b2e66405a8" title="Shift getter." alt="" coords="589,103,788,144"/>
 <area shape="rect" id="node4" href="$interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1UserRepository.html#a6a646ae44d01189ff44c81c03fc92fa8" title=" " alt="" coords="844,5,1076,47"/>
-<area shape="rect" id="node5" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a703ed9778e3ac6cd9741220089b5f48d" title=" " alt="" coords="840,71,1080,112"/>
+<area shape="rect" id="node5" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a703ed9778e3ac6cd9741220089b5f48d" title="Retrieves the email of the currently authenticated user." alt="" coords="840,71,1080,112"/>
 </map>

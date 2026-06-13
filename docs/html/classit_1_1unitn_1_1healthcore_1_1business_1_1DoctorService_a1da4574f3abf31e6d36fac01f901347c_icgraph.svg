@@ -12,7 +12,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="Retrieves a list of all doctors in the system.">
 <polygon fill="#bfbfbf" stroke="black" points="196,-0.5 196,-30.5 351,-30.5 351,-0.5 196,-0.5"/>
 <text text-anchor="start" x="204" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.business.</text>
 <text text-anchor="middle" x="273.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">DoctorService.getAllDoctors</text>

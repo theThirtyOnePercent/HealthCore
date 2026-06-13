@@ -144,12 +144,25 @@ public class PatientController {
     public String viewAppointmentDetail(@PathVariable Integer appointmentId){
         return appointmentService.getAppointmentDetails(appointmentId);
     }
-
+    /** @brief Modifies the details of an existing appointment for the authenticated patient.
+     * This endpoint is accessible only to users with the 'PATIENT' role.
+     * It takes the appointment ID, new start time, and new end time as parameters and updates the appointment accordingly.
+     * It does not return any content in the response.
+     * @param appointmentId The ID of the appointment to modify.
+     * @param startTime The new start time for the appointment.
+     * @param endTime The new end time for the appointment.
+     */
     @PostMapping(path = "appointment/modify/{appointmentId}")
     public void modifyAppointment (@PathVariable Integer appointmentId, @RequestParam LocalDateTime startTime, @RequestParam LocalDateTime endTime){
         patientService.modifyAppointment(appointmentId, startTime, endTime);
     }
 
+    /** @brief Cancels an existing appointment for the authenticated patient.
+     * This endpoint is accessible only to users with the 'PATIENT' role.
+     * It takes the appointment ID as a parameter and cancels the corresponding appointment.
+     * It does not return any content in the response.
+     * @param appointmentId The ID of the appointment to cancel.
+     */
     @PostMapping(path = "appointment/cancel/{appointmentId}")
     public void cancelAppointment (@PathVariable Integer appointmentId){
         patientService.cancelAppointment(appointmentId);

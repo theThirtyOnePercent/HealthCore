@@ -1,0 +1,4 @@
+<map id="it.unitn.healthcore.business.PatientService.cancelAppointment" name="it.unitn.healthcore.business.PatientService.cancelAppointment">
+<area shape="rect" id="node1" title="Cancels an existing appointment for the currently authenticated patient." alt="" coords="313,5,559,47"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#a3a3ac977996cfd51ff42b9386dccc075" title="Cancels an existing appointment for the authenticated patient." alt="" coords="5,5,265,47"/>
+</map>

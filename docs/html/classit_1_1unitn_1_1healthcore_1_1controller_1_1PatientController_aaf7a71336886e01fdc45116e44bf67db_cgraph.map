@@ -1,6 +1,6 @@
 <map id="it.unitn.healthcore.controller.PatientController.getDoctorDescription" name="it.unitn.healthcore.controller.PatientController.getDoctorDescription">
-<area shape="rect" id="node1" title=" " alt="" coords="5,300,277,341"/>
-<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService.html#ab163cba2913666d9f4505d4b6e7e1a69" title=" " alt="" coords="325,300,583,341"/>
+<area shape="rect" id="node1" title="Retrieves the current insurance plan of the authenticated patient." alt="" coords="5,300,277,341"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService.html#ab163cba2913666d9f4505d4b6e7e1a69" title="Retrieves detailed information about a doctor based on their ID." alt="" coords="325,300,583,341"/>
 <area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor.html#ab3cac7f0c22b3f39c4a5743a8422e1a3" title="Appointment price getter." alt="" coords="631,5,836,47"/>
 <area shape="rect" id="node4" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor.html#ac03da7697c11c376768602fad6a43886" title="Department getter." alt="" coords="634,71,833,112"/>
 <area shape="rect" id="node5" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#a5b48be6dca19b7d4d43ec2e6a3b91502" title="Returns the email address of the user." alt="" coords="634,136,833,177"/>

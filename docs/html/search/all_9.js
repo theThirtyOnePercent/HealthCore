@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['main_136',['main',['../classit_1_1unitn_1_1healthcore_1_1HealthcoreApplication.html#ab5f5e7dec8482acbe5f370336add41a8',1,'it::unitn::healthcore::HealthcoreApplication']]],
-  ['modifyshift_137',['modifyShift',['../classit_1_1unitn_1_1healthcore_1_1business_1_1DoctorService.html#a0144281b10cf3bd09275e4f2898c3aea',1,'it.unitn.healthcore.business.DoctorService.modifyShift()'],['../classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController.html#aa8d0870dac3e5c366755771a799956bb',1,'it.unitn.healthcore.controller.DoctorController.modifyShift()']]]
+  ['loaduserbyusername_133',['loadUserByUsername',['../classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a88e927ad954f21615b6f2ffa4fe90de2',1,'it::unitn::healthcore::business::UserService']]]
 ];

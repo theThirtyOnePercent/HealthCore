@@ -38,7 +38,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService.html#ac33e02f57cc7f1ef55dd59cb5673781a" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService.html#ac33e02f57cc7f1ef55dd59cb5673781a" target="_top" xlink:title="Books an appointment with a specified doctor for the currently authenticated patient.">
 <polygon fill="white" stroke="black" points="224,-0.5 224,-30.5 400,-30.5 400,-0.5 224,-0.5"/>
 <text text-anchor="start" x="232" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.business.</text>
 <text text-anchor="middle" x="312" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">PatientService.bookAppointment</text>
@@ -54,7 +54,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#a6c1b2c866308e0723c5b9157149ab47b" target="_top" xlink:title=" ">
+<g id="a_node4"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#a6c1b2c866308e0723c5b9157149ab47b" target="_top" xlink:title="Books an appointment with a specified doctor for the authenticated patient.">
 <polygon fill="white" stroke="black" points="0,-0.5 0,-30.5 188,-30.5 188,-0.5 0,-0.5"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.controller.</text>
 <text text-anchor="middle" x="94" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">PatientController.bookAppointment</text>

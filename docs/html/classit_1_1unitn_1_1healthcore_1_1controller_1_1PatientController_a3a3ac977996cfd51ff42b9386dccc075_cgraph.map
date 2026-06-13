@@ -1,0 +1,10 @@
+<map id="it.unitn.healthcore.controller.PatientController.cancelAppointment" name="it.unitn.healthcore.controller.PatientController.cancelAppointment">
+<area shape="rect" id="node1" title="Cancels an existing appointment for the authenticated patient." alt="" coords="5,136,265,177"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService.html#a7f10372a6537c0f235e585bdb8b87c30" title="Cancels an existing appointment for the currently authenticated patient." alt="" coords="313,136,559,177"/>
+<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a33213d05bfda4e7384e17b18332d4bb5" title="Retrieves the currently authenticated user from the database." alt="" coords="607,37,813,79"/>
+<area shape="rect" id="node6" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#af8206b66c08446d8c3cb7e16b825a794" title="Returns a string representation of the User." alt="" coords="611,103,809,144"/>
+<area shape="rect" id="node7" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment.html#a60f84ee45966ebeed37981dffe94c8ad" title="Returns the patient associated with the appointment." alt="" coords="611,168,809,209"/>
+<area shape="rect" id="node8" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment.html#a9bd30e2d1b2e4de743b3e83b9cc50eb4" title="Returns the start date and time of the appointment." alt="" coords="611,233,809,275"/>
+<area shape="rect" id="node4" href="$interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1UserRepository.html#a6a646ae44d01189ff44c81c03fc92fa8" title=" " alt="" coords="865,5,1097,47"/>
+<area shape="rect" id="node5" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a703ed9778e3ac6cd9741220089b5f48d" title="Retrieves the email of the currently authenticated user." alt="" coords="861,71,1101,112"/>
+</map>

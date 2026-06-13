@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
-
 import java.time.LocalDateTime;
 import java.util.Comparator;
 import java.util.List;
@@ -15,7 +14,9 @@ import java.util.List;
  * @brief  AppointmentService is a service class that provides business logic related to appointments.
  *  It interacts with the UserService to retrieve the current user and the AppointmentRepository to access appointment data. 
  * The service includes methods for retrieving future and past appointments, as well as getting detailed information about specific appointments.
- * @see UserService
+ * @detail The AppointmentService class is responsible for handling appointment-related operations in the system. It provides methods to retrieve
+ *  future and past appointments for the currently authenticated user, as well as detailed information about specific appointments. The service ensures that users can only 
+ *  access appointments they are assigned to, and it formats the appointment details for display.
  * @see AppointmentRepository
  * @author HealthCore Team
  * @version 1.0.0

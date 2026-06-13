@@ -12,7 +12,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="Retrieves the current insurance plan of the authenticated patient.">
 <polygon fill="#bfbfbf" stroke="black" points="0,-73.5 0,-103.5 203,-103.5 203,-73.5 0,-73.5"/>
 <text text-anchor="start" x="8" y="-91.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.controller.</text>
 <text text-anchor="middle" x="101.5" y="-80.5" font-family="Helvetica,sans-Serif" font-size="10.00">PatientController.updateInsurancePlan</text>
@@ -22,7 +22,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService.html#a9c5655c1b706c7dba40efb883c900a39" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService.html#a9c5655c1b706c7dba40efb883c900a39" target="_top" xlink:title="Retrieves the current insurance plan for the authenticated patient.">
 <polygon fill="white" stroke="black" points="239,-98.5 239,-128.5 448,-128.5 448,-98.5 239,-98.5"/>
 <text text-anchor="start" x="247" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.business.</text>
 <text text-anchor="middle" x="343.5" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00">PatientService.getCurrentInsurancePlan</text>
@@ -38,7 +38,7 @@
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService.html#a541ee9273fd696797608c005eb4d2f78" target="_top" xlink:title=" ">
+<g id="a_node7"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService.html#a541ee9273fd696797608c005eb4d2f78" target="_top" xlink:title="Updates the insurance plan for the currently authenticated patient.">
 <polygon fill="white" stroke="black" points="248,-49.5 248,-79.5 439,-79.5 439,-49.5 248,-49.5"/>
 <text text-anchor="start" x="256" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.business.</text>
 <text text-anchor="middle" x="343.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">PatientService.updateInsurancePlan</text>
@@ -54,7 +54,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a33213d05bfda4e7384e17b18332d4bb5" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a33213d05bfda4e7384e17b18332d4bb5" target="_top" xlink:title="Retrieves the currently authenticated user from the database.">
 <polygon fill="white" stroke="black" points="484,-98.5 484,-128.5 639,-128.5 639,-98.5 484,-98.5"/>
 <text text-anchor="start" x="492" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.business.</text>
 <text text-anchor="middle" x="561.5" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00">UserService.getCurrentUser</text>
@@ -102,7 +102,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a703ed9778e3ac6cd9741220089b5f48d" target="_top" xlink:title=" ">
+<g id="a_node5"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a703ed9778e3ac6cd9741220089b5f48d" target="_top" xlink:title="Retrieves the email of the currently authenticated user.">
 <polygon fill="white" stroke="black" points="675,-73.5 675,-103.5 855,-103.5 855,-73.5 675,-73.5"/>
 <text text-anchor="start" x="683" y="-91.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.business.</text>
 <text text-anchor="middle" x="765" y="-80.5" font-family="Helvetica,sans-Serif" font-size="10.00">UserService.getCurrentUserEmail</text>

@@ -174,13 +174,23 @@ public class DoctorController {
     public String viewAppointmentDetail(@PathVariable Integer appointmentId){
         return appointmentService.getAppointmentDetails(appointmentId);
     }
-
+    /** @brief Retrieves a list of available departments for doctor assignment.
+     * This endpoint is accessible only to users with the 'ADMINISTRATOR' role.
+     * It returns a list of Department objects representing the available departments in the system.
+     * @return A list of Department objects representing available departments.
+     */
     @GetMapping(path = "availableDepartments")
     @PreAuthorize("hasRole('ADMINISTRATOR')")
     public List<Department> viewAvailableDepartments(){
         return doctorService.getAvailableDepartments();
     }
 
+    /** @brief Changes the department assignment for a specific doctor.
+     * This endpoint is accessible only to users with the 'ADMINISTRATOR' role.
+     * It takes the doctor's ID and the new department ID as parameters and calls the DoctorService to update the doctor's department assignment.
+     * @param doctorId The ID of the doctor whose department is to be changed.
+     * @param departmentId The ID of the new department to assign to the doctor.
+     */
     @PostMapping (path = "changeDepartment/{doctorId}")
     @PreAuthorize("hasRole('ADMINISTRATOR')")
     public void changeDepartment(@PathVariable Integer doctorId, @RequestParam Integer departmentId){

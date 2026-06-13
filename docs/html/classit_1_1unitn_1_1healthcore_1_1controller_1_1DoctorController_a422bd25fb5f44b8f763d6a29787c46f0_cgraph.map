@@ -1,7 +1,7 @@
 <map id="it.unitn.healthcore.controller.DoctorController.viewFutureAppointments" name="it.unitn.healthcore.controller.DoctorController.viewFutureAppointments">
 <area shape="rect" id="node1" title="Retrieves a list of future appointments for the currently authenticated doctor." alt="" coords="5,39,300,80"/>
-<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1AppointmentService.html#aed50e6f0cf3a16af4d8754c66060512d" title=" " alt="" coords="348,39,659,80"/>
-<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a33213d05bfda4e7384e17b18332d4bb5" title=" " alt="" coords="707,39,913,80"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1AppointmentService.html#aed50e6f0cf3a16af4d8754c66060512d" title="Retrieves a list of future appointments for the currently authenticated user." alt="" coords="348,39,659,80"/>
+<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a33213d05bfda4e7384e17b18332d4bb5" title="Retrieves the currently authenticated user from the database." alt="" coords="707,39,913,80"/>
 <area shape="rect" id="node4" href="$interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1UserRepository.html#a6a646ae44d01189ff44c81c03fc92fa8" title=" " alt="" coords="965,5,1197,47"/>
-<area shape="rect" id="node5" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a703ed9778e3ac6cd9741220089b5f48d" title=" " alt="" coords="961,71,1201,112"/>
+<area shape="rect" id="node5" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a703ed9778e3ac6cd9741220089b5f48d" title="Retrieves the email of the currently authenticated user." alt="" coords="961,71,1201,112"/>
 </map>

@@ -1,10 +1,12 @@
 <map id="it.unitn.healthcore.controller.UserController.addPatient" name="it.unitn.healthcore.controller.UserController.addPatient">
-<area shape="rect" id="node1" title=" " alt="" coords="5,197,216,238"/>
-<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a32dba226bff5fb3cd0caf79303b71d38" title=" " alt="" coords="264,197,471,238"/>
-<area shape="rect" id="node3" href="$interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1PatientRepository.html#a320387b23f16ee948d66d932faa3991f" title=" " alt="" coords="529,5,795,61"/>
-<area shape="rect" id="node4" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1PasswordConfirmationForm.html#ad2a321af868704e56c42d5306a8acd91" title="Email getter." alt="" coords="531,86,793,127"/>
-<area shape="rect" id="node5" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1PatientRegistrationForm.html#abc573cb3f03f7b2d2e0dd970c569df84" title="Healthcare card number getter." alt="" coords="525,152,799,208"/>
-<area shape="rect" id="node6" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1PatientRegistrationForm.html#a47e69a04762a7937f63f729aa52fbe7a" title="Creates a PatientRegistrationForm with the specified details, without healthcare card number." alt="" coords="541,233,783,274"/>
-<area shape="rect" id="node7" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1PasswordConfirmationForm.html#aa7de23a583db33eba13ddecad973ceca" title="Password getter." alt="" coords="519,298,805,339"/>
-<area shape="rect" id="node8" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1PatientRegistrationForm.html#a28bacda95e68eaf4665de2509652c6fe" title="Surname getter." alt="" coords="531,363,793,405"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,233,216,274"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a32dba226bff5fb3cd0caf79303b71d38" title="Registers a new patient in the system." alt="" coords="264,233,471,274"/>
+<area shape="rect" id="node3" href="$interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1PatientRepository.html#a320387b23f16ee948d66d932faa3991f" title=" " alt="" coords="523,5,789,61"/>
+<area shape="rect" id="node4" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1PasswordConfirmationForm.html#ad2a321af868704e56c42d5306a8acd91" title="Email getter." alt="" coords="525,86,787,127"/>
+<area shape="rect" id="node5" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1PatientRegistrationForm.html#abc573cb3f03f7b2d2e0dd970c569df84" title="Healthcare card number getter." alt="" coords="519,152,793,208"/>
+<area shape="rect" id="node6" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1PatientRegistrationForm.html#a47e69a04762a7937f63f729aa52fbe7a" title="Creates a PatientRegistrationForm with the specified details, without healthcare card number." alt="" coords="535,233,777,274"/>
+<area shape="rect" id="node7" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1PasswordConfirmationForm.html#aa7de23a583db33eba13ddecad973ceca" title="Password getter." alt="" coords="841,321,1128,362"/>
+<area shape="rect" id="node8" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1PatientRegistrationForm.html#a28bacda95e68eaf4665de2509652c6fe" title="Surname getter." alt="" coords="525,350,787,391"/>
+<area shape="rect" id="node9" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1PasswordConfirmationForm.html#a181a1ca7ab3c4d07cb7f3817c1de6974" title="Validates the password confirmation form by checking if the password and confirmation match,..." alt="" coords="533,416,779,472"/>
+<area shape="rect" id="node10" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1PasswordConfirmationForm.html#add77c52ff85c3a8caefe02af899fe10b" title="Password confirmation getter." alt="" coords="841,416,1128,472"/>
 </map>

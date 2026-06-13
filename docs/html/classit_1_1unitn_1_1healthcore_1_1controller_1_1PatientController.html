@@ -90,27 +90,48 @@ $(document).ready(function(){initNavTree('classit_1_1unitn_1_1healthcore_1_1cont
 <div class="title">it.unitn.healthcore.controller.PatientController Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html" title="PatientController is a REST controller that handles HTTP requests related to patient management and a...">PatientController</a> is a REST controller that handles HTTP requests related to patient management and appointment booking for patients.  
+ <a href="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3b1d7f75d8fd009e934169c280d4a6a1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#a3b1d7f75d8fd009e934169c280d4a6a1">PatientController</a> (<a class="el" href="classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService.html">PatientService</a> patientService, <a class="el" href="classit_1_1unitn_1_1healthcore_1_1business_1_1AppointmentService.html">AppointmentService</a> appointmentService)</td></tr>
+<tr class="memdesc:a3b1d7f75d8fd009e934169c280d4a6a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for the <a class="el" href="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html" title="PatientController is a REST controller that handles HTTP requests related to patient management and a...">PatientController</a> class.  <a href="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#a3b1d7f75d8fd009e934169c280d4a6a1">More...</a><br /></td></tr>
 <tr class="separator:a3b1d7f75d8fd009e934169c280d4a6a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ff985e6a5601dbbef79fd420d2e54b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classit_1_1unitn_1_1healthcore_1_1domain_1_1InsurancePlan.html">InsurancePlan</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#a7ff985e6a5601dbbef79fd420d2e54b4">updateInsurancePlan</a> (@RequestParam Integer planId)</td></tr>
+<tr class="memdesc:a7ff985e6a5601dbbef79fd420d2e54b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the current insurance plan of the authenticated patient.  <a href="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#a7ff985e6a5601dbbef79fd420d2e54b4">More...</a><br /></td></tr>
 <tr class="separator:a7ff985e6a5601dbbef79fd420d2e54b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf7a71336886e01fdc45116e44bf67db"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#aaf7a71336886e01fdc45116e44bf67db">getDoctorDescription</a> ( @PathVariable(&quot;doctorId&quot;) Integer doctorId)</td></tr>
+<tr class="memdesc:aaf7a71336886e01fdc45116e44bf67db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the current insurance plan of the authenticated patient.  <a href="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#aaf7a71336886e01fdc45116e44bf67db">More...</a><br /></td></tr>
 <tr class="separator:aaf7a71336886e01fdc45116e44bf67db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c1b2c866308e0723c5b9157149ab47b"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#a6c1b2c866308e0723c5b9157149ab47b">bookAppointment</a> (@PathVariable Integer doctorId, @RequestParam LocalDateTime startTime, @RequestParam LocalDateTime endTime)</td></tr>
+<tr class="memdesc:a6c1b2c866308e0723c5b9157149ab47b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Books an appointment with a specified doctor for the authenticated patient.  <a href="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#a6c1b2c866308e0723c5b9157149ab47b">More...</a><br /></td></tr>
 <tr class="separator:a6c1b2c866308e0723c5b9157149ab47b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4207a6fab035c5242ecda1abdb49169e"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#a4207a6fab035c5242ecda1abdb49169e">viewFutureAppointments</a> ()</td></tr>
+<tr class="memdesc:a4207a6fab035c5242ecda1abdb49169e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a list of future appointments for the authenticated patient.  <a href="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#a4207a6fab035c5242ecda1abdb49169e">More...</a><br /></td></tr>
 <tr class="separator:a4207a6fab035c5242ecda1abdb49169e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8303b97c30b7b5049de75826bafceb4c"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#a8303b97c30b7b5049de75826bafceb4c">viewPastAppointments</a> ()</td></tr>
+<tr class="memdesc:a8303b97c30b7b5049de75826bafceb4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a list of past appointments for the authenticated patient.  <a href="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#a8303b97c30b7b5049de75826bafceb4c">More...</a><br /></td></tr>
 <tr class="separator:a8303b97c30b7b5049de75826bafceb4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6fe0b7997f8668f80b25419c0d686c6"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#ac6fe0b7997f8668f80b25419c0d686c6">viewAppointmentDetail</a> (@PathVariable Integer appointmentId)</td></tr>
+<tr class="memdesc:ac6fe0b7997f8668f80b25419c0d686c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the details of a specific appointment by its ID.  <a href="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#ac6fe0b7997f8668f80b25419c0d686c6">More...</a><br /></td></tr>
 <tr class="separator:ac6fe0b7997f8668f80b25419c0d686c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af370cd8f9baad62995675426371b349c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#af370cd8f9baad62995675426371b349c">modifyAppointment</a> (@PathVariable Integer appointmentId, @RequestParam LocalDateTime startTime, @RequestParam LocalDateTime endTime)</td></tr>
+<tr class="memdesc:af370cd8f9baad62995675426371b349c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifies the details of an existing appointment for the authenticated patient.  <a href="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#af370cd8f9baad62995675426371b349c">More...</a><br /></td></tr>
+<tr class="separator:af370cd8f9baad62995675426371b349c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a3ac977996cfd51ff42b9386dccc075"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#a3a3ac977996cfd51ff42b9386dccc075">cancelAppointment</a> (@PathVariable Integer appointmentId)</td></tr>
+<tr class="memdesc:a3a3ac977996cfd51ff42b9386dccc075"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancels an existing appointment for the authenticated patient.  <a href="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#a3a3ac977996cfd51ff42b9386dccc075">More...</a><br /></td></tr>
+<tr class="separator:a3a3ac977996cfd51ff42b9386dccc075"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="PatientController_8java_source.html#l00017">17</a> of file <a class="el" href="PatientController_8java_source.html">PatientController.java</a>.</p>
+<div class="textblock"><p><a class="el" href="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html" title="PatientController is a REST controller that handles HTTP requests related to patient management and a...">PatientController</a> is a REST controller that handles HTTP requests related to patient management and appointment booking for patients. </p>
+<p>It provides endpoints for patients to manage their insurance plans, view doctor descriptions, book appointments with doctors, and view their appointment history and details. </p><dl class="section see"><dt>See also</dt><dd>PatientService </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>HealthCore Team </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2026-06-11 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="PatientController_8java_source.html#l00024">24</a> of file <a class="el" href="PatientController_8java_source.html">PatientController.java</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3b1d7f75d8fd009e934169c280d4a6a1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3b1d7f75d8fd009e934169c280d4a6a1">&#9670;&nbsp;</a></span>PatientController()</h2>
@@ -138,7 +159,16 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="PatientController_8java_source.html#l00022">22</a> of file <a class="el" href="PatientController_8java_source.html">PatientController.java</a>.</p>
+<p>Constructor for the <a class="el" href="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html" title="PatientController is a REST controller that handles HTTP requests related to patient management and a...">PatientController</a> class. </p>
+<p>This constructor is used to inject the PatientService and AppointmentService dependencies into the controller. The @Autowired annotation allows Spring to automatically wire the services when creating an instance of the controller. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">patientService</td><td>The service that provides business logic related to patients. </td></tr>
+    <tr><td class="paramname">appointmentService</td><td>The service that provides business logic related to appointments. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="PatientController_8java_source.html#l00034">34</a> of file <a class="el" href="PatientController_8java_source.html">PatientController.java</a>.</p>
 
 </div>
 </div>
@@ -175,16 +205,63 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="PatientController_8java_source.html#l00040">40</a> of file <a class="el" href="PatientController_8java_source.html">PatientController.java</a>.</p>
+<p>Books an appointment with a specified doctor for the authenticated patient. </p>
+<p>This endpoint is accessible only to users with the 'PATIENT' role. It takes the doctor's ID, start time, and end time as parameters and creates an appointment. It returns a string containing the details of the created appointment, including doctor information, department, and hospital. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">doctorId</td><td>The ID of the doctor to book an appointment with. </td></tr>
+    <tr><td class="paramname">startTime</td><td>The start time of the appointment. </td></tr>
+    <tr><td class="paramname">endTime</td><td>The end time of the appointment. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A string containing the details of the booked appointment. </dd></dl>
 
-<p class="reference">References <a class="el" href="PatientService_8java_source.html#l00107">it.unitn.healthcore.business.PatientService.bookAppointment()</a>, <a class="el" href="Appointment_8java_source.html#l00079">it.unitn.healthcore.domain.Appointment.getAppointmentId()</a>, <a class="el" href="Doctor_8java_source.html#l00098">it.unitn.healthcore.domain.Doctor.getDepartment()</a>, <a class="el" href="Appointment_8java_source.html#l00095">it.unitn.healthcore.domain.Appointment.getDoctor()</a>, <a class="el" href="User_8java_source.html#l00078">it.unitn.healthcore.domain.User.getEmail()</a>, <a class="el" href="Appointment_8java_source.html#l00103">it.unitn.healthcore.domain.Appointment.getEndTime()</a>, <a class="el" href="Department_8java_source.html#l00105">it.unitn.healthcore.domain.Department.getHospital()</a>, <a class="el" href="Department_8java_source.html#l00081">it.unitn.healthcore.domain.Department.getName()</a>, <a class="el" href="Hospital_8java_source.html#l00076">it.unitn.healthcore.domain.Hospital.getName()</a>, <a class="el" href="User_8java_source.html#l00062">it.unitn.healthcore.domain.User.getName()</a>, <a class="el" href="Appointment_8java_source.html#l00111">it.unitn.healthcore.domain.Appointment.getStartTime()</a>, and <a class="el" href="User_8java_source.html#l00070">it.unitn.healthcore.domain.User.getSurname()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="PatientController_8java_source.html#l00069">69</a> of file <a class="el" href="PatientController_8java_source.html">PatientController.java</a>.</p>
+
+<p class="reference">References <a class="el" href="PatientService_8java_source.html#l00172">it.unitn.healthcore.business.PatientService.bookAppointment()</a>, <a class="el" href="Appointment_8java_source.html#l00079">it.unitn.healthcore.domain.Appointment.getAppointmentId()</a>, <a class="el" href="Doctor_8java_source.html#l00096">it.unitn.healthcore.domain.Doctor.getDepartment()</a>, <a class="el" href="Appointment_8java_source.html#l00095">it.unitn.healthcore.domain.Appointment.getDoctor()</a>, <a class="el" href="User_8java_source.html#l00078">it.unitn.healthcore.domain.User.getEmail()</a>, <a class="el" href="Appointment_8java_source.html#l00103">it.unitn.healthcore.domain.Appointment.getEndTime()</a>, <a class="el" href="Department_8java_source.html#l00099">it.unitn.healthcore.domain.Department.getHospital()</a>, <a class="el" href="Department_8java_source.html#l00075">it.unitn.healthcore.domain.Department.getName()</a>, <a class="el" href="Hospital_8java_source.html#l00076">it.unitn.healthcore.domain.Hospital.getName()</a>, <a class="el" href="User_8java_source.html#l00062">it.unitn.healthcore.domain.User.getName()</a>, <a class="el" href="Appointment_8java_source.html#l00111">it.unitn.healthcore.domain.Appointment.getStartTime()</a>, and <a class="el" href="User_8java_source.html#l00070">it.unitn.healthcore.domain.User.getSurname()</a>.</p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_a6c1b2c866308e0723c5b9157149ab47b_cgraph.svg" width="1131" height="920"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_a6c1b2c866308e0723c5b9157149ab47b_cgraph.svg" width="1131" height="823"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
+
+</div>
+</div>
+<a id="a3a3ac977996cfd51ff42b9386dccc075"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a3ac977996cfd51ff42b9386dccc075">&#9670;&nbsp;</a></span>cancelAppointment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void it.unitn.healthcore.controller.PatientController.cancelAppointment </td>
+          <td>(</td>
+          <td class="paramtype">@PathVariable Integer&#160;</td>
+          <td class="paramname"><em>appointmentId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cancels an existing appointment for the authenticated patient. </p>
+<p>This endpoint is accessible only to users with the 'PATIENT' role. It takes the appointment ID as a parameter and cancels the corresponding appointment. It does not return any content in the response. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">appointmentId</td><td>The ID of the appointment to cancel. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="PatientController_8java_source.html#l00167">167</a> of file <a class="el" href="PatientController_8java_source.html">PatientController.java</a>.</p>
+
+<p class="reference">References <a class="el" href="PatientService_8java_source.html#l00364">it.unitn.healthcore.business.PatientService.cancelAppointment()</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_a3a3ac977996cfd51ff42b9386dccc075_cgraph.svg" width="1107" height="280"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -205,16 +282,73 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="PatientController_8java_source.html#l00034">34</a> of file <a class="el" href="PatientController_8java_source.html">PatientController.java</a>.</p>
+<p>Retrieves the current insurance plan of the authenticated patient. </p>
+<p>This endpoint is accessible only to users with the 'PATIENT' role. It returns the InsurancePlan object representing the patient's current insurance plan. </p><dl class="section return"><dt>Returns</dt><dd>The current InsurancePlan of the patient. </dd></dl>
 
-<p class="reference">References <a class="el" href="PatientService_8java_source.html#l00060">it.unitn.healthcore.business.PatientService.getDoctorDescription()</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="PatientController_8java_source.html#l00054">54</a> of file <a class="el" href="PatientController_8java_source.html">PatientController.java</a>.</p>
+
+<p class="reference">References <a class="el" href="PatientService_8java_source.html#l00104">it.unitn.healthcore.business.PatientService.getDoctorDescription()</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_aaf7a71336886e01fdc45116e44bf67db_cgraph.svg" width="842" height="640"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_aaf7a71336886e01fdc45116e44bf67db_cgraph.svg" width="842" height="640"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
+
+</div>
+</div>
+<a id="af370cd8f9baad62995675426371b349c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af370cd8f9baad62995675426371b349c">&#9670;&nbsp;</a></span>modifyAppointment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void it.unitn.healthcore.controller.PatientController.modifyAppointment </td>
+          <td>(</td>
+          <td class="paramtype">@PathVariable Integer&#160;</td>
+          <td class="paramname"><em>appointmentId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">@RequestParam LocalDateTime&#160;</td>
+          <td class="paramname"><em>startTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">@RequestParam LocalDateTime&#160;</td>
+          <td class="paramname"><em>endTime</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Modifies the details of an existing appointment for the authenticated patient. </p>
+<p>This endpoint is accessible only to users with the 'PATIENT' role. It takes the appointment ID, new start time, and new end time as parameters and updates the appointment accordingly. It does not return any content in the response. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">appointmentId</td><td>The ID of the appointment to modify. </td></tr>
+    <tr><td class="paramname">startTime</td><td>The new start time for the appointment. </td></tr>
+    <tr><td class="paramname">endTime</td><td>The new end time for the appointment. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="PatientController_8java_source.html#l00156">156</a> of file <a class="el" href="PatientController_8java_source.html">PatientController.java</a>.</p>
+
+<p class="reference">References <a class="el" href="PatientService_8java_source.html#l00225">it.unitn.healthcore.business.PatientService.modifyAppointment()</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_af370cd8f9baad62995675426371b349c_cgraph.svg" width="1112" height="476"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -235,16 +369,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="PatientController_8java_source.html#l00028">28</a> of file <a class="el" href="PatientController_8java_source.html">PatientController.java</a>.</p>
+<p>Retrieves the current insurance plan of the authenticated patient. </p>
+<p>This endpoint is accessible only to users with the 'PATIENT' role. It returns the InsurancePlan object representing the patient's current insurance plan. </p><dl class="section return"><dt>Returns</dt><dd>The current InsurancePlan of the patient. </dd></dl>
 
-<p class="reference">References <a class="el" href="PatientService_8java_source.html#l00054">it.unitn.healthcore.business.PatientService.getCurrentInsurancePlan()</a>, and <a class="el" href="PatientService_8java_source.html#l00032">it.unitn.healthcore.business.PatientService.updateInsurancePlan()</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="PatientController_8java_source.html#l00044">44</a> of file <a class="el" href="PatientController_8java_source.html">PatientController.java</a>.</p>
+
+<p class="reference">References <a class="el" href="PatientService_8java_source.html#l00091">it.unitn.healthcore.business.PatientService.getCurrentInsurancePlan()</a>, and <a class="el" href="PatientService_8java_source.html#l00059">it.unitn.healthcore.business.PatientService.updateInsurancePlan()</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_a7ff985e6a5601dbbef79fd420d2e54b4_cgraph.svg" width="1151" height="248"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_a7ff985e6a5601dbbef79fd420d2e54b4_cgraph.svg" width="1151" height="248"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -265,16 +401,24 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="PatientController_8java_source.html#l00102">102</a> of file <a class="el" href="PatientController_8java_source.html">PatientController.java</a>.</p>
+<p>Retrieves the details of a specific appointment by its ID. </p>
+<p>This endpoint is accessible only to users with the 'PATIENT' role. It returns a string containing the details of the appointment, including doctor information, diagnosis history, and any notes associated with the appointment. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">appointmentId</td><td>The ID of the appointment to retrieve. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A string containing the details of the specified appointment. </dd></dl>
 
-<p class="reference">References <a class="el" href="AppointmentService_8java_source.html#l00074">it.unitn.healthcore.business.AppointmentService.getAppointmentDetails()</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="PatientController_8java_source.html#l00144">144</a> of file <a class="el" href="PatientController_8java_source.html">PatientController.java</a>.</p>
+
+<p class="reference">References <a class="el" href="AppointmentService_8java_source.html#l00103">it.unitn.healthcore.business.AppointmentService.getAppointmentDetails()</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_ac6fe0b7997f8668f80b25419c0d686c6_cgraph.svg" width="1172" height="444"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_ac6fe0b7997f8668f80b25419c0d686c6_cgraph.svg" width="1172" height="444"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -294,16 +438,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="PatientController_8java_source.html#l00068">68</a> of file <a class="el" href="PatientController_8java_source.html">PatientController.java</a>.</p>
+<p>Retrieves a list of future appointments for the authenticated patient. </p>
+<p>This endpoint is accessible only to users with the 'PATIENT' role. It returns a string representation of each future appointment, including the appointment ID, start and end times, and doctor information. </p><dl class="section return"><dt>Returns</dt><dd>A string containing the details of future appointments for the patient. </dd></dl>
 
-<p class="reference">References <a class="el" href="AppointmentService_8java_source.html#l00025">it.unitn.healthcore.business.AppointmentService.getFutureAppointments()</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="PatientController_8java_source.html#l00101">101</a> of file <a class="el" href="PatientController_8java_source.html">PatientController.java</a>.</p>
+
+<p class="reference">References <a class="el" href="AppointmentService_8java_source.html#l00045">it.unitn.healthcore.business.AppointmentService.getFutureAppointments()</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_a4207a6fab035c5242ecda1abdb49169e_cgraph.svg" width="1210" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_a4207a6fab035c5242ecda1abdb49169e_cgraph.svg" width="1210" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -323,16 +469,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="PatientController_8java_source.html#l00085">85</a> of file <a class="el" href="PatientController_8java_source.html">PatientController.java</a>.</p>
+<p>Retrieves a list of past appointments for the authenticated patient. </p>
+<p>This endpoint is accessible only to users with the 'PATIENT' role. It returns a string representation of each past appointment, including the appointment ID, start and end times, and doctor information. </p><dl class="section return"><dt>Returns</dt><dd>A string containing the details of past appointments for the patient. </dd></dl>
 
-<p class="reference">References <a class="el" href="AppointmentService_8java_source.html#l00050">it.unitn.healthcore.business.AppointmentService.getPastAppointments()</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="PatientController_8java_source.html#l00122">122</a> of file <a class="el" href="PatientController_8java_source.html">PatientController.java</a>.</p>
+
+<p class="reference">References <a class="el" href="AppointmentService_8java_source.html#l00074">it.unitn.healthcore.business.AppointmentService.getPastAppointments()</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_a8303b97c30b7b5049de75826bafceb4c_cgraph.svg" width="1182" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_a8303b97c30b7b5049de75826bafceb4c_cgraph.svg" width="1182" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>

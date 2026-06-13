@@ -1,0 +1,4 @@
+<map id="it.unitn.healthcore.business.DoctorService.getAvailableDepartments" name="it.unitn.healthcore.business.DoctorService.getAvailableDepartments">
+<area shape="rect" id="node1" title="Retrieves a list of departments that have available staff positions for new doctors." alt="" coords="361,5,644,47"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController.html#adb883beb797f320272c45dd204055bfe" title="Retrieves a list of available departments for doctor assignment." alt="" coords="5,5,313,47"/>
+</map>

@@ -1,6 +1,6 @@
 var namespaceit_1_1unitn_1_1healthcore_1_1persistence =
 [
-    [ "AppointmentRepository", "interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1AppointmentRepository.html", "interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1AppointmentRepository" ],
+    [ "AppointmentRepository", "interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1AppointmentRepository.html", null ],
     [ "DepartmentRepository", "interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1DepartmentRepository.html", null ],
     [ "DoctorRepository", "interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1DoctorRepository.html", null ],
     [ "HospitalRepository", "interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1HospitalRepository.html", null ],

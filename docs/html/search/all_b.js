@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['otppage_140',['otpPage',['../classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#af2c354e628cb4fd89bccf4931def837a',1,'it::unitn::healthcore::controller::UserController']]]
+  ['note_137',['Note',['../classit_1_1unitn_1_1healthcore_1_1domain_1_1Note.html',1,'it.unitn.healthcore.domain.Note'],['../classit_1_1unitn_1_1healthcore_1_1domain_1_1Note.html#a38699fbcbf69ee37bebde3093ad20acf',1,'it.unitn.healthcore.domain.Note.Note()'],['../classit_1_1unitn_1_1healthcore_1_1domain_1_1Note.html#a6dd64b5bb65a7080e8fac6924f5a232b',1,'it.unitn.healthcore.domain.Note.Note(Appointment appointment, String content)']]],
+  ['note_2ejava_138',['Note.java',['../Note_8java.html',1,'']]]
 ];

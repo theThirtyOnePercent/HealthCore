@@ -237,7 +237,11 @@ public class DoctorService {
                 .sorted(java.util.Comparator.comparing(Shift::getStartTime))
                 .toList();
     }
-
+    /** @brief Retrieves a list of departments that have available staff positions for new doctors.
+     * This method interacts with the DepartmentRepository to fetch all department records from the database.
+     *  It then filters the list to include only those departments that have available staff positions (i.e., the number of occupied positions is less than the total staff positions). The filtered list of available departments is returned.
+     * @return A list of departments that have available staff positions for new doctors.
+     */
     public List<Department> getAvailableDepartments(){
         List<Department> departments = departmentRepository.findAll();
 
@@ -252,7 +256,15 @@ public class DoctorService {
 
         return departments;
     }
-
+    /**
+     * @brief Changes the department of a doctor to a new department.
+     * This method retrieves the doctor and the new department based on their IDs. It checks if the new department has available staff positions. If the department is full, it throws a ResponseStatusException with a 400 BAD REQUEST status. 
+     * If the department has available positions, it updates the doctor's department
+     * The method is annotated with @Transactional to ensure that the changes are persisted in the database.
+     * @param doctorId The ID of the doctor whose department is to be changed.
+     * @param departmentId The ID of the new department to which the doctor will be assigned.
+     * @throws ResponseStatusException if the doctor or department is not found, or if the new department has no available staff positions.
+     */
     @Transactional
     public void changeDepartment(Integer doctorId, Integer departmentId){
         Doctor doctor = doctorRepository.findById(doctorId).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "doctor not found"));

@@ -1,4 +1,4 @@
 <map id="it.unitn.healthcore.business.PatientService.getDoctorDescription" name="it.unitn.healthcore.business.PatientService.getDoctorDescription">
-<area shape="rect" id="node1" title=" " alt="" coords="325,5,583,47"/>
-<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#aaf7a71336886e01fdc45116e44bf67db" title=" " alt="" coords="5,5,277,47"/>
+<area shape="rect" id="node1" title="Retrieves detailed information about a doctor based on their ID." alt="" coords="325,5,583,47"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#aaf7a71336886e01fdc45116e44bf67db" title="Retrieves the current insurance plan of the authenticated patient." alt="" coords="5,5,277,47"/>
 </map>

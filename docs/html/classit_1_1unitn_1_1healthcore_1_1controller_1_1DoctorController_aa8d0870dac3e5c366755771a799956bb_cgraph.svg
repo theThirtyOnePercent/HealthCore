@@ -22,7 +22,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1business_1_1DoctorService.html#a0144281b10cf3bd09275e4f2898c3aea" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1business_1_1DoctorService.html#a0144281b10cf3bd09275e4f2898c3aea" target="_top" xlink:title="Helper method to retrieve detailed information about a doctor associated with a specific appointment.">
 <polygon fill="white" stroke="black" points="194,-122.5 194,-152.5 349,-152.5 349,-122.5 194,-122.5"/>
 <text text-anchor="start" x="202" y="-140.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.business.</text>
 <text text-anchor="middle" x="271.5" y="-129.5" font-family="Helvetica,sans-Serif" font-size="10.00">DoctorService.modifyShift</text>

@@ -1,6 +1,8 @@
 <map id="it.unitn.healthcore.domain.Department.getTotalStaffPositions" name="it.unitn.healthcore.domain.Department.getTotalStaffPositions">
-<area shape="rect" id="node1" title="Returns the total staff positions within the department." alt="" coords="785,5,1031,47"/>
-<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#af71b0f13c31c938efe9fce54ab3d7f7d" title=" " alt="" coords="531,5,737,47"/>
-<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a8bb76a3af453837d334e1f5a9551ff56" title=" " alt="" coords="264,5,483,47"/>
-<area shape="rect" id="node4" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#ac9a8c37503c4a708c85863870ee27da7" title=" " alt="" coords="5,5,216,47"/>
+<area shape="rect" id="node1" title="Returns the total staff positions within the department." alt="" coords="860,39,1105,80"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1DoctorService.html#ab2c93c48b93c7f003012f699a06841cc" title="Changes the department of a doctor to a new department." alt="" coords="569,5,812,47"/>
+<area shape="rect" id="node4" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#af71b0f13c31c938efe9fce54ab3d7f7d" title="Registers a new doctor in the system." alt="" coords="587,71,794,112"/>
+<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController.html#aae8b5b27a77226e6e5c7a1ce5e177e92" title="Changes the department assignment for a specific doctor." alt="" coords="264,5,521,47"/>
+<area shape="rect" id="node5" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a8bb76a3af453837d334e1f5a9551ff56" title="Registers a new employee (doctor or administrator) in the system." alt="" coords="283,71,502,112"/>
+<area shape="rect" id="node6" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#ac9a8c37503c4a708c85863870ee27da7" title=" " alt="" coords="5,71,216,112"/>
 </map>

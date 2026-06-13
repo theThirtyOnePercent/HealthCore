@@ -203,8 +203,6 @@ public class PatientService{
         }
 
         // Create appointment
-
-
         if (!canProceed) {
             throw new ResponseStatusException(HttpStatus.UNAUTHORIZED, "Payment was not successful");
         }
@@ -216,6 +214,14 @@ public class PatientService{
 
     }
 
+    /** @brief Modifies an existing appointment for the currently authenticated patient.
+     * This method takes an appointment ID, new start time, and new end time as input to modify an existing appointment. It first retrieves the appointment based on the provided ID and checks if it belongs to the currently authenticated patient.
+     *  It also checks if the appointment has not already started. If these checks pass, it validates the new appointment details (e.g., time intervals, doctor's availability, bed availability) and updates the appointment with the new start and end times before saving it to the database.
+     * @param appointmentId The ID of the appointment to be modified.
+     * @param start The new start date and time of the appointment.
+     * @param end The new end date and time of the appointment.
+     * @throws ResponseStatusException if any of the checks fail (e.g., appointment not found, not assigned to patient, appointment already started, invalid time intervals, doctor not available, no beds available) or if there is an issue with modifying the appointment.
+     */
     public void modifyAppointment(Integer appointmentId,LocalDateTime startTime, LocalDateTime endTime){
         Appointment appointment = appointmentRepository.findById(appointmentId)
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Appointment not found"));
@@ -242,7 +248,15 @@ public class PatientService{
 
         appointmentRepository.save(appointment);
     }
-
+    /** @brief Validates the details of an appointment to ensure it can be booked or modified.
+     * This method performs several checks to validate the appointment details, including verifying that the start time is before the end time, checking if the requested time is during the doctor's shift, ensuring there are no overlapping appointments for the doctor, confirming bed availability in the department, and checking equipment availability. If any of these checks fail, it throws a ResponseStatusException with an appropriate error message.
+     * @param patient The patient for whom the appointment is being validated.
+     * @param doctor The doctor with whom the appointment is being validated.
+     * @param start The proposed start date and time of the appointment.
+     * @param end The proposed end date and time of the appointment.
+     * @param excludedAppointmentId An optional parameter representing an appointment ID to exclude from overlap checks (used when modifying an existing appointment).
+     * @throws ResponseStatusException if any of the validation checks fail (e.g., invalid time intervals, doctor not available, no beds available, not enough equipment available).
+     */
     private void validateAppointment(
             Patient patient,
             Doctor doctor,
@@ -254,7 +268,6 @@ public class PatientService{
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Start must be before end");
         }
 
-        // Check if it is during doctor shift time
         boolean insideShift = doctor.getShifts().stream()
                 .anyMatch(shift -> !start.isBefore(shift.getStartTime()) && !end.isAfter(shift.getEndTime()));
 
@@ -289,6 +302,15 @@ public class PatientService{
         checkEquipmentAvailability(doctor, start, end, excludedAppointmentId);
     }
 
+    /** @brief Checks the availability of equipment required by a doctor during a specified time interval.
+     * This method checks if the equipment required by a doctor is available during the specified start and end times. It retrieves overlapping appointments for the doctor's department and counts the quantity of each equipment in use. 
+     * It then compares the total required quantity of each equipment (including the new appointment) with the available quantity in the department. If any equipment exceeds its available quantity, it throws a ResponseStatusException with an appropriate error message.
+     * @param doctor The doctor for whom to check equipment availability.
+     * @param start The proposed start date and time of the appointment.
+     * @param end The proposed end date and time of the appointment.
+     * @param excludedAppointmentId An optional parameter representing an appointment ID to exclude from overlap checks (used when modifying an existing appointment).
+     * @throws ResponseStatusException if any required equipment exceeds its available quantity during the specified time interval.
+     */
     private void checkEquipmentAvailability(Doctor doctor, LocalDateTime start, LocalDateTime end, Integer excludedAppointmentId){
 
         Department department = doctor.getDepartment();
@@ -332,7 +354,13 @@ public class PatientService{
             }
         }
     }
-
+    /** @brief Cancels an existing appointment for the currently authenticated patient.
+     * This method takes an appointment ID as input and cancels the corresponding appointment. It first retrieves the appointment based on the provided ID and checks if it belongs to the currently authenticated patient. 
+     * If the appointment does not belong to the patient, it throws a ResponseStatusException with a 403 FORBIDDEN status. 
+     * If the appointment is valid for cancellation, it checks if the cancellation is happening more than 24 hours before the appointment start time. If so, it processes a refund for the patient. Finally, it deletes the appointment from the database.
+     * @param appointmentId The ID of the appointment to be canceled.
+     * @throws ResponseStatusException if any of the checks fail (e.g., appointment not found, not assigned to patient) or if there is an issue with canceling the appointment.
+     */
     public void cancelAppointment (Integer appointmentId){
         Appointment appointment = appointmentRepository.findById(appointmentId)
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Appointment not found"));
@@ -355,7 +383,11 @@ public class PatientService{
 
         appointmentRepository.deleteById(appointmentId);
     }
-
+    /** @brief Helper method to process a refund for a patient.
+     * This method is a placeholder for the actual refund processing logic that would interact with a payment gateway or system to handle refunds for patients. In this implementation, 
+     * it does not perform any actual refund processing. In a real-world application, this method would contain logic to process refunds and return the appropriate result based on the outcome of the refund transaction.
+     * @param patient The patient for whom the refund is being processed.
+     */
     private void refundPayment(Patient patient){
         //This is where the system would contact the payment system to perform the refund
     }

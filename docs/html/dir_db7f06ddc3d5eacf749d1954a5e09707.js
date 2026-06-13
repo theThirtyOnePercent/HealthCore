@@ -1,7 +1,7 @@
 var dir_db7f06ddc3d5eacf749d1954a5e09707 =
 [
     [ "AppointmentRepository.java", "AppointmentRepository_8java.html", [
-      [ "AppointmentRepository", "interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1AppointmentRepository.html", "interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1AppointmentRepository" ]
+      [ "AppointmentRepository", "interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1AppointmentRepository.html", null ]
     ] ],
     [ "DepartmentRepository.java", "DepartmentRepository_8java.html", [
       [ "DepartmentRepository", "interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1DepartmentRepository.html", null ]

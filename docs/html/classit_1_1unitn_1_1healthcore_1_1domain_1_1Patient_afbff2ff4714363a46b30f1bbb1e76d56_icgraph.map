@@ -1,5 +1,5 @@
 <map id="it.unitn.healthcore.domain.Patient.setInsurancePlan" name="it.unitn.healthcore.domain.Patient.setInsurancePlan">
 <area shape="rect" id="node1" title="Insurance plan setter." alt="" coords="627,5,825,47"/>
-<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService.html#a541ee9273fd696797608c005eb4d2f78" title=" " alt="" coords="324,5,579,47"/>
-<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#a7ff985e6a5601dbbef79fd420d2e54b4" title=" " alt="" coords="5,5,276,47"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService.html#a541ee9273fd696797608c005eb4d2f78" title="Updates the insurance plan for the currently authenticated patient." alt="" coords="324,5,579,47"/>
+<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#a7ff985e6a5601dbbef79fd420d2e54b4" title="Retrieves the current insurance plan of the authenticated patient." alt="" coords="5,5,276,47"/>
 </map>

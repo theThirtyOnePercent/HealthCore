@@ -1,5 +1,5 @@
 <map id="it.unitn.healthcore.business.AppointmentService.getAppointmentDetails" name="it.unitn.healthcore.business.AppointmentService.getAppointmentDetails">
-<area shape="rect" id="node1" title=" " alt="" coords="341,31,604,87"/>
+<area shape="rect" id="node1" title="Retrieves detailed information about a specific appointment based on the appointment ID." alt="" coords="341,31,604,87"/>
 <area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController.html#aaf741f63621b758e3aab2e1af0639398" title="Retrieves the details of a specific appointment by its ID." alt="" coords="6,5,293,47"/>
-<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#ac6fe0b7997f8668f80b25419c0d686c6" title=" " alt="" coords="5,71,293,112"/>
+<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#ac6fe0b7997f8668f80b25419c0d686c6" title="Retrieves the details of a specific appointment by its ID." alt="" coords="5,71,293,112"/>
 </map>

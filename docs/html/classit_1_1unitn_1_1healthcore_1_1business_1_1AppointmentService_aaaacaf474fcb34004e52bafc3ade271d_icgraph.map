@@ -1,5 +1,5 @@
 <map id="it.unitn.healthcore.business.AppointmentService.getPastAppointments" name="it.unitn.healthcore.business.AppointmentService.getPastAppointments">
-<area shape="rect" id="node1" title=" " alt="" coords="336,39,633,80"/>
+<area shape="rect" id="node1" title="Retrieves a list of past appointments for the currently authenticated user." alt="" coords="336,39,633,80"/>
 <area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController.html#a6d1a63a3f86734bbe0af66cf4b9cc4f8" title="Retrieves a list of past appointments for the currently authenticated doctor." alt="" coords="6,5,287,47"/>
-<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#a8303b97c30b7b5049de75826bafceb4c" title=" " alt="" coords="5,71,288,112"/>
+<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#a8303b97c30b7b5049de75826bafceb4c" title="Retrieves a list of past appointments for the authenticated patient." alt="" coords="5,71,288,112"/>
 </map>

@@ -1,4 +1,4 @@
 <map id="it.unitn.healthcore.controller.DoctorController.viewDoctors" name="it.unitn.healthcore.controller.DoctorController.viewDoctors">
 <area shape="rect" id="node1" title="Retrieves a list of all doctors in the system." alt="" coords="5,5,219,47"/>
-<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1DoctorService.html#a1da4574f3abf31e6d36fac01f901347c" title=" " alt="" coords="267,5,473,47"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1DoctorService.html#a1da4574f3abf31e6d36fac01f901347c" title="Retrieves a list of all doctors in the system." alt="" coords="267,5,473,47"/>
 </map>

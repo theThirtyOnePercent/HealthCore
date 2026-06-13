@@ -12,7 +12,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="Retrieves a list of past appointments for the currently authenticated user.">
 <polygon fill="#bfbfbf" stroke="black" points="248,-24.5 248,-54.5 471,-54.5 471,-24.5 248,-24.5"/>
 <text text-anchor="start" x="256" y="-42.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.business.</text>
 <text text-anchor="middle" x="359.5" y="-31.5" font-family="Helvetica,sans-Serif" font-size="10.00">AppointmentService.getPastAppointments</text>
@@ -38,7 +38,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#a8303b97c30b7b5049de75826bafceb4c" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#a8303b97c30b7b5049de75826bafceb4c" target="_top" xlink:title="Retrieves a list of past appointments for the authenticated patient.">
 <polygon fill="white" stroke="black" points="0,-0.5 0,-30.5 212,-30.5 212,-0.5 0,-0.5"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.controller.</text>
 <text text-anchor="middle" x="106" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">PatientController.viewPastAppointments</text>

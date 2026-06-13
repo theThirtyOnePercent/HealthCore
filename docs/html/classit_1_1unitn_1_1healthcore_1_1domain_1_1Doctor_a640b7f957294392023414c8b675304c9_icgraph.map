@@ -1,5 +1,5 @@
 <map id="it.unitn.healthcore.domain.Doctor.getSpecialization" name="it.unitn.healthcore.domain.Doctor.getSpecialization">
 <area shape="rect" id="node1" title="Specialization getter." alt="" coords="631,5,829,47"/>
-<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService.html#ab163cba2913666d9f4505d4b6e7e1a69" title=" " alt="" coords="325,5,583,47"/>
-<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#aaf7a71336886e01fdc45116e44bf67db" title=" " alt="" coords="5,5,277,47"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService.html#ab163cba2913666d9f4505d4b6e7e1a69" title="Retrieves detailed information about a doctor based on their ID." alt="" coords="325,5,583,47"/>
+<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#aaf7a71336886e01fdc45116e44bf67db" title="Retrieves the current insurance plan of the authenticated patient." alt="" coords="5,5,277,47"/>
 </map>

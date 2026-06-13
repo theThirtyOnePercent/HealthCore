@@ -25,7 +25,9 @@ public class PasswordConfirmationForm {
         this.password = password;
         this.passwordConfirmation = passwordConfirmation;
     }
-
+    /** @brief Validates the password form by checking if the password and confirmation match, if the password meets security requirements, and if the email is valid.
+     * If any validation fails, it throws a ResponseStatusException with an appropriate HTTP status code and message indicating the reason for the failure.
+     */
     private Boolean isValidPassword(){
         if (this.password == null) {
             return false;
@@ -37,7 +39,11 @@ public class PasswordConfirmationForm {
 
         return this.password.matches(passwordRegex);
     }
-
+    /** @brief Validates the email format using a regular expression.
+     * This method checks if the email is not null and matches a specific regex pattern that allows for common email formats. 
+     * The regex ensures that the email contains allowed characters before the '@' symbol, followed by a valid domain name and a domain extension with at least two letters.
+     * @return true if the email is valid, false otherwise.
+     */
     private boolean isValidEmail() {
         if (this.email == null) {
             return false;
@@ -53,6 +59,9 @@ public class PasswordConfirmationForm {
         return this.email.matches(emailRegex);
     }
 
+    /** @brief Validates the password confirmation form by checking if the password and confirmation match, if the password meets security requirements, and if the email is valid.
+     * If any validation fails, it throws a ResponseStatusException with an appropriate HTTP status code and message indicating the reason for the failure.
+     */
     public void isValidPasswordForm (){
 
         //Checks if it is not null

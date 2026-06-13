@@ -1,0 +1,5 @@
+<map id="it.unitn.healthcore.domain.Doctor.setDepartment" name="it.unitn.healthcore.domain.Doctor.setDepartment">
+<area shape="rect" id="node1" title="Department setter." alt="" coords="601,5,800,47"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1DoctorService.html#ab2c93c48b93c7f003012f699a06841cc" title="Changes the department of a doctor to a new department." alt="" coords="311,5,553,47"/>
+<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController.html#aae8b5b27a77226e6e5c7a1ce5e177e92" title="Changes the department assignment for a specific doctor." alt="" coords="5,5,263,47"/>
+</map>

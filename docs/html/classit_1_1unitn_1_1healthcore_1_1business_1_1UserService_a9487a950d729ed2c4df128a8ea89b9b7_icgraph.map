@@ -1,4 +1,4 @@
 <map id="it.unitn.healthcore.business.UserService.deleteUser" name="it.unitn.healthcore.business.UserService.deleteUser">
-<area shape="rect" id="node1" title=" " alt="" coords="265,5,472,47"/>
+<area shape="rect" id="node1" title="Deletes a user from the system based on their ID." alt="" coords="265,5,472,47"/>
 <area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#aa9d85586ed83e4d9865621769e24fd81" title="delete the current user&#39;s account and redirect to the login page." alt="" coords="5,5,217,47"/>
 </map>

@@ -90,17 +90,27 @@ $(document).ready(function(){initNavTree('classit_1_1unitn_1_1healthcore_1_1busi
 <div class="title">it.unitn.healthcore.business.HospitalService Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="classit_1_1unitn_1_1healthcore_1_1business_1_1HospitalService.html" title="HospitalService is a service class that provides business logic related to hospital management.">HospitalService</a> is a service class that provides business logic related to hospital management.  
+ <a href="classit_1_1unitn_1_1healthcore_1_1business_1_1HospitalService.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a49fc879f7b481178364edeb4d867793f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classit_1_1unitn_1_1healthcore_1_1business_1_1HospitalService.html#a49fc879f7b481178364edeb4d867793f">HospitalService</a> (<a class="el" href="interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1HospitalRepository.html">HospitalRepository</a> hospitalRepository)</td></tr>
+<tr class="memdesc:a49fc879f7b481178364edeb4d867793f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for the <a class="el" href="classit_1_1unitn_1_1healthcore_1_1business_1_1HospitalService.html" title="HospitalService is a service class that provides business logic related to hospital management.">HospitalService</a> class.  <a href="classit_1_1unitn_1_1healthcore_1_1business_1_1HospitalService.html#a49fc879f7b481178364edeb4d867793f">More...</a><br /></td></tr>
 <tr class="separator:a49fc879f7b481178364edeb4d867793f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae010824c3799305859c5cee01311739f"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classit_1_1unitn_1_1healthcore_1_1domain_1_1Hospital.html">Hospital</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classit_1_1unitn_1_1healthcore_1_1business_1_1HospitalService.html#ae010824c3799305859c5cee01311739f">getAllHospital</a> ()</td></tr>
+<tr class="memdesc:ae010824c3799305859c5cee01311739f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a list of all hospitals in the system.  <a href="classit_1_1unitn_1_1healthcore_1_1business_1_1HospitalService.html#ae010824c3799305859c5cee01311739f">More...</a><br /></td></tr>
 <tr class="separator:ae010824c3799305859c5cee01311739f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="HospitalService_8java_source.html#l00011">11</a> of file <a class="el" href="HospitalService_8java_source.html">HospitalService.java</a>.</p>
+<div class="textblock"><p><a class="el" href="classit_1_1unitn_1_1healthcore_1_1business_1_1HospitalService.html" title="HospitalService is a service class that provides business logic related to hospital management.">HospitalService</a> is a service class that provides business logic related to hospital management. </p>
+<p>It interacts with the HospitalRepository to perform operations related to retrieving hospital data from the database. @detail This service class contains methods for retrieving the hierarchy of hospitals in the system, which can be used by the HospitalController to provide endpoints for administrators to view hospital information. @detail Also it serves as an intermediary between the controller layer and the persistence layer, ensuring that business rules are applied when accessing hospital data. </p><dl class="section see"><dt>See also</dt><dd>HospitalRepository </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>HealthCore Team </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2026-06-11 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="HospitalService_8java_source.html#l00019">19</a> of file <a class="el" href="HospitalService_8java_source.html">HospitalService.java</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a49fc879f7b481178364edeb4d867793f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a49fc879f7b481178364edeb4d867793f">&#9670;&nbsp;</a></span>HospitalService()</h2>
@@ -118,7 +128,15 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="HospitalService_8java_source.html#l00015">15</a> of file <a class="el" href="HospitalService_8java_source.html">HospitalService.java</a>.</p>
+<p>Constructor for the <a class="el" href="classit_1_1unitn_1_1healthcore_1_1business_1_1HospitalService.html" title="HospitalService is a service class that provides business logic related to hospital management.">HospitalService</a> class. </p>
+<p>This constructor is used to inject the HospitalRepository dependency into the service. The @Autowired annotation allows Spring to automatically wire the repository when creating an instance of the service. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hospitalRepository</td><td>The repository that provides access to hospital data in the database. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="HospitalService_8java_source.html#l00026">26</a> of file <a class="el" href="HospitalService_8java_source.html">HospitalService.java</a>.</p>
 
 </div>
 </div>
@@ -138,7 +156,10 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="HospitalService_8java_source.html#l00019">19</a> of file <a class="el" href="HospitalService_8java_source.html">HospitalService.java</a>.</p>
+<p>Retrieves a list of all hospitals in the system. </p>
+<p>This method interacts with the HospitalRepository to retrieve all hospital entities from the database and returns them as a list. It can be used by the HospitalController to provide an endpoint for administrators to view the hierarchy of hospitals in the system. </p><dl class="section return"><dt>Returns</dt><dd>A list of Hospital objects representing all hospitals in the system. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="HospitalService_8java_source.html#l00033">33</a> of file <a class="el" href="HospitalService_8java_source.html">HospitalService.java</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="HospitalController_8java_source.html#l00042">it.unitn.healthcore.controller.HospitalController.viewHierarchy()</a>.</p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -146,8 +167,7 @@ Public Member Functions</h2></td></tr>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classit_1_1unitn_1_1healthcore_1_1business_1_1HospitalService_ae010824c3799305859c5cee01311739f_icgraph.svg" width="516" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classit_1_1unitn_1_1healthcore_1_1business_1_1HospitalService_ae010824c3799305859c5cee01311739f_icgraph.svg" width="516" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>

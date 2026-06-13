@@ -1,20 +1,21 @@
 <map id="it.unitn.healthcore.business.UserService.updateUserProfile" name="it.unitn.healthcore.business.UserService.updateUserProfile">
-<area shape="rect" id="node1" title=" " alt="" coords="5,443,225,484"/>
-<area shape="rect" id="node2" href="$interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1UserRepository.html#a6a646ae44d01189ff44c81c03fc92fa8" title=" " alt="" coords="635,71,867,112"/>
-<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a33213d05bfda4e7384e17b18332d4bb5" title=" " alt="" coords="313,27,520,68"/>
-<area shape="rect" id="node5" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1PasswordConfirmationForm.html#ad2a321af868704e56c42d5306a8acd91" title="Email getter." alt="" coords="620,136,883,177"/>
-<area shape="rect" id="node6" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#a5b48be6dca19b7d4d43ec2e6a3b91502" title="Returns the email address of the user." alt="" coords="317,312,516,353"/>
-<area shape="rect" id="node7" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1ProfileUpdateForm.html#a74ba2df0ee53889299dc64bd16a6c889" title="Name getter." alt="" coords="313,377,520,419"/>
-<area shape="rect" id="node8" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#a0c78137c0cf7b414cc88dcc41895d5a7" title="Returns the first name of the user." alt="" coords="317,443,516,484"/>
-<area shape="rect" id="node9" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1PasswordConfirmationForm.html#aa7de23a583db33eba13ddecad973ceca" title="Password getter." alt="" coords="608,267,895,308"/>
-<area shape="rect" id="node10" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1PasswordConfirmationForm.html#add77c52ff85c3a8caefe02af899fe10b" title="Password confirmation getter." alt="" coords="273,509,560,565"/>
-<area shape="rect" id="node11" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1ProfileUpdateForm.html#a8bd433fb0c7bfbe8eac0149bbfa707f6" title="Specialization getter." alt="" coords="287,589,546,631"/>
-<area shape="rect" id="node12" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1ProfileUpdateForm.html#af0bb243e48137fe877431ee1062a7c41" title="Surname getter." alt="" coords="303,655,530,696"/>
-<area shape="rect" id="node13" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#a1e52a76c1ad5fb44fe9c312e11203c9e" title="Returns the last name of the user." alt="" coords="317,720,516,761"/>
-<area shape="rect" id="node14" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#acc1ae5218e790edcc69ad692c84871a2" title=" " alt="" coords="309,195,524,236"/>
-<area shape="rect" id="node16" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#a637da3e206f619ffbd1b1589367b2114" title="Sets the email address of the user." alt="" coords="317,785,516,827"/>
-<area shape="rect" id="node17" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#a91c87abb5e6a05b9a218ee0a9537d0fb" title="Sets the first name of the user." alt="" coords="317,851,516,892"/>
-<area shape="rect" id="node18" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#aafba5fb3c10ba03d2e9121427365ec92" title="Sets the last name of the user." alt="" coords="317,916,516,957"/>
-<area shape="rect" id="node4" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a703ed9778e3ac6cd9741220089b5f48d" title=" " alt="" coords="631,5,871,47"/>
-<area shape="rect" id="node15" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#aae0addd4b63049c29c751a6c03e17f2c" title="Sets the password of the user." alt="" coords="652,201,851,243"/>
+<area shape="rect" id="node1" title="Updates the profile of the currently authenticated user based on the provided object ." alt="" coords="5,567,225,608"/>
+<area shape="rect" id="node2" href="$interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1UserRepository.html#a6a646ae44d01189ff44c81c03fc92fa8" title=" " alt="" coords="595,71,827,112"/>
+<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a33213d05bfda4e7384e17b18332d4bb5" title="Retrieves the currently authenticated user from the database." alt="" coords="299,71,506,112"/>
+<area shape="rect" id="node5" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1PasswordConfirmationForm.html#ad2a321af868704e56c42d5306a8acd91" title="Email getter." alt="" coords="580,136,843,177"/>
+<area shape="rect" id="node6" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#a5b48be6dca19b7d4d43ec2e6a3b91502" title="Returns the email address of the user." alt="" coords="303,501,502,543"/>
+<area shape="rect" id="node7" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1ProfileUpdateForm.html#a74ba2df0ee53889299dc64bd16a6c889" title="Name getter." alt="" coords="299,567,506,608"/>
+<area shape="rect" id="node8" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#a0c78137c0cf7b414cc88dcc41895d5a7" title="Returns the first name of the user." alt="" coords="303,632,502,673"/>
+<area shape="rect" id="node9" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1PasswordConfirmationForm.html#aa7de23a583db33eba13ddecad973ceca" title="Password getter." alt="" coords="891,327,1177,368"/>
+<area shape="rect" id="node10" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1PasswordConfirmationForm.html#add77c52ff85c3a8caefe02af899fe10b" title="Password confirmation getter." alt="" coords="891,414,1177,470"/>
+<area shape="rect" id="node11" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1ProfileUpdateForm.html#a8bd433fb0c7bfbe8eac0149bbfa707f6" title="Specialization getter." alt="" coords="273,697,532,739"/>
+<area shape="rect" id="node12" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1ProfileUpdateForm.html#af0bb243e48137fe877431ee1062a7c41" title="Surname getter." alt="" coords="289,763,516,804"/>
+<area shape="rect" id="node13" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#a1e52a76c1ad5fb44fe9c312e11203c9e" title="Returns the last name of the user." alt="" coords="303,828,502,869"/>
+<area shape="rect" id="node14" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#acc1ae5218e790edcc69ad692c84871a2" title="Recovers the password for a user by verifying the OTP and updating the password in the database." alt="" coords="295,252,510,293"/>
+<area shape="rect" id="node17" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#a637da3e206f619ffbd1b1589367b2114" title="Sets the email address of the user." alt="" coords="303,893,502,935"/>
+<area shape="rect" id="node18" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#a91c87abb5e6a05b9a218ee0a9537d0fb" title="Sets the first name of the user." alt="" coords="303,959,502,1000"/>
+<area shape="rect" id="node19" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#aafba5fb3c10ba03d2e9121427365ec92" title="Sets the last name of the user." alt="" coords="303,1024,502,1065"/>
+<area shape="rect" id="node4" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a703ed9778e3ac6cd9741220089b5f48d" title="Retrieves the email of the currently authenticated user." alt="" coords="591,5,831,47"/>
+<area shape="rect" id="node15" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1PasswordConfirmationForm.html#a181a1ca7ab3c4d07cb7f3817c1de6974" title="Validates the password confirmation form by checking if the password and confirmation match,..." alt="" coords="588,319,835,375"/>
+<area shape="rect" id="node16" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#aae0addd4b63049c29c751a6c03e17f2c" title="Sets the password of the user." alt="" coords="612,253,811,295"/>
 </map>

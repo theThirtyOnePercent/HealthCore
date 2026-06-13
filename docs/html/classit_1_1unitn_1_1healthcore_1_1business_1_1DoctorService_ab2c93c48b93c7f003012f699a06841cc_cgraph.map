@@ -1,0 +1,6 @@
+<map id="it.unitn.healthcore.business.DoctorService.changeDepartment" name="it.unitn.healthcore.business.DoctorService.changeDepartment">
+<area shape="rect" id="node1" title="Changes the department of a doctor to a new department." alt="" coords="5,71,248,112"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1Department.html#ad38ac8809036af86857a94672fd341e0" title=" " alt="" coords="319,5,518,47"/>
+<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1Department.html#adb4a544815968649e801e2182b7069f0" title="Returns the total staff positions within the department." alt="" coords="296,71,541,112"/>
+<area shape="rect" id="node4" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor.html#a38578f80c03e1b587010e19bbc37fa4d" title="Department setter." alt="" coords="319,136,518,177"/>
+</map>

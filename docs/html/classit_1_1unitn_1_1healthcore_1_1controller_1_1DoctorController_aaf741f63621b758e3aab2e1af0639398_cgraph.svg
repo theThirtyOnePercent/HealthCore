@@ -22,7 +22,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1business_1_1AppointmentService.html#a6df398766f183e79fe315aea5f1752a4" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1business_1_1AppointmentService.html#a6df398766f183e79fe315aea5f1752a4" target="_top" xlink:title="Retrieves detailed information about a specific appointment based on the appointment ID.">
 <polygon fill="white" stroke="black" points="251,-142 251,-183 448,-183 448,-142 251,-142"/>
 <text text-anchor="start" x="259" y="-171" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.business.</text>
 <text text-anchor="start" x="259" y="-160" font-family="Helvetica,sans-Serif" font-size="10.00">AppointmentService.getAppointment</text>
@@ -55,7 +55,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a33213d05bfda4e7384e17b18332d4bb5" target="_top" xlink:title=" ">
+<g id="a_node4"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a33213d05bfda4e7384e17b18332d4bb5" target="_top" xlink:title="Retrieves the currently authenticated user from the database.">
 <polygon fill="white" stroke="black" points="491.5,-245.5 491.5,-275.5 646.5,-275.5 646.5,-245.5 491.5,-245.5"/>
 <text text-anchor="start" x="499.5" y="-263.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.business.</text>
 <text text-anchor="middle" x="569" y="-252.5" font-family="Helvetica,sans-Serif" font-size="10.00">UserService.getCurrentUser</text>
@@ -167,7 +167,7 @@
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a703ed9778e3ac6cd9741220089b5f48d" target="_top" xlink:title=" ">
+<g id="a_node6"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a703ed9778e3ac6cd9741220089b5f48d" target="_top" xlink:title="Retrieves the email of the currently authenticated user.">
 <polygon fill="white" stroke="black" points="690,-220.5 690,-250.5 870,-250.5 870,-220.5 690,-220.5"/>
 <text text-anchor="start" x="698" y="-238.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.business.</text>
 <text text-anchor="middle" x="780" y="-227.5" font-family="Helvetica,sans-Serif" font-size="10.00">UserService.getCurrentUserEmail</text>

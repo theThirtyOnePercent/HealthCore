@@ -12,7 +12,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="Helper method to retrieve detailed information about a doctor associated with a specific appointment.">
 <polygon fill="#bfbfbf" stroke="black" points="0,-122.5 0,-152.5 155,-152.5 155,-122.5 0,-122.5"/>
 <text text-anchor="start" x="8" y="-140.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.business.</text>
 <text text-anchor="middle" x="77.5" y="-129.5" font-family="Helvetica,sans-Serif" font-size="10.00">DoctorService.modifyShift</text>

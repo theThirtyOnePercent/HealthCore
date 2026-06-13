@@ -20,13 +20,12 @@ import java.util.List;
 @Table (name="patients")
 @DiscriminatorValue("Patient")
 public class Patient extends User{
-
+    /** @brief Unique healthcare card number for the patient. */
     private Integer healthcareCardNumber;
     @ManyToOne
     @JoinColumn(name = "insurance_plan_id")
     private InsurancePlan insurancePlan;
     private String triageStatus;
-
     @OneToMany (mappedBy = "patient")
     @JsonIgnore
     private List<Appointment> appointments;

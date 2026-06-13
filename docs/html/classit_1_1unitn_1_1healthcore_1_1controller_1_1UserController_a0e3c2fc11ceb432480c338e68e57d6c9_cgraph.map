@@ -1,4 +1,4 @@
 <map id="it.unitn.healthcore.controller.UserController.verifyRecoveryOtp" name="it.unitn.healthcore.controller.UserController.verifyRecoveryOtp">
 <area shape="rect" id="node1" title="handle the password recovery request by sending an OTP to the user&#39;s email and redirecting to the OTP..." alt="" coords="5,5,245,47"/>
-<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#ab525154f58a13b4824b1dbf05e86e7b9" title=" " alt="" coords="293,5,500,47"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#ab525154f58a13b4824b1dbf05e86e7b9" title="Verifies the provided OTP (One&#45;Time Password) for user authentication or password recovery." alt="" coords="293,5,500,47"/>
 </map>

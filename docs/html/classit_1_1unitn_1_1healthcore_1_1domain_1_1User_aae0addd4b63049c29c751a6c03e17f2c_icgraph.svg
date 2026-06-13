@@ -22,7 +22,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#acc1ae5218e790edcc69ad692c84871a2" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#acc1ae5218e790edcc69ad692c84871a2" target="_top" xlink:title="Recovers the password for a user by verifying the OTP and updating the password in the database.">
 <polygon fill="white" stroke="black" points="402,-24.5 402,-54.5 563,-54.5 563,-24.5 402,-24.5"/>
 <text text-anchor="start" x="410" y="-42.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.business.</text>
 <text text-anchor="middle" x="482.5" y="-31.5" font-family="Helvetica,sans-Serif" font-size="10.00">UserService.recoverPassword</text>
@@ -54,7 +54,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a114823fda5c213bb46bc935608bb8953" target="_top" xlink:title=" ">
+<g id="a_node4"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a114823fda5c213bb46bc935608bb8953" target="_top" xlink:title="Updates the profile of the currently authenticated user based on the provided object .">
 <polygon fill="white" stroke="black" points="197.5,-0.5 197.5,-30.5 362.5,-30.5 362.5,-0.5 197.5,-0.5"/>
 <text text-anchor="start" x="205.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.business.</text>
 <text text-anchor="middle" x="280" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">UserService.updateUserProfile</text>
@@ -70,7 +70,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#a546d5ed79a6b2f6f15000d9ddb3b03ab" target="_top" xlink:title=" ">
+<g id="a_node5"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#a546d5ed79a6b2f6f15000d9ddb3b03ab" target="_top" xlink:title="handle the profile update request by updating the user&#39;s profile information and redirecting to the p...">
 <polygon fill="white" stroke="black" points="0,-0.5 0,-30.5 158,-30.5 158,-0.5 0,-0.5"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.controller.</text>
 <text text-anchor="middle" x="79" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">UserController.updateProfile</text>

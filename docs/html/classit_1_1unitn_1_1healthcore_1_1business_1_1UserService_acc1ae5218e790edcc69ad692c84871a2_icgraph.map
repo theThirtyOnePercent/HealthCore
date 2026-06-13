@@ -1,6 +1,6 @@
 <map id="it.unitn.healthcore.business.UserService.recoverPassword" name="it.unitn.healthcore.business.UserService.recoverPassword">
-<area shape="rect" id="node1" title=" " alt="" coords="541,39,756,80"/>
+<area shape="rect" id="node1" title="Recovers the password for a user by verifying the OTP and updating the password in the database." alt="" coords="541,39,756,80"/>
 <area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#a2405e7122fa835c28ee045e1339e0f7c" title="handle the password recovery request by sending an OTP to the user&#39;s email and redirecting to the OTP..." alt="" coords="264,5,493,47"/>
-<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a114823fda5c213bb46bc935608bb8953" title=" " alt="" coords="269,71,489,112"/>
-<area shape="rect" id="node4" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#a546d5ed79a6b2f6f15000d9ddb3b03ab" title=" " alt="" coords="5,71,216,112"/>
+<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a114823fda5c213bb46bc935608bb8953" title="Updates the profile of the currently authenticated user based on the provided object ." alt="" coords="269,71,489,112"/>
+<area shape="rect" id="node4" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#a546d5ed79a6b2f6f15000d9ddb3b03ab" title="handle the profile update request by updating the user&#39;s profile information and redirecting to the p..." alt="" coords="5,71,216,112"/>
 </map>

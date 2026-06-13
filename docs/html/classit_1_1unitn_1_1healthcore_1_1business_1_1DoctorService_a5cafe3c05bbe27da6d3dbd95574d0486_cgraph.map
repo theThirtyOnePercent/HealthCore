@@ -1,4 +1,4 @@
 <map id="it.unitn.healthcore.business.DoctorService.deleteShift" name="it.unitn.healthcore.business.DoctorService.deleteShift">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,212,47"/>
+<area shape="rect" id="node1" title="Helper method to delete a specific shift based on its ID." alt="" coords="5,5,212,47"/>
 <area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1Shift.html#aeb536b32967f2656409f668ad13f2347" title="Returns the doctor assigned to the shift." alt="" coords="260,5,459,47"/>
 </map>

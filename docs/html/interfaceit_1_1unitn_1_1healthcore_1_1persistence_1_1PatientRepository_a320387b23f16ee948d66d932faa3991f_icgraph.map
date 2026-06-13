@@ -1,5 +1,5 @@
 <map id="it.unitn.healthcore.persistence.PatientRepository.existsByHealthcareCardNumber" name="it.unitn.healthcore.persistence.PatientRepository.existsByHealthcareCardNumber">
 <area shape="rect" id="node1" title=" " alt="" coords="519,5,785,61"/>
-<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a32dba226bff5fb3cd0caf79303b71d38" title=" " alt="" coords="264,13,471,54"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a32dba226bff5fb3cd0caf79303b71d38" title="Registers a new patient in the system." alt="" coords="264,13,471,54"/>
 <area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#a2afa05c30a08ef688e1e3b89ca1f8774" title=" " alt="" coords="5,13,216,54"/>
 </map>

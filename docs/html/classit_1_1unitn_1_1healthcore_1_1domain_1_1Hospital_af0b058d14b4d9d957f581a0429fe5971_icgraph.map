@@ -1,6 +1,6 @@
 <map id="it.unitn.healthcore.domain.Hospital.getHospitalId" name="it.unitn.healthcore.domain.Hospital.getHospitalId">
 <area shape="rect" id="node1" title="Returns the hospital ID." alt="" coords="885,5,1084,47"/>
 <area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1InsurancePlan.html#a56214cc6c390772d6aa0431b140c01b2" title="Checks if this insurance plan covers a specific hospital." alt="" coords="587,5,837,47"/>
-<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService.html#ac33e02f57cc7f1ef55dd59cb5673781a" title=" " alt="" coords="304,5,539,47"/>
-<area shape="rect" id="node4" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#a6c1b2c866308e0723c5b9157149ab47b" title=" " alt="" coords="5,5,256,47"/>
+<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService.html#ac33e02f57cc7f1ef55dd59cb5673781a" title="Books an appointment with a specified doctor for the currently authenticated patient." alt="" coords="304,5,539,47"/>
+<area shape="rect" id="node4" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#a6c1b2c866308e0723c5b9157149ab47b" title="Books an appointment with a specified doctor for the authenticated patient." alt="" coords="5,5,256,47"/>
 </map>

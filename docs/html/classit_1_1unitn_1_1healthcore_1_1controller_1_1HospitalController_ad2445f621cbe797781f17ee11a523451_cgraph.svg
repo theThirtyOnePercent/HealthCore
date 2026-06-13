@@ -22,7 +22,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1business_1_1HospitalService.html#ae010824c3799305859c5cee01311739f" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1business_1_1HospitalService.html#ae010824c3799305859c5cee01311739f" target="_top" xlink:title="Retrieves a list of all hospitals in the system.">
 <polygon fill="white" stroke="black" points="214,-0.5 214,-30.5 379,-30.5 379,-0.5 214,-0.5"/>
 <text text-anchor="start" x="222" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.business.</text>
 <text text-anchor="middle" x="296.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">HospitalService.getAllHospital</text>

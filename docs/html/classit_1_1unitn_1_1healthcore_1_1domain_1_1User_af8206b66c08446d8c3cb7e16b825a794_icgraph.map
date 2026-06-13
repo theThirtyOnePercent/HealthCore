@@ -1,9 +1,13 @@
 <map id="it.unitn.healthcore.domain.User.getId" name="it.unitn.healthcore.domain.User.getId">
-<area shape="rect" id="node1" title="Returns a string representation of the User." alt="" coords="652,79,851,120"/>
-<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#aa9d85586ed83e4d9865621769e24fd81" title="delete the current user&#39;s account and redirect to the login page." alt="" coords="367,5,579,47"/>
-<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1AppointmentService.html#a6df398766f183e79fe315aea5f1752a4" title=" " alt="" coords="341,71,604,127"/>
-<area shape="rect" id="node6" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService.html#a541ee9273fd696797608c005eb4d2f78" title=" " alt="" coords="345,152,600,193"/>
-<area shape="rect" id="node4" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController.html#aaf741f63621b758e3aab2e1af0639398" title="Retrieves the details of a specific appointment by its ID." alt="" coords="6,17,293,59"/>
-<area shape="rect" id="node5" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#ac6fe0b7997f8668f80b25419c0d686c6" title=" " alt="" coords="5,83,293,124"/>
-<area shape="rect" id="node7" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#a7ff985e6a5601dbbef79fd420d2e54b4" title=" " alt="" coords="14,152,285,193"/>
+<area shape="rect" id="node1" title="Returns a string representation of the User." alt="" coords="652,144,851,185"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService.html#a7f10372a6537c0f235e585bdb8b87c30" title="Cancels an existing appointment for the currently authenticated patient." alt="" coords="350,5,595,47"/>
+<area shape="rect" id="node4" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#aa9d85586ed83e4d9865621769e24fd81" title="delete the current user&#39;s account and redirect to the login page." alt="" coords="367,71,579,112"/>
+<area shape="rect" id="node5" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1AppointmentService.html#a6df398766f183e79fe315aea5f1752a4" title="Retrieves detailed information about a specific appointment based on the appointment ID." alt="" coords="341,137,604,193"/>
+<area shape="rect" id="node8" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService.html#ab8266c492da03f9b5e38829e698129c6" title="Modifies an existing appointment for the currently authenticated patient." alt="" coords="349,217,597,259"/>
+<area shape="rect" id="node10" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService.html#a541ee9273fd696797608c005eb4d2f78" title="Updates the insurance plan for the currently authenticated patient." alt="" coords="345,283,600,324"/>
+<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#a3a3ac977996cfd51ff42b9386dccc075" title="Cancels an existing appointment for the authenticated patient." alt="" coords="19,5,279,47"/>
+<area shape="rect" id="node6" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController.html#aaf741f63621b758e3aab2e1af0639398" title="Retrieves the details of a specific appointment by its ID." alt="" coords="6,83,293,124"/>
+<area shape="rect" id="node7" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#ac6fe0b7997f8668f80b25419c0d686c6" title="Retrieves the details of a specific appointment by its ID." alt="" coords="5,148,293,189"/>
+<area shape="rect" id="node9" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#af370cd8f9baad62995675426371b349c" title="Modifies the details of an existing appointment for the authenticated patient." alt="" coords="18,217,281,259"/>
+<area shape="rect" id="node11" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#a7ff985e6a5601dbbef79fd420d2e54b4" title="Retrieves the current insurance plan of the authenticated patient." alt="" coords="14,283,285,324"/>
 </map>

@@ -22,7 +22,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1business_1_1DoctorService.html#a8403efefc9eb75820f493a34d727ba00" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1business_1_1DoctorService.html#a8403efefc9eb75820f493a34d727ba00" target="_top" xlink:title="Helper method to retrieve detailed information about a doctor associated with a specific appointment.">
 <polygon fill="white" stroke="black" points="200,-24.5 200,-54.5 355,-54.5 355,-24.5 200,-24.5"/>
 <text text-anchor="start" x="208" y="-42.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.business.</text>
 <text text-anchor="middle" x="277.5" y="-31.5" font-family="Helvetica,sans-Serif" font-size="10.00">DoctorService.addShift</text>
@@ -38,7 +38,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1business_1_1DoctorService.html#a41e7c24bfb4c4e41f1b3df875368f3c8" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1business_1_1DoctorService.html#a41e7c24bfb4c4e41f1b3df875368f3c8" target="_top" xlink:title="Retrieves detailed information about a specific doctor based on the doctor ID.">
 <polygon fill="white" stroke="black" points="391,-49.5 391,-79.5 546,-79.5 546,-49.5 391,-49.5"/>
 <text text-anchor="start" x="399" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.business.</text>
 <text text-anchor="middle" x="468.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">DoctorService.findDoctor</text>

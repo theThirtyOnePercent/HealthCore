@@ -1,5 +1,5 @@
 <map id="it.unitn.healthcore.controller.UserController.requestPasswordRecovery" name="it.unitn.healthcore.controller.UserController.requestPasswordRecovery">
 <area shape="rect" id="node1" title="handle the password recovery request by sending an OTP to the user&#39;s email and redirecting to the OTP..." alt="" coords="5,5,296,47"/>
-<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a262646caddacb1ce9c3a009beecdd52d" title=" " alt="" coords="344,5,551,47"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a262646caddacb1ce9c3a009beecdd52d" title="Sends an OTP (One&#45;Time Password) to the specified email address for user authentication or password r..." alt="" coords="344,5,551,47"/>
 <area shape="rect" id="node3" href="$interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1UserRepository.html#a6a646ae44d01189ff44c81c03fc92fa8" title=" " alt="" coords="599,5,831,47"/>
 </map>

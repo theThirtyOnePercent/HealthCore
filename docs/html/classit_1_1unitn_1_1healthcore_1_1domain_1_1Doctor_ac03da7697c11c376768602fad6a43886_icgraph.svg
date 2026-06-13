@@ -22,7 +22,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#a6c1b2c866308e0723c5b9157149ab47b" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#a6c1b2c866308e0723c5b9157149ab47b" target="_top" xlink:title="Books an appointment with a specified doctor for the authenticated patient.">
 <polygon fill="white" stroke="black" points="8,-71.5 8,-101.5 196,-101.5 196,-71.5 8,-71.5"/>
 <text text-anchor="start" x="16" y="-89.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.controller.</text>
 <text text-anchor="middle" x="102" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">PatientController.bookAppointment</text>
@@ -38,7 +38,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService.html#ac33e02f57cc7f1ef55dd59cb5673781a" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService.html#ac33e02f57cc7f1ef55dd59cb5673781a" target="_top" xlink:title="Books an appointment with a specified doctor for the currently authenticated patient.">
 <polygon fill="white" stroke="black" points="248.5,-49.5 248.5,-79.5 424.5,-79.5 424.5,-49.5 248.5,-49.5"/>
 <text text-anchor="start" x="256.5" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.business.</text>
 <text text-anchor="middle" x="336.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">PatientService.bookAppointment</text>
@@ -54,7 +54,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService.html#ab163cba2913666d9f4505d4b6e7e1a69" target="_top" xlink:title=" ">
+<g id="a_node4"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService.html#ab163cba2913666d9f4505d4b6e7e1a69" target="_top" xlink:title="Retrieves detailed information about a doctor based on their ID.">
 <polygon fill="white" stroke="black" points="240,-0.5 240,-30.5 433,-30.5 433,-0.5 240,-0.5"/>
 <text text-anchor="start" x="248" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.business.</text>
 <text text-anchor="middle" x="336.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">PatientService.getDoctorDescription</text>
@@ -76,7 +76,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#aaf7a71336886e01fdc45116e44bf67db" target="_top" xlink:title=" ">
+<g id="a_node5"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#aaf7a71336886e01fdc45116e44bf67db" target="_top" xlink:title="Retrieves the current insurance plan of the authenticated patient.">
 <polygon fill="white" stroke="black" points="0,-0.5 0,-30.5 204,-30.5 204,-0.5 0,-0.5"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.controller.</text>
 <text text-anchor="middle" x="102" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">PatientController.getDoctorDescription</text>

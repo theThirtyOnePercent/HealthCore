@@ -1,0 +1,13 @@
+<map id="it.unitn.healthcore.controller.PatientController.modifyAppointment" name="it.unitn.healthcore.controller.PatientController.modifyAppointment">
+<area shape="rect" id="node1" title="Modifies the details of an existing appointment for the authenticated patient." alt="" coords="5,233,268,275"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService.html#ab8266c492da03f9b5e38829e698129c6" title="Modifies an existing appointment for the currently authenticated patient." alt="" coords="316,233,564,275"/>
+<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a33213d05bfda4e7384e17b18332d4bb5" title="Retrieves the currently authenticated user from the database." alt="" coords="612,37,819,79"/>
+<area shape="rect" id="node6" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment.html#a5e3d223030b1b23d4a2dfab94d5b4ef2" title="Returns the doctor conducting the appointment." alt="" coords="616,103,815,144"/>
+<area shape="rect" id="node7" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#af8206b66c08446d8c3cb7e16b825a794" title="Returns a string representation of the User." alt="" coords="616,168,815,209"/>
+<area shape="rect" id="node8" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment.html#a60f84ee45966ebeed37981dffe94c8ad" title="Returns the patient associated with the appointment." alt="" coords="616,233,815,275"/>
+<area shape="rect" id="node9" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment.html#a9bd30e2d1b2e4de743b3e83b9cc50eb4" title="Returns the start date and time of the appointment." alt="" coords="616,299,815,340"/>
+<area shape="rect" id="node10" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment.html#a6de01451b6306612331a64affe989252" title="Sets the end date and time of the appointment." alt="" coords="616,364,815,405"/>
+<area shape="rect" id="node11" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment.html#af0a269963159bb6067469fb75a6fdf3a" title="Sets the start date and time of the appointment." alt="" coords="616,429,815,471"/>
+<area shape="rect" id="node4" href="$interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1UserRepository.html#a6a646ae44d01189ff44c81c03fc92fa8" title=" " alt="" coords="871,5,1103,47"/>
+<area shape="rect" id="node5" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a703ed9778e3ac6cd9741220089b5f48d" title="Retrieves the email of the currently authenticated user." alt="" coords="867,71,1107,112"/>
+</map>

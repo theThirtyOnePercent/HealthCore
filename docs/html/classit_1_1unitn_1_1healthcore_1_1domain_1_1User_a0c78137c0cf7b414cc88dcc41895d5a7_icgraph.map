@@ -1,9 +1,9 @@
 <map id="it.unitn.healthcore.domain.User.getName" name="it.unitn.healthcore.domain.User.getName">
 <area shape="rect" id="node1" title="Returns the first name of the user." alt="" coords="631,104,829,145"/>
-<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#a6c1b2c866308e0723c5b9157149ab47b" title=" " alt="" coords="329,5,579,47"/>
-<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService.html#ab163cba2913666d9f4505d4b6e7e1a69" title=" " alt="" coords="325,71,583,112"/>
-<area shape="rect" id="node5" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a114823fda5c213bb46bc935608bb8953" title=" " alt="" coords="344,136,564,177"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#a6c1b2c866308e0723c5b9157149ab47b" title="Books an appointment with a specified doctor for the authenticated patient." alt="" coords="329,5,579,47"/>
+<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService.html#ab163cba2913666d9f4505d4b6e7e1a69" title="Retrieves detailed information about a doctor based on their ID." alt="" coords="325,71,583,112"/>
+<area shape="rect" id="node5" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a114823fda5c213bb46bc935608bb8953" title="Updates the profile of the currently authenticated user based on the provided object ." alt="" coords="344,136,564,177"/>
 <area shape="rect" id="node7" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#a72a0e87005b1b6a91822302d4888d3cf" title="display the user&#39;s homepage after successful login and OTP verification." alt="" coords="345,201,563,243"/>
-<area shape="rect" id="node4" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#aaf7a71336886e01fdc45116e44bf67db" title=" " alt="" coords="5,71,277,112"/>
-<area shape="rect" id="node6" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#a546d5ed79a6b2f6f15000d9ddb3b03ab" title=" " alt="" coords="36,136,247,177"/>
+<area shape="rect" id="node4" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#aaf7a71336886e01fdc45116e44bf67db" title="Retrieves the current insurance plan of the authenticated patient." alt="" coords="5,71,277,112"/>
+<area shape="rect" id="node6" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#a546d5ed79a6b2f6f15000d9ddb3b03ab" title="handle the profile update request by updating the user&#39;s profile information and redirecting to the p..." alt="" coords="36,136,247,177"/>
 </map>

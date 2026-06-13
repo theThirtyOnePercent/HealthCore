@@ -1,6 +1,6 @@
 <map id="it.unitn.healthcore.controller.DoctorController.addShiftTime" name="it.unitn.healthcore.controller.DoctorController.addShiftTime">
 <area shape="rect" id="node1" title="Adds a new shift for a doctor." alt="" coords="5,39,224,80"/>
-<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1DoctorService.html#a8403efefc9eb75820f493a34d727ba00" title=" " alt="" coords="272,39,479,80"/>
-<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1DoctorService.html#a41e7c24bfb4c4e41f1b3df875368f3c8" title=" " alt="" coords="527,5,733,47"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1DoctorService.html#a8403efefc9eb75820f493a34d727ba00" title="Helper method to retrieve detailed information about a doctor associated with a specific appointment." alt="" coords="272,39,479,80"/>
+<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1DoctorService.html#a41e7c24bfb4c4e41f1b3df875368f3c8" title="Retrieves detailed information about a specific doctor based on the doctor ID." alt="" coords="527,5,733,47"/>
 <area shape="rect" id="node4" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor.html#a1f74266b5c9953f4c861a1b2e66405a8" title="Shift getter." alt="" coords="531,71,729,112"/>
 </map>

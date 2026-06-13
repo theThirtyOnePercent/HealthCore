@@ -12,7 +12,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="Registers a new doctor in the system.">
 <polygon fill="#bfbfbf" stroke="black" points="394,-0.5 394,-30.5 549,-30.5 549,-0.5 394,-0.5"/>
 <text text-anchor="start" x="402" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.business.</text>
 <text text-anchor="middle" x="471.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">UserService.registerDoctor</text>
@@ -22,7 +22,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a8bb76a3af453837d334e1f5a9551ff56" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a8bb76a3af453837d334e1f5a9551ff56" target="_top" xlink:title="Registers a new employee (doctor or administrator) in the system.">
 <polygon fill="white" stroke="black" points="194,-0.5 194,-30.5 358,-30.5 358,-0.5 194,-0.5"/>
 <text text-anchor="start" x="202" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.business.</text>
 <text text-anchor="middle" x="276" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">UserService.registerEmployee</text>

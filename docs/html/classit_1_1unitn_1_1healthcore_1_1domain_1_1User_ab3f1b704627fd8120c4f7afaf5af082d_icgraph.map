@@ -1,4 +1,4 @@
 <map id="it.unitn.healthcore.domain.User.getPassword" name="it.unitn.healthcore.domain.User.getPassword">
 <area shape="rect" id="node1" title="Returns the password of the user." alt="" coords="252,5,451,47"/>
-<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1SecurityUser.html#adbe6b7fc7824ede8ecb045bd7db80da3" title=" " alt="" coords="5,5,204,47"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1SecurityUser.html#adbe6b7fc7824ede8ecb045bd7db80da3" title="Returns the password used to authenticate the user." alt="" coords="5,5,204,47"/>
 </map>
