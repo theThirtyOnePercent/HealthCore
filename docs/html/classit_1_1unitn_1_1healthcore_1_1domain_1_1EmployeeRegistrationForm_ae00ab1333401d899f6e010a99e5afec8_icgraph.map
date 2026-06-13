@@ -1,5 +1,5 @@
 <map id="it.unitn.healthcore.domain.EmployeeRegistrationForm.getName" name="it.unitn.healthcore.domain.EmployeeRegistrationForm.getName">
-<area shape="rect" id="node1" title=" " alt="" coords="821,39,1084,80"/>
+<area shape="rect" id="node1" title="Name getter." alt="" coords="821,39,1084,80"/>
 <area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#aebfef6bf9480fb24956dba8b10232d2f" title=" " alt="" coords="531,5,773,47"/>
 <area shape="rect" id="node5" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#af71b0f13c31c938efe9fce54ab3d7f7d" title=" " alt="" coords="549,71,755,112"/>
 <area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a8bb76a3af453837d334e1f5a9551ff56" title=" " alt="" coords="264,39,483,80"/>

@@ -1,12 +1,13 @@
 <map id="it.unitn.healthcore.controller.UserController.addEmployee" name="it.unitn.healthcore.controller.UserController.addEmployee">
-<area shape="rect" id="node1" title=" " alt="" coords="5,71,216,112"/>
-<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a8bb76a3af453837d334e1f5a9551ff56" title=" " alt="" coords="264,71,483,112"/>
-<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1EmployeeRegistrationForm.html#a2cddb295abb33e4d48081a4b179d0928" title=" " alt="" coords="531,5,784,47"/>
-<area shape="rect" id="node4" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#aebfef6bf9480fb24956dba8b10232d2f" title=" " alt="" coords="536,71,779,112"/>
-<area shape="rect" id="node9" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#af71b0f13c31c938efe9fce54ab3d7f7d" title=" " alt="" coords="554,136,761,177"/>
-<area shape="rect" id="node5" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1PasswordConfirmationForm.html#ad2a321af868704e56c42d5306a8acd91" title=" " alt="" coords="858,71,1121,112"/>
-<area shape="rect" id="node6" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1EmployeeRegistrationForm.html#ae00ab1333401d899f6e010a99e5afec8" title=" " alt="" coords="858,136,1121,177"/>
-<area shape="rect" id="node7" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1PasswordConfirmationForm.html#aa7de23a583db33eba13ddecad973ceca" title=" " alt="" coords="846,201,1133,243"/>
-<area shape="rect" id="node8" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1EmployeeRegistrationForm.html#af1804bfdb0eb5dd711f6344f6c7e420c" title=" " alt="" coords="848,5,1131,47"/>
-<area shape="rect" id="node10" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1EmployeeRegistrationForm.html#aacda9ff32f2f6c240f9f1ce7a746839a" title=" " alt="" coords="832,267,1147,308"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,104,216,145"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a8bb76a3af453837d334e1f5a9551ff56" title=" " alt="" coords="264,104,483,145"/>
+<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1EmployeeRegistrationForm.html#a2cddb295abb33e4d48081a4b179d0928" title="Role getter." alt="" coords="531,39,784,80"/>
+<area shape="rect" id="node4" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#aebfef6bf9480fb24956dba8b10232d2f" title=" " alt="" coords="536,104,779,145"/>
+<area shape="rect" id="node9" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#af71b0f13c31c938efe9fce54ab3d7f7d" title=" " alt="" coords="554,169,761,211"/>
+<area shape="rect" id="node5" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1PasswordConfirmationForm.html#ad2a321af868704e56c42d5306a8acd91" title="Email getter." alt="" coords="858,5,1121,47"/>
+<area shape="rect" id="node6" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1EmployeeRegistrationForm.html#ae00ab1333401d899f6e010a99e5afec8" title="Name getter." alt="" coords="858,71,1121,112"/>
+<area shape="rect" id="node7" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1PasswordConfirmationForm.html#aa7de23a583db33eba13ddecad973ceca" title="Password getter." alt="" coords="846,136,1133,177"/>
+<area shape="rect" id="node8" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1EmployeeRegistrationForm.html#af1804bfdb0eb5dd711f6344f6c7e420c" title="Surname getter." alt="" coords="848,201,1131,243"/>
+<area shape="rect" id="node10" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1EmployeeRegistrationForm.html#aacda9ff32f2f6c240f9f1ce7a746839a" title="Department ID getter." alt="" coords="832,267,1147,308"/>
+<area shape="rect" id="node11" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1Department.html#adb4a544815968649e801e2182b7069f0" title="Returns the total staff positions within the department." alt="" coords="867,332,1112,373"/>
 </map>

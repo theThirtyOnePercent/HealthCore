@@ -1,0 +1,7 @@
+<map id="it.unitn.healthcore.business.DoctorService.getCurrentDoctorShifts" name="it.unitn.healthcore.business.DoctorService.getCurrentDoctorShifts">
+<area shape="rect" id="node1" title=" " alt="" coords="5,71,271,112"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a33213d05bfda4e7384e17b18332d4bb5" title=" " alt="" coords="319,37,525,79"/>
+<area shape="rect" id="node5" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor.html#a1f74266b5c9953f4c861a1b2e66405a8" title="Shift getter." alt="" coords="323,103,521,144"/>
+<area shape="rect" id="node3" href="$interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1UserRepository.html#a6a646ae44d01189ff44c81c03fc92fa8" title=" " alt="" coords="577,5,809,47"/>
+<area shape="rect" id="node4" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a703ed9778e3ac6cd9741220089b5f48d" title=" " alt="" coords="573,71,813,112"/>
+</map>

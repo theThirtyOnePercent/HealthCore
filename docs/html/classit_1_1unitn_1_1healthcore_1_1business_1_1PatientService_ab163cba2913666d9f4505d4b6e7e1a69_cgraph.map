@@ -1,0 +1,13 @@
+<map id="it.unitn.healthcore.business.PatientService.getDoctorDescription" name="it.unitn.healthcore.business.PatientService.getDoctorDescription">
+<area shape="rect" id="node1" title=" " alt="" coords="5,300,263,341"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor.html#ab3cac7f0c22b3f39c4a5743a8422e1a3" title="Appointment price getter." alt="" coords="311,5,516,47"/>
+<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor.html#ac03da7697c11c376768602fad6a43886" title="Department getter." alt="" coords="314,71,513,112"/>
+<area shape="rect" id="node4" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#a5b48be6dca19b7d4d43ec2e6a3b91502" title="Returns the email address of the user." alt="" coords="314,136,513,177"/>
+<area shape="rect" id="node5" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1Department.html#ae10adf6ab4ccadfca9bdbce8d1940c84" title="Returns the hospital associated with the department." alt="" coords="314,201,513,243"/>
+<area shape="rect" id="node6" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1Department.html#ad3dbd24db0898580a3a7ead8960abad7" title="Returns the list of equipments associated with the department." alt="" coords="314,267,513,308"/>
+<area shape="rect" id="node7" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1Hospital.html#ac8fd4fe7bb42c1db18f0ef42446cf95b" title="Returns the hospital name." alt="" coords="314,332,513,373"/>
+<area shape="rect" id="node8" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#a0c78137c0cf7b414cc88dcc41895d5a7" title="Returns the first name of the user." alt="" coords="314,397,513,439"/>
+<area shape="rect" id="node9" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor.html#a1f74266b5c9953f4c861a1b2e66405a8" title="Shift getter." alt="" coords="314,463,513,504"/>
+<area shape="rect" id="node10" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor.html#a640b7f957294392023414c8b675304c9" title="Specialization getter." alt="" coords="314,528,513,569"/>
+<area shape="rect" id="node11" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#a1e52a76c1ad5fb44fe9c312e11203c9e" title="Returns the last name of the user." alt="" coords="314,593,513,635"/>
+</map>

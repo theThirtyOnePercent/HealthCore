@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['insuranceplan_263',['InsurancePlan',['../classit_1_1unitn_1_1healthcore_1_1domain_1_1InsurancePlan.html#a0e766e9e48269e232faebb4cfb5db2af',1,'it.unitn.healthcore.domain.InsurancePlan.InsurancePlan()'],['../classit_1_1unitn_1_1healthcore_1_1domain_1_1InsurancePlan.html#ac38ee1070dffc470ca1924189bdd9fdd',1,'it.unitn.healthcore.domain.InsurancePlan.InsurancePlan(String name)']]],
-  ['isaccountnonexpired_264',['isAccountNonExpired',['../classit_1_1unitn_1_1healthcore_1_1domain_1_1SecurityUser.html#a93cfa29d0b0d1689609129fede79c255',1,'it::unitn::healthcore::domain::SecurityUser']]],
-  ['isaccountnonlocked_265',['isAccountNonLocked',['../classit_1_1unitn_1_1healthcore_1_1domain_1_1SecurityUser.html#a717345aaa890727eb44db3b1dba91b25',1,'it::unitn::healthcore::domain::SecurityUser']]],
-  ['iscredentialsnonexpired_266',['isCredentialsNonExpired',['../classit_1_1unitn_1_1healthcore_1_1domain_1_1SecurityUser.html#ae43e8946a0bc9772096743188a4173a5',1,'it::unitn::healthcore::domain::SecurityUser']]],
-  ['isenabled_267',['isEnabled',['../classit_1_1unitn_1_1healthcore_1_1domain_1_1SecurityUser.html#ac8f3f7864b0830612c6c32823ef31b55',1,'it::unitn::healthcore::domain::SecurityUser']]]
+  ['hospital_419',['Hospital',['../classit_1_1unitn_1_1healthcore_1_1domain_1_1Hospital.html#ad040423c1b026c0538879f685dd18c4d',1,'it.unitn.healthcore.domain.Hospital.Hospital()'],['../classit_1_1unitn_1_1healthcore_1_1domain_1_1Hospital.html#ae1c167cea462910c8d1ce70cb7f1c37a',1,'it.unitn.healthcore.domain.Hospital.Hospital(String name, String address, String phoneNumber)']]],
+  ['hospitalcontroller_420',['HospitalController',['../classit_1_1unitn_1_1healthcore_1_1controller_1_1HospitalController.html#a5b83c48213bc985d467a2bb9bf40a667',1,'it::unitn::healthcore::controller::HospitalController']]],
+  ['hospitalservice_421',['HospitalService',['../classit_1_1unitn_1_1healthcore_1_1business_1_1HospitalService.html#a49fc879f7b481178364edeb4d867793f',1,'it::unitn::healthcore::business::HospitalService']]]
 ];

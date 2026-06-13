@@ -10,5 +10,4 @@ Here is the visual layout of our architecture:
 
 ## Architectural Layout & Design Patterns
 
-
 ---

@@ -1,0 +1,5 @@
+<map id="it.unitn.healthcore.business.AppointmentService.getFutureAppointments" name="it.unitn.healthcore.business.AppointmentService.getFutureAppointments">
+<area shape="rect" id="node1" title=" " alt="" coords="351,39,661,80"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController.html#a422bd25fb5f44b8f763d6a29787c46f0" title="Retrieves a list of future appointments for the currently authenticated doctor." alt="" coords="7,5,301,47"/>
+<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#a4207a6fab035c5242ecda1abdb49169e" title=" " alt="" coords="5,71,303,112"/>
+</map>

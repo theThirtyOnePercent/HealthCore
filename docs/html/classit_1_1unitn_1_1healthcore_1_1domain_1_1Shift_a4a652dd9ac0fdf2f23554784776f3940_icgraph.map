@@ -1,0 +1,5 @@
+<map id="it.unitn.healthcore.domain.Shift.getStartTime" name="it.unitn.healthcore.domain.Shift.getStartTime">
+<area shape="rect" id="node1" title="Returns the start time of the shift." alt="" coords="519,5,717,47"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1DoctorService.html#a0144281b10cf3bd09275e4f2898c3aea" title=" " alt="" coords="264,5,471,47"/>
+<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController.html#aa8d0870dac3e5c366755771a799956bb" title="Modifies an existing shift for a doctor." alt="" coords="5,5,216,47"/>
+</map>

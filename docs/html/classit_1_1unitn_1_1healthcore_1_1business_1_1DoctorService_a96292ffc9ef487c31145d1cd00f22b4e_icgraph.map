@@ -1,0 +1,4 @@
+<map id="it.unitn.healthcore.business.DoctorService.getCurrentDoctorShifts" name="it.unitn.healthcore.business.DoctorService.getCurrentDoctorShifts">
+<area shape="rect" id="node1" title=" " alt="" coords="272,5,537,47"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController.html#a5a876b4fd08f941dc77ffca9e29608a3" title="Retrieves the details of a specific appointment by its ID." alt="" coords="5,5,224,47"/>
+</map>

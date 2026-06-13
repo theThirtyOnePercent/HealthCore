@@ -12,10 +12,10 @@
 <!-- Node0 -->
 <g id="node1" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html" target="_top" xlink:title="This class serves as a REST controller for handling user&#45;related operations such as registration,...">
+<g id="a_node1"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1controller_1_1AdministratorController.html" target="_top" xlink:title="AdiministratorCOntroller is a Rest controller that handles HTTP request related tot administrator @de...">
 <polygon fill="white" stroke="black" points="0,-0.5 0,-30.5 158,-30.5 158,-0.5 0,-0.5"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.controller.</text>
-<text text-anchor="middle" x="79" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">UserController</text>
+<text text-anchor="middle" x="79" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">AdministratorController</text>
 </a>
 </g>
 </g>

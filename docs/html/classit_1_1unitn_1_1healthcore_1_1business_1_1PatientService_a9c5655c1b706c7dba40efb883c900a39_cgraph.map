@@ -1,0 +1,7 @@
+<map id="it.unitn.healthcore.business.PatientService.getCurrentInsurancePlan" name="it.unitn.healthcore.business.PatientService.getCurrentInsurancePlan">
+<area shape="rect" id="node1" title=" " alt="" coords="5,71,284,112"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a33213d05bfda4e7384e17b18332d4bb5" title=" " alt="" coords="332,37,539,79"/>
+<area shape="rect" id="node5" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1Patient.html#a48266d60ec0c7b2baebd9aef60e6cbfe" title="Insurance plan getter." alt="" coords="336,103,535,144"/>
+<area shape="rect" id="node3" href="$interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1UserRepository.html#a6a646ae44d01189ff44c81c03fc92fa8" title=" " alt="" coords="591,5,823,47"/>
+<area shape="rect" id="node4" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a703ed9778e3ac6cd9741220089b5f48d" title=" " alt="" coords="587,71,827,112"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="it.unitn.healthcore.domain.Appointment.getEndTime" name="it.unitn.healthcore.domain.Appointment.getEndTime">
+<area shape="rect" id="node1" title="Returns the end date and time of the appointment." alt="" coords="652,43,851,84"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#a6c1b2c866308e0723c5b9157149ab47b" title=" " alt="" coords="347,5,598,47"/>
+<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1AppointmentService.html#a6df398766f183e79fe315aea5f1752a4" title=" " alt="" coords="341,71,604,127"/>
+<area shape="rect" id="node4" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController.html#aaf741f63621b758e3aab2e1af0639398" title="Retrieves the details of a specific appointment by its ID." alt="" coords="6,45,293,87"/>
+<area shape="rect" id="node5" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#ac6fe0b7997f8668f80b25419c0d686c6" title=" " alt="" coords="5,111,293,152"/>
+</map>

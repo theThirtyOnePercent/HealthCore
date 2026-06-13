@@ -12,7 +12,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="This class represents the form used for updating user profiles, extending the PasswordConfirmationFor...">
 <polygon fill="#bfbfbf" stroke="black" points="0.5,-0.5 0.5,-30.5 149.5,-30.5 149.5,-0.5 0.5,-0.5"/>
 <text text-anchor="start" x="8.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.domain.</text>
 <text text-anchor="middle" x="75" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">ProfileUpdateForm</text>
@@ -22,7 +22,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1domain_1_1PasswordConfirmationForm.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1domain_1_1PasswordConfirmationForm.html" target="_top" xlink:title="This class serves as a base form for user registration processes that require password confirmation.">
 <polygon fill="white" stroke="black" points="0,-67.5 0,-97.5 150,-97.5 150,-67.5 0,-67.5"/>
 <text text-anchor="start" x="8" y="-85.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.domain.</text>
 <text text-anchor="middle" x="75" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">PasswordConfirmationForm</text>

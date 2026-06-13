@@ -1,0 +1,13 @@
+<map id="it.unitn.healthcore.domain.Doctor.getShifts" name="it.unitn.healthcore.domain.Doctor.getShifts">
+<area shape="rect" id="node1" title="Shift getter." alt="" coords="639,136,837,177"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1DoctorService.html#a8403efefc9eb75820f493a34d727ba00" title=" " alt="" coords="355,5,561,47"/>
+<area shape="rect" id="node4" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService.html#ac33e02f57cc7f1ef55dd59cb5673781a" title=" " alt="" coords="341,71,575,112"/>
+<area shape="rect" id="node6" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1DoctorService.html#a96292ffc9ef487c31145d1cd00f22b4e" title=" " alt="" coords="325,136,591,177"/>
+<area shape="rect" id="node8" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService.html#ab163cba2913666d9f4505d4b6e7e1a69" title=" " alt="" coords="329,201,587,243"/>
+<area shape="rect" id="node10" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1DoctorService.html#a0144281b10cf3bd09275e4f2898c3aea" title=" " alt="" coords="355,267,561,308"/>
+<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController.html#a0a872c9d094787a6992ab720f4b226df" title="Adds a new shift for a doctor." alt="" coords="32,5,251,47"/>
+<area shape="rect" id="node5" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#a6c1b2c866308e0723c5b9157149ab47b" title=" " alt="" coords="16,71,267,112"/>
+<area shape="rect" id="node7" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController.html#a5a876b4fd08f941dc77ffca9e29608a3" title="Retrieves the details of a specific appointment by its ID." alt="" coords="32,136,251,177"/>
+<area shape="rect" id="node9" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html#aaf7a71336886e01fdc45116e44bf67db" title=" " alt="" coords="5,201,277,243"/>
+<area shape="rect" id="node11" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController.html#aa8d0870dac3e5c366755771a799956bb" title="Modifies an existing shift for a doctor." alt="" coords="36,267,247,308"/>
+</map>

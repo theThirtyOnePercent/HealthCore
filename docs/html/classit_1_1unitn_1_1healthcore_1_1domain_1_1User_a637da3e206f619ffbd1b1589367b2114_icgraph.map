@@ -1,5 +1,5 @@
 <map id="it.unitn.healthcore.domain.User.setEmail" name="it.unitn.healthcore.domain.User.setEmail">
-<area shape="rect" id="node1" title=" " alt="" coords="532,5,731,47"/>
+<area shape="rect" id="node1" title="Sets the email address of the user." alt="" coords="532,5,731,47"/>
 <area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a114823fda5c213bb46bc935608bb8953" title=" " alt="" coords="264,5,484,47"/>
-<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#acd7b4fd033c7ae0b42644c3932e6867f" title=" " alt="" coords="5,5,216,47"/>
+<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#a546d5ed79a6b2f6f15000d9ddb3b03ab" title=" " alt="" coords="5,5,216,47"/>
 </map>

@@ -1,0 +1,6 @@
+<map id="it.unitn.healthcore.business.DoctorService.findDoctor" name="it.unitn.healthcore.business.DoctorService.findDoctor">
+<area shape="rect" id="node1" title=" " alt="" coords="643,39,849,80"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1DoctorService.html#a8403efefc9eb75820f493a34d727ba00" title=" " alt="" coords="330,5,537,47"/>
+<area shape="rect" id="node4" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController.html#af584ce0e97c3d1e3c9164228d62cb106" title="Retrieves the details of a specific doctor by their ID." alt="" coords="272,71,595,112"/>
+<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController.html#a0a872c9d094787a6992ab720f4b226df" title="Adds a new shift for a doctor." alt="" coords="5,5,224,47"/>
+</map>

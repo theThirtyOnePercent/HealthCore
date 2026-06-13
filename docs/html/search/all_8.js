@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['main_83',['main',['../classit_1_1unitn_1_1healthcore_1_1HealthcoreApplication.html#ab5f5e7dec8482acbe5f370336add41a8',1,'it::unitn::healthcore::HealthcoreApplication']]]
+  ['loaduserbyusername_135',['loadUserByUsername',['../classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a88e927ad954f21615b6f2ffa4fe90de2',1,'it::unitn::healthcore::business::UserService']]]
 ];

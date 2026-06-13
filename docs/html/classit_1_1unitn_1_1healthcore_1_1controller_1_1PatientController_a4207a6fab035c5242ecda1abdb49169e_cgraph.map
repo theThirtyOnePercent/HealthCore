@@ -1,0 +1,7 @@
+<map id="it.unitn.healthcore.controller.PatientController.viewFutureAppointments" name="it.unitn.healthcore.controller.PatientController.viewFutureAppointments">
+<area shape="rect" id="node1" title=" " alt="" coords="5,39,303,80"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1AppointmentService.html#aed50e6f0cf3a16af4d8754c66060512d" title=" " alt="" coords="351,39,661,80"/>
+<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a33213d05bfda4e7384e17b18332d4bb5" title=" " alt="" coords="709,39,916,80"/>
+<area shape="rect" id="node4" href="$interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1UserRepository.html#a6a646ae44d01189ff44c81c03fc92fa8" title=" " alt="" coords="968,5,1200,47"/>
+<area shape="rect" id="node5" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a703ed9778e3ac6cd9741220089b5f48d" title=" " alt="" coords="964,71,1204,112"/>
+</map>

@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1SecurityConfig.html" title="This class configures the security settings for the application using Spring Security." alt="" coords="5,5,216,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,13,152,39"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html" title="This class serves as a service layer for handling user&#45;related business logic such as registration,..." alt="" coords="200,5,407,47"/>
 </map>

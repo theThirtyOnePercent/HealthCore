@@ -1,6 +1,6 @@
 var classit_1_1unitn_1_1healthcore_1_1business_1_1UserService =
 [
-    [ "UserService", "classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#abf2751a191d21ca45091d9ec64730d43", null ],
+    [ "UserService", "classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a3c20e2dd32132bc93dd27a341d0664b7", null ],
     [ "deleteUser", "classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a9487a950d729ed2c4df128a8ea89b9b7", null ],
     [ "getCurrentUser", "classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a33213d05bfda4e7384e17b18332d4bb5", null ],
     [ "getCurrentUserEmail", "classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#a703ed9778e3ac6cd9741220089b5f48d", null ],

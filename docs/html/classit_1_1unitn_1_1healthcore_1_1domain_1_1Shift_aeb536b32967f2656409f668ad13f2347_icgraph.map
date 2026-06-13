@@ -1,0 +1,7 @@
+<map id="it.unitn.healthcore.domain.Shift.getDoctor" name="it.unitn.healthcore.domain.Shift.getDoctor">
+<area shape="rect" id="node1" title="Returns the doctor assigned to the shift." alt="" coords="519,39,717,80"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1DoctorService.html#a5cafe3c05bbe27da6d3dbd95574d0486" title=" " alt="" coords="264,5,471,47"/>
+<area shape="rect" id="node4" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1DoctorService.html#a0144281b10cf3bd09275e4f2898c3aea" title=" " alt="" coords="264,71,471,112"/>
+<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController.html#a9918159e8ca76ff0c58aa9c9dd8aeba9" title="Deletes an existing shift for a doctor." alt="" coords="5,5,216,47"/>
+<area shape="rect" id="node5" href="$classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController.html#aa8d0870dac3e5c366755771a799956bb" title="Modifies an existing shift for a doctor." alt="" coords="5,71,216,112"/>
+</map>

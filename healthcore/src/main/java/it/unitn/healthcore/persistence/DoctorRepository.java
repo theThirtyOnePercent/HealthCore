@@ -14,4 +14,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * @date 2026-06-11
  */
 public interface DoctorRepository extends JpaRepository<Doctor, Integer> {
+
 }

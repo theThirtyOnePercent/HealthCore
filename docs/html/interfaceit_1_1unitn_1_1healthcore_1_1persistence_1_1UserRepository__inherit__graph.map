@@ -1,4 +1,4 @@
 <map id="it.unitn.healthcore.persistence.UserRepository" name="it.unitn.healthcore.persistence.UserRepository">
-<area shape="rect" id="node1" title=" " alt="" coords="5,95,229,136"/>
+<area shape="rect" id="node1" title="Repository interface for managing User entities in the database." alt="" coords="5,95,229,136"/>
 <area shape="rect" id="node2" title=" " alt="" coords="37,5,198,47"/>
 </map>

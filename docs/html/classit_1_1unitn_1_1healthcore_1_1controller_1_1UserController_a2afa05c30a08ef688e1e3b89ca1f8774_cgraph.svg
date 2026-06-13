@@ -55,7 +55,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1domain_1_1PasswordConfirmationForm.html#ad2a321af868704e56c42d5306a8acd91" target="_top" xlink:title=" ">
+<g id="a_node4"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1domain_1_1PasswordConfirmationForm.html#ad2a321af868704e56c42d5306a8acd91" target="_top" xlink:title="Email getter.">
 <polygon fill="white" stroke="black" points="394,-208.5 394,-238.5 591,-238.5 591,-208.5 394,-208.5"/>
 <text text-anchor="start" x="402" y="-226.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.domain.</text>
 <text text-anchor="middle" x="492.5" y="-215.5" font-family="Helvetica,sans-Serif" font-size="10.00">PasswordConfirmationForm.getEmail</text>
@@ -71,7 +71,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1domain_1_1PatientRegistrationForm.html#abc573cb3f03f7b2d2e0dd970c569df84" target="_top" xlink:title=" ">
+<g id="a_node5"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1domain_1_1PatientRegistrationForm.html#abc573cb3f03f7b2d2e0dd970c569df84" target="_top" xlink:title="Healthcare card number getter.">
 <polygon fill="white" stroke="black" points="389.5,-148 389.5,-189 595.5,-189 595.5,-148 389.5,-148"/>
 <text text-anchor="start" x="397.5" y="-177" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.domain.</text>
 <text text-anchor="start" x="397.5" y="-166" font-family="Helvetica,sans-Serif" font-size="10.00">PatientRegistrationForm.getHealthcare</text>
@@ -88,7 +88,7 @@
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1domain_1_1PatientRegistrationForm.html#a47e69a04762a7937f63f729aa52fbe7a" target="_top" xlink:title=" ">
+<g id="a_node6"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1domain_1_1PatientRegistrationForm.html#a47e69a04762a7937f63f729aa52fbe7a" target="_top" xlink:title="Creates a PatientRegistrationForm with the specified details, without healthcare card number.">
 <polygon fill="white" stroke="black" points="401.5,-98.5 401.5,-128.5 583.5,-128.5 583.5,-98.5 401.5,-98.5"/>
 <text text-anchor="start" x="409.5" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.domain.</text>
 <text text-anchor="middle" x="492.5" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00">PatientRegistrationForm.getName</text>
@@ -104,7 +104,7 @@
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1domain_1_1PasswordConfirmationForm.html#aa7de23a583db33eba13ddecad973ceca" target="_top" xlink:title=" ">
+<g id="a_node7"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1domain_1_1PasswordConfirmationForm.html#aa7de23a583db33eba13ddecad973ceca" target="_top" xlink:title="Password getter.">
 <polygon fill="white" stroke="black" points="385,-49.5 385,-79.5 600,-79.5 600,-49.5 385,-49.5"/>
 <text text-anchor="start" x="393" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.domain.</text>
 <text text-anchor="middle" x="492.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">PasswordConfirmationForm.getPassword</text>
@@ -120,7 +120,7 @@
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
-<g id="a_node8"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1domain_1_1PatientRegistrationForm.html#a28bacda95e68eaf4665de2509652c6fe" target="_top" xlink:title=" ">
+<g id="a_node8"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1domain_1_1PatientRegistrationForm.html#a28bacda95e68eaf4665de2509652c6fe" target="_top" xlink:title="Surname getter.">
 <polygon fill="white" stroke="black" points="394,-0.5 394,-30.5 591,-30.5 591,-0.5 394,-0.5"/>
 <text text-anchor="start" x="402" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.domain.</text>
 <text text-anchor="middle" x="492.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">PatientRegistrationForm.getSurname</text>

@@ -1,0 +1,5 @@
+<map id="it.unitn.healthcore.controller.DoctorController.deleteShift" name="it.unitn.healthcore.controller.DoctorController.deleteShift">
+<area shape="rect" id="node1" title="Deletes an existing shift for a doctor." alt="" coords="5,5,216,47"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1DoctorService.html#a5cafe3c05bbe27da6d3dbd95574d0486" title=" " alt="" coords="264,5,471,47"/>
+<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1Shift.html#aeb536b32967f2656409f668ad13f2347" title="Returns the doctor assigned to the shift." alt="" coords="519,5,717,47"/>
+</map>

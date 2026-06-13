@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1PasswordConfirmationForm.html" title="This class serves as a base form for user registration processes that require password confirmation." alt="" coords="5,71,205,112"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1EmployeeRegistrationForm.html" title=" " alt="" coords="253,5,452,47"/>
+<area shape="rect" id="node3" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1PatientRegistrationForm.html" title="This class represents the form used for patient registration, extending the PasswordConfirmationForm ..." alt="" coords="253,71,452,112"/>
+<area shape="rect" id="node4" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1ProfileUpdateForm.html" title="This class represents the form used for updating user profiles, extending the PasswordConfirmationFor..." alt="" coords="253,136,452,177"/>
+</map>

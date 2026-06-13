@@ -1,0 +1,4 @@
+<map id="it.unitn.healthcore.domain.InsurancePlan.isCoveredAtHospital" name="it.unitn.healthcore.domain.InsurancePlan.isCoveredAtHospital">
+<area shape="rect" id="node1" title="Checks if this insurance plan covers a specific hospital." alt="" coords="5,5,256,47"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1Hospital.html#af0b058d14b4d9d957f581a0429fe5971" title="Returns the hospital ID." alt="" coords="304,5,503,47"/>
+</map>

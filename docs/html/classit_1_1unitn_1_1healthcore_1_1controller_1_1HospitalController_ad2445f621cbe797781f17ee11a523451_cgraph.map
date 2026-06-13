@@ -1,4 +1,4 @@
 <map id="it.unitn.healthcore.controller.HospitalController.viewHierarchy" name="it.unitn.healthcore.controller.HospitalController.viewHierarchy">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,243,47"/>
+<area shape="rect" id="node1" title="Retrieves a list of all hospitals in the system." alt="" coords="5,5,243,47"/>
 <area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1HospitalService.html#ae010824c3799305859c5cee01311739f" title=" " alt="" coords="291,5,511,47"/>
 </map>

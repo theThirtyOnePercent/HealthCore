@@ -2,7 +2,7 @@
 <area shape="rect" id="node1" title="handle the password recovery request by sending an OTP to the user&#39;s email and redirecting to the OTP..." alt="" coords="5,104,235,145"/>
 <area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html#acc1ae5218e790edcc69ad692c84871a2" title=" " alt="" coords="283,104,497,145"/>
 <area shape="rect" id="node3" href="$interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1UserRepository.html#a6a646ae44d01189ff44c81c03fc92fa8" title=" " alt="" coords="573,5,805,47"/>
-<area shape="rect" id="node4" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1PasswordConfirmationForm.html#ad2a321af868704e56c42d5306a8acd91" title=" " alt="" coords="557,71,820,112"/>
-<area shape="rect" id="node5" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1PasswordConfirmationForm.html#aa7de23a583db33eba13ddecad973ceca" title=" " alt="" coords="545,136,832,177"/>
-<area shape="rect" id="node6" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#aae0addd4b63049c29c751a6c03e17f2c" title=" " alt="" coords="589,201,788,243"/>
+<area shape="rect" id="node4" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1PasswordConfirmationForm.html#ad2a321af868704e56c42d5306a8acd91" title="Email getter." alt="" coords="557,71,820,112"/>
+<area shape="rect" id="node5" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1PasswordConfirmationForm.html#aa7de23a583db33eba13ddecad973ceca" title="Password getter." alt="" coords="545,136,832,177"/>
+<area shape="rect" id="node6" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#aae0addd4b63049c29c751a6c03e17f2c" title="Sets the password of the user." alt="" coords="589,201,788,243"/>
 </map>

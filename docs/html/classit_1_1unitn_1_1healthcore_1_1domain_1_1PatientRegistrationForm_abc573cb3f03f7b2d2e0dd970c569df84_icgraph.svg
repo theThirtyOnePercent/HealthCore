@@ -12,7 +12,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="Healthcare card number getter.">
 <polygon fill="#bfbfbf" stroke="black" points="385,-0.5 385,-41.5 591,-41.5 591,-0.5 385,-0.5"/>
 <text text-anchor="start" x="393" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.domain.</text>
 <text text-anchor="start" x="393" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">PatientRegistrationForm.getHealthcare</text>

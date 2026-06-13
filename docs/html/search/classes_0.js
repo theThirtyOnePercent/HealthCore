@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['administrator_152',['Administrator',['../classit_1_1unitn_1_1healthcore_1_1domain_1_1Administrator.html',1,'it::unitn::healthcore::domain']]],
-  ['administratorcontroller_153',['AdministratorController',['../classit_1_1unitn_1_1healthcore_1_1controller_1_1AdministratorController.html',1,'it::unitn::healthcore::controller']]],
-  ['administratorservice_154',['AdministratorService',['../classit_1_1unitn_1_1healthcore_1_1business_1_1AdministratorService.html',1,'it::unitn::healthcore::business']]]
+  ['administrator_245',['Administrator',['../classit_1_1unitn_1_1healthcore_1_1domain_1_1Administrator.html',1,'it::unitn::healthcore::domain']]],
+  ['administratorcontroller_246',['AdministratorController',['../classit_1_1unitn_1_1healthcore_1_1controller_1_1AdministratorController.html',1,'it::unitn::healthcore::controller']]],
+  ['appointment_247',['Appointment',['../classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment.html',1,'it::unitn::healthcore::domain']]],
+  ['appointmentrepository_248',['AppointmentRepository',['../interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1AppointmentRepository.html',1,'it::unitn::healthcore::persistence']]],
+  ['appointmentservice_249',['AppointmentService',['../classit_1_1unitn_1_1healthcore_1_1business_1_1AppointmentService.html',1,'it::unitn::healthcore::business']]]
 ];

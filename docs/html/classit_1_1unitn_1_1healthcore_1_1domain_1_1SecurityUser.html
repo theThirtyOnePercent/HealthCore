@@ -90,19 +90,24 @@ $(document).ready(function(){initNavTree('classit_1_1unitn_1_1healthcore_1_1doma
 <div class="title">it.unitn.healthcore.domain.SecurityUser Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Adapter class that implements UserDetails to integrate our <a class="el" href="classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html" title="Represents a general user in our system.">User</a> entity with Spring Security.  
+ <a href="classit_1_1unitn_1_1healthcore_1_1domain_1_1SecurityUser.html#details">More...</a></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for it.unitn.healthcore.domain.SecurityUser:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classit_1_1unitn_1_1healthcore_1_1domain_1_1SecurityUser__inherit__graph.svg" width="210" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classit_1_1unitn_1_1healthcore_1_1domain_1_1SecurityUser__inherit__graph.svg" width="210" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for it.unitn.healthcore.domain.SecurityUser:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classit_1_1unitn_1_1healthcore_1_1domain_1_1SecurityUser__coll__graph.svg" width="210" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classit_1_1unitn_1_1healthcore_1_1domain_1_1SecurityUser__coll__graph.svg" width="210" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -125,8 +130,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac8f3f7864b0830612c6c32823ef31b55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="SecurityUser_8java_source.html#l00010">10</a> of file <a class="el" href="SecurityUser_8java_source.html">SecurityUser.java</a>.</p>
+<div class="textblock"><p>Adapter class that implements UserDetails to integrate our <a class="el" href="classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html" title="Represents a general user in our system.">User</a> entity with Spring Security. </p>
+<p>@detail It provides the necessary user information to Spring Security for authentication and authorization purposes. @detail The getAuthorities method maps the user's role to a GrantedAuthority, which Spring Security uses to manage access control. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html" title="Represents a general user in our system.">User</a> </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>HealthCore Team </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.0.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2026-06-11 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="SecurityUser_8java_source.html#l00020">20</a> of file <a class="el" href="SecurityUser_8java_source.html">SecurityUser.java</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4cbda6e02c37785bda581852be8bb0d1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4cbda6e02c37785bda581852be8bb0d1">&#9670;&nbsp;</a></span>SecurityUser()</h2>
@@ -144,7 +154,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SecurityUser_8java_source.html#l00014">14</a> of file <a class="el" href="SecurityUser_8java_source.html">SecurityUser.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SecurityUser_8java_source.html#l00024">24</a> of file <a class="el" href="SecurityUser_8java_source.html">SecurityUser.java</a>.</p>
 
 </div>
 </div>
@@ -164,7 +174,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SecurityUser_8java_source.html#l00019">19</a> of file <a class="el" href="SecurityUser_8java_source.html">SecurityUser.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SecurityUser_8java_source.html#l00032">32</a> of file <a class="el" href="SecurityUser_8java_source.html">SecurityUser.java</a>.</p>
 
 </div>
 </div>
@@ -183,15 +193,16 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SecurityUser_8java_source.html#l00027">27</a> of file <a class="el" href="SecurityUser_8java_source.html">SecurityUser.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SecurityUser_8java_source.html#l00043">43</a> of file <a class="el" href="SecurityUser_8java_source.html">SecurityUser.java</a>.</p>
 
-<p class="reference">References <a class="el" href="User_8java_source.html#l00078">it.unitn.healthcore.domain.User.getPassword()</a>.</p>
+<p class="reference">References <a class="el" href="User_8java_source.html#l00086">it.unitn.healthcore.domain.User.getPassword()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classit_1_1unitn_1_1healthcore_1_1domain_1_1SecurityUser_adbe6b7fc7824ede8ecb045bd7db80da3_cgraph.svg" width="456" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classit_1_1unitn_1_1healthcore_1_1domain_1_1SecurityUser_adbe6b7fc7824ede8ecb045bd7db80da3_cgraph.svg" width="456" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -211,15 +222,16 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SecurityUser_8java_source.html#l00032">32</a> of file <a class="el" href="SecurityUser_8java_source.html">SecurityUser.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SecurityUser_8java_source.html#l00051">51</a> of file <a class="el" href="SecurityUser_8java_source.html">SecurityUser.java</a>.</p>
 
-<p class="reference">References <a class="el" href="User_8java_source.html#l00070">it.unitn.healthcore.domain.User.getEmail()</a>.</p>
+<p class="reference">References <a class="el" href="User_8java_source.html#l00078">it.unitn.healthcore.domain.User.getEmail()</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classit_1_1unitn_1_1healthcore_1_1domain_1_1SecurityUser_a454663d8a8a5b1688e949c20c90ee222_cgraph.svg" width="456" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classit_1_1unitn_1_1healthcore_1_1domain_1_1SecurityUser_a454663d8a8a5b1688e949c20c90ee222_cgraph.svg" width="456" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -239,7 +251,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SecurityUser_8java_source.html#l00036">36</a> of file <a class="el" href="SecurityUser_8java_source.html">SecurityUser.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SecurityUser_8java_source.html#l00058">58</a> of file <a class="el" href="SecurityUser_8java_source.html">SecurityUser.java</a>.</p>
 
 </div>
 </div>
@@ -258,7 +270,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SecurityUser_8java_source.html#l00037">37</a> of file <a class="el" href="SecurityUser_8java_source.html">SecurityUser.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SecurityUser_8java_source.html#l00059">59</a> of file <a class="el" href="SecurityUser_8java_source.html">SecurityUser.java</a>.</p>
 
 </div>
 </div>
@@ -277,7 +289,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SecurityUser_8java_source.html#l00038">38</a> of file <a class="el" href="SecurityUser_8java_source.html">SecurityUser.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SecurityUser_8java_source.html#l00060">60</a> of file <a class="el" href="SecurityUser_8java_source.html">SecurityUser.java</a>.</p>
 
 </div>
 </div>
@@ -296,7 +308,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SecurityUser_8java_source.html#l00039">39</a> of file <a class="el" href="SecurityUser_8java_source.html">SecurityUser.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SecurityUser_8java_source.html#l00061">61</a> of file <a class="el" href="SecurityUser_8java_source.html">SecurityUser.java</a>.</p>
 
 </div>
 </div>

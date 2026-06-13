@@ -3,11 +3,16 @@ var dir_565dcb51077f427c661469a3f6e51715 =
     [ "AdministratorController.java", "AdministratorController_8java.html", [
       [ "AdministratorController", "classit_1_1unitn_1_1healthcore_1_1controller_1_1AdministratorController.html", "classit_1_1unitn_1_1healthcore_1_1controller_1_1AdministratorController" ]
     ] ],
+    [ "DoctorController.java", "DoctorController_8java.html", [
+      [ "DoctorController", "classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController.html", "classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController" ]
+    ] ],
     [ "HospitalController.java", "HospitalController_8java.html", [
       [ "HospitalController", "classit_1_1unitn_1_1healthcore_1_1controller_1_1HospitalController.html", "classit_1_1unitn_1_1healthcore_1_1controller_1_1HospitalController" ]
     ] ],
     [ "package_info.java", "controller_2package__info_8java.html", null ],
-    [ "PatientController.java", "PatientController_8java.html", null ],
+    [ "PatientController.java", "PatientController_8java.html", [
+      [ "PatientController", "classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html", "classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController" ]
+    ] ],
     [ "SecurityConfig.java", "SecurityConfig_8java.html", [
       [ "SecurityConfig", "classit_1_1unitn_1_1healthcore_1_1controller_1_1SecurityConfig.html", "classit_1_1unitn_1_1healthcore_1_1controller_1_1SecurityConfig" ]
     ] ],

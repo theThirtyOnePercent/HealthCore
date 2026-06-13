@@ -12,7 +12,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="Sets the password of the user.">
 <polygon fill="#bfbfbf" stroke="black" points="599,-24.5 599,-54.5 748,-54.5 748,-24.5 599,-24.5"/>
 <text text-anchor="start" x="607" y="-42.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.domain.</text>
 <text text-anchor="middle" x="673.5" y="-31.5" font-family="Helvetica,sans-Serif" font-size="10.00">User.setPassword</text>
@@ -70,7 +70,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#acd7b4fd033c7ae0b42644c3932e6867f" target="_top" xlink:title=" ">
+<g id="a_node5"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html#a546d5ed79a6b2f6f15000d9ddb3b03ab" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="0,-0.5 0,-30.5 158,-30.5 158,-0.5 0,-0.5"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.controller.</text>
 <text text-anchor="middle" x="79" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">UserController.updateProfile</text>

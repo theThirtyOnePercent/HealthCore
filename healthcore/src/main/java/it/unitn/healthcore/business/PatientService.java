@@ -170,7 +170,16 @@ public class PatientService{
      */
     @Transactional
     public Appointment bookAppointment(Integer doctorId, LocalDateTime start, LocalDateTime end) {
-
+        /**
+         * Steps to book an appointment:
+         * 1. Validate that the start time is before the end time.
+         * 2. Check if the doctor exists.
+         * 3. Check if the requested time is during the doctor's shift.
+         * 4. Check for overlapping appointments for the doctor.
+         * 5. Check bed availability in the department.
+         * 6. Check insurance coverage or process payment if necessary.
+         * 7. Create and save the appointment.
+         */
         Patient patient = (Patient) userService.getCurrentUser();
         if (!start.isBefore(end)) {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Start must be before end");

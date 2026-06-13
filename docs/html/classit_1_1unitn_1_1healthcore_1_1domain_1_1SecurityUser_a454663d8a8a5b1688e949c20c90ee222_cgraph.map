@@ -1,4 +1,4 @@
 <map id="it.unitn.healthcore.domain.SecurityUser.getUsername" name="it.unitn.healthcore.domain.SecurityUser.getUsername">
 <area shape="rect" id="node1" title=" " alt="" coords="5,5,204,47"/>
-<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#a5b48be6dca19b7d4d43ec2e6a3b91502" title=" " alt="" coords="252,5,451,47"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#a5b48be6dca19b7d4d43ec2e6a3b91502" title="Returns the email address of the user." alt="" coords="252,5,451,47"/>
 </map>

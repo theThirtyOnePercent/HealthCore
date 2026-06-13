@@ -38,7 +38,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#a0c78137c0cf7b414cc88dcc41895d5a7" target="_top" xlink:title=" ">
+<g id="a_node5"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#a0c78137c0cf7b414cc88dcc41895d5a7" target="_top" xlink:title="Returns the first name of the user.">
 <polygon fill="white" stroke="black" points="203,-0.5 203,-30.5 352,-30.5 352,-0.5 203,-0.5"/>
 <text text-anchor="start" x="211" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.domain.</text>
 <text text-anchor="middle" x="277.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">User.getName</text>

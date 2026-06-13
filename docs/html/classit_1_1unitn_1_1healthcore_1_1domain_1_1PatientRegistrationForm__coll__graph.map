@@ -1,4 +1,4 @@
 <map id="it.unitn.healthcore.domain.PatientRegistrationForm" name="it.unitn.healthcore.domain.PatientRegistrationForm">
-<area shape="rect" id="node1" title=" " alt="" coords="6,95,205,136"/>
-<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1PasswordConfirmationForm.html" title=" " alt="" coords="5,5,205,47"/>
+<area shape="rect" id="node1" title="This class represents the form used for patient registration, extending the PasswordConfirmationForm ..." alt="" coords="6,95,205,136"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1PasswordConfirmationForm.html" title="This class serves as a base form for user registration processes that require password confirmation." alt="" coords="5,5,205,47"/>
 </map>
