@@ -23,6 +23,7 @@ jobs:
       - name: Prepare output                
         run: |
           touch ./docs/html/.nojekyll  
+          rm -f ./docs/html/README.md
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
