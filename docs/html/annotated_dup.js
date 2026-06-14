@@ -51,7 +51,5 @@ var annotated_dup =
           [ "HealthcoreApplication", "classit_1_1unitn_1_1healthcore_1_1HealthcoreApplication.html", "classit_1_1unitn_1_1healthcore_1_1HealthcoreApplication" ]
         ] ]
       ] ]
-    ] ],
-    [ "doctorController", "classdoctorController.html", null ],
-    [ "RestController", "classRestController.html", null ]
+    ] ]
 ];

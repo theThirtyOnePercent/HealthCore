@@ -1,3 +1,11 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classit_1_1unitn_1_1healthcore_1_1HealthcoreApplication.html" title="Main class for the HealthCore application." alt="" coords="5,5,221,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,242,117,269"/>
+<area shape="rect" id="node2" href="$interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1AppointmentRepository.html" title="Repository interface for managing Appointment entities in the database." alt="" coords="165,5,389,47"/>
+<area shape="rect" id="node3" href="$interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1DepartmentRepository.html" title="Repository interface for managing Department entities in the database." alt="" coords="165,71,389,112"/>
+<area shape="rect" id="node4" href="$interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1DoctorRepository.html" title="Repository interface for managing Doctor entities in the database." alt="" coords="165,136,389,177"/>
+<area shape="rect" id="node5" href="$interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1HospitalRepository.html" title="Repository interface for managing Hospital entities in the database." alt="" coords="165,201,389,243"/>
+<area shape="rect" id="node6" href="$interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1InsurancePlanRepository.html" title="Repository interface for managing InsurancePlan entities in the database." alt="" coords="165,267,389,308"/>
+<area shape="rect" id="node7" href="$interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1PatientRepository.html" title="Repository interface for managing Patient entities in the database." alt="" coords="165,332,389,373"/>
+<area shape="rect" id="node8" href="$interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1ShiftRepository.html" title="Repository interface for managing Shift entities in the database." alt="" coords="165,397,389,439"/>
+<area shape="rect" id="node9" href="$interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1UserRepository.html" title="Repository interface for managing User entities in the database." alt="" coords="165,463,389,504"/>
 </map>

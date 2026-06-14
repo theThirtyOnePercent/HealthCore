@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 /**
- * @class RestController for managing hospital-related operations. This controller provides endpoints for administrators to view the hierarchy of hospitals in the system. It interacts with the HospitalService to retrieve hospital data and returns it to the client.
+ * @class HospitalController
  * @brief  HospitalController is a REST controller that handles HTTP requests related to hospital management. It provides an endpoint for administrators to view the hierarchy of hospitals in the system.
  * @see  HospitalService
  * @author HealthCore Team

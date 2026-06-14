@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['securityconfig_278',['SecurityConfig',['../classit_1_1unitn_1_1healthcore_1_1controller_1_1SecurityConfig.html',1,'it::unitn::healthcore::controller']]],
-  ['securityuser_279',['SecurityUser',['../classit_1_1unitn_1_1healthcore_1_1domain_1_1SecurityUser.html',1,'it::unitn::healthcore::domain']]],
-  ['shift_280',['Shift',['../classit_1_1unitn_1_1healthcore_1_1domain_1_1Shift.html',1,'it::unitn::healthcore::domain']]],
-  ['shiftrepository_281',['ShiftRepository',['../interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1ShiftRepository.html',1,'it::unitn::healthcore::persistence']]]
+  ['user_277',['User',['../classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html',1,'it::unitn::healthcore::domain']]],
+  ['usercontroller_278',['UserController',['../classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController.html',1,'it::unitn::healthcore::controller']]],
+  ['userrepository_279',['UserRepository',['../interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1UserRepository.html',1,'it::unitn::healthcore::persistence']]],
+  ['userservice_280',['UserService',['../classit_1_1unitn_1_1healthcore_1_1business_1_1UserService.html',1,'it::unitn::healthcore::business']]]
 ];

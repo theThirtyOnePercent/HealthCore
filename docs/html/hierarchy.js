@@ -5,7 +5,6 @@ var hierarchy =
     [ "it.unitn.healthcore.business.AppointmentService", "classit_1_1unitn_1_1healthcore_1_1business_1_1AppointmentService.html", null ],
     [ "it.unitn.healthcore.domain.Department", "classit_1_1unitn_1_1healthcore_1_1domain_1_1Department.html", null ],
     [ "it.unitn.healthcore.domain.Diagnosis", "classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis.html", null ],
-    [ "doctorController", "classdoctorController.html", null ],
     [ "it.unitn.healthcore.controller.DoctorController", "classit_1_1unitn_1_1healthcore_1_1controller_1_1DoctorController.html", null ],
     [ "it.unitn.healthcore.business.DoctorService", "classit_1_1unitn_1_1healthcore_1_1business_1_1DoctorService.html", null ],
     [ "it.unitn.healthcore.domain.Equipment", "classit_1_1unitn_1_1healthcore_1_1domain_1_1Equipment.html", null ],
@@ -23,7 +22,6 @@ var hierarchy =
     ] ],
     [ "it.unitn.healthcore.controller.PatientController", "classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController.html", null ],
     [ "it.unitn.healthcore.business.PatientService", "classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService.html", null ],
-    [ "RestController", "classRestController.html", null ],
     [ "it.unitn.healthcore.controller.SecurityConfig", "classit_1_1unitn_1_1healthcore_1_1controller_1_1SecurityConfig.html", null ],
     [ "it.unitn.healthcore.domain.Shift", "classit_1_1unitn_1_1healthcore_1_1domain_1_1Shift.html", null ],
     [ "it.unitn.healthcore.domain.User", "classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html", [

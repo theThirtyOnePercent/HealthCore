@@ -14,7 +14,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @SpringBootApplication
 public class HealthcoreApplication {
-
+	/** @brief Main method to run the HealthCore application. It uses SpringApplication.run() to launch the application. */
 	public static void main(String[] args) {
 		SpringApplication.run(HealthcoreApplication.class, args);
 

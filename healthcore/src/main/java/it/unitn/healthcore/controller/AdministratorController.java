@@ -10,9 +10,7 @@ import java.util.List;
 
 /**
  * @class AdministratorController
- * @brief  AdiministratorCOntroller is a Rest controller that handles HTTP request related tot administrator 
- * @detail management. It provides endpoint for administrator to manage the system and perform administrative tasks
- * @detail It interacts with the AdministratorService to perform operations related to administrator management and system administration.
+ * @brief AdministratorController is a Rest controller that handles HTTP request related tot administrator 
  * @see AdministratorService
  * @author HealthCore Team
  * @version 1.0.0

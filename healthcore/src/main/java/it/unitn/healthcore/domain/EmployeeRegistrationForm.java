@@ -1,7 +1,8 @@
 package it.unitn.healthcore.domain;
 /**
- * @class 
- * @brief 
+ * @class EmployeeRegistrationForm
+ * @brief This class represents the form used for registering a new employee in the system. It extends the PasswordConfirmationForm to include additional fields specific to employee registration, such as name, surname, role, and department ID. This form is used to capture the necessary information for creating a new employee account in the system.
+ * @see PasswordConfirmationForm
  ** @author HealthCore Team
  * @version 1.0.0
  * @date 2026-06-12

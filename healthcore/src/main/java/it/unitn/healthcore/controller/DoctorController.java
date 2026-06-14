@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.time.LocalDateTime;
 import java.util.List;
 /**
- * @class doctorController
+ * @class DoctorController
  * @brief  DoctorController is a REST controller that handles HTTP requests related to doctor management and appointment viewing for doctors. It provides endpoints for doctor to manage doctor shifts and for doctors to view their appointments and shift schedules.
  * @see 
  * @author HealthCore Team

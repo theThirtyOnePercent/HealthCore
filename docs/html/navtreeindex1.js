@@ -1,7 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"classit_1_1unitn_1_1healthcore_1_1domain_1_1Equipment.html":[3,0,0,0,0,2,6],
-"classit_1_1unitn_1_1healthcore_1_1domain_1_1Equipment.html#a2999e84dc509c28980fc15aa543ed9a9":[3,0,0,0,0,2,6,3],
 "classit_1_1unitn_1_1healthcore_1_1domain_1_1Equipment.html#a3029417f7e73c578ccfa9c42e0f7f238":[3,0,0,0,0,2,6,6],
 "classit_1_1unitn_1_1healthcore_1_1domain_1_1Equipment.html#a4276113734d8234f61d3b8ad306edc0f":[3,0,0,0,0,2,6,1],
 "classit_1_1unitn_1_1healthcore_1_1domain_1_1Equipment.html#a5460129847277ac20413e908503d98eb":[3,0,0,0,0,2,6,7],
@@ -146,15 +144,15 @@ var NAVTREEINDEX1 =
 "domain_2package__info_8java.html":[4,0,1,0,0,0,0,0,0,2,11],
 "domain_2package__info_8java_source.html":[4,0,1,0,0,0,0,0,0,2,11],
 "files.html":[4,0],
-"functions.html":[3,3,0],
 "functions.html":[3,3,0,0],
+"functions.html":[3,3,0],
 "functions_b.html":[3,3,0,1],
 "functions_c.html":[3,3,0,2],
 "functions_d.html":[3,3,0,3],
 "functions_e.html":[3,3,0,4],
 "functions_f.html":[3,3,0,5],
-"functions_func.html":[3,3,1,0],
 "functions_func.html":[3,3,1],
+"functions_func.html":[3,3,1,0],
 "functions_func_b.html":[3,3,1,1],
 "functions_func_c.html":[3,3,1,2],
 "functions_func_d.html":[3,3,1,3],
@@ -187,8 +185,8 @@ var NAVTREEINDEX1 =
 "functions_u.html":[3,3,0,17],
 "functions_v.html":[3,3,0,18],
 "hierarchy.html":[3,2],
-"index.html":[0],
 "index.html":[],
+"index.html":[0],
 "index.html#autotoc_md1":[0,0],
 "index.html#autotoc_md11":[0,5],
 "index.html#autotoc_md2":[0,1],
@@ -208,7 +206,6 @@ var NAVTREEINDEX1 =
 "interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1UserRepository.html":[3,0,0,0,0,3,7],
 "interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1UserRepository.html#a6a646ae44d01189ff44c81c03fc92fa8":[3,0,0,0,0,3,7,0],
 "md_docs_architecture.html":[1],
-"md_docs_architecture.html#autotoc_md14":[1,0],
 "namespaceit_1_1unitn_1_1healthcore_1_1business.html":[2,0,0,0,0,0],
 "namespaceit_1_1unitn_1_1healthcore_1_1controller.html":[2,0,0,0,0,1],
 "namespaceit_1_1unitn_1_1healthcore_1_1domain.html":[2,0,0,0,0,2],
@@ -217,7 +214,7 @@ var NAVTREEINDEX1 =
 "pages.html":[],
 "persistence_2package__info_8java.html":[4,0,1,0,0,0,0,0,0,3,5],
 "persistence_2package__info_8java_source.html":[4,0,1,0,0,0,0,0,0,3,5],
-"":[2,0,0],
+"":[2,0,0,0,0],
 "":[2,0,0,0],
-"":[2,0,0,0,0]
+"":[2,0,0]
 };
