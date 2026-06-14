@@ -1,0 +1,386 @@
+\hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment}{}\doxysection{it.\+unitn.\+healthcore.\+domain.\+Appointment Class Reference}
+\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment}\index{it.unitn.healthcore.domain.Appointment@{it.unitn.healthcore.domain.Appointment}}
+
+
+Entity representing a scheduled appointment between a \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Patient}{Patient}} and a \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor}{Doctor}}, mapped to the \char`\"{}appointments\char`\"{} table.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_a4d8648565f5ad03ff46490a469104d26}{Appointment}} ()
+\item 
+\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_ac32b16c7d1fed435ebfeb1a86a12d8d8}{Appointment}} (\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Patient}{Patient}} patient, \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor}{Doctor}} doctor, Local\+Date\+Time start\+Time, Local\+Date\+Time end\+Time)
+\begin{DoxyCompactList}\small\item\em Creates an \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment}{Appointment}} between a patient and a doctor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Note}{Note}} \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_a3fb81e623b0ff03cc54fcb647288539e}{get\+Note}} ()
+\begin{DoxyCompactList}\small\item\em Returns the appointment ID. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_a7526c982c00ba3d7e29c80c049340471}{set\+Note}} (\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Note}{Note}} note)
+\begin{DoxyCompactList}\small\item\em Sets the note associated with the appointment. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis}{Diagnosis}} $>$ \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_a6945c3dac1787160e8537deeff1b44b2}{get\+Diagnoses}} ()
+\begin{DoxyCompactList}\small\item\em Returns the list of diagnoses associated with the appointment. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_a834ac83694ac066d9178489b4657c72c}{set\+Diagnoses}} (List$<$ \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis}{Diagnosis}} $>$ diagnoses)
+\begin{DoxyCompactList}\small\item\em Sets the list of diagnoses associated with the appointment. \end{DoxyCompactList}\item 
+Integer \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_ae8a397335e77fdd3ab2a12667c862b30}{get\+Appointment\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Returns the appointment ID. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_af1132572bc8fcef2ae80402a379a8a5f}{set\+Appointment\+Id}} (Integer appointment\+Id)
+\begin{DoxyCompactList}\small\item\em Sets the appointment ID. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Patient}{Patient}} \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_a60f84ee45966ebeed37981dffe94c8ad}{get\+Patient}} ()
+\begin{DoxyCompactList}\small\item\em Returns the patient associated with the appointment. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_a956203f611931420f0fb17001d8a4df7}{set\+Patient}} (\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Patient}{Patient}} patient)
+\begin{DoxyCompactList}\small\item\em Sets the patient associated with the appointment. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor}{Doctor}} \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_a5e3d223030b1b23d4a2dfab94d5b4ef2}{get\+Doctor}} ()
+\begin{DoxyCompactList}\small\item\em Returns the doctor conducting the appointment. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_a896932952a4ed02e2514415dc2388aa0}{set\+Doctor}} (\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor}{Doctor}} doctor)
+\begin{DoxyCompactList}\small\item\em Sets the doctor conducting the appointment. \end{DoxyCompactList}\item 
+Local\+Date\+Time \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_a6adf9242cb006af27dd5ed15fdf82450}{get\+End\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Returns the end date and time of the appointment. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_a6de01451b6306612331a64affe989252}{set\+End\+Time}} (Local\+Date\+Time end\+Time)
+\begin{DoxyCompactList}\small\item\em Sets the end date and time of the appointment. \end{DoxyCompactList}\item 
+Local\+Date\+Time \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_a9bd30e2d1b2e4de743b3e83b9cc50eb4}{get\+Start\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Returns the start date and time of the appointment. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_af0a269963159bb6067469fb75a6fdf3a}{set\+Start\+Time}} (Local\+Date\+Time start\+Time)
+\begin{DoxyCompactList}\small\item\em Sets the start date and time of the appointment. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Entity representing a scheduled appointment between a \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Patient}{Patient}} and a \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor}{Doctor}}, mapped to the \char`\"{}appointments\char`\"{} table. 
+
+\begin{DoxyAuthor}{Author}
+Health\+Core Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2026-\/06-\/12 
+\end{DoxyDate}
+
+
+Definition at line 19 of file Appointment.\+java.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_a4d8648565f5ad03ff46490a469104d26}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_a4d8648565f5ad03ff46490a469104d26}} 
+\index{it.unitn.healthcore.domain.Appointment@{it.unitn.healthcore.domain.Appointment}!Appointment@{Appointment}}
+\index{Appointment@{Appointment}!it.unitn.healthcore.domain.Appointment@{it.unitn.healthcore.domain.Appointment}}
+\doxysubsubsection{\texorpdfstring{Appointment()}{Appointment()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily it.\+unitn.\+healthcore.\+domain.\+Appointment.\+Appointment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 47 of file Appointment.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_ac32b16c7d1fed435ebfeb1a86a12d8d8}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_ac32b16c7d1fed435ebfeb1a86a12d8d8}} 
+\index{it.unitn.healthcore.domain.Appointment@{it.unitn.healthcore.domain.Appointment}!Appointment@{Appointment}}
+\index{Appointment@{Appointment}!it.unitn.healthcore.domain.Appointment@{it.unitn.healthcore.domain.Appointment}}
+\doxysubsubsection{\texorpdfstring{Appointment()}{Appointment()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily it.\+unitn.\+healthcore.\+domain.\+Appointment.\+Appointment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Patient}{Patient}}}]{patient,  }\item[{\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor}{Doctor}}}]{doctor,  }\item[{Local\+Date\+Time}]{start\+Time,  }\item[{Local\+Date\+Time}]{end\+Time }\end{DoxyParamCaption})}
+
+
+
+Creates an \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment}{Appointment}} between a patient and a doctor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em patient} & The patient attending the appointment. \\
+\hline
+{\em doctor} & The doctor conducting the appointment. \\
+\hline
+{\em start\+Time} & \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment}{Appointment}} start date and time. \\
+\hline
+{\em end\+Time} & \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment}{Appointment}} end date and time. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 56 of file Appointment.\+java.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_ae8a397335e77fdd3ab2a12667c862b30}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_ae8a397335e77fdd3ab2a12667c862b30}} 
+\index{it.unitn.healthcore.domain.Appointment@{it.unitn.healthcore.domain.Appointment}!getAppointmentId@{getAppointmentId}}
+\index{getAppointmentId@{getAppointmentId}!it.unitn.healthcore.domain.Appointment@{it.unitn.healthcore.domain.Appointment}}
+\doxysubsubsection{\texorpdfstring{getAppointmentId()}{getAppointmentId()}}
+{\footnotesize\ttfamily Integer it.\+unitn.\+healthcore.\+domain.\+Appointment.\+get\+Appointment\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the appointment ID. 
+
+
+
+Definition at line 79 of file Appointment.\+java.
+
+
+
+Referenced by it.\+unitn.\+healthcore.\+controller.\+Patient\+Controller.\+book\+Appointment(), and it.\+unitn.\+healthcore.\+business.\+Appointment\+Service.\+get\+Appointment\+Details().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_ae8a397335e77fdd3ab2a12667c862b30_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_a6945c3dac1787160e8537deeff1b44b2}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_a6945c3dac1787160e8537deeff1b44b2}} 
+\index{it.unitn.healthcore.domain.Appointment@{it.unitn.healthcore.domain.Appointment}!getDiagnoses@{getDiagnoses}}
+\index{getDiagnoses@{getDiagnoses}!it.unitn.healthcore.domain.Appointment@{it.unitn.healthcore.domain.Appointment}}
+\doxysubsubsection{\texorpdfstring{getDiagnoses()}{getDiagnoses()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis}{Diagnosis}}$>$ it.\+unitn.\+healthcore.\+domain.\+Appointment.\+get\+Diagnoses (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the list of diagnoses associated with the appointment. 
+
+
+
+Definition at line 71 of file Appointment.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_a5e3d223030b1b23d4a2dfab94d5b4ef2}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_a5e3d223030b1b23d4a2dfab94d5b4ef2}} 
+\index{it.unitn.healthcore.domain.Appointment@{it.unitn.healthcore.domain.Appointment}!getDoctor@{getDoctor}}
+\index{getDoctor@{getDoctor}!it.unitn.healthcore.domain.Appointment@{it.unitn.healthcore.domain.Appointment}}
+\doxysubsubsection{\texorpdfstring{getDoctor()}{getDoctor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor}{Doctor}} it.\+unitn.\+healthcore.\+domain.\+Appointment.\+get\+Doctor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the doctor conducting the appointment. 
+
+
+
+Definition at line 95 of file Appointment.\+java.
+
+
+
+Referenced by it.\+unitn.\+healthcore.\+controller.\+Patient\+Controller.\+book\+Appointment(), it.\+unitn.\+healthcore.\+business.\+Appointment\+Service.\+get\+Appointment\+Details(), and it.\+unitn.\+healthcore.\+business.\+Patient\+Service.\+modify\+Appointment().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_a5e3d223030b1b23d4a2dfab94d5b4ef2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_a6adf9242cb006af27dd5ed15fdf82450}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_a6adf9242cb006af27dd5ed15fdf82450}} 
+\index{it.unitn.healthcore.domain.Appointment@{it.unitn.healthcore.domain.Appointment}!getEndTime@{getEndTime}}
+\index{getEndTime@{getEndTime}!it.unitn.healthcore.domain.Appointment@{it.unitn.healthcore.domain.Appointment}}
+\doxysubsubsection{\texorpdfstring{getEndTime()}{getEndTime()}}
+{\footnotesize\ttfamily Local\+Date\+Time it.\+unitn.\+healthcore.\+domain.\+Appointment.\+get\+End\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the end date and time of the appointment. 
+
+
+
+Definition at line 103 of file Appointment.\+java.
+
+
+
+Referenced by it.\+unitn.\+healthcore.\+controller.\+Patient\+Controller.\+book\+Appointment(), and it.\+unitn.\+healthcore.\+business.\+Appointment\+Service.\+get\+Appointment\+Details().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_a6adf9242cb006af27dd5ed15fdf82450_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_a3fb81e623b0ff03cc54fcb647288539e}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_a3fb81e623b0ff03cc54fcb647288539e}} 
+\index{it.unitn.healthcore.domain.Appointment@{it.unitn.healthcore.domain.Appointment}!getNote@{getNote}}
+\index{getNote@{getNote}!it.unitn.healthcore.domain.Appointment@{it.unitn.healthcore.domain.Appointment}}
+\doxysubsubsection{\texorpdfstring{getNote()}{getNote()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Note}{Note}} it.\+unitn.\+healthcore.\+domain.\+Appointment.\+get\+Note (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the appointment ID. 
+
+
+
+Definition at line 63 of file Appointment.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_a60f84ee45966ebeed37981dffe94c8ad}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_a60f84ee45966ebeed37981dffe94c8ad}} 
+\index{it.unitn.healthcore.domain.Appointment@{it.unitn.healthcore.domain.Appointment}!getPatient@{getPatient}}
+\index{getPatient@{getPatient}!it.unitn.healthcore.domain.Appointment@{it.unitn.healthcore.domain.Appointment}}
+\doxysubsubsection{\texorpdfstring{getPatient()}{getPatient()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Patient}{Patient}} it.\+unitn.\+healthcore.\+domain.\+Appointment.\+get\+Patient (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the patient associated with the appointment. 
+
+
+
+Definition at line 87 of file Appointment.\+java.
+
+
+
+Referenced by it.\+unitn.\+healthcore.\+business.\+Patient\+Service.\+cancel\+Appointment(), it.\+unitn.\+healthcore.\+business.\+Appointment\+Service.\+get\+Appointment\+Details(), and it.\+unitn.\+healthcore.\+business.\+Patient\+Service.\+modify\+Appointment().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_a60f84ee45966ebeed37981dffe94c8ad_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_a9bd30e2d1b2e4de743b3e83b9cc50eb4}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_a9bd30e2d1b2e4de743b3e83b9cc50eb4}} 
+\index{it.unitn.healthcore.domain.Appointment@{it.unitn.healthcore.domain.Appointment}!getStartTime@{getStartTime}}
+\index{getStartTime@{getStartTime}!it.unitn.healthcore.domain.Appointment@{it.unitn.healthcore.domain.Appointment}}
+\doxysubsubsection{\texorpdfstring{getStartTime()}{getStartTime()}}
+{\footnotesize\ttfamily Local\+Date\+Time it.\+unitn.\+healthcore.\+domain.\+Appointment.\+get\+Start\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the start date and time of the appointment. 
+
+
+
+Definition at line 111 of file Appointment.\+java.
+
+
+
+Referenced by it.\+unitn.\+healthcore.\+controller.\+Patient\+Controller.\+book\+Appointment(), it.\+unitn.\+healthcore.\+business.\+Patient\+Service.\+cancel\+Appointment(), it.\+unitn.\+healthcore.\+business.\+Appointment\+Service.\+get\+Appointment\+Details(), and it.\+unitn.\+healthcore.\+business.\+Patient\+Service.\+modify\+Appointment().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_a9bd30e2d1b2e4de743b3e83b9cc50eb4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_af1132572bc8fcef2ae80402a379a8a5f}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_af1132572bc8fcef2ae80402a379a8a5f}} 
+\index{it.unitn.healthcore.domain.Appointment@{it.unitn.healthcore.domain.Appointment}!setAppointmentId@{setAppointmentId}}
+\index{setAppointmentId@{setAppointmentId}!it.unitn.healthcore.domain.Appointment@{it.unitn.healthcore.domain.Appointment}}
+\doxysubsubsection{\texorpdfstring{setAppointmentId()}{setAppointmentId()}}
+{\footnotesize\ttfamily void it.\+unitn.\+healthcore.\+domain.\+Appointment.\+set\+Appointment\+Id (\begin{DoxyParamCaption}\item[{Integer}]{appointment\+Id }\end{DoxyParamCaption})}
+
+
+
+Sets the appointment ID. 
+
+
+
+Definition at line 83 of file Appointment.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_a834ac83694ac066d9178489b4657c72c}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_a834ac83694ac066d9178489b4657c72c}} 
+\index{it.unitn.healthcore.domain.Appointment@{it.unitn.healthcore.domain.Appointment}!setDiagnoses@{setDiagnoses}}
+\index{setDiagnoses@{setDiagnoses}!it.unitn.healthcore.domain.Appointment@{it.unitn.healthcore.domain.Appointment}}
+\doxysubsubsection{\texorpdfstring{setDiagnoses()}{setDiagnoses()}}
+{\footnotesize\ttfamily void it.\+unitn.\+healthcore.\+domain.\+Appointment.\+set\+Diagnoses (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis}{Diagnosis}} $>$}]{diagnoses }\end{DoxyParamCaption})}
+
+
+
+Sets the list of diagnoses associated with the appointment. 
+
+
+
+Definition at line 75 of file Appointment.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_a896932952a4ed02e2514415dc2388aa0}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_a896932952a4ed02e2514415dc2388aa0}} 
+\index{it.unitn.healthcore.domain.Appointment@{it.unitn.healthcore.domain.Appointment}!setDoctor@{setDoctor}}
+\index{setDoctor@{setDoctor}!it.unitn.healthcore.domain.Appointment@{it.unitn.healthcore.domain.Appointment}}
+\doxysubsubsection{\texorpdfstring{setDoctor()}{setDoctor()}}
+{\footnotesize\ttfamily void it.\+unitn.\+healthcore.\+domain.\+Appointment.\+set\+Doctor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor}{Doctor}}}]{doctor }\end{DoxyParamCaption})}
+
+
+
+Sets the doctor conducting the appointment. 
+
+
+
+Definition at line 99 of file Appointment.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_a6de01451b6306612331a64affe989252}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_a6de01451b6306612331a64affe989252}} 
+\index{it.unitn.healthcore.domain.Appointment@{it.unitn.healthcore.domain.Appointment}!setEndTime@{setEndTime}}
+\index{setEndTime@{setEndTime}!it.unitn.healthcore.domain.Appointment@{it.unitn.healthcore.domain.Appointment}}
+\doxysubsubsection{\texorpdfstring{setEndTime()}{setEndTime()}}
+{\footnotesize\ttfamily void it.\+unitn.\+healthcore.\+domain.\+Appointment.\+set\+End\+Time (\begin{DoxyParamCaption}\item[{Local\+Date\+Time}]{end\+Time }\end{DoxyParamCaption})}
+
+
+
+Sets the end date and time of the appointment. 
+
+
+
+Definition at line 107 of file Appointment.\+java.
+
+
+
+Referenced by it.\+unitn.\+healthcore.\+business.\+Patient\+Service.\+modify\+Appointment().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_a6de01451b6306612331a64affe989252_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_a7526c982c00ba3d7e29c80c049340471}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_a7526c982c00ba3d7e29c80c049340471}} 
+\index{it.unitn.healthcore.domain.Appointment@{it.unitn.healthcore.domain.Appointment}!setNote@{setNote}}
+\index{setNote@{setNote}!it.unitn.healthcore.domain.Appointment@{it.unitn.healthcore.domain.Appointment}}
+\doxysubsubsection{\texorpdfstring{setNote()}{setNote()}}
+{\footnotesize\ttfamily void it.\+unitn.\+healthcore.\+domain.\+Appointment.\+set\+Note (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Note}{Note}}}]{note }\end{DoxyParamCaption})}
+
+
+
+Sets the note associated with the appointment. 
+
+
+
+Definition at line 67 of file Appointment.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_a956203f611931420f0fb17001d8a4df7}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_a956203f611931420f0fb17001d8a4df7}} 
+\index{it.unitn.healthcore.domain.Appointment@{it.unitn.healthcore.domain.Appointment}!setPatient@{setPatient}}
+\index{setPatient@{setPatient}!it.unitn.healthcore.domain.Appointment@{it.unitn.healthcore.domain.Appointment}}
+\doxysubsubsection{\texorpdfstring{setPatient()}{setPatient()}}
+{\footnotesize\ttfamily void it.\+unitn.\+healthcore.\+domain.\+Appointment.\+set\+Patient (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Patient}{Patient}}}]{patient }\end{DoxyParamCaption})}
+
+
+
+Sets the patient associated with the appointment. 
+
+
+
+Definition at line 91 of file Appointment.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_af0a269963159bb6067469fb75a6fdf3a}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_af0a269963159bb6067469fb75a6fdf3a}} 
+\index{it.unitn.healthcore.domain.Appointment@{it.unitn.healthcore.domain.Appointment}!setStartTime@{setStartTime}}
+\index{setStartTime@{setStartTime}!it.unitn.healthcore.domain.Appointment@{it.unitn.healthcore.domain.Appointment}}
+\doxysubsubsection{\texorpdfstring{setStartTime()}{setStartTime()}}
+{\footnotesize\ttfamily void it.\+unitn.\+healthcore.\+domain.\+Appointment.\+set\+Start\+Time (\begin{DoxyParamCaption}\item[{Local\+Date\+Time}]{start\+Time }\end{DoxyParamCaption})}
+
+
+
+Sets the start date and time of the appointment. 
+
+
+
+Definition at line 115 of file Appointment.\+java.
+
+
+
+Referenced by it.\+unitn.\+healthcore.\+business.\+Patient\+Service.\+modify\+Appointment().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment_af0a269963159bb6067469fb75a6fdf3a_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+healthcore/src/main/java/it/unitn/healthcore/domain/\mbox{\hyperlink{Appointment_8java}{Appointment.\+java}}\end{DoxyCompactItemize}

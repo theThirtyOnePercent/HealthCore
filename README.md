@@ -7,7 +7,6 @@ HealthCore is a web-based healthcare management system developed for a small net
 The project was developed as part of a software engineering course (University of Trento) and follows a layered architecture designed to support maintainability, scalability, and security.
 
 
-
 ## Project Structure
 
 ![alt text](docs/structure.png)
@@ -52,7 +51,7 @@ The project was developed as part of a software engineering course (University o
 
 ## Documentation
 
-API and code documentation is generated using [Doxygen](https://www.doxygen.nl/). To build the docs locally:
+Code documentation is generated using [Doxygen](https://www.doxygen.nl/). To build the docs locally:
 
 ```bash
 doxygen Doxyfile

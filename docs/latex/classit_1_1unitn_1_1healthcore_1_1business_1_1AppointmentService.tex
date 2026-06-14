@@ -1,0 +1,199 @@
+\hypertarget{classit_1_1unitn_1_1healthcore_1_1business_1_1AppointmentService}{}\doxysection{it.\+unitn.\+healthcore.\+business.\+Appointment\+Service Class Reference}
+\label{classit_1_1unitn_1_1healthcore_1_1business_1_1AppointmentService}\index{it.unitn.healthcore.business.AppointmentService@{it.unitn.healthcore.business.AppointmentService}}
+
+
+\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1business_1_1AppointmentService}{Appointment\+Service}} is a service class that provides business logic related to appointments.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1business_1_1AppointmentService_acfd09ad2e039f0a8a857acbb24052f8c}{Appointment\+Service}} (\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1business_1_1UserService}{User\+Service}} user\+Service, \mbox{\hyperlink{interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1AppointmentRepository}{Appointment\+Repository}} appointment\+Repository)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1business_1_1AppointmentService}{Appointment\+Service}} class. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment}{Appointment}} $>$ \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1business_1_1AppointmentService_aed50e6f0cf3a16af4d8754c66060512d}{get\+Future\+Appointments}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves a list of future appointments for the currently authenticated user. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment}{Appointment}} $>$ \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1business_1_1AppointmentService_aaaacaf474fcb34004e52bafc3ade271d}{get\+Past\+Appointments}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves a list of past appointments for the currently authenticated user. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1business_1_1AppointmentService_a6df398766f183e79fe315aea5f1752a4}{get\+Appointment\+Details}} (Integer appointment\+Id)
+\begin{DoxyCompactList}\small\item\em Retrieves detailed information about a specific appointment based on the appointment ID. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1business_1_1AppointmentService}{Appointment\+Service}} is a service class that provides business logic related to appointments. 
+
+It interacts with the \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1business_1_1UserService}{User\+Service}} to retrieve the current user and the Appointment\+Repository to access appointment data. The service includes methods for retrieving future and past appointments, as well as getting detailed information about specific appointments. @detail The \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1business_1_1AppointmentService}{Appointment\+Service}} class is responsible for handling appointment-\/related operations in the system. It provides methods to retrieve future and past appointments for the currently authenticated user, as well as detailed information about specific appointments. The service ensures that users can only access appointments they are assigned to, and it formats the appointment details for display. \begin{DoxySeeAlso}{See also}
+Appointment\+Repository 
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Health\+Core Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2026-\/06-\/11 
+\end{DoxyDate}
+
+
+Definition at line 26 of file Appointment\+Service.\+java.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1business_1_1AppointmentService_acfd09ad2e039f0a8a857acbb24052f8c}\label{classit_1_1unitn_1_1healthcore_1_1business_1_1AppointmentService_acfd09ad2e039f0a8a857acbb24052f8c}} 
+\index{it.unitn.healthcore.business.AppointmentService@{it.unitn.healthcore.business.AppointmentService}!AppointmentService@{AppointmentService}}
+\index{AppointmentService@{AppointmentService}!it.unitn.healthcore.business.AppointmentService@{it.unitn.healthcore.business.AppointmentService}}
+\doxysubsubsection{\texorpdfstring{AppointmentService()}{AppointmentService()}}
+{\footnotesize\ttfamily it.\+unitn.\+healthcore.\+business.\+Appointment\+Service.\+Appointment\+Service (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1business_1_1UserService}{User\+Service}}}]{user\+Service,  }\item[{\mbox{\hyperlink{interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1AppointmentRepository}{Appointment\+Repository}}}]{appointment\+Repository }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1business_1_1AppointmentService}{Appointment\+Service}} class. 
+
+This constructor is used to inject the \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1business_1_1UserService}{User\+Service}} and Appointment\+Repository dependencies into the service. The @\+Autowired annotation allows Spring to automatically wire the service when creating an instance of the \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1business_1_1AppointmentService}{Appointment\+Service}}. 
+\begin{DoxyParams}{Parameters}
+{\em user\+Service} & The service that provides user-\/related functionalities such as retrieving the current user. \\
+\hline
+{\em appointment\+Repository} & The repository that provides access to appointment data in the database. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 36 of file Appointment\+Service.\+java.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1business_1_1AppointmentService_a6df398766f183e79fe315aea5f1752a4}\label{classit_1_1unitn_1_1healthcore_1_1business_1_1AppointmentService_a6df398766f183e79fe315aea5f1752a4}} 
+\index{it.unitn.healthcore.business.AppointmentService@{it.unitn.healthcore.business.AppointmentService}!getAppointmentDetails@{getAppointmentDetails}}
+\index{getAppointmentDetails@{getAppointmentDetails}!it.unitn.healthcore.business.AppointmentService@{it.unitn.healthcore.business.AppointmentService}}
+\doxysubsubsection{\texorpdfstring{getAppointmentDetails()}{getAppointmentDetails()}}
+{\footnotesize\ttfamily String it.\+unitn.\+healthcore.\+business.\+Appointment\+Service.\+get\+Appointment\+Details (\begin{DoxyParamCaption}\item[{Integer}]{appointment\+Id }\end{DoxyParamCaption})}
+
+
+
+Retrieves detailed information about a specific appointment based on the appointment ID. 
+
+This method checks the type of the current user (Doctor or Patient) and verifies that they are assigned to the requested appointment. If the user is authorized to view the appointment, it returns a string containing detailed information about the appointment, including patient or doctor details and any associated notes or diagnoses. 
+\begin{DoxyParams}{Parameters}
+{\em appointment\+Id} & The ID of the appointment for which to retrieve details. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string containing detailed information about the specified appointment. 
+\end{DoxyReturn}
+
+
+Definition at line 103 of file Appointment\+Service.\+java.
+
+
+
+References it.\+unitn.\+healthcore.\+domain.\+Appointment.\+get\+Appointment\+Id(), it.\+unitn.\+healthcore.\+business.\+User\+Service.\+get\+Current\+User(), it.\+unitn.\+healthcore.\+domain.\+Appointment.\+get\+Doctor(), it.\+unitn.\+healthcore.\+domain.\+Appointment.\+get\+End\+Time(), it.\+unitn.\+healthcore.\+domain.\+User.\+get\+Id(), it.\+unitn.\+healthcore.\+domain.\+Appointment.\+get\+Patient(), and it.\+unitn.\+healthcore.\+domain.\+Appointment.\+get\+Start\+Time().
+
+
+
+Referenced by it.\+unitn.\+healthcore.\+controller.\+Doctor\+Controller.\+view\+Appointment\+Detail(), and it.\+unitn.\+healthcore.\+controller.\+Patient\+Controller.\+view\+Appointment\+Detail().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1business_1_1AppointmentService_a6df398766f183e79fe315aea5f1752a4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1business_1_1AppointmentService_a6df398766f183e79fe315aea5f1752a4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1business_1_1AppointmentService_aed50e6f0cf3a16af4d8754c66060512d}\label{classit_1_1unitn_1_1healthcore_1_1business_1_1AppointmentService_aed50e6f0cf3a16af4d8754c66060512d}} 
+\index{it.unitn.healthcore.business.AppointmentService@{it.unitn.healthcore.business.AppointmentService}!getFutureAppointments@{getFutureAppointments}}
+\index{getFutureAppointments@{getFutureAppointments}!it.unitn.healthcore.business.AppointmentService@{it.unitn.healthcore.business.AppointmentService}}
+\doxysubsubsection{\texorpdfstring{getFutureAppointments()}{getFutureAppointments()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment}{Appointment}}$>$ it.\+unitn.\+healthcore.\+business.\+Appointment\+Service.\+get\+Future\+Appointments (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieves a list of future appointments for the currently authenticated user. 
+
+This method checks the type of the current user (Doctor or Patient) and retrieves their respective appointments. It then filters the appointments to include only those that are scheduled for the future (i.\+e., start time is after the current time) and sorts them by start time in ascending order. \begin{DoxyReturn}{Returns}
+A list of future appointments for the current user, sorted by start time. 
+\end{DoxyReturn}
+
+
+Definition at line 45 of file Appointment\+Service.\+java.
+
+
+
+References it.\+unitn.\+healthcore.\+business.\+User\+Service.\+get\+Current\+User().
+
+
+
+Referenced by it.\+unitn.\+healthcore.\+controller.\+Doctor\+Controller.\+view\+Future\+Appointments(), and it.\+unitn.\+healthcore.\+controller.\+Patient\+Controller.\+view\+Future\+Appointments().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1business_1_1AppointmentService_aed50e6f0cf3a16af4d8754c66060512d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1business_1_1AppointmentService_aed50e6f0cf3a16af4d8754c66060512d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1business_1_1AppointmentService_aaaacaf474fcb34004e52bafc3ade271d}\label{classit_1_1unitn_1_1healthcore_1_1business_1_1AppointmentService_aaaacaf474fcb34004e52bafc3ade271d}} 
+\index{it.unitn.healthcore.business.AppointmentService@{it.unitn.healthcore.business.AppointmentService}!getPastAppointments@{getPastAppointments}}
+\index{getPastAppointments@{getPastAppointments}!it.unitn.healthcore.business.AppointmentService@{it.unitn.healthcore.business.AppointmentService}}
+\doxysubsubsection{\texorpdfstring{getPastAppointments()}{getPastAppointments()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment}{Appointment}}$>$ it.\+unitn.\+healthcore.\+business.\+Appointment\+Service.\+get\+Past\+Appointments (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieves a list of past appointments for the currently authenticated user. 
+
+This method checks the type of the current user (Doctor or Patient) and retrieves their respective appointments. It then filters the appointments to include only those that have already occurred (i.\+e., end time is before the current time) and sorts them by start time in descending order. \begin{DoxyReturn}{Returns}
+A list of past appointments for the current user, sorted by start time in descending order. 
+\end{DoxyReturn}
+
+
+Definition at line 74 of file Appointment\+Service.\+java.
+
+
+
+References it.\+unitn.\+healthcore.\+business.\+User\+Service.\+get\+Current\+User().
+
+
+
+Referenced by it.\+unitn.\+healthcore.\+controller.\+Doctor\+Controller.\+view\+Past\+Appointments(), and it.\+unitn.\+healthcore.\+controller.\+Patient\+Controller.\+view\+Past\+Appointments().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1business_1_1AppointmentService_aaaacaf474fcb34004e52bafc3ade271d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1business_1_1AppointmentService_aaaacaf474fcb34004e52bafc3ade271d_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+healthcore/src/main/java/it/unitn/healthcore/business/\mbox{\hyperlink{AppointmentService_8java}{Appointment\+Service.\+java}}\end{DoxyCompactItemize}

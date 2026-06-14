@@ -78,7 +78,7 @@ var NAVTREEINDEX0 =
 "User_8java_source.html":[4,0,1,0,0,0,0,0,0,2,18],
 "annotated.html":[3,0],
 "architecture_page.html":[1],
-"architecture_page.html#autotoc_md5":[1,0],
+"architecture_page.html#autotoc_md13":[1,0],
 "business_2package__info_8java.html":[4,0,1,0,0,0,0,0,0,0,3],
 "business_2package__info_8java_source.html":[4,0,1,0,0,0,0,0,0,0,3],
 "classRestController.html":[3,0,2],

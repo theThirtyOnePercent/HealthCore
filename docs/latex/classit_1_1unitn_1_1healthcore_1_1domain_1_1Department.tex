@@ -1,0 +1,319 @@
+\hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department}{}\doxysection{it.\+unitn.\+healthcore.\+domain.\+Department Class Reference}
+\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department}\index{it.unitn.healthcore.domain.Department@{it.unitn.healthcore.domain.Department}}
+
+
+Represents a department in our system.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_a2d7de90b1af28f08015a08e7444c2acc}{Department}} ()
+\item 
+\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_aa9dcc33a31a282fa2979e9e4eabb5260}{Department}} (\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Hospital}{Hospital}} hospital, String name, Integer beds, Integer total\+Staff\+Positions)
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department}{Department}} with full credentials. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Equipment}{Equipment}} $>$ \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_a5887f64577d5c42cd1f95134dd2b0dc2}{get\+Equipments}} ()
+\item 
+void \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_a8f6fc5a8f6e5e2cb06647a032d21dbb9}{set\+Equipments}} (List$<$ \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Equipment}{Equipment}} $>$ equipments)
+\item 
+List$<$ \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor}{Doctor}} $>$ \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_ad38ac8809036af86857a94672fd341e0}{get\+Doctors}} ()
+\item 
+void \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_a86b6dd4cbd3768d5bb0f6b502f64f151}{set\+Doctors}} (List$<$ \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor}{Doctor}} $>$ doctors)
+\item 
+Integer \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_a75653b55374323e861735b2bf82fda3b}{get\+Department\+Id}} ()
+\item 
+void \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_a2f140e60dc1d5fd88b61d7850d4ac2e8}{set\+Department\+Id}} (Integer department\+Id)
+\begin{DoxyCompactList}\small\item\em Sets the department ID. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_ad3dbd24db0898580a3a7ead8960abad7}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Returns the list of equipments associated with the department. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_a363af3126a30d7f8468d445304c3eda8}{set\+Name}} (String name)
+\begin{DoxyCompactList}\small\item\em Sets the name of the department. \end{DoxyCompactList}\item 
+Integer \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_ae32c96f1e79ae08ee368ae8bb82f9337}{get\+Beds}} ()
+\begin{DoxyCompactList}\small\item\em Returns the available bed number within the department. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_a13a0840cc8ddfe0f9729fa84e8a11efe}{set\+Beds}} (Integer beds)
+\begin{DoxyCompactList}\small\item\em Sets the available bed number within the department. \end{DoxyCompactList}\item 
+Integer \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_adb4a544815968649e801e2182b7069f0}{get\+Total\+Staff\+Positions}} ()
+\begin{DoxyCompactList}\small\item\em Returns the total staff positions within the department. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_af12f15d8a2e3073bf52ffe00a346c9af}{set\+Total\+Staff\+Positions}} (Integer total\+Staff\+Positions)
+\begin{DoxyCompactList}\small\item\em Sets the total staff positions within the department. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Hospital}{Hospital}} \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_ae10adf6ab4ccadfca9bdbce8d1940c84}{get\+Hospital}} ()
+\begin{DoxyCompactList}\small\item\em Returns the hospital associated with the department. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_aa53056a24d8deb2747ad964a67867124}{set\+Hospital}} (\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Hospital}{Hospital}} hospital)
+\begin{DoxyCompactList}\small\item\em Sets the hospital associated with the department. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a department in our system. 
+
+It uses JPA annotations for ORM mapping to the \char`\"{}departments\char`\"{} table in the database. \begin{DoxyAuthor}{Author}
+Health\+Core Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2026-\/06-\/12 
+\end{DoxyDate}
+
+
+Definition at line 18 of file Department.\+java.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_a2d7de90b1af28f08015a08e7444c2acc}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_a2d7de90b1af28f08015a08e7444c2acc}} 
+\index{it.unitn.healthcore.domain.Department@{it.unitn.healthcore.domain.Department}!Department@{Department}}
+\index{Department@{Department}!it.unitn.healthcore.domain.Department@{it.unitn.healthcore.domain.Department}}
+\doxysubsubsection{\texorpdfstring{Department()}{Department()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily it.\+unitn.\+healthcore.\+domain.\+Department.\+Department (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 42 of file Department.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_aa9dcc33a31a282fa2979e9e4eabb5260}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_aa9dcc33a31a282fa2979e9e4eabb5260}} 
+\index{it.unitn.healthcore.domain.Department@{it.unitn.healthcore.domain.Department}!Department@{Department}}
+\index{Department@{Department}!it.unitn.healthcore.domain.Department@{it.unitn.healthcore.domain.Department}}
+\doxysubsubsection{\texorpdfstring{Department()}{Department()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily it.\+unitn.\+healthcore.\+domain.\+Department.\+Department (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Hospital}{Hospital}}}]{hospital,  }\item[{String}]{name,  }\item[{Integer}]{beds,  }\item[{Integer}]{total\+Staff\+Positions }\end{DoxyParamCaption})}
+
+
+
+Creates a \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department}{Department}} with full credentials. 
+
+
+
+Definition at line 44 of file Department.\+java.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_ae32c96f1e79ae08ee368ae8bb82f9337}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_ae32c96f1e79ae08ee368ae8bb82f9337}} 
+\index{it.unitn.healthcore.domain.Department@{it.unitn.healthcore.domain.Department}!getBeds@{getBeds}}
+\index{getBeds@{getBeds}!it.unitn.healthcore.domain.Department@{it.unitn.healthcore.domain.Department}}
+\doxysubsubsection{\texorpdfstring{getBeds()}{getBeds()}}
+{\footnotesize\ttfamily Integer it.\+unitn.\+healthcore.\+domain.\+Department.\+get\+Beds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the available bed number within the department. 
+
+
+
+Definition at line 83 of file Department.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_a75653b55374323e861735b2bf82fda3b}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_a75653b55374323e861735b2bf82fda3b}} 
+\index{it.unitn.healthcore.domain.Department@{it.unitn.healthcore.domain.Department}!getDepartmentId@{getDepartmentId}}
+\index{getDepartmentId@{getDepartmentId}!it.unitn.healthcore.domain.Department@{it.unitn.healthcore.domain.Department}}
+\doxysubsubsection{\texorpdfstring{getDepartmentId()}{getDepartmentId()}}
+{\footnotesize\ttfamily Integer it.\+unitn.\+healthcore.\+domain.\+Department.\+get\+Department\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 66 of file Department.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_ad38ac8809036af86857a94672fd341e0}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_ad38ac8809036af86857a94672fd341e0}} 
+\index{it.unitn.healthcore.domain.Department@{it.unitn.healthcore.domain.Department}!getDoctors@{getDoctors}}
+\index{getDoctors@{getDoctors}!it.unitn.healthcore.domain.Department@{it.unitn.healthcore.domain.Department}}
+\doxysubsubsection{\texorpdfstring{getDoctors()}{getDoctors()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor}{Doctor}}$>$ it.\+unitn.\+healthcore.\+domain.\+Department.\+get\+Doctors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 58 of file Department.\+java.
+
+
+
+Referenced by it.\+unitn.\+healthcore.\+business.\+Doctor\+Service.\+change\+Department(), and it.\+unitn.\+healthcore.\+business.\+User\+Service.\+register\+Doctor().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_ad38ac8809036af86857a94672fd341e0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_a5887f64577d5c42cd1f95134dd2b0dc2}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_a5887f64577d5c42cd1f95134dd2b0dc2}} 
+\index{it.unitn.healthcore.domain.Department@{it.unitn.healthcore.domain.Department}!getEquipments@{getEquipments}}
+\index{getEquipments@{getEquipments}!it.unitn.healthcore.domain.Department@{it.unitn.healthcore.domain.Department}}
+\doxysubsubsection{\texorpdfstring{getEquipments()}{getEquipments()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Equipment}{Equipment}}$>$ it.\+unitn.\+healthcore.\+domain.\+Department.\+get\+Equipments (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 50 of file Department.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_ae10adf6ab4ccadfca9bdbce8d1940c84}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_ae10adf6ab4ccadfca9bdbce8d1940c84}} 
+\index{it.unitn.healthcore.domain.Department@{it.unitn.healthcore.domain.Department}!getHospital@{getHospital}}
+\index{getHospital@{getHospital}!it.unitn.healthcore.domain.Department@{it.unitn.healthcore.domain.Department}}
+\doxysubsubsection{\texorpdfstring{getHospital()}{getHospital()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Hospital}{Hospital}} it.\+unitn.\+healthcore.\+domain.\+Department.\+get\+Hospital (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the hospital associated with the department. 
+
+
+
+Definition at line 99 of file Department.\+java.
+
+
+
+Referenced by it.\+unitn.\+healthcore.\+controller.\+Patient\+Controller.\+book\+Appointment(), it.\+unitn.\+healthcore.\+business.\+Patient\+Service.\+book\+Appointment(), and it.\+unitn.\+healthcore.\+business.\+Patient\+Service.\+get\+Doctor\+Description().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_ae10adf6ab4ccadfca9bdbce8d1940c84_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_ad3dbd24db0898580a3a7ead8960abad7}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_ad3dbd24db0898580a3a7ead8960abad7}} 
+\index{it.unitn.healthcore.domain.Department@{it.unitn.healthcore.domain.Department}!getName@{getName}}
+\index{getName@{getName}!it.unitn.healthcore.domain.Department@{it.unitn.healthcore.domain.Department}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily String it.\+unitn.\+healthcore.\+domain.\+Department.\+get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the list of equipments associated with the department. 
+
+
+
+Definition at line 75 of file Department.\+java.
+
+
+
+Referenced by it.\+unitn.\+healthcore.\+controller.\+Patient\+Controller.\+book\+Appointment(), and it.\+unitn.\+healthcore.\+business.\+Patient\+Service.\+get\+Doctor\+Description().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_ad3dbd24db0898580a3a7ead8960abad7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_adb4a544815968649e801e2182b7069f0}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_adb4a544815968649e801e2182b7069f0}} 
+\index{it.unitn.healthcore.domain.Department@{it.unitn.healthcore.domain.Department}!getTotalStaffPositions@{getTotalStaffPositions}}
+\index{getTotalStaffPositions@{getTotalStaffPositions}!it.unitn.healthcore.domain.Department@{it.unitn.healthcore.domain.Department}}
+\doxysubsubsection{\texorpdfstring{getTotalStaffPositions()}{getTotalStaffPositions()}}
+{\footnotesize\ttfamily Integer it.\+unitn.\+healthcore.\+domain.\+Department.\+get\+Total\+Staff\+Positions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the total staff positions within the department. 
+
+
+
+Definition at line 91 of file Department.\+java.
+
+
+
+Referenced by it.\+unitn.\+healthcore.\+business.\+Doctor\+Service.\+change\+Department(), and it.\+unitn.\+healthcore.\+business.\+User\+Service.\+register\+Doctor().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_adb4a544815968649e801e2182b7069f0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_a13a0840cc8ddfe0f9729fa84e8a11efe}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_a13a0840cc8ddfe0f9729fa84e8a11efe}} 
+\index{it.unitn.healthcore.domain.Department@{it.unitn.healthcore.domain.Department}!setBeds@{setBeds}}
+\index{setBeds@{setBeds}!it.unitn.healthcore.domain.Department@{it.unitn.healthcore.domain.Department}}
+\doxysubsubsection{\texorpdfstring{setBeds()}{setBeds()}}
+{\footnotesize\ttfamily void it.\+unitn.\+healthcore.\+domain.\+Department.\+set\+Beds (\begin{DoxyParamCaption}\item[{Integer}]{beds }\end{DoxyParamCaption})}
+
+
+
+Sets the available bed number within the department. 
+
+
+
+Definition at line 87 of file Department.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_a2f140e60dc1d5fd88b61d7850d4ac2e8}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_a2f140e60dc1d5fd88b61d7850d4ac2e8}} 
+\index{it.unitn.healthcore.domain.Department@{it.unitn.healthcore.domain.Department}!setDepartmentId@{setDepartmentId}}
+\index{setDepartmentId@{setDepartmentId}!it.unitn.healthcore.domain.Department@{it.unitn.healthcore.domain.Department}}
+\doxysubsubsection{\texorpdfstring{setDepartmentId()}{setDepartmentId()}}
+{\footnotesize\ttfamily void it.\+unitn.\+healthcore.\+domain.\+Department.\+set\+Department\+Id (\begin{DoxyParamCaption}\item[{Integer}]{department\+Id }\end{DoxyParamCaption})}
+
+
+
+Sets the department ID. 
+
+
+
+Definition at line 70 of file Department.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_a86b6dd4cbd3768d5bb0f6b502f64f151}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_a86b6dd4cbd3768d5bb0f6b502f64f151}} 
+\index{it.unitn.healthcore.domain.Department@{it.unitn.healthcore.domain.Department}!setDoctors@{setDoctors}}
+\index{setDoctors@{setDoctors}!it.unitn.healthcore.domain.Department@{it.unitn.healthcore.domain.Department}}
+\doxysubsubsection{\texorpdfstring{setDoctors()}{setDoctors()}}
+{\footnotesize\ttfamily void it.\+unitn.\+healthcore.\+domain.\+Department.\+set\+Doctors (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor}{Doctor}} $>$}]{doctors }\end{DoxyParamCaption})}
+
+
+
+Definition at line 62 of file Department.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_a8f6fc5a8f6e5e2cb06647a032d21dbb9}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_a8f6fc5a8f6e5e2cb06647a032d21dbb9}} 
+\index{it.unitn.healthcore.domain.Department@{it.unitn.healthcore.domain.Department}!setEquipments@{setEquipments}}
+\index{setEquipments@{setEquipments}!it.unitn.healthcore.domain.Department@{it.unitn.healthcore.domain.Department}}
+\doxysubsubsection{\texorpdfstring{setEquipments()}{setEquipments()}}
+{\footnotesize\ttfamily void it.\+unitn.\+healthcore.\+domain.\+Department.\+set\+Equipments (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Equipment}{Equipment}} $>$}]{equipments }\end{DoxyParamCaption})}
+
+
+
+Definition at line 54 of file Department.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_aa53056a24d8deb2747ad964a67867124}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_aa53056a24d8deb2747ad964a67867124}} 
+\index{it.unitn.healthcore.domain.Department@{it.unitn.healthcore.domain.Department}!setHospital@{setHospital}}
+\index{setHospital@{setHospital}!it.unitn.healthcore.domain.Department@{it.unitn.healthcore.domain.Department}}
+\doxysubsubsection{\texorpdfstring{setHospital()}{setHospital()}}
+{\footnotesize\ttfamily void it.\+unitn.\+healthcore.\+domain.\+Department.\+set\+Hospital (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Hospital}{Hospital}}}]{hospital }\end{DoxyParamCaption})}
+
+
+
+Sets the hospital associated with the department. 
+
+
+
+Definition at line 103 of file Department.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_a363af3126a30d7f8468d445304c3eda8}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_a363af3126a30d7f8468d445304c3eda8}} 
+\index{it.unitn.healthcore.domain.Department@{it.unitn.healthcore.domain.Department}!setName@{setName}}
+\index{setName@{setName}!it.unitn.healthcore.domain.Department@{it.unitn.healthcore.domain.Department}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void it.\+unitn.\+healthcore.\+domain.\+Department.\+set\+Name (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})}
+
+
+
+Sets the name of the department. 
+
+
+
+Definition at line 79 of file Department.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_af12f15d8a2e3073bf52ffe00a346c9af}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department_af12f15d8a2e3073bf52ffe00a346c9af}} 
+\index{it.unitn.healthcore.domain.Department@{it.unitn.healthcore.domain.Department}!setTotalStaffPositions@{setTotalStaffPositions}}
+\index{setTotalStaffPositions@{setTotalStaffPositions}!it.unitn.healthcore.domain.Department@{it.unitn.healthcore.domain.Department}}
+\doxysubsubsection{\texorpdfstring{setTotalStaffPositions()}{setTotalStaffPositions()}}
+{\footnotesize\ttfamily void it.\+unitn.\+healthcore.\+domain.\+Department.\+set\+Total\+Staff\+Positions (\begin{DoxyParamCaption}\item[{Integer}]{total\+Staff\+Positions }\end{DoxyParamCaption})}
+
+
+
+Sets the total staff positions within the department. 
+
+
+
+Definition at line 95 of file Department.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+healthcore/src/main/java/it/unitn/healthcore/domain/\mbox{\hyperlink{Department_8java}{Department.\+java}}\end{DoxyCompactItemize}

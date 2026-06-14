@@ -1,0 +1,60 @@
+\hypertarget{namespaceit_1_1unitn_1_1healthcore_1_1domain}{}\doxysection{Package it.\+unitn.\+healthcore.\+domain}
+\label{namespaceit_1_1unitn_1_1healthcore_1_1domain}\index{it.unitn.healthcore.domain@{it.unitn.healthcore.domain}}
+
+
+;  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Administrator}{Administrator}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Administrator}{Administrator}} entity mapped to the \char`\"{}administrators\char`\"{} table, extends \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1User}{User}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment}{Appointment}}
+\begin{DoxyCompactList}\small\item\em Entity representing a scheduled appointment between a \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Patient}{Patient}} and a \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor}{Doctor}}, mapped to the \char`\"{}appointments\char`\"{} table. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department}{Department}}
+\begin{DoxyCompactList}\small\item\em Represents a department in our system. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis}{Diagnosis}}
+\begin{DoxyCompactList}\small\item\em Entity representing a medical diagnosis associated with an appointment, mapped to the \char`\"{}diagnosis\char`\"{} table in the database. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor}{Doctor}}
+\begin{DoxyCompactList}\small\item\em Represents a doctor in our system, extending the general \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1User}{User}} class. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1EmployeeRegistrationForm}{Employee\+Registration\+Form}}
+\item 
+class \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Equipment}{Equipment}}
+\begin{DoxyCompactList}\small\item\em Entity representing a piece of equipment assigned to a \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department}{Department}}, mapped to the \char`\"{}equipments\char`\"{} table. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1EquipmentDoctor}{Equipment\+Doctor}}
+\begin{DoxyCompactList}\small\item\em Entity representing a piece of equipment assigned to a \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department}{Department}}, mapped to the \char`\"{}equipments\+\_\+doctors\char`\"{} table. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Hospital}{Hospital}}
+\begin{DoxyCompactList}\small\item\em Entity representing a hospital, mapped to the \char`\"{}hospitals\char`\"{} table. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1InsurancePlan}{Insurance\+Plan}}
+\begin{DoxyCompactList}\small\item\em Represents an insurance plan in our system, mapped to the \char`\"{}insuranceplans\char`\"{} table in the database. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Note}{Note}}
+\begin{DoxyCompactList}\small\item\em Entity representing a note associated with an appointment, mapped to the \char`\"{}\+Notes\char`\"{} table. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1PasswordConfirmationForm}{Password\+Confirmation\+Form}}
+\begin{DoxyCompactList}\small\item\em This class serves as a base form for user registration processes that require password confirmation. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Patient}{Patient}}
+\begin{DoxyCompactList}\small\item\em Represents a patient in our system, extending the \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1User}{User}} class. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1PatientRegistrationForm}{Patient\+Registration\+Form}}
+\begin{DoxyCompactList}\small\item\em This class represents the form used for patient registration, extending the \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1PasswordConfirmationForm}{Password\+Confirmation\+Form}} to include additional fields specific to patients. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1ProfileUpdateForm}{Profile\+Update\+Form}}
+\begin{DoxyCompactList}\small\item\em This class represents the form used for updating user profiles, extending the \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1PasswordConfirmationForm}{Password\+Confirmation\+Form}} to include additional fields such as name, surname, and specialization (for doctors). \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1SecurityUser}{Security\+User}}
+\begin{DoxyCompactList}\small\item\em Adapter class that implements User\+Details to integrate our \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1User}{User}} entity with Spring Security. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Shift}{Shift}}
+\begin{DoxyCompactList}\small\item\em Entity representing a work shift for a doctor, mapped to the \char`\"{}shifts\char`\"{} table. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1User}{User}}
+\begin{DoxyCompactList}\small\item\em Represents a general user in our system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+; 
+
+TIER 4\+: Domain Layer
+\begin{DoxyItemize}
+\item This layer defines the core business entities, domain models and interfaces.
+\end{DoxyItemize}
+
+TIER 3\+: Persistence Layer
+\begin{DoxyItemize}
+\item This layer handles data storage, retrieval, and database interactions. It strictly communicates down with the it.\+unitn.\+healthcore.\+domain layer. 
+\end{DoxyItemize}

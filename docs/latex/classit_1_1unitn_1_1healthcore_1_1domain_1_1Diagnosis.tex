@@ -1,0 +1,274 @@
+\hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis}{}\doxysection{it.\+unitn.\+healthcore.\+domain.\+Diagnosis Class Reference}
+\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis}\index{it.unitn.healthcore.domain.Diagnosis@{it.unitn.healthcore.domain.Diagnosis}}
+
+
+Entity representing a medical diagnosis associated with an appointment, mapped to the \char`\"{}diagnosis\char`\"{} table in the database.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis_a778997f572452b9421db92b9cbfadcef}{Diagnosis}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor required by JPA. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis_a92b594a70f85a764729b45b808a0618f}{Diagnosis}} (\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment}{Appointment}} appointment, Local\+Date\+Time date\+Start\+Condition, Local\+Date\+Time date\+End\+Condition, String description)
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis}{Diagnosis}} entry for a given appointment. \end{DoxyCompactList}\item 
+Integer \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis_ac861295dcf562b4d1d2e90cc8537ed7b}{get\+Diagnosis\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Returns the diagnosis ID. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis_a034f4eb5cf78af67309bb65a65f43848}{set\+Diagnosis\+Id}} (Integer diagnosis\+Id)
+\begin{DoxyCompactList}\small\item\em Sets the diagnosis ID. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment}{Appointment}} \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis_a636f81adfd0a3445a6b3c0e781012c66}{get\+Appointment}} ()
+\begin{DoxyCompactList}\small\item\em Returns the associated appointment. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis_ab4fa69aa7691c1fac940340f2842d933}{set\+Appointment}} (\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment}{Appointment}} appointment)
+\begin{DoxyCompactList}\small\item\em Sets the associated appointment. \end{DoxyCompactList}\item 
+Local\+Date\+Time \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis_a64a8005d6749ff6067cdfe474e8d0f51}{get\+Date\+Record}} ()
+\begin{DoxyCompactList}\small\item\em Returns the date when the diagnosis was recorded. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis_a552bcf43bef62b8a90a0f5f0923e3339}{set\+Date\+Record}} (Local\+Date\+Time date\+Record)
+\begin{DoxyCompactList}\small\item\em Sets the date when the diagnosis was recorded. \end{DoxyCompactList}\item 
+Local\+Date\+Time \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis_a10c2801c452444978a0d37ea03de7902}{get\+Date\+Start\+Condition}} ()
+\begin{DoxyCompactList}\small\item\em Returns the date when the condition started. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis_a2f3b496e4addca3af9d080f38085d764}{set\+Date\+Start\+Condition}} (Local\+Date\+Time date\+Start\+Condition)
+\begin{DoxyCompactList}\small\item\em Sets the Start date. \end{DoxyCompactList}\item 
+Local\+Date\+Time \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis_aff57c27225ce15fe2ae62156a69c1806}{get\+Date\+End\+Condition}} ()
+\begin{DoxyCompactList}\small\item\em Returns the End date. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis_aa5f67e4d48a5dd9e6a9c513560dec403}{set\+Date\+End\+Condition}} (Local\+Date\+Time date\+End\+Condition)
+\begin{DoxyCompactList}\small\item\em Sets the End date. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis_a880b9e8216341716079a54e5f8269d4e}{get\+Description}} ()
+\begin{DoxyCompactList}\small\item\em Returns the diagnosis description. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis_a05811fd8251b6e9befe575019b2122b0}{set\+Description}} (String description)
+\begin{DoxyCompactList}\small\item\em Sets the diagnosis description. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Entity representing a medical diagnosis associated with an appointment, mapped to the \char`\"{}diagnosis\char`\"{} table in the database. 
+
+\begin{DoxyAuthor}{Author}
+Health\+Core Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2026-\/06-\/12 
+\end{DoxyDate}
+
+
+Definition at line 19 of file Diagnosis.\+java.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis_a778997f572452b9421db92b9cbfadcef}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis_a778997f572452b9421db92b9cbfadcef}} 
+\index{it.unitn.healthcore.domain.Diagnosis@{it.unitn.healthcore.domain.Diagnosis}!Diagnosis@{Diagnosis}}
+\index{Diagnosis@{Diagnosis}!it.unitn.healthcore.domain.Diagnosis@{it.unitn.healthcore.domain.Diagnosis}}
+\doxysubsubsection{\texorpdfstring{Diagnosis()}{Diagnosis()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily it.\+unitn.\+healthcore.\+domain.\+Diagnosis.\+Diagnosis (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor required by JPA. 
+
+
+
+Definition at line 37 of file Diagnosis.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis_a92b594a70f85a764729b45b808a0618f}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis_a92b594a70f85a764729b45b808a0618f}} 
+\index{it.unitn.healthcore.domain.Diagnosis@{it.unitn.healthcore.domain.Diagnosis}!Diagnosis@{Diagnosis}}
+\index{Diagnosis@{Diagnosis}!it.unitn.healthcore.domain.Diagnosis@{it.unitn.healthcore.domain.Diagnosis}}
+\doxysubsubsection{\texorpdfstring{Diagnosis()}{Diagnosis()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily it.\+unitn.\+healthcore.\+domain.\+Diagnosis.\+Diagnosis (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment}{Appointment}}}]{appointment,  }\item[{Local\+Date\+Time}]{date\+Start\+Condition,  }\item[{Local\+Date\+Time}]{date\+End\+Condition,  }\item[{String}]{description }\end{DoxyParamCaption})}
+
+
+
+Creates a \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis}{Diagnosis}} entry for a given appointment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em appointment} & The appointment this diagnosis is associated with. \\
+\hline
+{\em date\+Start\+Condition} & The date when the condition started. \\
+\hline
+{\em date\+End\+Condition} & The date when the condition ended (if applicable). \\
+\hline
+{\em description} & A detailed description of the diagnosis. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 45 of file Diagnosis.\+java.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis_a636f81adfd0a3445a6b3c0e781012c66}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis_a636f81adfd0a3445a6b3c0e781012c66}} 
+\index{it.unitn.healthcore.domain.Diagnosis@{it.unitn.healthcore.domain.Diagnosis}!getAppointment@{getAppointment}}
+\index{getAppointment@{getAppointment}!it.unitn.healthcore.domain.Diagnosis@{it.unitn.healthcore.domain.Diagnosis}}
+\doxysubsubsection{\texorpdfstring{getAppointment()}{getAppointment()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment}{Appointment}} it.\+unitn.\+healthcore.\+domain.\+Diagnosis.\+get\+Appointment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the associated appointment. 
+
+
+
+Definition at line 61 of file Diagnosis.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis_aff57c27225ce15fe2ae62156a69c1806}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis_aff57c27225ce15fe2ae62156a69c1806}} 
+\index{it.unitn.healthcore.domain.Diagnosis@{it.unitn.healthcore.domain.Diagnosis}!getDateEndCondition@{getDateEndCondition}}
+\index{getDateEndCondition@{getDateEndCondition}!it.unitn.healthcore.domain.Diagnosis@{it.unitn.healthcore.domain.Diagnosis}}
+\doxysubsubsection{\texorpdfstring{getDateEndCondition()}{getDateEndCondition()}}
+{\footnotesize\ttfamily Local\+Date\+Time it.\+unitn.\+healthcore.\+domain.\+Diagnosis.\+get\+Date\+End\+Condition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the End date. 
+
+
+
+Definition at line 85 of file Diagnosis.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis_a64a8005d6749ff6067cdfe474e8d0f51}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis_a64a8005d6749ff6067cdfe474e8d0f51}} 
+\index{it.unitn.healthcore.domain.Diagnosis@{it.unitn.healthcore.domain.Diagnosis}!getDateRecord@{getDateRecord}}
+\index{getDateRecord@{getDateRecord}!it.unitn.healthcore.domain.Diagnosis@{it.unitn.healthcore.domain.Diagnosis}}
+\doxysubsubsection{\texorpdfstring{getDateRecord()}{getDateRecord()}}
+{\footnotesize\ttfamily Local\+Date\+Time it.\+unitn.\+healthcore.\+domain.\+Diagnosis.\+get\+Date\+Record (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the date when the diagnosis was recorded. 
+
+
+
+Definition at line 69 of file Diagnosis.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis_a10c2801c452444978a0d37ea03de7902}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis_a10c2801c452444978a0d37ea03de7902}} 
+\index{it.unitn.healthcore.domain.Diagnosis@{it.unitn.healthcore.domain.Diagnosis}!getDateStartCondition@{getDateStartCondition}}
+\index{getDateStartCondition@{getDateStartCondition}!it.unitn.healthcore.domain.Diagnosis@{it.unitn.healthcore.domain.Diagnosis}}
+\doxysubsubsection{\texorpdfstring{getDateStartCondition()}{getDateStartCondition()}}
+{\footnotesize\ttfamily Local\+Date\+Time it.\+unitn.\+healthcore.\+domain.\+Diagnosis.\+get\+Date\+Start\+Condition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the date when the condition started. 
+
+
+
+Definition at line 77 of file Diagnosis.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis_a880b9e8216341716079a54e5f8269d4e}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis_a880b9e8216341716079a54e5f8269d4e}} 
+\index{it.unitn.healthcore.domain.Diagnosis@{it.unitn.healthcore.domain.Diagnosis}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!it.unitn.healthcore.domain.Diagnosis@{it.unitn.healthcore.domain.Diagnosis}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily String it.\+unitn.\+healthcore.\+domain.\+Diagnosis.\+get\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the diagnosis description. 
+
+
+
+Definition at line 93 of file Diagnosis.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis_ac861295dcf562b4d1d2e90cc8537ed7b}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis_ac861295dcf562b4d1d2e90cc8537ed7b}} 
+\index{it.unitn.healthcore.domain.Diagnosis@{it.unitn.healthcore.domain.Diagnosis}!getDiagnosisId@{getDiagnosisId}}
+\index{getDiagnosisId@{getDiagnosisId}!it.unitn.healthcore.domain.Diagnosis@{it.unitn.healthcore.domain.Diagnosis}}
+\doxysubsubsection{\texorpdfstring{getDiagnosisId()}{getDiagnosisId()}}
+{\footnotesize\ttfamily Integer it.\+unitn.\+healthcore.\+domain.\+Diagnosis.\+get\+Diagnosis\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the diagnosis ID. 
+
+
+
+Definition at line 53 of file Diagnosis.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis_ab4fa69aa7691c1fac940340f2842d933}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis_ab4fa69aa7691c1fac940340f2842d933}} 
+\index{it.unitn.healthcore.domain.Diagnosis@{it.unitn.healthcore.domain.Diagnosis}!setAppointment@{setAppointment}}
+\index{setAppointment@{setAppointment}!it.unitn.healthcore.domain.Diagnosis@{it.unitn.healthcore.domain.Diagnosis}}
+\doxysubsubsection{\texorpdfstring{setAppointment()}{setAppointment()}}
+{\footnotesize\ttfamily void it.\+unitn.\+healthcore.\+domain.\+Diagnosis.\+set\+Appointment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment}{Appointment}}}]{appointment }\end{DoxyParamCaption})}
+
+
+
+Sets the associated appointment. 
+
+
+
+Definition at line 65 of file Diagnosis.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis_aa5f67e4d48a5dd9e6a9c513560dec403}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis_aa5f67e4d48a5dd9e6a9c513560dec403}} 
+\index{it.unitn.healthcore.domain.Diagnosis@{it.unitn.healthcore.domain.Diagnosis}!setDateEndCondition@{setDateEndCondition}}
+\index{setDateEndCondition@{setDateEndCondition}!it.unitn.healthcore.domain.Diagnosis@{it.unitn.healthcore.domain.Diagnosis}}
+\doxysubsubsection{\texorpdfstring{setDateEndCondition()}{setDateEndCondition()}}
+{\footnotesize\ttfamily void it.\+unitn.\+healthcore.\+domain.\+Diagnosis.\+set\+Date\+End\+Condition (\begin{DoxyParamCaption}\item[{Local\+Date\+Time}]{date\+End\+Condition }\end{DoxyParamCaption})}
+
+
+
+Sets the End date. 
+
+
+
+Definition at line 89 of file Diagnosis.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis_a552bcf43bef62b8a90a0f5f0923e3339}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis_a552bcf43bef62b8a90a0f5f0923e3339}} 
+\index{it.unitn.healthcore.domain.Diagnosis@{it.unitn.healthcore.domain.Diagnosis}!setDateRecord@{setDateRecord}}
+\index{setDateRecord@{setDateRecord}!it.unitn.healthcore.domain.Diagnosis@{it.unitn.healthcore.domain.Diagnosis}}
+\doxysubsubsection{\texorpdfstring{setDateRecord()}{setDateRecord()}}
+{\footnotesize\ttfamily void it.\+unitn.\+healthcore.\+domain.\+Diagnosis.\+set\+Date\+Record (\begin{DoxyParamCaption}\item[{Local\+Date\+Time}]{date\+Record }\end{DoxyParamCaption})}
+
+
+
+Sets the date when the diagnosis was recorded. 
+
+
+
+Definition at line 73 of file Diagnosis.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis_a2f3b496e4addca3af9d080f38085d764}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis_a2f3b496e4addca3af9d080f38085d764}} 
+\index{it.unitn.healthcore.domain.Diagnosis@{it.unitn.healthcore.domain.Diagnosis}!setDateStartCondition@{setDateStartCondition}}
+\index{setDateStartCondition@{setDateStartCondition}!it.unitn.healthcore.domain.Diagnosis@{it.unitn.healthcore.domain.Diagnosis}}
+\doxysubsubsection{\texorpdfstring{setDateStartCondition()}{setDateStartCondition()}}
+{\footnotesize\ttfamily void it.\+unitn.\+healthcore.\+domain.\+Diagnosis.\+set\+Date\+Start\+Condition (\begin{DoxyParamCaption}\item[{Local\+Date\+Time}]{date\+Start\+Condition }\end{DoxyParamCaption})}
+
+
+
+Sets the Start date. 
+
+
+
+Definition at line 81 of file Diagnosis.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis_a05811fd8251b6e9befe575019b2122b0}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis_a05811fd8251b6e9befe575019b2122b0}} 
+\index{it.unitn.healthcore.domain.Diagnosis@{it.unitn.healthcore.domain.Diagnosis}!setDescription@{setDescription}}
+\index{setDescription@{setDescription}!it.unitn.healthcore.domain.Diagnosis@{it.unitn.healthcore.domain.Diagnosis}}
+\doxysubsubsection{\texorpdfstring{setDescription()}{setDescription()}}
+{\footnotesize\ttfamily void it.\+unitn.\+healthcore.\+domain.\+Diagnosis.\+set\+Description (\begin{DoxyParamCaption}\item[{String}]{description }\end{DoxyParamCaption})}
+
+
+
+Sets the diagnosis description. 
+
+
+
+Definition at line 97 of file Diagnosis.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis_a034f4eb5cf78af67309bb65a65f43848}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Diagnosis_a034f4eb5cf78af67309bb65a65f43848}} 
+\index{it.unitn.healthcore.domain.Diagnosis@{it.unitn.healthcore.domain.Diagnosis}!setDiagnosisId@{setDiagnosisId}}
+\index{setDiagnosisId@{setDiagnosisId}!it.unitn.healthcore.domain.Diagnosis@{it.unitn.healthcore.domain.Diagnosis}}
+\doxysubsubsection{\texorpdfstring{setDiagnosisId()}{setDiagnosisId()}}
+{\footnotesize\ttfamily void it.\+unitn.\+healthcore.\+domain.\+Diagnosis.\+set\+Diagnosis\+Id (\begin{DoxyParamCaption}\item[{Integer}]{diagnosis\+Id }\end{DoxyParamCaption})}
+
+
+
+Sets the diagnosis ID. 
+
+
+
+Definition at line 57 of file Diagnosis.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+healthcore/src/main/java/it/unitn/healthcore/domain/\mbox{\hyperlink{Diagnosis_8java}{Diagnosis.\+java}}\end{DoxyCompactItemize}

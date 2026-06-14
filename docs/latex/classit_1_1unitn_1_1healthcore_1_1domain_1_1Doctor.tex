@@ -1,0 +1,386 @@
+\hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor}{}\doxysection{it.\+unitn.\+healthcore.\+domain.\+Doctor Class Reference}
+\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor}\index{it.unitn.healthcore.domain.Doctor@{it.unitn.healthcore.domain.Doctor}}
+
+
+Represents a doctor in our system, extending the general \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1User}{User}} class.  
+
+
+
+
+Inheritance diagram for it.\+unitn.\+healthcore.\+domain.\+Doctor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for it.\+unitn.\+healthcore.\+domain.\+Doctor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_a14285ed9284df86e732e6680919f1eac}{Doctor}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor required by JPA. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_aa39cf6ba8bfb22794702ac7b28b0a632}{Doctor}} (String name, String surname, String email, String password, \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department}{Department}} department, String specialization, Double appointment\+Price)
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor}{Doctor}} with full credentials. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_a7bb9fdaa92325eae4f8c7ddb8dc80d58}{Doctor}} (String name, String surname, String email, String password, \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department}{Department}} department)
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor}{Doctor}} with full credentials. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_a3146e94bec4cc95651efadfb5aa59743}{to\+String}} ()
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor}{Doctor}} with full credentials. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment}{Appointment}} $>$ \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_a548d264288dc218b5a2aa48a85bf3a04}{get\+Appointments}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment}{Appointment}} getter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_a757dd6347958f3cdf3ae8d62b3c5eb05}{set\+Appointments}} (List$<$ \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment}{Appointment}} $>$ appointments)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment}{Appointment}} setter. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1EquipmentDoctor}{Equipment\+Doctor}} $>$ \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_a3a7566bdb7143d950da5f09d17b4b44d}{get\+Equipments}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Equipment}{Equipment}} getter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_af232951e98bd45ea7c2b58e3209fa300}{set\+Equipments}} (List$<$ \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1EquipmentDoctor}{Equipment\+Doctor}} $>$ equipments)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment}{Appointment}} getter. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Shift}{Shift}} $>$ \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_a1f74266b5c9953f4c861a1b2e66405a8}{get\+Shifts}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Shift}{Shift}} getter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_a93fc693a307a310777deb731b8931208}{set\+Shifts}} (List$<$ \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Shift}{Shift}} $>$ shifts)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Shift}{Shift}} setter. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department}{Department}} \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_ac03da7697c11c376768602fad6a43886}{get\+Department}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department}{Department}} getter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_a38578f80c03e1b587010e19bbc37fa4d}{set\+Department}} (\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department}{Department}} department)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department}{Department}} setter. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_a640b7f957294392023414c8b675304c9}{get\+Specialization}} ()
+\begin{DoxyCompactList}\small\item\em Specialization getter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_a575afa2e735657529b04cd90a98c0fe3}{set\+Specialization}} (String specialization)
+\begin{DoxyCompactList}\small\item\em Specialization setter. \end{DoxyCompactList}\item 
+Double \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_ab3cac7f0c22b3f39c4a5743a8422e1a3}{get\+Appointment\+Price}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment}{Appointment}} price getter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_a4b191af285aa63718eff1d630ec52745}{set\+Appointment\+Price}} (Double appointment\+Price)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment}{Appointment}} price setter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a doctor in our system, extending the general \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1User}{User}} class. 
+
+T It uses JPA annotations for ORM mapping to the \char`\"{}doctors\char`\"{} table in the database. \begin{DoxyAuthor}{Author}
+Health\+Core Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2026-\/06-\/11 
+\end{DoxyDate}
+
+
+Definition at line 18 of file Doctor.\+java.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_a14285ed9284df86e732e6680919f1eac}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_a14285ed9284df86e732e6680919f1eac}} 
+\index{it.unitn.healthcore.domain.Doctor@{it.unitn.healthcore.domain.Doctor}!Doctor@{Doctor}}
+\index{Doctor@{Doctor}!it.unitn.healthcore.domain.Doctor@{it.unitn.healthcore.domain.Doctor}}
+\doxysubsubsection{\texorpdfstring{Doctor()}{Doctor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily it.\+unitn.\+healthcore.\+domain.\+Doctor.\+Doctor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor required by JPA. 
+
+
+
+Definition at line 31 of file Doctor.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_aa39cf6ba8bfb22794702ac7b28b0a632}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_aa39cf6ba8bfb22794702ac7b28b0a632}} 
+\index{it.unitn.healthcore.domain.Doctor@{it.unitn.healthcore.domain.Doctor}!Doctor@{Doctor}}
+\index{Doctor@{Doctor}!it.unitn.healthcore.domain.Doctor@{it.unitn.healthcore.domain.Doctor}}
+\doxysubsubsection{\texorpdfstring{Doctor()}{Doctor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily it.\+unitn.\+healthcore.\+domain.\+Doctor.\+Doctor (\begin{DoxyParamCaption}\item[{String}]{name,  }\item[{String}]{surname,  }\item[{String}]{email,  }\item[{String}]{password,  }\item[{\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department}{Department}}}]{department,  }\item[{String}]{specialization,  }\item[{Double}]{appointment\+Price }\end{DoxyParamCaption})}
+
+
+
+Creates a \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor}{Doctor}} with full credentials. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & First name. \\
+\hline
+{\em surname} & Last name. \\
+\hline
+{\em email} & Email address. \\
+\hline
+{\em password} & Account password. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 40 of file Doctor.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_a7bb9fdaa92325eae4f8c7ddb8dc80d58}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_a7bb9fdaa92325eae4f8c7ddb8dc80d58}} 
+\index{it.unitn.healthcore.domain.Doctor@{it.unitn.healthcore.domain.Doctor}!Doctor@{Doctor}}
+\index{Doctor@{Doctor}!it.unitn.healthcore.domain.Doctor@{it.unitn.healthcore.domain.Doctor}}
+\doxysubsubsection{\texorpdfstring{Doctor()}{Doctor()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily it.\+unitn.\+healthcore.\+domain.\+Doctor.\+Doctor (\begin{DoxyParamCaption}\item[{String}]{name,  }\item[{String}]{surname,  }\item[{String}]{email,  }\item[{String}]{password,  }\item[{\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department}{Department}}}]{department }\end{DoxyParamCaption})}
+
+
+
+Creates a \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor}{Doctor}} with full credentials. 
+
+
+
+Definition at line 48 of file Doctor.\+java.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_ab3cac7f0c22b3f39c4a5743a8422e1a3}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_ab3cac7f0c22b3f39c4a5743a8422e1a3}} 
+\index{it.unitn.healthcore.domain.Doctor@{it.unitn.healthcore.domain.Doctor}!getAppointmentPrice@{getAppointmentPrice}}
+\index{getAppointmentPrice@{getAppointmentPrice}!it.unitn.healthcore.domain.Doctor@{it.unitn.healthcore.domain.Doctor}}
+\doxysubsubsection{\texorpdfstring{getAppointmentPrice()}{getAppointmentPrice()}}
+{\footnotesize\ttfamily Double it.\+unitn.\+healthcore.\+domain.\+Doctor.\+get\+Appointment\+Price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment}{Appointment}} price getter. 
+
+
+
+Definition at line 112 of file Doctor.\+java.
+
+
+
+Referenced by it.\+unitn.\+healthcore.\+business.\+Patient\+Service.\+get\+Doctor\+Description().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_ab3cac7f0c22b3f39c4a5743a8422e1a3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_a548d264288dc218b5a2aa48a85bf3a04}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_a548d264288dc218b5a2aa48a85bf3a04}} 
+\index{it.unitn.healthcore.domain.Doctor@{it.unitn.healthcore.domain.Doctor}!getAppointments@{getAppointments}}
+\index{getAppointments@{getAppointments}!it.unitn.healthcore.domain.Doctor@{it.unitn.healthcore.domain.Doctor}}
+\doxysubsubsection{\texorpdfstring{getAppointments()}{getAppointments()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment}{Appointment}}$>$ it.\+unitn.\+healthcore.\+domain.\+Doctor.\+get\+Appointments (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment}{Appointment}} getter. 
+
+
+
+Definition at line 65 of file Doctor.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_ac03da7697c11c376768602fad6a43886}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_ac03da7697c11c376768602fad6a43886}} 
+\index{it.unitn.healthcore.domain.Doctor@{it.unitn.healthcore.domain.Doctor}!getDepartment@{getDepartment}}
+\index{getDepartment@{getDepartment}!it.unitn.healthcore.domain.Doctor@{it.unitn.healthcore.domain.Doctor}}
+\doxysubsubsection{\texorpdfstring{getDepartment()}{getDepartment()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department}{Department}} it.\+unitn.\+healthcore.\+domain.\+Doctor.\+get\+Department (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department}{Department}} getter. 
+
+
+
+Definition at line 96 of file Doctor.\+java.
+
+
+
+Referenced by it.\+unitn.\+healthcore.\+controller.\+Patient\+Controller.\+book\+Appointment(), it.\+unitn.\+healthcore.\+business.\+Patient\+Service.\+book\+Appointment(), and it.\+unitn.\+healthcore.\+business.\+Patient\+Service.\+get\+Doctor\+Description().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_ac03da7697c11c376768602fad6a43886_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_a3a7566bdb7143d950da5f09d17b4b44d}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_a3a7566bdb7143d950da5f09d17b4b44d}} 
+\index{it.unitn.healthcore.domain.Doctor@{it.unitn.healthcore.domain.Doctor}!getEquipments@{getEquipments}}
+\index{getEquipments@{getEquipments}!it.unitn.healthcore.domain.Doctor@{it.unitn.healthcore.domain.Doctor}}
+\doxysubsubsection{\texorpdfstring{getEquipments()}{getEquipments()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1EquipmentDoctor}{Equipment\+Doctor}}$>$ it.\+unitn.\+healthcore.\+domain.\+Doctor.\+get\+Equipments (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Equipment}{Equipment}} getter. 
+
+
+
+Definition at line 76 of file Doctor.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_a1f74266b5c9953f4c861a1b2e66405a8}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_a1f74266b5c9953f4c861a1b2e66405a8}} 
+\index{it.unitn.healthcore.domain.Doctor@{it.unitn.healthcore.domain.Doctor}!getShifts@{getShifts}}
+\index{getShifts@{getShifts}!it.unitn.healthcore.domain.Doctor@{it.unitn.healthcore.domain.Doctor}}
+\doxysubsubsection{\texorpdfstring{getShifts()}{getShifts()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Shift}{Shift}}$>$ it.\+unitn.\+healthcore.\+domain.\+Doctor.\+get\+Shifts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Shift}{Shift}} getter. 
+
+
+
+Definition at line 87 of file Doctor.\+java.
+
+
+
+Referenced by it.\+unitn.\+healthcore.\+business.\+Doctor\+Service.\+add\+Shift(), it.\+unitn.\+healthcore.\+business.\+Doctor\+Service.\+get\+Current\+Doctor\+Shifts(), it.\+unitn.\+healthcore.\+business.\+Patient\+Service.\+get\+Doctor\+Description(), and it.\+unitn.\+healthcore.\+business.\+Doctor\+Service.\+modify\+Shift().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_a1f74266b5c9953f4c861a1b2e66405a8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_a640b7f957294392023414c8b675304c9}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_a640b7f957294392023414c8b675304c9}} 
+\index{it.unitn.healthcore.domain.Doctor@{it.unitn.healthcore.domain.Doctor}!getSpecialization@{getSpecialization}}
+\index{getSpecialization@{getSpecialization}!it.unitn.healthcore.domain.Doctor@{it.unitn.healthcore.domain.Doctor}}
+\doxysubsubsection{\texorpdfstring{getSpecialization()}{getSpecialization()}}
+{\footnotesize\ttfamily String it.\+unitn.\+healthcore.\+domain.\+Doctor.\+get\+Specialization (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Specialization getter. 
+
+
+
+Definition at line 104 of file Doctor.\+java.
+
+
+
+Referenced by it.\+unitn.\+healthcore.\+business.\+Patient\+Service.\+get\+Doctor\+Description().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_a640b7f957294392023414c8b675304c9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_a4b191af285aa63718eff1d630ec52745}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_a4b191af285aa63718eff1d630ec52745}} 
+\index{it.unitn.healthcore.domain.Doctor@{it.unitn.healthcore.domain.Doctor}!setAppointmentPrice@{setAppointmentPrice}}
+\index{setAppointmentPrice@{setAppointmentPrice}!it.unitn.healthcore.domain.Doctor@{it.unitn.healthcore.domain.Doctor}}
+\doxysubsubsection{\texorpdfstring{setAppointmentPrice()}{setAppointmentPrice()}}
+{\footnotesize\ttfamily void it.\+unitn.\+healthcore.\+domain.\+Doctor.\+set\+Appointment\+Price (\begin{DoxyParamCaption}\item[{Double}]{appointment\+Price }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment}{Appointment}} price setter. 
+
+
+
+Definition at line 116 of file Doctor.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_a757dd6347958f3cdf3ae8d62b3c5eb05}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_a757dd6347958f3cdf3ae8d62b3c5eb05}} 
+\index{it.unitn.healthcore.domain.Doctor@{it.unitn.healthcore.domain.Doctor}!setAppointments@{setAppointments}}
+\index{setAppointments@{setAppointments}!it.unitn.healthcore.domain.Doctor@{it.unitn.healthcore.domain.Doctor}}
+\doxysubsubsection{\texorpdfstring{setAppointments()}{setAppointments()}}
+{\footnotesize\ttfamily void it.\+unitn.\+healthcore.\+domain.\+Doctor.\+set\+Appointments (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment}{Appointment}} $>$}]{appointments }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment}{Appointment}} setter. 
+
+
+
+Definition at line 70 of file Doctor.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_a38578f80c03e1b587010e19bbc37fa4d}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_a38578f80c03e1b587010e19bbc37fa4d}} 
+\index{it.unitn.healthcore.domain.Doctor@{it.unitn.healthcore.domain.Doctor}!setDepartment@{setDepartment}}
+\index{setDepartment@{setDepartment}!it.unitn.healthcore.domain.Doctor@{it.unitn.healthcore.domain.Doctor}}
+\doxysubsubsection{\texorpdfstring{setDepartment()}{setDepartment()}}
+{\footnotesize\ttfamily void it.\+unitn.\+healthcore.\+domain.\+Doctor.\+set\+Department (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department}{Department}}}]{department }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Department}{Department}} setter. 
+
+
+
+Definition at line 100 of file Doctor.\+java.
+
+
+
+Referenced by it.\+unitn.\+healthcore.\+business.\+Doctor\+Service.\+change\+Department().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_a38578f80c03e1b587010e19bbc37fa4d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_af232951e98bd45ea7c2b58e3209fa300}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_af232951e98bd45ea7c2b58e3209fa300}} 
+\index{it.unitn.healthcore.domain.Doctor@{it.unitn.healthcore.domain.Doctor}!setEquipments@{setEquipments}}
+\index{setEquipments@{setEquipments}!it.unitn.healthcore.domain.Doctor@{it.unitn.healthcore.domain.Doctor}}
+\doxysubsubsection{\texorpdfstring{setEquipments()}{setEquipments()}}
+{\footnotesize\ttfamily void it.\+unitn.\+healthcore.\+domain.\+Doctor.\+set\+Equipments (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1EquipmentDoctor}{Equipment\+Doctor}} $>$}]{equipments }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment}{Appointment}} getter. 
+
+
+
+Definition at line 82 of file Doctor.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_a93fc693a307a310777deb731b8931208}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_a93fc693a307a310777deb731b8931208}} 
+\index{it.unitn.healthcore.domain.Doctor@{it.unitn.healthcore.domain.Doctor}!setShifts@{setShifts}}
+\index{setShifts@{setShifts}!it.unitn.healthcore.domain.Doctor@{it.unitn.healthcore.domain.Doctor}}
+\doxysubsubsection{\texorpdfstring{setShifts()}{setShifts()}}
+{\footnotesize\ttfamily void it.\+unitn.\+healthcore.\+domain.\+Doctor.\+set\+Shifts (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Shift}{Shift}} $>$}]{shifts }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Shift}{Shift}} setter. 
+
+
+
+Definition at line 92 of file Doctor.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_a575afa2e735657529b04cd90a98c0fe3}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_a575afa2e735657529b04cd90a98c0fe3}} 
+\index{it.unitn.healthcore.domain.Doctor@{it.unitn.healthcore.domain.Doctor}!setSpecialization@{setSpecialization}}
+\index{setSpecialization@{setSpecialization}!it.unitn.healthcore.domain.Doctor@{it.unitn.healthcore.domain.Doctor}}
+\doxysubsubsection{\texorpdfstring{setSpecialization()}{setSpecialization()}}
+{\footnotesize\ttfamily void it.\+unitn.\+healthcore.\+domain.\+Doctor.\+set\+Specialization (\begin{DoxyParamCaption}\item[{String}]{specialization }\end{DoxyParamCaption})}
+
+
+
+Specialization setter. 
+
+
+
+Definition at line 108 of file Doctor.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_a3146e94bec4cc95651efadfb5aa59743}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor_a3146e94bec4cc95651efadfb5aa59743}} 
+\index{it.unitn.healthcore.domain.Doctor@{it.unitn.healthcore.domain.Doctor}!toString@{toString}}
+\index{toString@{toString}!it.unitn.healthcore.domain.Doctor@{it.unitn.healthcore.domain.Doctor}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String it.\+unitn.\+healthcore.\+domain.\+Doctor.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates a \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor}{Doctor}} with full credentials. 
+
+
+
+Definition at line 56 of file Doctor.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+healthcore/src/main/java/it/unitn/healthcore/domain/\mbox{\hyperlink{Doctor_8java}{Doctor.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,139 @@
+\hypertarget{classit_1_1unitn_1_1healthcore_1_1controller_1_1SecurityConfig}{}\doxysection{it.\+unitn.\+healthcore.\+controller.\+Security\+Config Class Reference}
+\label{classit_1_1unitn_1_1healthcore_1_1controller_1_1SecurityConfig}\index{it.unitn.healthcore.controller.SecurityConfig@{it.unitn.healthcore.controller.SecurityConfig}}
+
+
+This class configures the security settings for the application using Spring Security.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Password\+Encoder \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1controller_1_1SecurityConfig_a0cf2d1db0eb057d2e10142be49043475}{password\+Encoder}} ()
+\begin{DoxyCompactList}\small\item\em Defines a bean for password encoding using BCrypt algorithm with a strength of 10. \end{DoxyCompactList}\item 
+Security\+Filter\+Chain \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1controller_1_1SecurityConfig_a0374e2f6ceaea3412a1fb2fccc8d933b}{filter\+Chain}} (Http\+Security http)  throws Exception
+\begin{DoxyCompactList}\small\item\em Configures the security filter chain for the application. \end{DoxyCompactList}\item 
+Dao\+Authentication\+Provider \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1controller_1_1SecurityConfig_a79cc8349f76cb88cc9adc829922164f2}{authentication\+Provider}} (User\+Details\+Service user\+Details\+Service, Password\+Encoder \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1controller_1_1SecurityConfig_a0cf2d1db0eb057d2e10142be49043475}{password\+Encoder}})
+\begin{DoxyCompactList}\small\item\em Defines a bean for the Dao\+Authentication\+Provider, which integrates with Spring Security\textquotesingle{}s authentication mechanism. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class configures the security settings for the application using Spring Security. 
+
+It defines password encoding, authentication provider, and security filter chain to manage access control and authentication for the application\textquotesingle{}s endpoints. ~\newline
+ \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1controller_1_1UserController}{it.\+unitn.\+healthcore.\+controller.\+User\+Controller}} ~\newline
+ @detail The \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1controller_1_1SecurityConfig}{Security\+Config}} class is responsible for setting up the security configuration for the application. It defines a Password\+Encoder bean that uses BCrypt for hashing passwords, an authentication provider that integrates with Spring Security\textquotesingle{}s authentication mechanism, and a security filter chain that specifies which endpoints are publicly accessible and which require authentication. The filter chain also configures form-\/based login and logout behavior. 
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Health\+Core Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2026-\/06-\/11 
+\end{DoxyDate}
+
+
+Definition at line 29 of file Security\+Config.\+java.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1controller_1_1SecurityConfig_a79cc8349f76cb88cc9adc829922164f2}\label{classit_1_1unitn_1_1healthcore_1_1controller_1_1SecurityConfig_a79cc8349f76cb88cc9adc829922164f2}} 
+\index{it.unitn.healthcore.controller.SecurityConfig@{it.unitn.healthcore.controller.SecurityConfig}!authenticationProvider@{authenticationProvider}}
+\index{authenticationProvider@{authenticationProvider}!it.unitn.healthcore.controller.SecurityConfig@{it.unitn.healthcore.controller.SecurityConfig}}
+\doxysubsubsection{\texorpdfstring{authenticationProvider()}{authenticationProvider()}}
+{\footnotesize\ttfamily Dao\+Authentication\+Provider it.\+unitn.\+healthcore.\+controller.\+Security\+Config.\+authentication\+Provider (\begin{DoxyParamCaption}\item[{User\+Details\+Service}]{user\+Details\+Service,  }\item[{Password\+Encoder}]{password\+Encoder }\end{DoxyParamCaption})}
+
+
+
+Defines a bean for the Dao\+Authentication\+Provider, which integrates with Spring Security\textquotesingle{}s authentication mechanism. 
+
+It sets the User\+Details\+Service and Password\+Encoder to be used for authentication. 
+\begin{DoxyParams}{Parameters}
+{\em user\+Details\+Service} & The User\+Details\+Service that provides user details for authentication. \\
+\hline
+{\em password\+Encoder} & The Password\+Encoder that is used to encode and verify passwords during authentication. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Dao\+Authentication\+Provider configured with the specified User\+Details\+Service and Password\+Encoder. 
+\end{DoxyReturn}
+
+
+Definition at line 70 of file Security\+Config.\+java.
+
+
+
+References it.\+unitn.\+healthcore.\+controller.\+Security\+Config.\+password\+Encoder().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1controller_1_1SecurityConfig_a79cc8349f76cb88cc9adc829922164f2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1controller_1_1SecurityConfig_a0374e2f6ceaea3412a1fb2fccc8d933b}\label{classit_1_1unitn_1_1healthcore_1_1controller_1_1SecurityConfig_a0374e2f6ceaea3412a1fb2fccc8d933b}} 
+\index{it.unitn.healthcore.controller.SecurityConfig@{it.unitn.healthcore.controller.SecurityConfig}!filterChain@{filterChain}}
+\index{filterChain@{filterChain}!it.unitn.healthcore.controller.SecurityConfig@{it.unitn.healthcore.controller.SecurityConfig}}
+\doxysubsubsection{\texorpdfstring{filterChain()}{filterChain()}}
+{\footnotesize\ttfamily Security\+Filter\+Chain it.\+unitn.\+healthcore.\+controller.\+Security\+Config.\+filter\+Chain (\begin{DoxyParamCaption}\item[{Http\+Security}]{http }\end{DoxyParamCaption}) throws Exception}
+
+
+
+Configures the security filter chain for the application. 
+
+It specifies which endpoints are publicly accessible and which require authentication, as well as the login and logout behavior. 
+\begin{DoxyParams}{Parameters}
+{\em http} & The Http\+Security object used to configure web-\/based security for specific HTTP requests. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Security\+Filter\+Chain that defines the security configuration for the application. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & If an error occurs while configuring the security filter chain. \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 46 of file Security\+Config.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1controller_1_1SecurityConfig_a0cf2d1db0eb057d2e10142be49043475}\label{classit_1_1unitn_1_1healthcore_1_1controller_1_1SecurityConfig_a0cf2d1db0eb057d2e10142be49043475}} 
+\index{it.unitn.healthcore.controller.SecurityConfig@{it.unitn.healthcore.controller.SecurityConfig}!passwordEncoder@{passwordEncoder}}
+\index{passwordEncoder@{passwordEncoder}!it.unitn.healthcore.controller.SecurityConfig@{it.unitn.healthcore.controller.SecurityConfig}}
+\doxysubsubsection{\texorpdfstring{passwordEncoder()}{passwordEncoder()}}
+{\footnotesize\ttfamily Password\+Encoder it.\+unitn.\+healthcore.\+controller.\+Security\+Config.\+password\+Encoder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Defines a bean for password encoding using BCrypt algorithm with a strength of 10. 
+
+This bean is used by the authentication provider to encode and verify user passwords securely. \begin{DoxyReturn}{Returns}
+A Password\+Encoder instance that uses BCrypt for password hashing. 
+\end{DoxyReturn}
+
+
+Definition at line 35 of file Security\+Config.\+java.
+
+
+
+Referenced by it.\+unitn.\+healthcore.\+controller.\+Security\+Config.\+authentication\+Provider().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1controller_1_1SecurityConfig_a0cf2d1db0eb057d2e10142be49043475_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+healthcore/src/main/java/it/unitn/healthcore/controller/\mbox{\hyperlink{SecurityConfig_8java}{Security\+Config.\+java}}\end{DoxyCompactItemize}

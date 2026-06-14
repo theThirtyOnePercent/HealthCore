@@ -90,20 +90,58 @@ $(document).ready(function(){initNavTree('md_README.html',''); initResizable(); 
 <div class="textblock"><h1><a class="anchor" id="autotoc_md1"></a>
 Overview</h1>
 <p>HealthCore is a web-based healthcare management system developed for a small network of hospitals. The system aims to provide a secure and efficient platform that connects patients, doctors, and administrators while ensuring the protection of sensitive medical information.</p>
-<p>The project was developed as part of a software engineering course and follows a layered architecture designed to support maintainability, scalability, and security. Through a centralized web application, users can manage appointments, access medical information, and perform administrative tasks in an organized and user-friendly environment.</p>
+<p>The project was developed as part of a software engineering course (University of Trento) and follows a layered architecture designed to support maintainability, scalability, and security.</p>
 <h1><a class="anchor" id="autotoc_md2"></a>
-Purpose of the Project</h1>
-<p>The primary objective of HealthCore is to improve healthcare service management by providing:</p>
+Project Structure</h1>
+<p><img src="structure.png" alt="" class="inline" title="alt text"/></p>
+<h1><a class="anchor" id="autotoc_md3"></a>
+Getting Started</h1>
+<h2><a class="anchor" id="autotoc_md4"></a>
+Prerequisites</h2>
 <ul>
-<li>Secure access to patient and medical information.</li>
-<li>Efficient appointment scheduling and management.</li>
-<li>Support for healthcare professionals in managing patient records.</li>
-<li>Administrative tools for managing users and hospital operations.</li>
-<li>Centralized data management across multiple hospitals.</li>
+<li>Java 11 or higher</li>
+<li>A compatible Java web server (e.g. Apache Tomcat)</li>
+<li>A relational database PostgreSQL</li>
+<li>Maven</li>
 </ul>
-<p>The system focuses on enhancing both patient experience and healthcare staff productivity while maintaining strict confidentiality and integrity of medical data.</p>
+<h2><a class="anchor" id="autotoc_md5"></a>
+Setup</h2>
+<ol type="1">
+<li><b>Clone the repository</b> <div class="fragment"><div class="line">git clone https://github.com/theThirtyOnePercent/HealthCore.git</div>
+<div class="line">cd HealthCore</div>
+</div><!-- fragment --></li>
+<li><b>Configure your database</b> <br  />
+ Update the database connection settings in the application configuration file with your local credentials.</li>
+<li><b>Build the project</b> <div class="fragment"><div class="line">mvn clean install</div>
+</div><!-- fragment --> *(Or import into your IDE and build from there.)*</li>
+<li><b>Deploy</b> <br  />
+ Deploy the generated <code>.war</code> file to your web server (e.g. Tomcat's <code>webapps/</code> directory).</li>
+<li><b>Access the application</b> <br  />
+ Open your browser and navigate to: <div class="fragment"><div class="line">http://localhost:8080/healthcore</div>
+</div><!-- fragment --></li>
+</ol>
 <hr  />
- </div></div><!-- contents -->
+<h1><a class="anchor" id="autotoc_md7"></a>
+Documentation</h1>
+<p>Code documentation is generated using <a href="https://www.doxygen.nl/">Doxygen</a>. To build the docs locally:</p>
+<div class="fragment"><div class="line">doxygen Doxyfile</div>
+</div><!-- fragment --><p>The output will be placed in the <code>docs/</code> directory. Open <code>docs/html/index.html</code> in your browser to browse the full documentation.</p>
+<hr  />
+<h1><a class="anchor" id="autotoc_md9"></a>
+Contributing</h1>
+<p>Contributions are welcome! To get started:</p>
+<ol type="1">
+<li>Fork the repository.</li>
+<li>Create a new branch for your feature or fix: <code>git checkout -b feature/your-feature-name</code></li>
+<li>Commit your changes with clear messages.</li>
+<li>Open a Pull Request describing what you've changed and why.</li>
+</ol>
+<p>Please ensure your code follows the existing style conventions and is documented with Doxygen-compatible comments.</p>
+<hr  />
+<h1><a class="anchor" id="autotoc_md11"></a>
+License</h1>
+<p>This project was developed as part of a Software Engineering (University of Trento) course. </p>
+</div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->

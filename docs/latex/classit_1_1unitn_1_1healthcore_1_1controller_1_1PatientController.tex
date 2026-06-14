@@ -1,0 +1,335 @@
+\hypertarget{classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController}{}\doxysection{it.\+unitn.\+healthcore.\+controller.\+Patient\+Controller Class Reference}
+\label{classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController}\index{it.unitn.healthcore.controller.PatientController@{it.unitn.healthcore.controller.PatientController}}
+
+
+\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController}{Patient\+Controller}} is a REST controller that handles HTTP requests related to patient management and appointment booking for patients.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_a3b1d7f75d8fd009e934169c280d4a6a1}{Patient\+Controller}} (\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService}{Patient\+Service}} patient\+Service, \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1business_1_1AppointmentService}{Appointment\+Service}} appointment\+Service)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController}{Patient\+Controller}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1InsurancePlan}{Insurance\+Plan}} \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_a7ff985e6a5601dbbef79fd420d2e54b4}{update\+Insurance\+Plan}} (@Request\+Param Integer plan\+Id)
+\begin{DoxyCompactList}\small\item\em Retrieves the current insurance plan of the authenticated patient. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_aaf7a71336886e01fdc45116e44bf67db}{get\+Doctor\+Description}} ( @Path\+Variable(\char`\"{}doctor\+Id\char`\"{}) Integer doctor\+Id)
+\begin{DoxyCompactList}\small\item\em Retrieves the current insurance plan of the authenticated patient. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_a6c1b2c866308e0723c5b9157149ab47b}{book\+Appointment}} (@Path\+Variable Integer doctor\+Id, @Request\+Param Local\+Date\+Time start\+Time, @Request\+Param Local\+Date\+Time end\+Time)
+\begin{DoxyCompactList}\small\item\em Books an appointment with a specified doctor for the authenticated patient. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_a4207a6fab035c5242ecda1abdb49169e}{view\+Future\+Appointments}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves a list of future appointments for the authenticated patient. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_a8303b97c30b7b5049de75826bafceb4c}{view\+Past\+Appointments}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves a list of past appointments for the authenticated patient. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_ac6fe0b7997f8668f80b25419c0d686c6}{view\+Appointment\+Detail}} (@Path\+Variable Integer appointment\+Id)
+\begin{DoxyCompactList}\small\item\em Retrieves the details of a specific appointment by its ID. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_af370cd8f9baad62995675426371b349c}{modify\+Appointment}} (@Path\+Variable Integer appointment\+Id, @Request\+Param Local\+Date\+Time start\+Time, @Request\+Param Local\+Date\+Time end\+Time)
+\begin{DoxyCompactList}\small\item\em Modifies the details of an existing appointment for the authenticated patient. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_a3a3ac977996cfd51ff42b9386dccc075}{cancel\+Appointment}} (@Path\+Variable Integer appointment\+Id)
+\begin{DoxyCompactList}\small\item\em Cancels an existing appointment for the authenticated patient. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController}{Patient\+Controller}} is a REST controller that handles HTTP requests related to patient management and appointment booking for patients. 
+
+It provides endpoints for patients to manage their insurance plans, view doctor descriptions, book appointments with doctors, and view their appointment history and details. \begin{DoxySeeAlso}{See also}
+Patient\+Service 
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Health\+Core Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2026-\/06-\/11 
+\end{DoxyDate}
+
+
+Definition at line 24 of file Patient\+Controller.\+java.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_a3b1d7f75d8fd009e934169c280d4a6a1}\label{classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_a3b1d7f75d8fd009e934169c280d4a6a1}} 
+\index{it.unitn.healthcore.controller.PatientController@{it.unitn.healthcore.controller.PatientController}!PatientController@{PatientController}}
+\index{PatientController@{PatientController}!it.unitn.healthcore.controller.PatientController@{it.unitn.healthcore.controller.PatientController}}
+\doxysubsubsection{\texorpdfstring{PatientController()}{PatientController()}}
+{\footnotesize\ttfamily it.\+unitn.\+healthcore.\+controller.\+Patient\+Controller.\+Patient\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService}{Patient\+Service}}}]{patient\+Service,  }\item[{\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1business_1_1AppointmentService}{Appointment\+Service}}}]{appointment\+Service }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController}{Patient\+Controller}} class. 
+
+This constructor is used to inject the Patient\+Service and Appointment\+Service dependencies into the controller. The @\+Autowired annotation allows Spring to automatically wire the services when creating an instance of the controller. 
+\begin{DoxyParams}{Parameters}
+{\em patient\+Service} & The service that provides business logic related to patients. \\
+\hline
+{\em appointment\+Service} & The service that provides business logic related to appointments. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 34 of file Patient\+Controller.\+java.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_a6c1b2c866308e0723c5b9157149ab47b}\label{classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_a6c1b2c866308e0723c5b9157149ab47b}} 
+\index{it.unitn.healthcore.controller.PatientController@{it.unitn.healthcore.controller.PatientController}!bookAppointment@{bookAppointment}}
+\index{bookAppointment@{bookAppointment}!it.unitn.healthcore.controller.PatientController@{it.unitn.healthcore.controller.PatientController}}
+\doxysubsubsection{\texorpdfstring{bookAppointment()}{bookAppointment()}}
+{\footnotesize\ttfamily String it.\+unitn.\+healthcore.\+controller.\+Patient\+Controller.\+book\+Appointment (\begin{DoxyParamCaption}\item[{@Path\+Variable Integer}]{doctor\+Id,  }\item[{@Request\+Param Local\+Date\+Time}]{start\+Time,  }\item[{@Request\+Param Local\+Date\+Time}]{end\+Time }\end{DoxyParamCaption})}
+
+
+
+Books an appointment with a specified doctor for the authenticated patient. 
+
+This endpoint is accessible only to users with the \textquotesingle{}PATIENT\textquotesingle{} role. It takes the doctor\textquotesingle{}s ID, start time, and end time as parameters and creates an appointment. It returns a string containing the details of the created appointment, including doctor information, department, and hospital. 
+\begin{DoxyParams}{Parameters}
+{\em doctor\+Id} & The ID of the doctor to book an appointment with. \\
+\hline
+{\em start\+Time} & The start time of the appointment. \\
+\hline
+{\em end\+Time} & The end time of the appointment. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string containing the details of the booked appointment. 
+\end{DoxyReturn}
+
+
+Definition at line 69 of file Patient\+Controller.\+java.
+
+
+
+References it.\+unitn.\+healthcore.\+business.\+Patient\+Service.\+book\+Appointment(), it.\+unitn.\+healthcore.\+domain.\+Appointment.\+get\+Appointment\+Id(), it.\+unitn.\+healthcore.\+domain.\+Doctor.\+get\+Department(), it.\+unitn.\+healthcore.\+domain.\+Appointment.\+get\+Doctor(), it.\+unitn.\+healthcore.\+domain.\+User.\+get\+Email(), it.\+unitn.\+healthcore.\+domain.\+Appointment.\+get\+End\+Time(), it.\+unitn.\+healthcore.\+domain.\+Department.\+get\+Hospital(), it.\+unitn.\+healthcore.\+domain.\+Department.\+get\+Name(), it.\+unitn.\+healthcore.\+domain.\+Hospital.\+get\+Name(), it.\+unitn.\+healthcore.\+domain.\+User.\+get\+Name(), it.\+unitn.\+healthcore.\+domain.\+Appointment.\+get\+Start\+Time(), and it.\+unitn.\+healthcore.\+domain.\+User.\+get\+Surname().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_a6c1b2c866308e0723c5b9157149ab47b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_a3a3ac977996cfd51ff42b9386dccc075}\label{classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_a3a3ac977996cfd51ff42b9386dccc075}} 
+\index{it.unitn.healthcore.controller.PatientController@{it.unitn.healthcore.controller.PatientController}!cancelAppointment@{cancelAppointment}}
+\index{cancelAppointment@{cancelAppointment}!it.unitn.healthcore.controller.PatientController@{it.unitn.healthcore.controller.PatientController}}
+\doxysubsubsection{\texorpdfstring{cancelAppointment()}{cancelAppointment()}}
+{\footnotesize\ttfamily void it.\+unitn.\+healthcore.\+controller.\+Patient\+Controller.\+cancel\+Appointment (\begin{DoxyParamCaption}\item[{@Path\+Variable Integer}]{appointment\+Id }\end{DoxyParamCaption})}
+
+
+
+Cancels an existing appointment for the authenticated patient. 
+
+This endpoint is accessible only to users with the \textquotesingle{}PATIENT\textquotesingle{} role. It takes the appointment ID as a parameter and cancels the corresponding appointment. It does not return any content in the response. 
+\begin{DoxyParams}{Parameters}
+{\em appointment\+Id} & The ID of the appointment to cancel. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 167 of file Patient\+Controller.\+java.
+
+
+
+References it.\+unitn.\+healthcore.\+business.\+Patient\+Service.\+cancel\+Appointment().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_a3a3ac977996cfd51ff42b9386dccc075_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_aaf7a71336886e01fdc45116e44bf67db}\label{classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_aaf7a71336886e01fdc45116e44bf67db}} 
+\index{it.unitn.healthcore.controller.PatientController@{it.unitn.healthcore.controller.PatientController}!getDoctorDescription@{getDoctorDescription}}
+\index{getDoctorDescription@{getDoctorDescription}!it.unitn.healthcore.controller.PatientController@{it.unitn.healthcore.controller.PatientController}}
+\doxysubsubsection{\texorpdfstring{getDoctorDescription()}{getDoctorDescription()}}
+{\footnotesize\ttfamily String it.\+unitn.\+healthcore.\+controller.\+Patient\+Controller.\+get\+Doctor\+Description (\begin{DoxyParamCaption}\item[{@Path\+Variable(\char`\"{}doctor\+Id\char`\"{}) Integer}]{doctor\+Id }\end{DoxyParamCaption})}
+
+
+
+Retrieves the current insurance plan of the authenticated patient. 
+
+This endpoint is accessible only to users with the \textquotesingle{}PATIENT\textquotesingle{} role. It returns the Insurance\+Plan object representing the patient\textquotesingle{}s current insurance plan. \begin{DoxyReturn}{Returns}
+The current Insurance\+Plan of the patient. 
+\end{DoxyReturn}
+
+
+Definition at line 54 of file Patient\+Controller.\+java.
+
+
+
+References it.\+unitn.\+healthcore.\+business.\+Patient\+Service.\+get\+Doctor\+Description().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_aaf7a71336886e01fdc45116e44bf67db_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_af370cd8f9baad62995675426371b349c}\label{classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_af370cd8f9baad62995675426371b349c}} 
+\index{it.unitn.healthcore.controller.PatientController@{it.unitn.healthcore.controller.PatientController}!modifyAppointment@{modifyAppointment}}
+\index{modifyAppointment@{modifyAppointment}!it.unitn.healthcore.controller.PatientController@{it.unitn.healthcore.controller.PatientController}}
+\doxysubsubsection{\texorpdfstring{modifyAppointment()}{modifyAppointment()}}
+{\footnotesize\ttfamily void it.\+unitn.\+healthcore.\+controller.\+Patient\+Controller.\+modify\+Appointment (\begin{DoxyParamCaption}\item[{@Path\+Variable Integer}]{appointment\+Id,  }\item[{@Request\+Param Local\+Date\+Time}]{start\+Time,  }\item[{@Request\+Param Local\+Date\+Time}]{end\+Time }\end{DoxyParamCaption})}
+
+
+
+Modifies the details of an existing appointment for the authenticated patient. 
+
+This endpoint is accessible only to users with the \textquotesingle{}PATIENT\textquotesingle{} role. It takes the appointment ID, new start time, and new end time as parameters and updates the appointment accordingly. It does not return any content in the response. 
+\begin{DoxyParams}{Parameters}
+{\em appointment\+Id} & The ID of the appointment to modify. \\
+\hline
+{\em start\+Time} & The new start time for the appointment. \\
+\hline
+{\em end\+Time} & The new end time for the appointment. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 156 of file Patient\+Controller.\+java.
+
+
+
+References it.\+unitn.\+healthcore.\+business.\+Patient\+Service.\+modify\+Appointment().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_af370cd8f9baad62995675426371b349c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_a7ff985e6a5601dbbef79fd420d2e54b4}\label{classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_a7ff985e6a5601dbbef79fd420d2e54b4}} 
+\index{it.unitn.healthcore.controller.PatientController@{it.unitn.healthcore.controller.PatientController}!updateInsurancePlan@{updateInsurancePlan}}
+\index{updateInsurancePlan@{updateInsurancePlan}!it.unitn.healthcore.controller.PatientController@{it.unitn.healthcore.controller.PatientController}}
+\doxysubsubsection{\texorpdfstring{updateInsurancePlan()}{updateInsurancePlan()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1InsurancePlan}{Insurance\+Plan}} it.\+unitn.\+healthcore.\+controller.\+Patient\+Controller.\+update\+Insurance\+Plan (\begin{DoxyParamCaption}\item[{@Request\+Param Integer}]{plan\+Id }\end{DoxyParamCaption})}
+
+
+
+Retrieves the current insurance plan of the authenticated patient. 
+
+This endpoint is accessible only to users with the \textquotesingle{}PATIENT\textquotesingle{} role. It returns the Insurance\+Plan object representing the patient\textquotesingle{}s current insurance plan. \begin{DoxyReturn}{Returns}
+The current Insurance\+Plan of the patient. 
+\end{DoxyReturn}
+
+
+Definition at line 44 of file Patient\+Controller.\+java.
+
+
+
+References it.\+unitn.\+healthcore.\+business.\+Patient\+Service.\+get\+Current\+Insurance\+Plan(), and it.\+unitn.\+healthcore.\+business.\+Patient\+Service.\+update\+Insurance\+Plan().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_a7ff985e6a5601dbbef79fd420d2e54b4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_ac6fe0b7997f8668f80b25419c0d686c6}\label{classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_ac6fe0b7997f8668f80b25419c0d686c6}} 
+\index{it.unitn.healthcore.controller.PatientController@{it.unitn.healthcore.controller.PatientController}!viewAppointmentDetail@{viewAppointmentDetail}}
+\index{viewAppointmentDetail@{viewAppointmentDetail}!it.unitn.healthcore.controller.PatientController@{it.unitn.healthcore.controller.PatientController}}
+\doxysubsubsection{\texorpdfstring{viewAppointmentDetail()}{viewAppointmentDetail()}}
+{\footnotesize\ttfamily String it.\+unitn.\+healthcore.\+controller.\+Patient\+Controller.\+view\+Appointment\+Detail (\begin{DoxyParamCaption}\item[{@Path\+Variable Integer}]{appointment\+Id }\end{DoxyParamCaption})}
+
+
+
+Retrieves the details of a specific appointment by its ID. 
+
+This endpoint is accessible only to users with the \textquotesingle{}PATIENT\textquotesingle{} role. It returns a string containing the details of the appointment, including doctor information, diagnosis history, and any notes associated with the appointment. 
+\begin{DoxyParams}{Parameters}
+{\em appointment\+Id} & The ID of the appointment to retrieve. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string containing the details of the specified appointment. 
+\end{DoxyReturn}
+
+
+Definition at line 144 of file Patient\+Controller.\+java.
+
+
+
+References it.\+unitn.\+healthcore.\+business.\+Appointment\+Service.\+get\+Appointment\+Details().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_ac6fe0b7997f8668f80b25419c0d686c6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_a4207a6fab035c5242ecda1abdb49169e}\label{classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_a4207a6fab035c5242ecda1abdb49169e}} 
+\index{it.unitn.healthcore.controller.PatientController@{it.unitn.healthcore.controller.PatientController}!viewFutureAppointments@{viewFutureAppointments}}
+\index{viewFutureAppointments@{viewFutureAppointments}!it.unitn.healthcore.controller.PatientController@{it.unitn.healthcore.controller.PatientController}}
+\doxysubsubsection{\texorpdfstring{viewFutureAppointments()}{viewFutureAppointments()}}
+{\footnotesize\ttfamily String it.\+unitn.\+healthcore.\+controller.\+Patient\+Controller.\+view\+Future\+Appointments (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieves a list of future appointments for the authenticated patient. 
+
+This endpoint is accessible only to users with the \textquotesingle{}PATIENT\textquotesingle{} role. It returns a string representation of each future appointment, including the appointment ID, start and end times, and doctor information. \begin{DoxyReturn}{Returns}
+A string containing the details of future appointments for the patient. 
+\end{DoxyReturn}
+
+
+Definition at line 101 of file Patient\+Controller.\+java.
+
+
+
+References it.\+unitn.\+healthcore.\+business.\+Appointment\+Service.\+get\+Future\+Appointments().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_a4207a6fab035c5242ecda1abdb49169e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_a8303b97c30b7b5049de75826bafceb4c}\label{classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_a8303b97c30b7b5049de75826bafceb4c}} 
+\index{it.unitn.healthcore.controller.PatientController@{it.unitn.healthcore.controller.PatientController}!viewPastAppointments@{viewPastAppointments}}
+\index{viewPastAppointments@{viewPastAppointments}!it.unitn.healthcore.controller.PatientController@{it.unitn.healthcore.controller.PatientController}}
+\doxysubsubsection{\texorpdfstring{viewPastAppointments()}{viewPastAppointments()}}
+{\footnotesize\ttfamily String it.\+unitn.\+healthcore.\+controller.\+Patient\+Controller.\+view\+Past\+Appointments (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieves a list of past appointments for the authenticated patient. 
+
+This endpoint is accessible only to users with the \textquotesingle{}PATIENT\textquotesingle{} role. It returns a string representation of each past appointment, including the appointment ID, start and end times, and doctor information. \begin{DoxyReturn}{Returns}
+A string containing the details of past appointments for the patient. 
+\end{DoxyReturn}
+
+
+Definition at line 122 of file Patient\+Controller.\+java.
+
+
+
+References it.\+unitn.\+healthcore.\+business.\+Appointment\+Service.\+get\+Past\+Appointments().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1controller_1_1PatientController_a8303b97c30b7b5049de75826bafceb4c_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+healthcore/src/main/java/it/unitn/healthcore/controller/\mbox{\hyperlink{PatientController_8java}{Patient\+Controller.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,79 @@
+\hypertarget{interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1UserRepository}{}\doxysection{it.\+unitn.\+healthcore.\+persistence.\+User\+Repository Interface Reference}
+\label{interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1UserRepository}\index{it.unitn.healthcore.persistence.UserRepository@{it.unitn.healthcore.persistence.UserRepository}}
+
+
+Repository interface for managing User entities in the database.  
+
+
+
+
+Inheritance diagram for it.\+unitn.\+healthcore.\+persistence.\+User\+Repository\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1UserRepository__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for it.\+unitn.\+healthcore.\+persistence.\+User\+Repository\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1UserRepository__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Optional$<$ \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1User}{User}} $>$ \mbox{\hyperlink{interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1UserRepository_a6a646ae44d01189ff44c81c03fc92fa8}{find\+User\+By\+Email}} (String email)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Repository interface for managing User entities in the database. 
+
+It extends Jpa\+Repository to provide CRUD operations and custom query methods. This interface is used by the service layer to interact with the persistence layer. \begin{DoxySeeAlso}{See also}
+Jpa\+Repository 
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Health\+Core Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2026-\/06-\/11 
+\end{DoxyDate}
+
+
+Definition at line 19 of file User\+Repository.\+java.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1UserRepository_a6a646ae44d01189ff44c81c03fc92fa8}\label{interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1UserRepository_a6a646ae44d01189ff44c81c03fc92fa8}} 
+\index{it.unitn.healthcore.persistence.UserRepository@{it.unitn.healthcore.persistence.UserRepository}!findUserByEmail@{findUserByEmail}}
+\index{findUserByEmail@{findUserByEmail}!it.unitn.healthcore.persistence.UserRepository@{it.unitn.healthcore.persistence.UserRepository}}
+\doxysubsubsection{\texorpdfstring{findUserByEmail()}{findUserByEmail()}}
+{\footnotesize\ttfamily Optional$<$\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1User}{User}}$>$ it.\+unitn.\+healthcore.\+persistence.\+User\+Repository.\+find\+User\+By\+Email (\begin{DoxyParamCaption}\item[{String}]{email }\end{DoxyParamCaption})}
+
+
+
+Referenced by it.\+unitn.\+healthcore.\+business.\+User\+Service.\+get\+Current\+User(), it.\+unitn.\+healthcore.\+business.\+User\+Service.\+load\+User\+By\+Username(), it.\+unitn.\+healthcore.\+business.\+User\+Service.\+recover\+Password(), it.\+unitn.\+healthcore.\+business.\+User\+Service.\+send\+Otp(), and it.\+unitn.\+healthcore.\+business.\+User\+Service.\+update\+User\+Profile().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1UserRepository_a6a646ae44d01189ff44c81c03fc92fa8_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+healthcore/src/main/java/it/unitn/healthcore/persistence/\mbox{\hyperlink{UserRepository_8java}{User\+Repository.\+java}}\end{DoxyCompactItemize}

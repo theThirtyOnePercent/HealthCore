@@ -1,0 +1,174 @@
+\hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1SecurityUser}{}\doxysection{it.\+unitn.\+healthcore.\+domain.\+Security\+User Class Reference}
+\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1SecurityUser}\index{it.unitn.healthcore.domain.SecurityUser@{it.unitn.healthcore.domain.SecurityUser}}
+
+
+Adapter class that implements User\+Details to integrate our \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1User}{User}} entity with Spring Security.  
+
+
+
+
+Inheritance diagram for it.\+unitn.\+healthcore.\+domain.\+Security\+User\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{classit_1_1unitn_1_1healthcore_1_1domain_1_1SecurityUser__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for it.\+unitn.\+healthcore.\+domain.\+Security\+User\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{classit_1_1unitn_1_1healthcore_1_1domain_1_1SecurityUser__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1SecurityUser_a4cbda6e02c37785bda581852be8bb0d1}{Security\+User}} (\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1User}{User}} user)
+\item 
+Collection$<$? extends Granted\+Authority $>$ \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1SecurityUser_a6190eb222122a2eb0e1b93c39099c304}{get\+Authorities}} ()
+\begin{DoxyCompactList}\small\item\em Returns the authorities granted to the user. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1SecurityUser_adbe6b7fc7824ede8ecb045bd7db80da3}{get\+Password}} ()
+\begin{DoxyCompactList}\small\item\em Returns the password used to authenticate the user. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1SecurityUser_a454663d8a8a5b1688e949c20c90ee222}{get\+Username}} ()
+\begin{DoxyCompactList}\small\item\em Returns the username used to authenticate the user. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1SecurityUser_ac8f3f7864b0830612c6c32823ef31b55}{is\+Enabled}} ()
+\begin{DoxyCompactList}\small\item\em Indicates whether the user\textquotesingle{}s account has expired. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Adapter class that implements User\+Details to integrate our \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1User}{User}} entity with Spring Security. 
+
+@detail It provides the necessary user information to Spring Security for authentication and authorization purposes. @detail The get\+Authorities method maps the user\textquotesingle{}s role to a Granted\+Authority, which Spring Security uses to manage access control. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1User}{User}} 
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Health\+Core Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2026-\/06-\/11 
+\end{DoxyDate}
+
+
+Definition at line 20 of file Security\+User.\+java.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1SecurityUser_a4cbda6e02c37785bda581852be8bb0d1}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1SecurityUser_a4cbda6e02c37785bda581852be8bb0d1}} 
+\index{it.unitn.healthcore.domain.SecurityUser@{it.unitn.healthcore.domain.SecurityUser}!SecurityUser@{SecurityUser}}
+\index{SecurityUser@{SecurityUser}!it.unitn.healthcore.domain.SecurityUser@{it.unitn.healthcore.domain.SecurityUser}}
+\doxysubsubsection{\texorpdfstring{SecurityUser()}{SecurityUser()}}
+{\footnotesize\ttfamily it.\+unitn.\+healthcore.\+domain.\+Security\+User.\+Security\+User (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1User}{User}}}]{user }\end{DoxyParamCaption})}
+
+
+
+Definition at line 24 of file Security\+User.\+java.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1SecurityUser_a6190eb222122a2eb0e1b93c39099c304}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1SecurityUser_a6190eb222122a2eb0e1b93c39099c304}} 
+\index{it.unitn.healthcore.domain.SecurityUser@{it.unitn.healthcore.domain.SecurityUser}!getAuthorities@{getAuthorities}}
+\index{getAuthorities@{getAuthorities}!it.unitn.healthcore.domain.SecurityUser@{it.unitn.healthcore.domain.SecurityUser}}
+\doxysubsubsection{\texorpdfstring{getAuthorities()}{getAuthorities()}}
+{\footnotesize\ttfamily Collection$<$? extends Granted\+Authority$>$ it.\+unitn.\+healthcore.\+domain.\+Security\+User.\+get\+Authorities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the authorities granted to the user. 
+
+In this implementation, it maps the user\textquotesingle{}s role to a Spring Security authority. @detail The role is prefixed with \char`\"{}\+ROLE\+\_\+\char`\"{} to conform to Spring Security\textquotesingle{}s convention for role names. \begin{DoxyReturn}{Returns}
+A collection of Granted\+Authority representing the user\textquotesingle{}s roles and permissions. 
+\end{DoxyReturn}
+
+
+Definition at line 33 of file Security\+User.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1SecurityUser_adbe6b7fc7824ede8ecb045bd7db80da3}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1SecurityUser_adbe6b7fc7824ede8ecb045bd7db80da3}} 
+\index{it.unitn.healthcore.domain.SecurityUser@{it.unitn.healthcore.domain.SecurityUser}!getPassword@{getPassword}}
+\index{getPassword@{getPassword}!it.unitn.healthcore.domain.SecurityUser@{it.unitn.healthcore.domain.SecurityUser}}
+\doxysubsubsection{\texorpdfstring{getPassword()}{getPassword()}}
+{\footnotesize\ttfamily String it.\+unitn.\+healthcore.\+domain.\+Security\+User.\+get\+Password (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the password used to authenticate the user. 
+
+In this implementation, it retrieves the password from the underlying \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1User}{User}} entity. \begin{DoxyReturn}{Returns}
+The user\textquotesingle{}s password as a String. 
+\end{DoxyReturn}
+
+
+Definition at line 42 of file Security\+User.\+java.
+
+
+
+References it.\+unitn.\+healthcore.\+domain.\+User.\+get\+Password().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1domain_1_1SecurityUser_adbe6b7fc7824ede8ecb045bd7db80da3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1SecurityUser_a454663d8a8a5b1688e949c20c90ee222}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1SecurityUser_a454663d8a8a5b1688e949c20c90ee222}} 
+\index{it.unitn.healthcore.domain.SecurityUser@{it.unitn.healthcore.domain.SecurityUser}!getUsername@{getUsername}}
+\index{getUsername@{getUsername}!it.unitn.healthcore.domain.SecurityUser@{it.unitn.healthcore.domain.SecurityUser}}
+\doxysubsubsection{\texorpdfstring{getUsername()}{getUsername()}}
+{\footnotesize\ttfamily String it.\+unitn.\+healthcore.\+domain.\+Security\+User.\+get\+Username (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the username used to authenticate the user. 
+
+In this implementation, it retrieves the email from the underlying \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1User}{User}} entity as the username. \begin{DoxyReturn}{Returns}
+The user\textquotesingle{}s email as a String, which serves as the username for authentication purposes. 
+\end{DoxyReturn}
+
+
+Definition at line 50 of file Security\+User.\+java.
+
+
+
+References it.\+unitn.\+healthcore.\+domain.\+User.\+get\+Email().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1domain_1_1SecurityUser_a454663d8a8a5b1688e949c20c90ee222_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1SecurityUser_ac8f3f7864b0830612c6c32823ef31b55}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1SecurityUser_ac8f3f7864b0830612c6c32823ef31b55}} 
+\index{it.unitn.healthcore.domain.SecurityUser@{it.unitn.healthcore.domain.SecurityUser}!isEnabled@{isEnabled}}
+\index{isEnabled@{isEnabled}!it.unitn.healthcore.domain.SecurityUser@{it.unitn.healthcore.domain.SecurityUser}}
+\doxysubsubsection{\texorpdfstring{isEnabled()}{isEnabled()}}
+{\footnotesize\ttfamily boolean it.\+unitn.\+healthcore.\+domain.\+Security\+User.\+is\+Enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Indicates whether the user\textquotesingle{}s account has expired. 
+
+In this implementation, it always returns true, indicating that accounts do not expire. \begin{DoxyReturn}{Returns}
+true, indicating that the user\textquotesingle{}s account is non-\/expired. 
+\end{DoxyReturn}
+
+
+Definition at line 58 of file Security\+User.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+healthcore/src/main/java/it/unitn/healthcore/domain/\mbox{\hyperlink{SecurityUser_8java}{Security\+User.\+java}}\end{DoxyCompactItemize}

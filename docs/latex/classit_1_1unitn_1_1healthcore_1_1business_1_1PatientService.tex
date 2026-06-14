@@ -1,0 +1,396 @@
+\hypertarget{classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService}{}\doxysection{it.\+unitn.\+healthcore.\+business.\+Patient\+Service Class Reference}
+\label{classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService}\index{it.unitn.healthcore.business.PatientService@{it.unitn.healthcore.business.PatientService}}
+
+
+\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService}{Patient\+Service}} is a service class that provides business logic related to patient management.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService_a57f5e054d847abb6ea876a279dd9928e}{Patient\+Service}} (\mbox{\hyperlink{interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1InsurancePlanRepository}{Insurance\+Plan\+Repository}} insurance\+Plan\+Repository, \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1business_1_1UserService}{User\+Service}} user\+Service, \mbox{\hyperlink{interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1DoctorRepository}{Doctor\+Repository}} doctor\+Repository, \mbox{\hyperlink{interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1AppointmentRepository}{Appointment\+Repository}} appointment\+Repository)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService}{Patient\+Service}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService_a541ee9273fd696797608c005eb4d2f78}{update\+Insurance\+Plan}} (Integer plan\+Id)
+\begin{DoxyCompactList}\small\item\em Updates the insurance plan for the currently authenticated patient. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1InsurancePlan}{Insurance\+Plan}} \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService_a9c5655c1b706c7dba40efb883c900a39}{get\+Current\+Insurance\+Plan}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the current insurance plan for the authenticated patient. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService_ab163cba2913666d9f4505d4b6e7e1a69}{get\+Doctor\+Description}} (Integer doctor\+Id)
+\begin{DoxyCompactList}\small\item\em Retrieves detailed information about a doctor based on their ID. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment}{Appointment}} \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService_ac33e02f57cc7f1ef55dd59cb5673781a}{book\+Appointment}} (Integer doctor\+Id, Local\+Date\+Time start, Local\+Date\+Time end)
+\begin{DoxyCompactList}\small\item\em Books an appointment with a specified doctor for the currently authenticated patient. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService_ab8266c492da03f9b5e38829e698129c6}{modify\+Appointment}} (Integer appointment\+Id, Local\+Date\+Time start\+Time, Local\+Date\+Time end\+Time)
+\begin{DoxyCompactList}\small\item\em Modifies an existing appointment for the currently authenticated patient. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService_a7f10372a6537c0f235e585bdb8b87c30}{cancel\+Appointment}} (Integer appointment\+Id)
+\begin{DoxyCompactList}\small\item\em Cancels an existing appointment for the currently authenticated patient. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService}{Patient\+Service}} is a service class that provides business logic related to patient management. 
+
+It interacts with the Insurance\+Plan\+Repository, \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1business_1_1UserService}{User\+Service}}, Doctor\+Repository, and Appointment\+Repository to perform operations related to patient insurance plans, doctor information retrieval, and appointment booking. @detail This service class contains methods for updating a patient\textquotesingle{}s insurance plan, retrieving the current insurance plan, getting detailed information about a doctor, and booking appointments with doctors. It serves as an intermediary between the controller layer and the persistence layer, ensuring that business rules are applied when accessing patient-\/related data and performing operations. \begin{DoxySeeAlso}{See also}
+Insurance\+Plan\+Repository 
+
+\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1business_1_1UserService}{User\+Service}} 
+
+Doctor\+Repository 
+
+Appointment\+Repository 
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Health\+Core Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2026-\/06-\/12 
+\end{DoxyDate}
+
+
+Definition at line 31 of file Patient\+Service.\+java.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService_a57f5e054d847abb6ea876a279dd9928e}\label{classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService_a57f5e054d847abb6ea876a279dd9928e}} 
+\index{it.unitn.healthcore.business.PatientService@{it.unitn.healthcore.business.PatientService}!PatientService@{PatientService}}
+\index{PatientService@{PatientService}!it.unitn.healthcore.business.PatientService@{it.unitn.healthcore.business.PatientService}}
+\doxysubsubsection{\texorpdfstring{PatientService()}{PatientService()}}
+{\footnotesize\ttfamily it.\+unitn.\+healthcore.\+business.\+Patient\+Service.\+Patient\+Service (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1InsurancePlanRepository}{Insurance\+Plan\+Repository}}}]{insurance\+Plan\+Repository,  }\item[{\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1business_1_1UserService}{User\+Service}}}]{user\+Service,  }\item[{\mbox{\hyperlink{interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1DoctorRepository}{Doctor\+Repository}}}]{doctor\+Repository,  }\item[{\mbox{\hyperlink{interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1AppointmentRepository}{Appointment\+Repository}}}]{appointment\+Repository }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService}{Patient\+Service}} class. 
+
+This constructor is used to inject the dependencies of the \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService}{Patient\+Service}} class, including the Insurance\+Plan Repository, \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1business_1_1UserService}{User\+Service}}, Doctor\+Repository, and Appointment\+Repository. The @\+Autowired annotation allows Spring to automatically wire these dependencies when creating an instance of the \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService}{Patient\+Service}}. 
+\begin{DoxyParams}{Parameters}
+{\em insurance\+Plan\+Repository} & The repository that provides access to insurance plan data in the database. \\
+\hline
+{\em user\+Service} & The service that provides business logic related to user management and authentication. \\
+\hline
+{\em doctor\+Repository} & The repository that provides access to doctor data in the database. \\
+\hline
+{\em appointment\+Repository} & The repository that provides access to appointment data in the database. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 44 of file Patient\+Service.\+java.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService_ac33e02f57cc7f1ef55dd59cb5673781a}\label{classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService_ac33e02f57cc7f1ef55dd59cb5673781a}} 
+\index{it.unitn.healthcore.business.PatientService@{it.unitn.healthcore.business.PatientService}!bookAppointment@{bookAppointment}}
+\index{bookAppointment@{bookAppointment}!it.unitn.healthcore.business.PatientService@{it.unitn.healthcore.business.PatientService}}
+\doxysubsubsection{\texorpdfstring{bookAppointment()}{bookAppointment()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Appointment}{Appointment}} it.\+unitn.\+healthcore.\+business.\+Patient\+Service.\+book\+Appointment (\begin{DoxyParamCaption}\item[{Integer}]{doctor\+Id,  }\item[{Local\+Date\+Time}]{start,  }\item[{Local\+Date\+Time}]{end }\end{DoxyParamCaption})}
+
+
+
+Books an appointment with a specified doctor for the currently authenticated patient. 
+
+This method takes a doctor ID, start time, and end time as input to book an appointment. It performs several checks to ensure that the appointment can be booked, including validating the time intervals, checking the doctor\textquotesingle{}s availability during their shifts, verifying that there are available beds in the department, and confirming insurance coverage or processing payment if necessary. If all checks pass, it creates a new Appointment entity and saves it to the database. 
+\begin{DoxyParams}{Parameters}
+{\em doctor\+Id} & The ID of the doctor with whom to book the appointment. \\
+\hline
+{\em start} & The start date and time of the appointment. \\
+\hline
+{\em end} & The end date and time of the appointment. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Appointment object representing the booked appointment. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Response\+Status\+Exception} & if any of the checks fail (e.\+g., invalid time intervals, doctor not available, no beds available, payment failure) or if there is an issue with booking the appointment. \\
+\hline
+\end{DoxyExceptions}
+Steps to book an appointment\+:
+\begin{DoxyEnumerate}
+\item Validate that the start time is before the end time.
+\item Check if the doctor exists.
+\item Check if the requested time is during the doctor\textquotesingle{}s shift.
+\item Check for overlapping appointments for the doctor.
+\item Check bed availability in the department.
+\item Check insurance coverage or process payment if necessary.
+\item Create and save the appointment.
+\end{DoxyEnumerate}
+
+Definition at line 172 of file Patient\+Service.\+java.
+
+
+
+References it.\+unitn.\+healthcore.\+business.\+User\+Service.\+get\+Current\+User(), it.\+unitn.\+healthcore.\+domain.\+Doctor.\+get\+Department(), it.\+unitn.\+healthcore.\+domain.\+Department.\+get\+Hospital(), it.\+unitn.\+healthcore.\+domain.\+Patient.\+get\+Insurance\+Plan(), and it.\+unitn.\+healthcore.\+domain.\+Insurance\+Plan.\+is\+Covered\+At\+Hospital().
+
+
+
+Referenced by it.\+unitn.\+healthcore.\+controller.\+Patient\+Controller.\+book\+Appointment().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService_ac33e02f57cc7f1ef55dd59cb5673781a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService_ac33e02f57cc7f1ef55dd59cb5673781a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService_a7f10372a6537c0f235e585bdb8b87c30}\label{classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService_a7f10372a6537c0f235e585bdb8b87c30}} 
+\index{it.unitn.healthcore.business.PatientService@{it.unitn.healthcore.business.PatientService}!cancelAppointment@{cancelAppointment}}
+\index{cancelAppointment@{cancelAppointment}!it.unitn.healthcore.business.PatientService@{it.unitn.healthcore.business.PatientService}}
+\doxysubsubsection{\texorpdfstring{cancelAppointment()}{cancelAppointment()}}
+{\footnotesize\ttfamily void it.\+unitn.\+healthcore.\+business.\+Patient\+Service.\+cancel\+Appointment (\begin{DoxyParamCaption}\item[{Integer}]{appointment\+Id }\end{DoxyParamCaption})}
+
+
+
+Cancels an existing appointment for the currently authenticated patient. 
+
+This method takes an appointment ID as input and cancels the corresponding appointment. It first retrieves the appointment based on the provided ID and checks if it belongs to the currently authenticated patient. If the appointment does not belong to the patient, it throws a Response\+Status\+Exception with a 403 FORBIDDEN status. If the appointment is valid for cancellation, it checks if the cancellation is happening more than 24 hours before the appointment start time. If so, it processes a refund for the patient. Finally, it deletes the appointment from the database. 
+\begin{DoxyParams}{Parameters}
+{\em appointment\+Id} & The ID of the appointment to be canceled. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Response\+Status\+Exception} & if any of the checks fail (e.\+g., appointment not found, not assigned to patient) or if there is an issue with canceling the appointment. \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 364 of file Patient\+Service.\+java.
+
+
+
+References it.\+unitn.\+healthcore.\+business.\+User\+Service.\+get\+Current\+User(), it.\+unitn.\+healthcore.\+domain.\+User.\+get\+Id(), it.\+unitn.\+healthcore.\+domain.\+Appointment.\+get\+Patient(), and it.\+unitn.\+healthcore.\+domain.\+Appointment.\+get\+Start\+Time().
+
+
+
+Referenced by it.\+unitn.\+healthcore.\+controller.\+Patient\+Controller.\+cancel\+Appointment().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService_a7f10372a6537c0f235e585bdb8b87c30_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService_a7f10372a6537c0f235e585bdb8b87c30_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService_a9c5655c1b706c7dba40efb883c900a39}\label{classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService_a9c5655c1b706c7dba40efb883c900a39}} 
+\index{it.unitn.healthcore.business.PatientService@{it.unitn.healthcore.business.PatientService}!getCurrentInsurancePlan@{getCurrentInsurancePlan}}
+\index{getCurrentInsurancePlan@{getCurrentInsurancePlan}!it.unitn.healthcore.business.PatientService@{it.unitn.healthcore.business.PatientService}}
+\doxysubsubsection{\texorpdfstring{getCurrentInsurancePlan()}{getCurrentInsurancePlan()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1InsurancePlan}{Insurance\+Plan}} it.\+unitn.\+healthcore.\+business.\+Patient\+Service.\+get\+Current\+Insurance\+Plan (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieves the current insurance plan for the authenticated patient. 
+
+This method retrieves the currently authenticated patient from the \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1business_1_1UserService}{User\+Service}} and returns their associated insurance plan. If the patient does not have an insurance plan, it may return null or an appropriate response based on the application\textquotesingle{}s requirements. \begin{DoxyReturn}{Returns}
+The Insurance\+Plan object representing the current insurance plan of the authenticated patient, or null if the patient does not have an insurance plan. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Response\+Status\+Exception} & if there is an issue retrieving the current patient\textquotesingle{}s information or if the user is not authenticated as a patient. \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 91 of file Patient\+Service.\+java.
+
+
+
+References it.\+unitn.\+healthcore.\+business.\+User\+Service.\+get\+Current\+User(), and it.\+unitn.\+healthcore.\+domain.\+Patient.\+get\+Insurance\+Plan().
+
+
+
+Referenced by it.\+unitn.\+healthcore.\+controller.\+Patient\+Controller.\+update\+Insurance\+Plan().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService_a9c5655c1b706c7dba40efb883c900a39_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService_a9c5655c1b706c7dba40efb883c900a39_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService_ab163cba2913666d9f4505d4b6e7e1a69}\label{classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService_ab163cba2913666d9f4505d4b6e7e1a69}} 
+\index{it.unitn.healthcore.business.PatientService@{it.unitn.healthcore.business.PatientService}!getDoctorDescription@{getDoctorDescription}}
+\index{getDoctorDescription@{getDoctorDescription}!it.unitn.healthcore.business.PatientService@{it.unitn.healthcore.business.PatientService}}
+\doxysubsubsection{\texorpdfstring{getDoctorDescription()}{getDoctorDescription()}}
+{\footnotesize\ttfamily String it.\+unitn.\+healthcore.\+business.\+Patient\+Service.\+get\+Doctor\+Description (\begin{DoxyParamCaption}\item[{Integer}]{doctor\+Id }\end{DoxyParamCaption})}
+
+
+
+Retrieves detailed information about a doctor based on their ID. 
+
+This method takes a doctor ID as input and retrieves the corresponding Doctor entity from the Doctor\+Repository. If the doctor is not found, it throws a Response\+Status\+Exception with a 404 NOT FOUND status. If the doctor is found, it constructs a string containing detailed information about the doctor, including their name, surname, email, specialization, department, hospital, appointment price, and shift schedule. The method returns this string as the output. 
+\begin{DoxyParams}{Parameters}
+{\em doctor\+Id} & The ID of the doctor for whom to retrieve detailed information. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string containing detailed information about the specified doctor. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Response\+Status\+Exception} & if the doctor with the specified ID is not found in the database. \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 104 of file Patient\+Service.\+java.
+
+
+
+References it.\+unitn.\+healthcore.\+domain.\+Doctor.\+get\+Appointment\+Price(), it.\+unitn.\+healthcore.\+domain.\+Doctor.\+get\+Department(), it.\+unitn.\+healthcore.\+domain.\+User.\+get\+Email(), it.\+unitn.\+healthcore.\+domain.\+Department.\+get\+Hospital(), it.\+unitn.\+healthcore.\+domain.\+Department.\+get\+Name(), it.\+unitn.\+healthcore.\+domain.\+Hospital.\+get\+Name(), it.\+unitn.\+healthcore.\+domain.\+User.\+get\+Name(), it.\+unitn.\+healthcore.\+domain.\+Doctor.\+get\+Shifts(), it.\+unitn.\+healthcore.\+domain.\+Doctor.\+get\+Specialization(), and it.\+unitn.\+healthcore.\+domain.\+User.\+get\+Surname().
+
+
+
+Referenced by it.\+unitn.\+healthcore.\+controller.\+Patient\+Controller.\+get\+Doctor\+Description().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService_ab163cba2913666d9f4505d4b6e7e1a69_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService_ab163cba2913666d9f4505d4b6e7e1a69_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService_ab8266c492da03f9b5e38829e698129c6}\label{classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService_ab8266c492da03f9b5e38829e698129c6}} 
+\index{it.unitn.healthcore.business.PatientService@{it.unitn.healthcore.business.PatientService}!modifyAppointment@{modifyAppointment}}
+\index{modifyAppointment@{modifyAppointment}!it.unitn.healthcore.business.PatientService@{it.unitn.healthcore.business.PatientService}}
+\doxysubsubsection{\texorpdfstring{modifyAppointment()}{modifyAppointment()}}
+{\footnotesize\ttfamily void it.\+unitn.\+healthcore.\+business.\+Patient\+Service.\+modify\+Appointment (\begin{DoxyParamCaption}\item[{Integer}]{appointment\+Id,  }\item[{Local\+Date\+Time}]{start\+Time,  }\item[{Local\+Date\+Time}]{end\+Time }\end{DoxyParamCaption})}
+
+
+
+Modifies an existing appointment for the currently authenticated patient. 
+
+This method takes an appointment ID, new start time, and new end time as input to modify an existing appointment. It first retrieves the appointment based on the provided ID and checks if it belongs to the currently authenticated patient. It also checks if the appointment has not already started. If these checks pass, it validates the new appointment details (e.\+g., time intervals, doctor\textquotesingle{}s availability, bed availability) and updates the appointment with the new start and end times before saving it to the database. 
+\begin{DoxyParams}{Parameters}
+{\em appointment\+Id} & The ID of the appointment to be modified. \\
+\hline
+{\em start} & The new start date and time of the appointment. \\
+\hline
+{\em end} & The new end date and time of the appointment. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Response\+Status\+Exception} & if any of the checks fail (e.\+g., appointment not found, not assigned to patient, appointment already started, invalid time intervals, doctor not available, no beds available) or if there is an issue with modifying the appointment. \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 225 of file Patient\+Service.\+java.
+
+
+
+References it.\+unitn.\+healthcore.\+business.\+User\+Service.\+get\+Current\+User(), it.\+unitn.\+healthcore.\+domain.\+Appointment.\+get\+Doctor(), it.\+unitn.\+healthcore.\+domain.\+User.\+get\+Id(), it.\+unitn.\+healthcore.\+domain.\+Appointment.\+get\+Patient(), it.\+unitn.\+healthcore.\+domain.\+Appointment.\+get\+Start\+Time(), it.\+unitn.\+healthcore.\+domain.\+Appointment.\+set\+End\+Time(), and it.\+unitn.\+healthcore.\+domain.\+Appointment.\+set\+Start\+Time().
+
+
+
+Referenced by it.\+unitn.\+healthcore.\+controller.\+Patient\+Controller.\+modify\+Appointment().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService_ab8266c492da03f9b5e38829e698129c6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService_ab8266c492da03f9b5e38829e698129c6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService_a541ee9273fd696797608c005eb4d2f78}\label{classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService_a541ee9273fd696797608c005eb4d2f78}} 
+\index{it.unitn.healthcore.business.PatientService@{it.unitn.healthcore.business.PatientService}!updateInsurancePlan@{updateInsurancePlan}}
+\index{updateInsurancePlan@{updateInsurancePlan}!it.unitn.healthcore.business.PatientService@{it.unitn.healthcore.business.PatientService}}
+\doxysubsubsection{\texorpdfstring{updateInsurancePlan()}{updateInsurancePlan()}}
+{\footnotesize\ttfamily void it.\+unitn.\+healthcore.\+business.\+Patient\+Service.\+update\+Insurance\+Plan (\begin{DoxyParamCaption}\item[{Integer}]{plan\+Id }\end{DoxyParamCaption})}
+
+
+
+Updates the insurance plan for the currently authenticated patient. 
+
+This method takes an insurance plan ID as input and updates the insurance plan for the currently authenticated patient. It first checks if the specified insurance plan exists in the database. If it does not exist, it throws a Response\+Status\+Exception with a 404 NOT FOUND status. If the insurance plan exists, it retrieves the current patient from the \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1business_1_1UserService}{User\+Service}} and validates whether the patient can subscribe to the specified insurance plan. If the validation is successful, it updates the patient\textquotesingle{}s insurance plan with the new plan. 
+\begin{DoxyParams}{Parameters}
+{\em plan\+Id} & The ID of the insurance plan to update for the current patient. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Response\+Status\+Exception} & if the specified insurance plan does not exist or if there is an issue with updating the patient\textquotesingle{}s insurance plan. \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 59 of file Patient\+Service.\+java.
+
+
+
+References it.\+unitn.\+healthcore.\+business.\+User\+Service.\+get\+Current\+User(), it.\+unitn.\+healthcore.\+domain.\+User.\+get\+Id(), and it.\+unitn.\+healthcore.\+domain.\+Patient.\+set\+Insurance\+Plan().
+
+
+
+Referenced by it.\+unitn.\+healthcore.\+controller.\+Patient\+Controller.\+update\+Insurance\+Plan().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService_a541ee9273fd696797608c005eb4d2f78_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1business_1_1PatientService_a541ee9273fd696797608c005eb4d2f78_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+healthcore/src/main/java/it/unitn/healthcore/business/\mbox{\hyperlink{PatientService_8java}{Patient\+Service.\+java}}\end{DoxyCompactItemize}

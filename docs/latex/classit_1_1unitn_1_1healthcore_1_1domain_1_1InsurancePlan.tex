@@ -1,0 +1,220 @@
+\hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1InsurancePlan}{}\doxysection{it.\+unitn.\+healthcore.\+domain.\+Insurance\+Plan Class Reference}
+\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1InsurancePlan}\index{it.unitn.healthcore.domain.InsurancePlan@{it.unitn.healthcore.domain.InsurancePlan}}
+
+
+Represents an insurance plan in our system, mapped to the \char`\"{}insuranceplans\char`\"{} table in the database.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1InsurancePlan_a0e766e9e48269e232faebb4cfb5db2af}{Insurance\+Plan}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor required by JPA. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1InsurancePlan_ac38ee1070dffc470ca1924189bdd9fdd}{Insurance\+Plan}} (String name)
+\begin{DoxyCompactList}\small\item\em Creates an \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1InsurancePlan}{Insurance\+Plan}} with a given name. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1InsurancePlan_a56214cc6c390772d6aa0431b140c01b2}{is\+Covered\+At\+Hospital}} (\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Hospital}{Hospital}} hospital)
+\begin{DoxyCompactList}\small\item\em Checks if this insurance plan covers a specific hospital. \end{DoxyCompactList}\item 
+Integer \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1InsurancePlan_adb7a86d9fa984ab9f3f55ae17d111aeb}{get\+Insurance\+Plan\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Returns the insurance plan ID. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1InsurancePlan_ac72c0fb0895213c95cd494c027b1282c}{set\+Insurance\+Plan\+Id}} (Integer insurance\+Plan\+Id)
+\begin{DoxyCompactList}\small\item\em Sets the insurance plan ID. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1InsurancePlan_af869654831dcdcbdefe761f7ede19145}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Returns the insurance plan name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1InsurancePlan_a659ea979918eefd574225cce23c2638c}{set\+Name}} (String name)
+\begin{DoxyCompactList}\small\item\em Sets the insurance plan name. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Hospital}{Hospital}} $>$ \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1InsurancePlan_a72a86b4e8c77094cb598e7a6fde601fc}{get\+Hospitals}} ()
+\begin{DoxyCompactList}\small\item\em Returns the list of hospitals that accept this insurance plan. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1InsurancePlan_ac96c7bc7458afa1f159ff359c060bc0c}{set\+Hospitals}} (List$<$ \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Hospital}{Hospital}} $>$ hospitals)
+\begin{DoxyCompactList}\small\item\em Sets the list of hospitals that accept this insurance plan. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents an insurance plan in our system, mapped to the \char`\"{}insuranceplans\char`\"{} table in the database. 
+
+It maintains a many-\/to-\/many relationship with \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Hospital}{Hospital}}, indicating which hospitals accept this insurance plan. Helps determine if a patient\textquotesingle{}s insurance covers a specific hospital. \begin{DoxyAuthor}{Author}
+Health\+Core Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2026-\/06-\/12 
+\end{DoxyDate}
+
+
+Definition at line 19 of file Insurance\+Plan.\+java.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1InsurancePlan_a0e766e9e48269e232faebb4cfb5db2af}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1InsurancePlan_a0e766e9e48269e232faebb4cfb5db2af}} 
+\index{it.unitn.healthcore.domain.InsurancePlan@{it.unitn.healthcore.domain.InsurancePlan}!InsurancePlan@{InsurancePlan}}
+\index{InsurancePlan@{InsurancePlan}!it.unitn.healthcore.domain.InsurancePlan@{it.unitn.healthcore.domain.InsurancePlan}}
+\doxysubsubsection{\texorpdfstring{InsurancePlan()}{InsurancePlan()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily it.\+unitn.\+healthcore.\+domain.\+Insurance\+Plan.\+Insurance\+Plan (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor required by JPA. 
+
+
+
+Definition at line 35 of file Insurance\+Plan.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1InsurancePlan_ac38ee1070dffc470ca1924189bdd9fdd}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1InsurancePlan_ac38ee1070dffc470ca1924189bdd9fdd}} 
+\index{it.unitn.healthcore.domain.InsurancePlan@{it.unitn.healthcore.domain.InsurancePlan}!InsurancePlan@{InsurancePlan}}
+\index{InsurancePlan@{InsurancePlan}!it.unitn.healthcore.domain.InsurancePlan@{it.unitn.healthcore.domain.InsurancePlan}}
+\doxysubsubsection{\texorpdfstring{InsurancePlan()}{InsurancePlan()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily it.\+unitn.\+healthcore.\+domain.\+Insurance\+Plan.\+Insurance\+Plan (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})}
+
+
+
+Creates an \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1InsurancePlan}{Insurance\+Plan}} with a given name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the insurance plan. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 41 of file Insurance\+Plan.\+java.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1InsurancePlan_a72a86b4e8c77094cb598e7a6fde601fc}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1InsurancePlan_a72a86b4e8c77094cb598e7a6fde601fc}} 
+\index{it.unitn.healthcore.domain.InsurancePlan@{it.unitn.healthcore.domain.InsurancePlan}!getHospitals@{getHospitals}}
+\index{getHospitals@{getHospitals}!it.unitn.healthcore.domain.InsurancePlan@{it.unitn.healthcore.domain.InsurancePlan}}
+\doxysubsubsection{\texorpdfstring{getHospitals()}{getHospitals()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Hospital}{Hospital}}$>$ it.\+unitn.\+healthcore.\+domain.\+Insurance\+Plan.\+get\+Hospitals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the list of hospitals that accept this insurance plan. 
+
+
+
+Definition at line 85 of file Insurance\+Plan.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1InsurancePlan_adb7a86d9fa984ab9f3f55ae17d111aeb}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1InsurancePlan_adb7a86d9fa984ab9f3f55ae17d111aeb}} 
+\index{it.unitn.healthcore.domain.InsurancePlan@{it.unitn.healthcore.domain.InsurancePlan}!getInsurancePlanId@{getInsurancePlanId}}
+\index{getInsurancePlanId@{getInsurancePlanId}!it.unitn.healthcore.domain.InsurancePlan@{it.unitn.healthcore.domain.InsurancePlan}}
+\doxysubsubsection{\texorpdfstring{getInsurancePlanId()}{getInsurancePlanId()}}
+{\footnotesize\ttfamily Integer it.\+unitn.\+healthcore.\+domain.\+Insurance\+Plan.\+get\+Insurance\+Plan\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the insurance plan ID. 
+
+
+
+Definition at line 65 of file Insurance\+Plan.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1InsurancePlan_af869654831dcdcbdefe761f7ede19145}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1InsurancePlan_af869654831dcdcbdefe761f7ede19145}} 
+\index{it.unitn.healthcore.domain.InsurancePlan@{it.unitn.healthcore.domain.InsurancePlan}!getName@{getName}}
+\index{getName@{getName}!it.unitn.healthcore.domain.InsurancePlan@{it.unitn.healthcore.domain.InsurancePlan}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily String it.\+unitn.\+healthcore.\+domain.\+Insurance\+Plan.\+get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the insurance plan name. 
+
+
+
+Definition at line 75 of file Insurance\+Plan.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1InsurancePlan_a56214cc6c390772d6aa0431b140c01b2}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1InsurancePlan_a56214cc6c390772d6aa0431b140c01b2}} 
+\index{it.unitn.healthcore.domain.InsurancePlan@{it.unitn.healthcore.domain.InsurancePlan}!isCoveredAtHospital@{isCoveredAtHospital}}
+\index{isCoveredAtHospital@{isCoveredAtHospital}!it.unitn.healthcore.domain.InsurancePlan@{it.unitn.healthcore.domain.InsurancePlan}}
+\doxysubsubsection{\texorpdfstring{isCoveredAtHospital()}{isCoveredAtHospital()}}
+{\footnotesize\ttfamily boolean it.\+unitn.\+healthcore.\+domain.\+Insurance\+Plan.\+is\+Covered\+At\+Hospital (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Hospital}{Hospital}}}]{hospital }\end{DoxyParamCaption})}
+
+
+
+Checks if this insurance plan covers a specific hospital. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hospital} & The hospital to check coverage for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the insurance plan covers the hospital, false otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line 50 of file Insurance\+Plan.\+java.
+
+
+
+References it.\+unitn.\+healthcore.\+domain.\+Hospital.\+get\+Hospital\+Id().
+
+
+
+Referenced by it.\+unitn.\+healthcore.\+business.\+Patient\+Service.\+book\+Appointment().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1domain_1_1InsurancePlan_a56214cc6c390772d6aa0431b140c01b2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classit_1_1unitn_1_1healthcore_1_1domain_1_1InsurancePlan_a56214cc6c390772d6aa0431b140c01b2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1InsurancePlan_ac96c7bc7458afa1f159ff359c060bc0c}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1InsurancePlan_ac96c7bc7458afa1f159ff359c060bc0c}} 
+\index{it.unitn.healthcore.domain.InsurancePlan@{it.unitn.healthcore.domain.InsurancePlan}!setHospitals@{setHospitals}}
+\index{setHospitals@{setHospitals}!it.unitn.healthcore.domain.InsurancePlan@{it.unitn.healthcore.domain.InsurancePlan}}
+\doxysubsubsection{\texorpdfstring{setHospitals()}{setHospitals()}}
+{\footnotesize\ttfamily void it.\+unitn.\+healthcore.\+domain.\+Insurance\+Plan.\+set\+Hospitals (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{classit_1_1unitn_1_1healthcore_1_1domain_1_1Hospital}{Hospital}} $>$}]{hospitals }\end{DoxyParamCaption})}
+
+
+
+Sets the list of hospitals that accept this insurance plan. 
+
+
+
+Definition at line 90 of file Insurance\+Plan.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1InsurancePlan_ac72c0fb0895213c95cd494c027b1282c}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1InsurancePlan_ac72c0fb0895213c95cd494c027b1282c}} 
+\index{it.unitn.healthcore.domain.InsurancePlan@{it.unitn.healthcore.domain.InsurancePlan}!setInsurancePlanId@{setInsurancePlanId}}
+\index{setInsurancePlanId@{setInsurancePlanId}!it.unitn.healthcore.domain.InsurancePlan@{it.unitn.healthcore.domain.InsurancePlan}}
+\doxysubsubsection{\texorpdfstring{setInsurancePlanId()}{setInsurancePlanId()}}
+{\footnotesize\ttfamily void it.\+unitn.\+healthcore.\+domain.\+Insurance\+Plan.\+set\+Insurance\+Plan\+Id (\begin{DoxyParamCaption}\item[{Integer}]{insurance\+Plan\+Id }\end{DoxyParamCaption})}
+
+
+
+Sets the insurance plan ID. 
+
+
+
+Definition at line 70 of file Insurance\+Plan.\+java.
+
+\mbox{\Hypertarget{classit_1_1unitn_1_1healthcore_1_1domain_1_1InsurancePlan_a659ea979918eefd574225cce23c2638c}\label{classit_1_1unitn_1_1healthcore_1_1domain_1_1InsurancePlan_a659ea979918eefd574225cce23c2638c}} 
+\index{it.unitn.healthcore.domain.InsurancePlan@{it.unitn.healthcore.domain.InsurancePlan}!setName@{setName}}
+\index{setName@{setName}!it.unitn.healthcore.domain.InsurancePlan@{it.unitn.healthcore.domain.InsurancePlan}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void it.\+unitn.\+healthcore.\+domain.\+Insurance\+Plan.\+set\+Name (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})}
+
+
+
+Sets the insurance plan name. 
+
+
+
+Definition at line 80 of file Insurance\+Plan.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+healthcore/src/main/java/it/unitn/healthcore/domain/\mbox{\hyperlink{InsurancePlan_8java}{Insurance\+Plan.\+java}}\end{DoxyCompactItemize}
