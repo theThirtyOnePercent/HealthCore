@@ -1,8 +1,5 @@
 var NAVTREEINDEX0 =
 {
-"":[2,0,0],
-"":[2,0,0,0],
-"":[2,0,0,0,0],
 "AdministratorController_8java.html":[4,0,1,0,0,0,0,0,0,1,0],
 "AdministratorController_8java_source.html":[4,0,1,0,0,0,0,0,0,1,0],
 "Administrator_8java.html":[4,0,1,0,0,0,0,0,0,2,0],
@@ -249,5 +246,8 @@ var NAVTREEINDEX0 =
 "classit_1_1unitn_1_1healthcore_1_1domain_1_1EmployeeRegistrationForm.html#a3ba4b468e75f25699d816341484e2153":[3,0,0,0,0,2,5,0],
 "classit_1_1unitn_1_1healthcore_1_1domain_1_1EmployeeRegistrationForm.html#a3d6bb878040ca46aadac3bda22d4e1d1":[3,0,0,0,0,2,5,7],
 "classit_1_1unitn_1_1healthcore_1_1domain_1_1EmployeeRegistrationForm.html#a887b6ee8b206ffeb3255dac6eb8d5e15":[3,0,0,0,0,2,5,9],
-"classit_1_1unitn_1_1healthcore_1_1domain_1_1EmployeeRegistrationForm.html#aacda9ff32f2f6c240f9f1ce7a746839a":[3,0,0,0,0,2,5,3]
+"classit_1_1unitn_1_1healthcore_1_1domain_1_1EmployeeRegistrationForm.html#aacda9ff32f2f6c240f9f1ce7a746839a":[3,0,0,0,0,2,5,3],
+"classit_1_1unitn_1_1healthcore_1_1domain_1_1EmployeeRegistrationForm.html#abff5a4ecbe2a4e8fd3627082fd7685fc":[3,0,0,0,0,2,5,1],
+"classit_1_1unitn_1_1healthcore_1_1domain_1_1EmployeeRegistrationForm.html#ae00ab1333401d899f6e010a99e5afec8":[3,0,0,0,0,2,5,4],
+"classit_1_1unitn_1_1healthcore_1_1domain_1_1EmployeeRegistrationForm.html#ae2e5950ae6271d96dc899fedf239907d":[3,0,0,0,0,2,5,8]
 };
