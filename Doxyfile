@@ -71,8 +71,8 @@ HTML_OUTPUT            = html
 HTML_DYNAMIC_SECTIONS  = NO
 <!-- USE_MDFILE_AS_MAINPAGE = README.md -->
 GENERATE_LATEX         = NO
-<!-- HTML_EXTRA_STYLESHEET  = docs/doxygen-awesome-css/doxygen-awesome.css -->
-
+HTML_EXTRA_STYLESHEET  = docs/doxygen-awesome-css/doxygen-awesome.css \
+                         docs/doxygen-awesome-css/doxygen-awesome-sidebar-only.css
 
 # Package & Tree Layout
 SHOW_INCLUDE_FILES     = NO

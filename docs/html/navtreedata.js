@@ -59,8 +59,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"",
-"classit_1_1unitn_1_1healthcore_1_1domain_1_1EmployeeRegistrationForm.html#abff5a4ecbe2a4e8fd3627082fd7685fc"
+"AdministratorController_8java.html",
+"classit_1_1unitn_1_1healthcore_1_1domain_1_1EmployeeRegistrationForm.html#ae78247f6e323b0eb64b18cdc4be53792"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
