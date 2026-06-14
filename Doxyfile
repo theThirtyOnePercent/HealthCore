@@ -68,10 +68,10 @@ DOT_IMAGE_FORMAT       = svg
 #--------------------------------------------------
 GENERATE_HTML          = YES
 HTML_OUTPUT            = html
-HTML_DYNAMIC_SECTIONS  = YES
+HTML_DYNAMIC_SECTIONS  = NO
 <!-- USE_MDFILE_AS_MAINPAGE = README.md -->
 GENERATE_LATEX         = NO
-HTML_EXTRA_STYLESHEET  = docs/doxygen-awesome-css/doxygen-awesome.css
+<!-- HTML_EXTRA_STYLESHEET  = docs/doxygen-awesome-css/doxygen-awesome.css -->
 
 
 # Package & Tree Layout
