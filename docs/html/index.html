@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>HealthCore: Main Page</title>
+<title>HealthCore: HealthCore - Healthcare Management System</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,6 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
-<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -84,11 +83,67 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </iframe>
 </div>
 
-<div class="header">
+<div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">HealthCore Documentation</div>  </div>
+<div class="title">HealthCore - Healthcare Management System </div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><p><a class="anchor" id="md_README"></a> </p>
+<h1><a class="anchor" id="autotoc_md1"></a>
+Overview</h1>
+<p>HealthCore is a web-based healthcare management system developed for a small network of hospitals. The system aims to provide a secure and efficient platform that connects patients, doctors, and administrators while ensuring the protection of sensitive medical information.</p>
+<p>The project was developed as part of a software engineering course (University of Trento) and follows a layered architecture designed to support maintainability, scalability, and security.</p>
+<h1><a class="anchor" id="autotoc_md2"></a>
+Project Structure</h1>
+<p><img src="structure.png" alt="" class="inline" title="alt text"/></p>
+<h1><a class="anchor" id="autotoc_md3"></a>
+Getting Started</h1>
+<h2><a class="anchor" id="autotoc_md4"></a>
+Prerequisites</h2>
+<ul>
+<li>Java 11 or higher</li>
+<li>A compatible Java web server (e.g. Apache Tomcat)</li>
+<li>A relational database PostgreSQL</li>
+<li>Maven</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md5"></a>
+Setup</h2>
+<ol type="1">
+<li><b>Clone the repository</b> <div class="fragment"><div class="line">git clone https://github.com/theThirtyOnePercent/HealthCore.git</div>
+<div class="line">cd HealthCore</div>
+</div><!-- fragment --></li>
+<li><b>Configure your database</b> <br  />
+ Update the database connection settings in the application configuration file with your local credentials.</li>
+<li><b>Build the project</b> <div class="fragment"><div class="line">mvn clean install</div>
+</div><!-- fragment --> *(Or import into your IDE and build from there.)*</li>
+<li><b>Deploy</b> <br  />
+ Deploy the generated <code>.war</code> file to your web server (e.g. Tomcat's <code>webapps/</code> directory).</li>
+<li><b>Access the application</b> <br  />
+ Open your browser and navigate to: <div class="fragment"><div class="line">http://localhost:8080/healthcore</div>
+</div><!-- fragment --></li>
+</ol>
+<hr  />
+<h1><a class="anchor" id="autotoc_md7"></a>
+Documentation</h1>
+<p>Code documentation is generated using <a href="https://www.doxygen.nl/">Doxygen</a>. To build the docs locally:</p>
+<div class="fragment"><div class="line">doxygen Doxyfile</div>
+</div><!-- fragment --><p>The output will be placed in the <code>docs/</code> directory. Open <code>docs/html/index.html</code> in your browser to browse the full documentation.</p>
+<hr  />
+<h1><a class="anchor" id="autotoc_md9"></a>
+Contributing</h1>
+<p>Contributions are welcome! To get started:</p>
+<ol type="1">
+<li>Fork the repository.</li>
+<li>Create a new branch for your feature or fix: <code>git checkout -b feature/your-feature-name</code></li>
+<li>Commit your changes with clear messages.</li>
+<li>Open a Pull Request describing what you've changed and why.</li>
+</ol>
+<p>Please ensure your code follows the existing style conventions and is documented with Doxygen-compatible comments.</p>
+<hr  />
+<h1><a class="anchor" id="autotoc_md11"></a>
+License</h1>
+<p>This project was developed as part of a ( University of Trento ) Software Engineering course. </p>
+</div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

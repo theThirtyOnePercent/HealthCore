@@ -69,11 +69,9 @@ DOT_IMAGE_FORMAT       = svg
 GENERATE_HTML          = YES
 HTML_OUTPUT            = html
 HTML_DYNAMIC_SECTIONS  = NO
-<!-- USE_MDFILE_AS_MAINPAGE = README.md -->
+USE_MDFILE_AS_MAINPAGE = README.md
 GENERATE_LATEX         = NO
-HTML_EXTRA_STYLESHEET  = docs/doxygen-awesome-css/doxygen-awesome.css \
-                         docs/doxygen-awesome-css/doxygen-awesome-sidebar-only.css
-                         GENERATE_TREEVIEW      = YES
+HTML_EXTRA_STYLESHEET  = docs/doxygen-awesome-css/doxygen-awesome.css
 DISABLE_INDEX          = NO
 FULL_SIDEBAR           = NO
 

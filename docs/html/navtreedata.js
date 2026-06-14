@@ -25,16 +25,16 @@
 var NAVTREE =
 [
   [ "HealthCore", "index.html", [
-    [ "HealthCore - Healthcare Management System", "md_README.html", [
-      [ "Overview", "md_README.html#autotoc_md1", null ],
-      [ "Project Structure", "md_README.html#autotoc_md2", null ],
-      [ "Getting Started", "md_README.html#autotoc_md3", [
-        [ "Prerequisites", "md_README.html#autotoc_md4", null ],
-        [ "Setup", "md_README.html#autotoc_md5", null ]
+    [ "HealthCore - Healthcare Management System", "index.html", [
+      [ "Overview", "index.html#autotoc_md1", null ],
+      [ "Project Structure", "index.html#autotoc_md2", null ],
+      [ "Getting Started", "index.html#autotoc_md3", [
+        [ "Prerequisites", "index.html#autotoc_md4", null ],
+        [ "Setup", "index.html#autotoc_md5", null ]
       ] ],
-      [ "Documentation", "md_README.html#autotoc_md7", null ],
-      [ "Contributing", "md_README.html#autotoc_md9", null ],
-      [ "License", "md_README.html#autotoc_md11", null ]
+      [ "Documentation", "index.html#autotoc_md7", null ],
+      [ "Contributing", "index.html#autotoc_md9", null ],
+      [ "License", "index.html#autotoc_md11", null ]
     ] ],
     [ "Architectural Overview", "architecture_page.html", [
       [ "Architectural Layout & Design Patterns", "architecture_page.html#autotoc_md13", null ]
