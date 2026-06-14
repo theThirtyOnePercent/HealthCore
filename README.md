@@ -51,13 +51,10 @@ The project was developed as part of a software engineering course (University o
 
 ## Documentation
 
-Code documentation is generated using [Doxygen](https://www.doxygen.nl/). To build the docs locally:
+Code documentation is generated using [Doxygen](https://www.doxygen.nl/). 
 
-```bash
-doxygen Doxyfile
-```
+Visit : [HealthCore Documentation](https://thethirtyonepercent.github.io/HealthCore/).
 
-The output will be placed in the `docs/` directory. Open `docs/html/index.html` in your browser to browse the full documentation.
 
 ---
 

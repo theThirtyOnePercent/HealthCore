@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['architectural_20overview_517',['Architectural Overview',['../architecture_page.html',1,'']]]
+  ['architectural_20overview_517',['Architectural Overview',['../md_docs_architecture.html',1,'']]]
 ];

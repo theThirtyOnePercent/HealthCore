@@ -1,7 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"classit_1_1unitn_1_1healthcore_1_1domain_1_1EmployeeRegistrationForm.html#ae78247f6e323b0eb64b18cdc4be53792":[3,0,0,0,0,2,5,10],
-"classit_1_1unitn_1_1healthcore_1_1domain_1_1EmployeeRegistrationForm.html#af1804bfdb0eb5dd711f6344f6c7e420c":[3,0,0,0,0,2,5,6],
 "classit_1_1unitn_1_1healthcore_1_1domain_1_1Equipment.html":[3,0,0,0,0,2,6],
 "classit_1_1unitn_1_1healthcore_1_1domain_1_1Equipment.html#a2999e84dc509c28980fc15aa543ed9a9":[3,0,0,0,0,2,6,3],
 "classit_1_1unitn_1_1healthcore_1_1domain_1_1Equipment.html#a3029417f7e73c578ccfa9c42e0f7f238":[3,0,0,0,0,2,6,6],
@@ -148,8 +146,8 @@ var NAVTREEINDEX1 =
 "domain_2package__info_8java.html":[4,0,1,0,0,0,0,0,0,2,11],
 "domain_2package__info_8java_source.html":[4,0,1,0,0,0,0,0,0,2,11],
 "files.html":[4,0],
-"functions.html":[3,3,0,0],
 "functions.html":[3,3,0],
+"functions.html":[3,3,0,0],
 "functions_b.html":[3,3,0,1],
 "functions_c.html":[3,3,0,2],
 "functions_d.html":[3,3,0,3],
@@ -209,6 +207,8 @@ var NAVTREEINDEX1 =
 "interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1ShiftRepository.html":[3,0,0,0,0,3,6],
 "interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1UserRepository.html":[3,0,0,0,0,3,7],
 "interfaceit_1_1unitn_1_1healthcore_1_1persistence_1_1UserRepository.html#a6a646ae44d01189ff44c81c03fc92fa8":[3,0,0,0,0,3,7,0],
+"md_docs_architecture.html":[1],
+"md_docs_architecture.html#autotoc_md14":[1,0],
 "namespaceit_1_1unitn_1_1healthcore_1_1business.html":[2,0,0,0,0,0],
 "namespaceit_1_1unitn_1_1healthcore_1_1controller.html":[2,0,0,0,0,1],
 "namespaceit_1_1unitn_1_1healthcore_1_1domain.html":[2,0,0,0,0,2],
@@ -217,7 +217,7 @@ var NAVTREEINDEX1 =
 "pages.html":[],
 "persistence_2package__info_8java.html":[4,0,1,0,0,0,0,0,0,3,5],
 "persistence_2package__info_8java_source.html":[4,0,1,0,0,0,0,0,0,3,5],
+"":[2,0,0],
 "":[2,0,0,0],
-"":[2,0,0,0,0],
-"":[2,0,0]
+"":[2,0,0,0,0]
 };

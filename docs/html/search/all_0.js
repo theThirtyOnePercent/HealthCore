@@ -14,7 +14,7 @@ var searchData=
   ['appointmentrepository_2ejava_11',['AppointmentRepository.java',['../AppointmentRepository_8java.html',1,'']]],
   ['appointmentservice_12',['AppointmentService',['../classit_1_1unitn_1_1healthcore_1_1business_1_1AppointmentService.html#acfd09ad2e039f0a8a857acbb24052f8c',1,'it.unitn.healthcore.business.AppointmentService.AppointmentService()'],['../classit_1_1unitn_1_1healthcore_1_1business_1_1AppointmentService.html',1,'it.unitn.healthcore.business.AppointmentService']]],
   ['appointmentservice_2ejava_13',['AppointmentService.java',['../AppointmentService_8java.html',1,'']]],
-  ['architectural_20overview_14',['Architectural Overview',['../architecture_page.html',1,'']]],
+  ['architectural_20overview_14',['Architectural Overview',['../md_docs_architecture.html',1,'']]],
   ['architecture_2emd_15',['architecture.md',['../architecture_8md.html',1,'']]],
   ['authenticationprovider_16',['authenticationProvider',['../classit_1_1unitn_1_1healthcore_1_1controller_1_1SecurityConfig.html#a79cc8349f76cb88cc9adc829922164f2',1,'it::unitn::healthcore::controller::SecurityConfig']]]
 ];

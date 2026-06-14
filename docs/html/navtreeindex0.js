@@ -77,8 +77,6 @@ var NAVTREEINDEX0 =
 "User_8java.html":[4,0,1,0,0,0,0,0,0,2,18],
 "User_8java_source.html":[4,0,1,0,0,0,0,0,0,2,18],
 "annotated.html":[3,0],
-"architecture_page.html":[1],
-"architecture_page.html#autotoc_md13":[1,0],
 "business_2package__info_8java.html":[4,0,1,0,0,0,0,0,0,0,3],
 "business_2package__info_8java_source.html":[4,0,1,0,0,0,0,0,0,0,3],
 "classRestController.html":[3,0,2],
@@ -249,5 +247,7 @@ var NAVTREEINDEX0 =
 "classit_1_1unitn_1_1healthcore_1_1domain_1_1EmployeeRegistrationForm.html#aacda9ff32f2f6c240f9f1ce7a746839a":[3,0,0,0,0,2,5,3],
 "classit_1_1unitn_1_1healthcore_1_1domain_1_1EmployeeRegistrationForm.html#abff5a4ecbe2a4e8fd3627082fd7685fc":[3,0,0,0,0,2,5,1],
 "classit_1_1unitn_1_1healthcore_1_1domain_1_1EmployeeRegistrationForm.html#ae00ab1333401d899f6e010a99e5afec8":[3,0,0,0,0,2,5,4],
-"classit_1_1unitn_1_1healthcore_1_1domain_1_1EmployeeRegistrationForm.html#ae2e5950ae6271d96dc899fedf239907d":[3,0,0,0,0,2,5,8]
+"classit_1_1unitn_1_1healthcore_1_1domain_1_1EmployeeRegistrationForm.html#ae2e5950ae6271d96dc899fedf239907d":[3,0,0,0,0,2,5,8],
+"classit_1_1unitn_1_1healthcore_1_1domain_1_1EmployeeRegistrationForm.html#ae78247f6e323b0eb64b18cdc4be53792":[3,0,0,0,0,2,5,10],
+"classit_1_1unitn_1_1healthcore_1_1domain_1_1EmployeeRegistrationForm.html#af1804bfdb0eb5dd711f6344f6c7e420c":[3,0,0,0,0,2,5,6]
 };
