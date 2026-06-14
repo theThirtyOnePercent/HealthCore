@@ -76,4 +76,4 @@ Please ensure your code follows the existing style conventions and is documented
 
 ## License
 
-This project was developed as part of a Software Engineering (University of Trento) course. 
+This project was developed as part of a  ( University of Trento ) Software Engineering course. 
