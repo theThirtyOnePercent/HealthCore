@@ -71,6 +71,7 @@ HTML_OUTPUT            = html
 HTML_DYNAMIC_SECTIONS  = YES
 USE_MDFILE_AS_MAINPAGE = README.md
 GENERATE_TREEVIEW      = YES
+GENERATE_LATEX         = NO
 HTML_EXTRA_STYLESHEET  = docs/doxygen-awesome-css/doxygen-awesome.css
 
 
