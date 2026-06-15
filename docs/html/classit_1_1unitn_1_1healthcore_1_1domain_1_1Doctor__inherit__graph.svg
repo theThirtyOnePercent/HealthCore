@@ -12,7 +12,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Represents a doctor in our system, extending the general User class.">
+<g id="a_node1"><a xlink:title="Entity representing a doctor, mapped to the &quot;doctors&quot; table.">
 <polygon fill="#bfbfbf" stroke="black" points="11,-0.5 11,-30.5 160,-30.5 160,-0.5 11,-0.5"/>
 <text text-anchor="start" x="19" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.domain.</text>
 <text text-anchor="middle" x="85.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">Doctor</text>
@@ -22,7 +22,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html" target="_top" xlink:title="Represents a general user in our system.">
+<g id="a_node2"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html" target="_top" xlink:title="Entity representing a general user in the healthcare system, mapped to the &quot;users&quot; table.">
 <polygon fill="white" stroke="black" points="0,-67.5 0,-86.5 171,-86.5 171,-67.5 0,-67.5"/>
 <text text-anchor="middle" x="85.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.domain.User</text>
 </a>

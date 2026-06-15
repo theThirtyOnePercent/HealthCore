@@ -29,12 +29,11 @@ var NAVTREE =
       [ "Overview", "index.html#autotoc_md1", null ],
       [ "Project Structure", "index.html#autotoc_md2", null ],
       [ "Getting Started", "index.html#autotoc_md3", [
-        [ "Prerequisites", "index.html#autotoc_md4", null ],
-        [ "Setup", "index.html#autotoc_md5", null ]
+        [ "Prerequisites", "index.html#autotoc_md4", null ]
       ] ],
-      [ "Documentation", "index.html#autotoc_md7", null ],
-      [ "Contributing", "index.html#autotoc_md9", null ],
-      [ "License", "index.html#autotoc_md11", null ]
+      [ "Documentation", "index.html#autotoc_md5", null ],
+      [ "Contributing", "index.html#autotoc_md7", null ],
+      [ "License", "index.html#autotoc_md9", null ]
     ] ],
     [ "Architectural Overview", "md_docs_architecture.html", null ],
     [ "Packages", "namespaces.html", [
@@ -57,8 +56,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"AdministratorController_8java.html",
-"classit_1_1unitn_1_1healthcore_1_1domain_1_1Equipment.html#a3029417f7e73c578ccfa9c42e0f7f238"
+"",
+"classit_1_1unitn_1_1healthcore_1_1domain_1_1EmployeeRegistrationForm.html#af1804bfdb0eb5dd711f6344f6c7e420c"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

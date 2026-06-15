@@ -45,11 +45,12 @@ public class PatientController {
         patientService.updateInsurancePlan(planId);
         return patientService.getCurrentInsurancePlan();
     }
-    /** @brief Retrieves the current insurance plan of the authenticated patient.
-     * This endpoint is accessible only to users with the 'PATIENT' role.
-     * It returns the InsurancePlan object representing the patient's current insurance plan.
-     * @return The current InsurancePlan of the patient.
-     */
+    /** @brief Returns the description of a specific doctor by their ID.
+      * This endpoint is accessible only to users with the 'PATIENT' role.
+      * It returns a string containing the doctor's description, which may include information.
+      * @param doctorId The ID of the doctor whose description is to be retrieved.
+      * @return A string containing the doctor's description.
+      */
     @GetMapping(path = "doctorDescription/{doctorId}")
     public String getDoctorDescription(
             @PathVariable("doctorId") Integer doctorId) {

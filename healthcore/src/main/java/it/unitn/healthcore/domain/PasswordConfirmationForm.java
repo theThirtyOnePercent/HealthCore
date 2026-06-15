@@ -6,7 +6,7 @@ import org.springframework.web.server.ResponseStatusException;
 /**
  * @class PasswordConfirmationForm
  * @brief This class serves as a base form for user registration processes that require password confirmation.
- *
+ 
  * @author HealthCore Team
  * @version 1.0.0
  * @date 2026-06-12

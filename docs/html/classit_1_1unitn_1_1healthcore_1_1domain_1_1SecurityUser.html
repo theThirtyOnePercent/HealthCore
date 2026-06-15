@@ -92,7 +92,7 @@ $(document).ready(function(){initNavTree('classit_1_1unitn_1_1healthcore_1_1doma
 </div><!--header-->
 <div class="contents">
 
-<p>Adapter class that implements UserDetails to integrate our <a class="el" href="classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html" title="Represents a general user in our system.">User</a> entity with Spring Security.  
+<p>Adapter class that implements UserDetails to integrate our <a class="el" href="classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html" title="Entity representing a general user in the healthcare system, mapped to the &quot;users&quot; table.">User</a> entity with Spring Security.  
  <a href="classit_1_1unitn_1_1healthcore_1_1domain_1_1SecurityUser.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for it.unitn.healthcore.domain.SecurityUser:</div>
@@ -123,8 +123,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac8f3f7864b0830612c6c32823ef31b55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Adapter class that implements UserDetails to integrate our <a class="el" href="classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html" title="Represents a general user in our system.">User</a> entity with Spring Security. </p>
-<p>@detail It provides the necessary user information to Spring Security for authentication and authorization purposes. @detail The getAuthorities method maps the user's role to a GrantedAuthority, which Spring Security uses to manage access control. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html" title="Represents a general user in our system.">User</a> </dd></dl>
+<div class="textblock"><p>Adapter class that implements UserDetails to integrate our <a class="el" href="classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html" title="Entity representing a general user in the healthcare system, mapped to the &quot;users&quot; table.">User</a> entity with Spring Security. </p>
+<p>@detail It provides the necessary user information to Spring Security for authentication and authorization purposes. @detail The getAuthorities method maps the user's role to a GrantedAuthority, which Spring Security uses to manage access control. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html" title="Entity representing a general user in the healthcare system, mapped to the &quot;users&quot; table.">User</a> </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>HealthCore Team </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1.0.0 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2026-06-11 </dd></dl>
@@ -190,7 +190,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the password used to authenticate the user. </p>
-<p>In this implementation, it retrieves the password from the underlying <a class="el" href="classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html" title="Represents a general user in our system.">User</a> entity. </p><dl class="section return"><dt>Returns</dt><dd>The user's password as a String. </dd></dl>
+<p>In this implementation, it retrieves the password from the underlying <a class="el" href="classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html" title="Entity representing a general user in the healthcare system, mapped to the &quot;users&quot; table.">User</a> entity. </p><dl class="section return"><dt>Returns</dt><dd>The user's password as a String. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="SecurityUser_8java_source.html#l00042">42</a> of file <a class="el" href="SecurityUser_8java_source.html">SecurityUser.java</a>.</p>
 
@@ -219,7 +219,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Returns the username used to authenticate the user. </p>
-<p>In this implementation, it retrieves the email from the underlying <a class="el" href="classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html" title="Represents a general user in our system.">User</a> entity as the username. </p><dl class="section return"><dt>Returns</dt><dd>The user's email as a String, which serves as the username for authentication purposes. </dd></dl>
+<p>In this implementation, it retrieves the email from the underlying <a class="el" href="classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html" title="Entity representing a general user in the healthcare system, mapped to the &quot;users&quot; table.">User</a> entity as the username. </p><dl class="section return"><dt>Returns</dt><dd>The user's email as a String, which serves as the username for authentication purposes. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="SecurityUser_8java_source.html#l00050">50</a> of file <a class="el" href="SecurityUser_8java_source.html">SecurityUser.java</a>.</p>
 

@@ -17,7 +17,7 @@ import java.util.Optional;
  * @date 2026-06-11
  */
 public interface UserRepository extends JpaRepository<User, Integer> {
-
+    /** @brief Finds the user by email address */
     @Query("SELECT u FROM User u where u.email = ?1")
     Optional<User> findUserByEmail(String email);
 }

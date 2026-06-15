@@ -5,8 +5,7 @@ import jakarta.persistence.*;
 import java.util.List;
 /**
  * @class Doctor
- * @brief Represents a doctor in our system, extending the general User class.
- * T
+ * @brief Entity representing a doctor, mapped to the "doctors" table.
  * It uses JPA annotations for ORM mapping to the "doctors" table in the database.
  ** @author HealthCore Team
  * @version 1.0.0
@@ -51,7 +50,7 @@ public class Doctor extends User{
         this.specialization = null;
         this.appointmentPrice = null;
     }
-    /** @brief Creates a Doctor with full credentials.*/
+    /** @brief Returns String information about doctor.*/
     @Override
     public String toString() {
         return "Doctor{" +

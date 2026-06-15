@@ -35,7 +35,7 @@ public class UserController {
     }
 
     /**
-     * @brief 
+     * @brief Add a new patient user to the system by processing the registration form data and redirecting to the login page upon successful registration.
      * @param PatientRegistrationForm The form containing the necessary information for registering a new patient user.
      * @detail The service that provides user-related functionalities such as registration, profile updates, password recovery, and OTP verification.
      */
@@ -49,7 +49,7 @@ public class UserController {
     }
 
    /**
-     * @brief 
+     * @brief Add a new employee user (e.g., doctor or administrator) to the system by processing the registration form data and redirecting to the homepage with a success message upon successful registration.
      * @param EmployeeRegistrationForm The form containing the necessary information for registering a new employee user (e.g., doctor or administrator).
      * @detail The service that provides user-related functionalities such as registration, profile updates, password recovery, and OTP verification.
      */

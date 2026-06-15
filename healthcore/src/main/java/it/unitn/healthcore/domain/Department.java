@@ -7,7 +7,7 @@ import jakarta.persistence.criteria.CriteriaBuilder;
 import java.util.List;
 /**
  * @class Department
- * @brief Represents a department in our system. 
+ * @brief Entity representing a hospital department, mapped to the "departments" table.
  * It uses JPA annotations for ORM mapping to the "departments" table in the database.
  ** @author HealthCore Team
  * @version 1.0.0
@@ -31,38 +31,38 @@ public class Department {
     private String name;
     private Integer beds;
     private Integer totalStaffPositions;
-
-    /** @brief Default constructor required by JPA. */
-
-
     @OneToMany(mappedBy = "department")
     @JsonIgnore
     private List<Doctor> doctors;
-
+    /** @brief Default constructor required by JPA. */
     public Department(){}
-    /** @brief Creates a Department with full credentials. */
+
+    /** @brief Constructor for creating Department with hospital, name, beds, totalStaffPositions  */
     public Department(Hospital hospital, String name, Integer beds, Integer totalStaffPositions) {
         this.hospital = hospital;
         this.name = name;
         this.beds = beds;
         this.totalStaffPositions = totalStaffPositions;
     }
+
+    /** @brief Returns list of equipments available  */
     public List<Equipment> getEquipments() {
         return equipments;
     }
-
+     /** @brief Sets a equipment of the Department  */
     public void setEquipments(List<Equipment> equipments) {
         this.equipments = equipments;
     }
-
+    /** @brief Returns the list of doctors associated with the department. */
     public List<Doctor> getDoctors() {
         return doctors;
     }
-
+    /** @brief Sets the list of doctors associated with the department. */
     public void setDoctors(List<Doctor> doctors) {
         this.doctors = doctors;
     }
 
+    /** @brief Department ID getter. */
     public Integer getDepartmentId() {
         return departmentId;
     }
@@ -70,8 +70,7 @@ public class Department {
     public void setDepartmentId(Integer departmentId) {
         this.departmentId = departmentId;
     }
-    /** @brief Returns the list of equipments associated with the department. */
-
+    /** @brief getter for Department name. */
     public String getName() {
         return name;
     }

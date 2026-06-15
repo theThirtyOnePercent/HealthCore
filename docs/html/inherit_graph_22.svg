@@ -12,7 +12,7 @@
 <!-- Node0 -->
 <g id="node1" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html" target="_top" xlink:title="Represents a general user in our system.">
+<g id="a_node1"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html" target="_top" xlink:title="Entity representing a general user in the healthcare system, mapped to the &quot;users&quot; table.">
 <polygon fill="white" stroke="black" points="0,-55 0,-74 171,-74 171,-55 0,-55"/>
 <text text-anchor="middle" x="85.5" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.domain.User</text>
 </a>
@@ -37,7 +37,7 @@
 <!-- Node2 -->
 <g id="node3" class="node">
 <title>Node2</title>
-<g id="a_node3"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor.html" target="_top" xlink:title="Represents a doctor in our system, extending the general User class.">
+<g id="a_node3"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor.html" target="_top" xlink:title="Entity representing a doctor, mapped to the &quot;doctors&quot; table.">
 <polygon fill="white" stroke="black" points="207,-49.5 207,-79.5 356,-79.5 356,-49.5 207,-49.5"/>
 <text text-anchor="start" x="215" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.domain.</text>
 <text text-anchor="middle" x="281.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">Doctor</text>
@@ -53,7 +53,7 @@
 <!-- Node3 -->
 <g id="node4" class="node">
 <title>Node3</title>
-<g id="a_node4"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1domain_1_1Patient.html" target="_top" xlink:title="Represents a patient in our system, extending the User class.">
+<g id="a_node4"><a xlink:href="classit_1_1unitn_1_1healthcore_1_1domain_1_1Patient.html" target="_top" xlink:title="Entity representing a patient in the healthcare system, mapped to the &quot;patients&quot; table.">
 <polygon fill="white" stroke="black" points="207,-0.5 207,-30.5 356,-30.5 356,-0.5 207,-0.5"/>
 <text text-anchor="start" x="215" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">it.unitn.healthcore.domain.</text>
 <text text-anchor="middle" x="281.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">Patient</text>

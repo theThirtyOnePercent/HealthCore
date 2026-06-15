@@ -92,7 +92,7 @@ $(document).ready(function(){initNavTree('classit_1_1unitn_1_1healthcore_1_1doma
 </div><!--header-->
 <div class="contents">
 
-<p>Represents a general user in our system.  
+<p>Entity representing a general user in the healthcare system, mapped to the "users" table.  
  <a href="classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for it.unitn.healthcore.domain.User:</div>
@@ -106,10 +106,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a22a9517702f06a706308a4cc83112fed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor required by JPA.  <a href="classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#a22a9517702f06a706308a4cc83112fed">More...</a><br /></td></tr>
 <tr class="separator:a22a9517702f06a706308a4cc83112fed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fa2acc5cc89cba9d51db61ad5198e83"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#a9fa2acc5cc89cba9d51db61ad5198e83">User</a> (String name, String surname, String email, String password)</td></tr>
-<tr class="memdesc:a9fa2acc5cc89cba9d51db61ad5198e83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html" title="Represents a general user in our system.">User</a> with full credentials.  <a href="classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#a9fa2acc5cc89cba9d51db61ad5198e83">More...</a><br /></td></tr>
+<tr class="memdesc:a9fa2acc5cc89cba9d51db61ad5198e83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html" title="Entity representing a general user in the healthcare system, mapped to the &quot;users&quot; table.">User</a> with full credentials.  <a href="classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#a9fa2acc5cc89cba9d51db61ad5198e83">More...</a><br /></td></tr>
 <tr class="separator:a9fa2acc5cc89cba9d51db61ad5198e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8206b66c08446d8c3cb7e16b825a794"><td class="memItemLeft" align="right" valign="top">Integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#af8206b66c08446d8c3cb7e16b825a794">getId</a> ()</td></tr>
-<tr class="memdesc:af8206b66c08446d8c3cb7e16b825a794"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string representation of the <a class="el" href="classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html" title="Represents a general user in our system.">User</a>.  <a href="classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#af8206b66c08446d8c3cb7e16b825a794">More...</a><br /></td></tr>
+<tr class="memdesc:af8206b66c08446d8c3cb7e16b825a794"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string representation of the <a class="el" href="classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html" title="Entity representing a general user in the healthcare system, mapped to the &quot;users&quot; table.">User</a>.  <a href="classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#af8206b66c08446d8c3cb7e16b825a794">More...</a><br /></td></tr>
 <tr class="separator:af8206b66c08446d8c3cb7e16b825a794"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf2893ac64c0dab236529887f4f70ced"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#aaf2893ac64c0dab236529887f4f70ced">setId</a> (Integer id)</td></tr>
 <tr class="memdesc:aaf2893ac64c0dab236529887f4f70ced"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the user ID.  <a href="classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html#aaf2893ac64c0dab236529887f4f70ced">More...</a><br /></td></tr>
@@ -140,8 +140,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aae0addd4b63049c29c751a6c03e17f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents a general user in our system. </p>
-<p>This class serves as a base for specific user roles like <a class="el" href="classit_1_1unitn_1_1healthcore_1_1domain_1_1Patient.html" title="Represents a patient in our system, extending the User class.">Patient</a>, <a class="el" href="classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor.html" title="Represents a doctor in our system, extending the general User class.">Doctor</a>, and <a class="el" href="classit_1_1unitn_1_1healthcore_1_1domain_1_1Administrator.html" title="Administrator entity mapped to the &quot;administrators&quot; table, extends User.">Administrator</a>. It uses JPA annotations for ORM mapping to the "users" table in the database. </p><dl class="section author"><dt>Author</dt><dd>HealthCore Team </dd></dl>
+<div class="textblock"><p>Entity representing a general user in the healthcare system, mapped to the "users" table. </p>
+<p>@detail This class serves as a base for specific user roles like <a class="el" href="classit_1_1unitn_1_1healthcore_1_1domain_1_1Patient.html" title="Entity representing a patient in the healthcare system, mapped to the &quot;patients&quot; table.">Patient</a>, <a class="el" href="classit_1_1unitn_1_1healthcore_1_1domain_1_1Doctor.html" title="Entity representing a doctor, mapped to the &quot;doctors&quot; table.">Doctor</a>, and <a class="el" href="classit_1_1unitn_1_1healthcore_1_1domain_1_1Administrator.html" title="Administrator entity mapped to the &quot;administrators&quot; table, extends User.">Administrator</a>. @detail It uses JPA annotations for ORM mapping to the "users" table in the database. </p><dl class="section author"><dt>Author</dt><dd>HealthCore Team </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1.0.0 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2026-06-11 </dd></dl>
 
@@ -206,7 +206,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Creates a <a class="el" href="classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html" title="Represents a general user in our system.">User</a> with full credentials. </p>
+<p>Creates a <a class="el" href="classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html" title="Entity representing a general user in the healthcare system, mapped to the &quot;users&quot; table.">User</a> with full credentials. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>First name. </td></tr>
@@ -265,7 +265,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Returns a string representation of the <a class="el" href="classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html" title="Represents a general user in our system.">User</a>. </p>
+<p>Returns a string representation of the <a class="el" href="classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html" title="Entity representing a general user in the healthcare system, mapped to the &quot;users&quot; table.">User</a>. </p>
 
 <p class="definition">Definition at line <a class="el" href="User_8java_source.html#l00054">54</a> of file <a class="el" href="User_8java_source.html">User.java</a>.</p>
 

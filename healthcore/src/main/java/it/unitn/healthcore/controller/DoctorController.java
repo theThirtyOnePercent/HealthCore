@@ -104,9 +104,9 @@ public class DoctorController {
 
         doctorService.deleteShift(shiftId);
     }
-    /** @brief Retrieves the details of a specific appointment by its ID.
+    /** @brief Retrieves a list of shifts for the currently authenticated doctor.
      * This endpoint is accessible only to users with the 'DOCTOR' role.
-     * It returns a string containing the details of the appointment, including patient information, diagnosis history, and any notes associated with the appointment.
+     * It returns a string containing the details of the appointment.
      * @param appointmentId The ID of the appointment to retrieve.
      * @return A string containing the details of the specified appointment.
      */

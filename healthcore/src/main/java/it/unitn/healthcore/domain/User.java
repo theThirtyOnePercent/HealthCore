@@ -4,9 +4,9 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 /**
  * @class User
- * @brief Represents a general user in our system.
- * This class serves as a base for specific user roles like Patient, Doctor, and Administrator.
- * It uses JPA annotations for ORM mapping to the "users" table in the database.
+ * @brief Entity representing a general user in the healthcare system, mapped to the "users" table.
+ * @detail This class serves as a base for specific user roles like Patient, Doctor, and Administrator.
+ * @detail It uses JPA annotations for ORM mapping to the "users" table in the database.
  ** @author HealthCore Team
  * @version 1.0.0
  * @date 2026-06-11

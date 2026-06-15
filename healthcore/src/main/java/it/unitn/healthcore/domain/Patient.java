@@ -6,8 +6,7 @@ import jakarta.persistence.*;
 import java.util.List;
 /**
  * @class Patient
- * @brief Represents a patient in our system, extending the User class.
- * It uses JPA annotations for ORM mapping to the "patients" table in the database.
+ * @brief Entity representing a patient in the healthcare system, mapped to the "patients" table.
  * @details The Patient class includes attributes specific to patients, such as healthcare card number, insurance plan, and triage status. It also maintains a one-to-many relationship with appointments, allowing us to track all appointments associated with a patient.
  * @details The triage status can be used to manage patient flow in emergency situations, indicating whether a patient is currently in triage or not.
  * @details The insurance plan association allows us to determine which insurance plan a patient has and whether it covers specific hospitals or treatments.
@@ -49,7 +48,7 @@ public class Patient extends User{
         this.triageStatus = "NotInTriage";
     }
 
-    /** @brief It creates full insurance plan including Patient */   
+    /** @brief Returns String representation about doctor  */   
     @Override
     public String toString() {
         return "Patient{" +

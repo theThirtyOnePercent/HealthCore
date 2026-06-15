@@ -13,6 +13,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * @date 2026-06-11
  */
 public interface PatientRepository extends JpaRepository<Patient, Integer> {
-
+    /** @brief Checks if a patient exists in the database by their healthcare card number. */
     boolean existsByHealthcareCardNumber(Integer healthcareCardNumber);
 }

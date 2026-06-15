@@ -1,4 +1,4 @@
 <map id="it.unitn.healthcore.domain.Patient" name="it.unitn.healthcore.domain.Patient">
-<area shape="rect" id="node1" title="Represents a patient in our system, extending the User class." alt="" coords="20,80,219,121"/>
-<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html" title="Represents a general user in our system." alt="" coords="5,5,233,32"/>
+<area shape="rect" id="node1" title="Entity representing a patient in the healthcare system, mapped to the &quot;patients&quot; table." alt="" coords="20,80,219,121"/>
+<area shape="rect" id="node2" href="$classit_1_1unitn_1_1healthcore_1_1domain_1_1User.html" title="Entity representing a general user in the healthcare system, mapped to the &quot;users&quot; table." alt="" coords="5,5,233,32"/>
 </map>

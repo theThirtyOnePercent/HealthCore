@@ -7,9 +7,9 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 /** @class HospitalService
- * @brief  HospitalService is a service class that provides business logic related to hospital management. It interacts with the HospitalRepository to perform operations related to retrieving hospital data from the database.
- * @detail This service class contains methods for retrieving the hierarchy of hospitals in the system, which can be used by the HospitalController to provide endpoints for administrators to view hospital information.
- * @detail Also it serves as an intermediary between the controller layer and the persistence layer, ensuring that business rules are applied when accessing hospital data.
+ *  @brief  HospitalService is a service class that provides business logic related to hospital management. It interacts with the HospitalRepository to perform operations related to retrieving hospital data from the database.
+ *  This service class contains methods for retrieving the hierarchy of hospitals in the system, which can be used by the HospitalController to provide endpoints for administrators to view hospital information. Also it serves as an intermediary between the controller layer and the persistence layer,
+ *  ensuring that business rules are applied when accessing hospital data.
  * @see HospitalRepository
  * @author HealthCore Team
  * @version 1.0.0
