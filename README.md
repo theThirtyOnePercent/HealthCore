@@ -17,11 +17,9 @@ The project was developed as part of a software engineering course (University o
 ### Prerequisites
 
 - Java 11 or higher
-- A compatible Java web server (e.g. Apache Tomcat)
-- A relational database PostgreSQL
-- Maven 
+- PostgreSQL
 
-### Setup
+<!-- ### Setup
 
 1. **Clone the repository**
    ```bash
@@ -30,24 +28,13 @@ The project was developed as part of a software engineering course (University o
    ```
 
 2. **Configure your database**  
+
    Update the database connection settings in the application configuration file with your local credentials.
+   
+   Copy and run resources/data.sql and resources/schema.sql in your local Database.
 
-3. **Build the project**
-   ```bash
-   mvn clean install
-   ```
-   *(Or import into your IDE and build from there.)*
-
-4. **Deploy**  
-   Deploy the generated `.war` file to your web server (e.g. Tomcat's `webapps/` directory).
-
-5. **Access the application**  
-   Open your browser and navigate to:
-   ```
-   http://localhost:8080/healthcore
-   ```
-
----
+3. **
+--- -->
 
 ## Documentation
 
