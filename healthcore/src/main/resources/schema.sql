@@ -19,7 +19,7 @@ CREATE TABLE InsurancePlans (
     name VARCHAR(255) NOT NULL
 );
 
-CREATE TABLE Insurances_Hospitals (
+CREATE TABLE InsurancesHospitals (
     insurance_plan_id INT,
     hospital_id INT,
     CONSTRAINT fk_insurance_hospital FOREIGN KEY (insurance_plan_id) REFERENCES InsurancePlans(insurance_plan_id) ON DELETE CASCADE,
@@ -69,7 +69,7 @@ CREATE TABLE Equipments (
 );
 
 
-CREATE TABLE Equipments_Doctors(
+CREATE TABLE EquipmentsDoctors(
     id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     equipment_id INT,
     quantity INT,

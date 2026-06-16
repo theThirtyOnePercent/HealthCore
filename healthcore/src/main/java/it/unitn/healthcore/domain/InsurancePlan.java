@@ -23,7 +23,7 @@ public class InsurancePlan {
     private String name;
     @ManyToMany
     @JoinTable(
-            name = "Insurances_Hospitals",
+            name = "InsurancesHospitals",
             joinColumns = @JoinColumn(name = "insurance_plan_id"),
             inverseJoinColumns = @JoinColumn(name = "hospital_id")
     )

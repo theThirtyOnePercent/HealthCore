@@ -13,7 +13,7 @@ import jakarta.persistence.*;
  * @date 2026-06-12
  */
 @Entity
-@Table(name = "equipments_doctors")
+@Table(name = "equipmentsdoctors")
 public class EquipmentDoctor {
     /** @brief Default constructor required by JPA. */
     @Id
